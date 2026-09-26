@@ -1,0 +1,128 @@
+/* 006 UI theme on csfloat.com: true dark or light, by re-pointing CSFloat's and Angular Material's colour variables.
+   Runs on csfloat.com pages, injected with the isolated content script; inert until toggles.js sets data-tf-theme.
+   Colour only, never display, size, order or visibility (test/theme-css.test.mjs); semantic colours are never named.
+   theme-parts.css holds the few rules that need a selector. */
+
+/* The two palettes. Neutral greys only; the accent stays CSFloat's blue. */
+html[data-tf-theme='dark'] {
+  color-scheme: dark;
+  --tf-t-bg: #0a0a0a;
+  --tf-t-surface: #111111;
+  --tf-t-raised: #141414;
+  --tf-t-hover: #1a1a1a;
+  --tf-t-line: #1f1f1f;
+  --tf-t-line-strong: #2a2a2a;
+  --tf-t-text: #f5f5f5;
+  --tf-t-muted: #a3a3a3;
+  --tf-t-tint-1: rgba(255, 255, 255, 0.04);
+  --tf-t-tint-2: rgba(255, 255, 255, 0.07);
+  --tf-t-tint-3: rgba(255, 255, 255, 0.12);
+  --tf-t-float: rgba(17, 17, 17, 0.6);
+  --tf-t-float-hover: rgba(38, 38, 38, 0.8);
+  --tf-t-disabled: rgba(255, 255, 255, 0.38);
+}
+
+/* Light: white cards on #fafafa. The blue is a shade deeper, so blue text and
+   white-on-blue both pass AA (4.9:1) on white. */
+html[data-tf-theme='light'] {
+  color-scheme: light;
+  --tf-t-bg: #fafafa;
+  --tf-t-surface: #ffffff;
+  --tf-t-raised: #ffffff;
+  --tf-t-hover: #f0f0f0;
+  --tf-t-line: #e5e5e5;
+  --tf-t-line-strong: #d4d4d4;
+  --tf-t-text: #0a0a0a;
+  --tf-t-muted: #525252;
+  --tf-t-tint-1: rgba(0, 0, 0, 0.04);
+  --tf-t-tint-2: rgba(0, 0, 0, 0.06);
+  --tf-t-tint-3: rgba(0, 0, 0, 0.1);
+  --tf-t-float: rgba(255, 255, 255, 0.75);
+  --tf-t-float-hover: rgba(240, 240, 240, 0.9);
+  --tf-t-disabled: rgba(0, 0, 0, 0.38);
+  --primary-color: #1a6ae6;
+  --highlight-base: #1a6ae6;
+}
+
+/* CSFloat's own variables (:root.dark) and Material's (html). The extra
+   :root outranks CSFloat's :root.dark. */
+html:is([data-tf-theme='dark'], [data-tf-theme='light']):root {
+  --primary-text-color: var(--tf-t-text);
+  --subtext-color: var(--tf-t-muted);
+  --highlight-background-minimal: var(--tf-t-tint-1);
+  --highlight-background: var(--tf-t-tint-2);
+  --highlight-background-heavy: var(--tf-t-tint-3);
+  --backing-background-color: var(--tf-t-bg);
+  --module-background-color: var(--tf-t-surface);
+  --module-highlight-background-color: var(--tf-t-hover);
+  --toolbar-background: var(--tf-t-surface);
+  --toolbar-background-firefox: var(--tf-t-surface);
+  --banner-notice-background: var(--tf-t-surface);
+  --dialog-background: var(--tf-t-raised);
+  --dialog-background-firefox: var(--tf-t-raised);
+  --dropdown-color: var(--tf-t-raised);
+  --snackbar-info-background: var(--tf-t-raised);
+  --reference-popover-background: var(--tf-t-raised);
+  --reference-background-color: var(--tf-t-tint-1);
+  --landing-card-gradient-background: var(--tf-t-surface);
+  --enter-search-icon-bg: var(--tf-t-tint-1);
+  --enter-search-icon-fg: var(--tf-t-muted);
+  --action-button-floating-background: var(--tf-t-float);
+  --action-button-floating-border: var(--tf-t-line-strong);
+  --action-button-floating-hover-background: var(--tf-t-float-hover);
+  --action-button-interaction-background: var(--tf-t-float);
+  --mat-app-background-color: var(--tf-t-bg);
+  --mat-app-text-color: var(--tf-t-text);
+  --mat-card-container-color: var(--tf-t-surface);
+  --mat-card-elevated-container-color: var(--tf-t-surface);
+  --mat-card-outlined-container-color: var(--tf-t-surface);
+  --mat-card-filled-container-color: var(--tf-t-surface);
+  --mat-card-outlined-outline-color: var(--tf-t-line);
+  --mat-card-subtitle-text-color: var(--tf-t-muted);
+  --mat-dialog-container-color: var(--tf-t-raised);
+  --mat-dialog-subhead-color: var(--tf-t-text);
+  --mat-dialog-supporting-text-color: var(--tf-t-muted);
+  --mat-menu-container-color: var(--tf-t-raised);
+  --mat-menu-item-label-text-color: var(--tf-t-text);
+  --mat-menu-item-icon-color: var(--tf-t-text);
+  --mat-menu-divider-color: var(--tf-t-line);
+  --mat-menu-item-hover-state-layer-color: var(--tf-t-tint-1);
+  --mat-select-panel-background-color: var(--tf-t-raised);
+  --mat-autocomplete-background-color: var(--tf-t-raised);
+  --mat-option-label-text-color: var(--tf-t-text);
+  --mat-option-hover-state-layer-color: var(--tf-t-tint-1);
+  --mat-option-focus-state-layer-color: var(--tf-t-tint-2);
+  --mat-option-selected-state-layer-color: var(--tf-t-tint-2);
+  --mat-ripple-color: var(--tf-t-tint-3);
+  --mat-table-background-color: var(--tf-t-surface);
+  --mat-table-header-headline-color: var(--tf-t-text);
+  --mat-table-row-item-label-text-color: var(--tf-t-text);
+  --mat-table-row-item-outline-color: var(--tf-t-line);
+  --mat-paginator-container-background-color: var(--tf-t-surface);
+  --mat-paginator-container-text-color: var(--tf-t-text);
+  --mat-bottom-sheet-container-background-color: var(--tf-t-raised);
+  --mat-bottom-sheet-container-text-color: var(--tf-t-text);
+  --mat-list-list-item-label-text-color: var(--tf-t-text);
+  --mat-list-list-item-supporting-text-color: var(--tf-t-muted);
+  --mat-checkbox-label-text-color: var(--tf-t-text);
+  --mat-checkbox-unselected-icon-color: var(--tf-t-muted);
+  --mat-slide-toggle-label-text-color: var(--tf-t-text);
+  --mat-button-toggle-text-color: var(--tf-t-text);
+  --mat-button-toggle-divider-color: var(--tf-t-line);
+  --mat-button-text-label-text-color: var(--tf-t-text);
+  --mat-button-outlined-label-text-color: var(--tf-t-text);
+  --mat-button-outlined-outline-color: var(--tf-t-line-strong);
+  --mat-button-filled-disabled-label-text-color: var(--tf-t-disabled);
+  --mat-button-outlined-disabled-label-text-color: var(--tf-t-disabled);
+  --mat-button-text-disabled-label-text-color: var(--tf-t-disabled);
+  --mat-button-protected-disabled-label-text-color: var(--tf-t-disabled);
+  --mat-icon-button-disabled-icon-color: var(--tf-t-disabled);
+  --mat-select-enabled-trigger-text-color: var(--tf-t-text);
+  --mat-select-placeholder-text-color: var(--tf-t-muted);
+  --mat-select-enabled-arrow-color: var(--tf-t-muted);
+  --mat-dialog-container-elevation-shadow: none;
+  --mat-select-container-elevation-shadow: none;
+  --mat-menu-container-elevation-shadow: none;
+  --mat-autocomplete-container-elevation-shadow: none;
+  --mat-card-elevated-container-elevation: none;
+}

@@ -1,0 +1,80 @@
+/* TrueFloat brand tokens: the one palette of truefloat.app, taken from the
+   prism mark (design/BRAND.md). Used as is by both sites:
+     - the landing page loads it as /tokens.<hash>.css, fingerprinted by
+       web/docs/scripts/build-landing.mjs;
+     - the docs bundle it through Starlight's customCss and the Scalar
+       reference page's import (web/docs/src/styles/custom.css maps it onto
+       Starlight's variables).
+   Dark is the default and the brand. The light block exists only for the
+   docs' theme toggle; the landing page never sets data-theme. */
+:root {
+	color-scheme: dark;
+
+	/* Ink: the mark's tile, then two raised steps for surfaces. */
+	--tf-ink: #0a0a0a;
+	--tf-ink-raised: #111111;
+	--tf-ink-overlay: #1a1a1a;
+	--tf-line: rgba(255, 255, 255, 0.1);
+	--tf-line-strong: rgba(255, 255, 255, 0.2);
+
+	/* Text, strongest to faintest. Every step is at least 4.5:1 on --tf-ink. */
+	--tf-fg: #fafafa;
+	--tf-text: #c4c4c4;
+	--tf-muted: #a3a3a3;
+	--tf-faint: #8a8a8a;
+
+	/* Neutral greys for component chrome (borders, code, hover). */
+	--tf-grey-1: #ededed;
+	--tf-grey-2: #c4c4c4;
+	--tf-grey-3: #8a8a8a;
+	--tf-grey-4: #5c5c5c;
+	--tf-grey-5: #2b2b2b;
+	--tf-grey-6: #171717;
+
+	/* The spectrum: the mark's four outgoing rays, top to bottom. Accents
+	   only, never a background wash. */
+	--tf-red: #ef4444;
+	--tf-amber: #f59e0b;
+	--tf-green: #22c55e;
+	--tf-blue: #3b82f6;
+	--tf-spectrum: linear-gradient(90deg, var(--tf-red), var(--tf-amber), var(--tf-green), var(--tf-blue));
+
+	/* Tiers read top ray down: tier 1 is the red ray. */
+	--tf-tier-1: var(--tf-red);
+	--tf-tier-2: var(--tf-amber);
+	--tf-tier-3: var(--tf-green);
+	--tf-tier-4: var(--tf-blue);
+
+	/* Accent: the blue ray. --tf-accent for rings and fills, --tf-accent-text
+	   (lifted, 7.8:1 on ink) for link text. */
+	--tf-accent: var(--tf-blue);
+	--tf-accent-text: #60a5fa;
+	--tf-accent-low: #0e1a30;
+
+	--tf-font-sans: 'Inter Variable', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+	--tf-font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace;
+	--tf-radius: 10px;
+	--tf-radius-sm: 6px;
+}
+
+:root[data-theme='light'] {
+	color-scheme: light;
+	--tf-ink: #ffffff;
+	--tf-ink-raised: #f6f6f6;
+	--tf-ink-overlay: #ededed;
+	--tf-line: rgba(10, 10, 10, 0.1);
+	--tf-line-strong: rgba(10, 10, 10, 0.2);
+	--tf-fg: #0a0a0a;
+	--tf-text: #262626;
+	--tf-muted: #525252;
+	--tf-faint: #6b6b6b;
+	--tf-grey-1: #171717;
+	--tf-grey-2: #262626;
+	--tf-grey-3: #525252;
+	--tf-grey-4: #8a8a8a;
+	--tf-grey-5: #d4d4d4;
+	--tf-grey-6: #ededed;
+	--tf-accent: #2563eb;
+	--tf-accent-text: #1d4ed8;
+	--tf-accent-low: #dbeafe;
+}

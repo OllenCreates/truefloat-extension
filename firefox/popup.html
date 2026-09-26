@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>TrueFloat</title>
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="popup.css">
+<link rel="stylesheet" href="popup-segments.css">
+<script src="popup.js" defer></script>
+</head>
+<body>
+<header>
+  <img src="icon.svg" alt="" width="24" height="24">
+  <h1>TrueFloat</h1>
+  <input type="checkbox" role="switch" id="enabled" name="enabled" aria-label="TrueFloat on csfloat.com" disabled>
+</header>
+<main>
+<fieldset>
+  <label class="row">
+    <span class="text">
+      <span class="name">Hide rarity glow (rarity border stays)</span>
+    </span>
+    <input type="checkbox" role="switch" id="noGlow" name="noGlow" disabled>
+  </label>
+  <label class="row">
+    <span class="text">
+      <span class="name">Real screenshots</span>
+      <span class="note">About 0.75 MB per card, from csfloat.pics. Paused while your browser saves data.</span>
+    </span>
+    <input type="checkbox" role="switch" id="shots" name="shots" disabled>
+  </label>
+  <div class="row" role="radiogroup" aria-labelledby="theme-name">
+    <span class="name" id="theme-name">Theme</span>
+    <span class="segments">
+      <label><input type="radio" name="theme" value="off" disabled>CSFloat</label>
+      <label><input type="radio" name="theme" value="dark" disabled>True dark</label>
+      <label><input type="radio" name="theme" value="light" disabled>Light</label>
+    </span>
+  </div>
+</fieldset>
+</main>
+<footer>
+  <p>Not affiliated with CSFloat, Valve or Steam.</p>
+  <p id="version"></p>
+</footer>
+</body>
+</html>

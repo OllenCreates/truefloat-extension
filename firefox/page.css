@@ -1,0 +1,39 @@
+/* 002, 004 on csfloat.com: hides the rarity glow and places the screenshot overlay, per data-tf-* attribute.
+   Runs on csfloat.com pages, injected with the isolated content script; inert until toggles.js sets an attribute.
+   Selectors are copied from src/selectors.js; test/page-css.test.mjs fails if they drift apart. */
+
+/* 002 No glow: drop the inline rarity gradient behind the card image. The
+   rarity border and any background colour stay. */
+html[data-tf-noglow] item-card app-item-image-actions > div.container {
+  background-image: none !important;
+}
+
+/* 004 Real screenshot: our own overlay image, hidden until it has loaded and
+   whenever the feature is off. It shows the whole item, centred, and never
+   takes a click. */
+item-card img.tf-shot {
+  display: none;
+}
+
+html[data-tf-shots] item-card img.tf-shot[data-tf-loaded] {
+  display: block;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  pointer-events: none;
+}
+
+html[data-tf-shots] item-card app-item-image-actions :has(> img.tf-shot[data-tf-loaded]) {
+  position: relative;
+}
+
+/* Screenshots have a transparent background, so the card's own image, the one
+   right before a loaded overlay, is hidden, never changed. Stickers, badges and
+   buttons are other elements and stay. Without our attribute or a loaded
+   overlay, it shows as CSFloat renders it. */
+html[data-tf-shots] item-card img:has(+ img.tf-shot[data-tf-loaded]) {
+  visibility: hidden;
+}

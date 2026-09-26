@@ -1,0 +1,66 @@
+{
+  "manifest_version": 3,
+  "name": "TrueFloat",
+  "version": "0.1.0",
+  "description": "Cleaner csfloat.com listing cards: no rarity glow, real in-game screenshots. Collects and sends nothing.",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "action": {
+    "default_title": "TrueFloat",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png"
+    }
+  },
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://csfloat.com/*"
+      ],
+      "js": [
+        "toggles.js"
+      ],
+      "css": [
+        "page.css",
+        "theme.css",
+        "theme-parts.css"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://csfloat.com/*"
+      ],
+      "js": [
+        "main.js"
+      ],
+      "run_at": "document_start",
+      "world": "MAIN"
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "truefloat@truefloat.app",
+      "strict_min_version": "140.0",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
+    },
+    "gecko_android": {
+      "strict_min_version": "142.0"
+    }
+  }
+}
