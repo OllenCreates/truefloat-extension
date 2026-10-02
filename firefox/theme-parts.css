@@ -1,9 +1,3 @@
-/* 006 UI theme, the targeted part: rules that need a csfloat.com selector because no variable reaches the colour.
-   Runs on csfloat.com pages, injected with the isolated content script; inert until toggles.js sets data-tf-theme.
-   Colour only, like theme.css; the palette variables (--tf-t-*) come from there. */
-
-/* Form fields: Material sets these again on each field's own class
-   (.mat-primary, .mat-accent), so they are re-pointed on the field. */
 html:is([data-tf-theme='dark'], [data-tf-theme='light']) .mat-mdc-form-field {
   --mat-form-field-state-layer-color: var(--tf-t-text);
   --mat-form-field-filled-input-text-color: var(--tf-t-text);
@@ -19,39 +13,38 @@ html:is([data-tf-theme='dark'], [data-tf-theme='light']) .mat-mdc-form-field {
   --mat-select-enabled-arrow-color: var(--tf-t-muted);
 }
 
-/* Grey (unthemed) filled buttons, e.g. refresh: their label follows the page
-   text. Primary buttons keep CSFloat's white on blue. */
 html:is([data-tf-theme='dark'], [data-tf-theme='light']) .mat-unthemed {
   --mat-button-filled-label-text-color: var(--tf-t-text);
   --mat-button-protected-label-text-color: var(--tf-t-text);
   --mat-button-tonal-label-text-color: var(--tf-t-text);
 }
 
-/* Blue primary buttons (Filter, Add to cart, Sign in) keep CSFloat's pure
-   white label; it would otherwise follow the page text, dark in light mode. */
 html:is([data-tf-theme='dark'], [data-tf-theme='light']) .mat-mdc-raised-button.mat-primary {
   --mat-button-protected-label-text-color: #ffffff;
 }
 
-/* Cards and the header bar: a 1px hairline instead of CSFloat's tinted edge,
-   and no drop shadow. */
 html:is([data-tf-theme='dark'], [data-tf-theme='light']) item-card mat-card.item-card,
+html:is([data-tf-theme='dark'], [data-tf-theme='light']) .tf-tc-card,
 html:is([data-tf-theme='dark'], [data-tf-theme='light']) app-header .toolbar {
   box-shadow: inset 0 0 0 1px var(--tf-t-line);
 }
 
-/* The page scrollbar, tinted blue-grey by CSFloat. */
 html:is([data-tf-theme='dark'], [data-tf-theme='light']) ::-webkit-scrollbar-thumb {
   background-color: var(--tf-t-tint-3);
 }
 
-/* The blurred blue ellipse under the current header tab: a glow, drawn in SVG. */
 html:is([data-tf-theme='dark'], [data-tf-theme='light']) app-header svg > g[filter] > ellipse {
   fill: transparent;
 }
 
-/* Sticker wear badges keep CSFloat's white on grey in light mode; the text
-   would otherwise follow the page's dark text onto the grey pill. */
 html[data-tf-theme='light'] .wear-badge {
   color: #ffffff;
+}
+
+html[data-tf-theme='light'] app-advanced-search .mat-mdc-checkbox.mat-primary {
+  --mat-checkbox-unselected-icon-color: var(--tf-t-muted);
+}
+html[data-tf-theme='light'] .mat-mdc-checkbox.category-checkbox {
+  --quality-souvenir-color: #777600;
+  --quality-highlight-color: #966634;
 }

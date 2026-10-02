@@ -1,9 +1,3 @@
-/* 006 UI theme on csfloat.com: true dark or light, by re-pointing CSFloat's and Angular Material's colour variables.
-   Runs on csfloat.com pages, injected with the isolated content script; inert until toggles.js sets data-tf-theme.
-   Colour only, never display, size, order or visibility (test/theme-css.test.mjs); semantic colours are never named.
-   theme-parts.css holds the few rules that need a selector. */
-
-/* The two palettes. Neutral greys only; the accent stays CSFloat's blue. */
 html[data-tf-theme='dark'] {
   color-scheme: dark;
   --tf-t-bg: #0a0a0a;
@@ -22,8 +16,6 @@ html[data-tf-theme='dark'] {
   --tf-t-disabled: rgba(255, 255, 255, 0.38);
 }
 
-/* Light: white cards on #fafafa. The blue is a shade deeper, so blue text and
-   white-on-blue both pass AA (4.9:1) on white. */
 html[data-tf-theme='light'] {
   color-scheme: light;
   --tf-t-bg: #fafafa;
@@ -44,8 +36,6 @@ html[data-tf-theme='light'] {
   --highlight-base: #1a6ae6;
 }
 
-/* CSFloat's own variables (:root.dark) and Material's (html). The extra
-   :root outranks CSFloat's :root.dark. */
 html:is([data-tf-theme='dark'], [data-tf-theme='light']):root {
   --primary-text-color: var(--tf-t-text);
   --subtext-color: var(--tf-t-muted);

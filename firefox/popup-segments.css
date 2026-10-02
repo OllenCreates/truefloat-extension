@@ -1,5 +1,3 @@
-/* 006 The popup's theme picker: three radios drawn as one segmented control, colours from tokens.css.
-   Runs in the popup. */
 .segments {
   display: flex;
   flex: none;
@@ -19,12 +17,13 @@
   cursor: pointer;
 }
 
-/* The radio itself is invisible but still the click and focus target. */
 .segments input {
   appearance: none;
   position: absolute;
   inset: 0;
   margin: 0;
+  border: 0;
+  background: none;
   cursor: pointer;
 }
 
@@ -41,4 +40,88 @@
 .segments label:has(:disabled) {
   opacity: 0.5;
   cursor: default;
+}
+
+.range {
+  flex-wrap: wrap;
+  row-gap: 6px;
+  cursor: default;
+}
+
+.range output {
+  color: var(--tf-fg);
+  font-variant-numeric: tabular-nums;
+}
+
+.range input {
+  flex: 1 0 100%;
+  margin: 0;
+  accent-color: var(--tf-accent);
+  cursor: pointer;
+}
+
+.range input:disabled,
+fieldset:disabled .range > * {
+  opacity: 0.5;
+  accent-color: var(--tf-grey-3);
+  cursor: default;
+}
+
+.group > legend {
+  width: 100%;
+  padding: 0;
+  border-top: 1px solid var(--tf-line);
+}
+
+.group > legend > button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 11px 14px 6px;
+  border: 0;
+  background: none;
+  color: var(--tf-muted);
+  font: inherit;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.group > legend > button::after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  margin-right: 13px;
+  border: solid currentColor;
+  border-width: 0 1.5px 1.5px 0;
+  transform: translateY(-2px) rotate(45deg);
+}
+
+.group > legend > button[aria-expanded='false']::after {
+  transform: rotate(-45deg);
+}
+
+.group > legend > button:hover {
+  color: var(--tf-fg);
+}
+
+.group > legend > button:focus-visible {
+  outline: 2px solid var(--tf-accent);
+  outline-offset: -2px;
+}
+
+.rows > .row {
+  padding-block: 8px;
+}
+
+.row.sub {
+  padding-left: 28px;
+}
+
+.row:has(:disabled) > :is(.name, .credit) {
+  opacity: 0.5;
 }

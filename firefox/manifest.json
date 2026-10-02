@@ -1,8 +1,9 @@
 {
   "manifest_version": 3,
   "name": "TrueFloat",
-  "version": "0.1.0",
-  "description": "Cleaner csfloat.com listing cards: no rarity glow, real in-game screenshots. Collects and sends nothing.",
+  "version": "1.0.0",
+  "description": "Pattern grades, tier search and market prices on csfloat.com, plus real screenshots, listing age and sales graphs. No tracking.",
+  "homepage_url": "https://truefloat.app/",
   "icons": {
     "16": "icons/icon-16.png",
     "32": "icons/icon-32.png",
@@ -31,7 +32,39 @@
       "css": [
         "page.css",
         "theme.css",
-        "theme-parts.css"
+        "theme-parts.css",
+        "cards.css",
+        "card-layout.css",
+        "card-title.css",
+        "card-watch.css",
+        "card-actions.css",
+        "card-price.css",
+        "chip.css",
+        "dialog.css",
+        "dialog-about.css",
+        "dialog-lower.css",
+        "dialog-parts.css",
+        "prices-panel.css",
+        "prices-panel-sub.css",
+        "prices-panel-net.css",
+        "prices-chip.css",
+        "plain-mark.css",
+        "prices-pop.css",
+        "sticker-cards.css",
+        "sticker-panel.css",
+        "catalog-cards.css",
+        "catalog-window.css",
+        "grades.css",
+        "grade-corner.css",
+        "grade-panel.css",
+        "sales-table.css",
+        "sales-marks.css",
+        "sales-graph.css",
+        "db-grades.css",
+        "tiers.css",
+        "tier-pop.css",
+        "tier-row.css",
+        "menus.css"
       ],
       "run_at": "document_start"
     },
@@ -47,7 +80,12 @@
     }
   ],
   "content_security_policy": {
-    "extension_pages": "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'"
+    "extension_pages": "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src https://truefloat.app/api/v1/index https://truefloat.app/api/v1/prices https://truefloat.app/api/v1/catalog/ext; base-uri 'none'; form-action 'none'"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
   },
   "browser_specific_settings": {
     "gecko": {
@@ -58,9 +96,6 @@
           "none"
         ]
       }
-    },
-    "gecko_android": {
-      "strict_min_version": "142.0"
     }
   }
 }

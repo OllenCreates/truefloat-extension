@@ -1,0 +1,24 @@
+app-float-dbtable table:not(:has(.tf-db-g)) .tf-db-gc {
+  display: none;
+}
+
+app-float-dbtable .tf-db-gc {
+  width: 1%;
+  white-space: nowrap;
+}
+
+.tf-db-g {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  vertical-align: middle;
+}
+
+.tf-db-more {
+  color: var(--subtext-color);
+  font-size: 12px;
+}
+
+app-history-dialog .title > .tf-db-g {
+  margin-left: 10px;
+}

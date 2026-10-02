@@ -1,21 +1,12 @@
-/* 002, 004 on csfloat.com: hides the rarity glow and places the screenshot overlay, per data-tf-* attribute.
-   Runs on csfloat.com pages, injected with the isolated content script; inert until toggles.js sets an attribute.
-   Selectors are copied from src/selectors.js; test/page-css.test.mjs fails if they drift apart. */
-
-/* 002 No glow: drop the inline rarity gradient behind the card image. The
-   rarity border and any background colour stay. */
 html[data-tf-noglow] item-card app-item-image-actions > div.container {
   background-image: none !important;
 }
 
-/* 004 Real screenshot: our own overlay image, hidden until it has loaded and
-   whenever the feature is off. It shows the whole item, centred, and never
-   takes a click. */
-item-card img.tf-shot {
+item-card :is(img, canvas).tf-shot {
   display: none;
 }
 
-html[data-tf-shots] item-card img.tf-shot[data-tf-loaded] {
+html[data-tf-shots] item-card :is(img, canvas).tf-shot[data-tf-loaded] {
   display: block;
   position: absolute;
   inset: 0;
@@ -26,14 +17,104 @@ html[data-tf-shots] item-card img.tf-shot[data-tf-loaded] {
   pointer-events: none;
 }
 
-html[data-tf-shots] item-card app-item-image-actions :has(> img.tf-shot[data-tf-loaded]) {
+html[data-tf-shots] item-detail item-card img.tf-shot[data-tf-loaded] {
+  box-sizing: border-box;
+  padding-inline: 4%;
+}
+
+html[data-tf-shots] item-card app-item-image-actions :is([data-tf-has~='shot'], img.tf-shot[data-tf-loaded] *) {
   position: relative;
 }
 
-/* Screenshots have a transparent background, so the card's own image, the one
-   right before a loaded overlay, is hidden, never changed. Stickers, badges and
-   buttons are other elements and stay. Without our attribute or a loaded
-   overlay, it shows as CSFloat renders it. */
-html[data-tf-shots] item-card img:has(+ img.tf-shot[data-tf-loaded]) {
+html[data-tf-shots] item-card img:is([data-tf-has~='under'], img.tf-shot[data-tf-loaded] *) {
   visibility: hidden;
+}
+
+item-card span.tf-age {
+  display: none;
+}
+
+html[data-tf-age] item-card span.tf-age {
+  display: block;
+  flex: none;
+  color: var(--subtext-color);
+  font-size: 12px;
+  font-weight: 400;
+  font-variant-numeric: tabular-nums;
+  line-height: 12px;
+  white-space: nowrap;
+}
+
+html[data-tf-age] item-card .name-container > span.tf-age {
+  order: 1;
+  margin-inline-start: auto;
+  padding-inline-start: 4px;
+}
+
+html[data-tf-age] item-card .seller-details > span.tf-age::before {
+  content: '\00b7';
+  padding-inline-end: 6px;
+}
+
+item-card span.tf-fresh {
+  display: none;
+}
+
+html[data-tf-refresh][data-tf-fresh]
+  item-card
+  app-item-image-actions
+  > div.container:is([data-tf-has~='fresh'], span.tf-fresh *) {
+  position: relative;
+}
+
+html[data-tf-refresh][data-tf-fresh] item-card span.tf-fresh {
+  display: block;
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: inherit;
+  box-shadow: inset 0 0 0 1px var(--primary-color);
+  pointer-events: none;
+}
+
+item-card span.tf-bargain {
+  display: none;
+}
+
+html[data-tf-bargain] item-card .bargain-btn .mdc-button__label:is([data-tf-has~='bargain'], span.tf-bargain *) {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+}
+
+html[data-tf-bargain] item-card .bargain-btn .mdc-button__label > span.tf-bargain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: stretch;
+  height: 13px;
+  overflow: hidden;
+  contain: inline-size;
+  color: var(--subtext-color);
+  font-size: 11px;
+  font-weight: 400;
+  font-variant-numeric: tabular-nums;
+  line-height: 13px;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+html[data-tf-bargain] item-card .bargain-btn .mdc-button__label > span.tf-bargain::before {
+  content: '';
+  height: 13px;
+}
+
+html[data-tf-bargain] item-card .bargain-btn .mdc-button__label > span.tf-bargain[hidden] {
+  margin-top: -13px;
+  clip-path: inset(50%);
+}
+
+html[data-tf-bargain] item-card .bargain-btn :is(:disabled, .mat-mdc-button-disabled) span.tf-bargain {
+  color: inherit;
 }

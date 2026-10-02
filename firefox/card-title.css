@@ -1,0 +1,109 @@
+html[data-tf-titles] item-card span.tf-title {
+  display: flex;
+  position: relative;
+  flex: 1 1 auto;
+  align-items: baseline;
+  gap: 6px;
+  min-width: 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+html[data-tf-titles] item-card span.tf-star {
+  flex: none;
+  margin-right: -2px;
+  color: var(--subtext-color);
+  font-size: 12px;
+}
+
+html[data-tf-titles] item-card span.tf-skin {
+  flex: 0 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  color: var(--primary-text-color);
+  text-overflow: ellipsis;
+}
+
+html[data-tf-titles] item-card span.tf-title.tf-st > span.tf-skin {
+  color: var(--quality-stattrak-color);
+}
+
+html[data-tf-titles] item-card span.tf-title.tf-sv > span.tf-skin {
+  color: var(--quality-souvenir-color);
+}
+
+html[data-tf-titles] item-card span.tf-weapon {
+  display: flex;
+  flex: 1 1 0;
+  flex-wrap: wrap;
+  min-width: 0;
+  height: 1lh;
+  overflow: hidden;
+  color: var(--subtext-color);
+  font-size: 13px;
+  font-weight: 400;
+}
+
+html[data-tf-titles] item-card span.tf-weapon::before {
+  content: '\200b';
+}
+
+html[data-tf-titles] item-card .name-container:is([data-tf-has~='title'], span.tf-title *) > .item-name,
+html[data-tf-titles][data-tf-tags][data-tf-wear]
+  item-card
+  app-item-name:is([data-tf-has~='title'], span.tf-title *)
+  .subtext {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+html[data-tf-titles][data-tf-tags] item-card span.tf-q,
+html[data-tf-titles][data-tf-tags] item-card span.tf-phase {
+  display: inline-block;
+  flex: none;
+  align-self: center;
+  padding: 0 4px;
+  border-radius: 4px;
+  font-size: 10.5px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+}
+
+html[data-tf-titles][data-tf-tags] item-card span.tf-q {
+  border: 1px solid currentColor;
+  color: var(--quality-stattrak-color);
+}
+
+html[data-tf-titles][data-tf-tags] item-card span.tf-title.tf-sv > span.tf-q {
+  color: var(--quality-souvenir-color);
+}
+
+html[data-tf-titles][data-tf-tags] item-card span.tf-phase {
+  padding: 0 5px;
+  background: var(--highlight-background-heavy);
+  color: var(--primary-text-color);
+  font-size: 11px;
+  font-weight: 500;
+}
+
+html[data-tf-titles][data-tf-theme='light'] item-card span.tf-title:is(.tf-st, .tf-sv) > span.tf-skin {
+  color: var(--primary-text-color);
+}
+
+html[data-tf-titles][data-tf-tags][data-tf-theme='light'] item-card span.tf-title > span.tf-q {
+  border-color: transparent;
+  background: var(--quality-stattrak-color);
+  color: #1b1d24;
+}
+
+html[data-tf-titles][data-tf-tags][data-tf-theme='light'] item-card span.tf-title.tf-sv > span.tf-q {
+  background: var(--quality-souvenir-color);
+  color: #1b1d24;
+}

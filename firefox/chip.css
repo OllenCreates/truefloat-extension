@@ -1,0 +1,102 @@
+button.tf-chip,
+span.tf-chip-status {
+  display: none;
+}
+
+html[data-tf-refresh] app-search-bar div.refresh > button.tf-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  box-sizing: border-box;
+  height: 36px;
+  margin: 0 0 0 4px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 8px;
+  background: var(--highlight-background-minimal);
+  color: var(--subtext-color);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1;
+  white-space: nowrap;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+html[data-tf-refresh] app-search-bar div.refresh > button.tf-chip:hover {
+  background-image: linear-gradient(var(--highlight-background), var(--highlight-background));
+}
+
+html[data-tf-refresh] app-search-bar div.refresh > button.tf-chip:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+html[data-tf-refresh] app-search-bar div.refresh > button.tf-chip[aria-disabled='true'] {
+  cursor: default;
+}
+
+html[data-tf-refresh] app-search-bar div.refresh > button.tf-chip svg {
+  flex: none;
+  width: 14px;
+  height: 14px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+html[data-tf-refresh] app-search-bar div.refresh > button.tf-chip span.tf-chip-time {
+  min-width: 4.5ch;
+  font-variant-numeric: tabular-nums;
+  text-align: left;
+}
+
+html[data-tf-refresh] app-search-bar div.refresh > button.tf-chip span.tf-chip-time:empty {
+  display: none;
+}
+
+html[data-tf-refresh] app-search-bar div.refresh:has(> button.tf-chip) {
+  flex: 0 100000 154px;
+  min-width: 78px;
+  text-align: start;
+  white-space: nowrap;
+}
+
+html[data-tf-refresh] app-search-bar div.refresh:has(> button.tf-chip[data-tf-icon]) {
+  flex-basis: 78px;
+}
+
+html[data-tf-refresh] app-search-bar div.refresh > button.tf-chip[data-tf-icon] {
+  position: relative;
+  justify-content: center;
+  width: 36px;
+  padding: 0;
+}
+
+html[data-tf-refresh] app-search-bar div.refresh > button.tf-chip[data-tf-icon] span {
+  display: none;
+}
+
+html[data-tf-refresh] app-search-bar div.refresh > button.tf-chip[data-tf-icon]::after {
+  content: 'A';
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  color: var(--subtext-color);
+  font-size: 9px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+html[data-tf-refresh] app-search-bar div.refresh > span.tf-chip-status {
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}

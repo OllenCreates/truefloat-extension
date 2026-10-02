@@ -1,0 +1,27 @@
+html[data-tf-priceline] app-item-container > .content-wrapper > item-card .price-row {
+  flex-wrap: wrap;
+}
+html[data-tf-priceline] app-item-container > .content-wrapper > item-card .price-row > .price {
+  white-space: nowrap;
+}
+
+html[data-tf-priceline] .price-row[data-tf-fit] > .reference-widget-container {
+  margin-left: calc(-1 * var(--tf-gap, 0px));
+}
+html[data-tf-priceline] .price-row[data-tf-fit] > .price {
+  zoom: var(--tf-zoom, 1);
+}
+
+html[data-tf-priceline] .price-row[data-tf-fit] div.reference {
+  padding-inline: calc(var(--padding-left-right) - var(--tf-pad, 0px)) !important;
+}
+
+html[data-tf-priceline] .price-row[data-tf-fit] div.reference > .percentage {
+  margin-left: calc(-1 * var(--tf-inner, 0px));
+}
+html[data-tf-priceline] .price-row[data-tf-fit] div.reference > .icon,
+html[data-tf-priceline] .price-row[data-tf-fit] div.reference > .icon > * {
+  width: calc(var(--icon-size) - var(--tf-icon, 0px)) !important;
+  height: calc(var(--icon-size) - var(--tf-icon, 0px)) !important;
+  font-size: calc(var(--icon-size) - var(--tf-icon, 0px)) !important;
+}

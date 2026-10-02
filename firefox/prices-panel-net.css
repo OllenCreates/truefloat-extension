@@ -1,0 +1,65 @@
+.tf-pw .tf-pw-n,
+html[data-tf-pricenet] .tf-pw.tf-pw-net .tf-pw-a,
+html:not([data-tf-pricenet]) .tf-pw .tf-pw-mode {
+  display: none;
+}
+
+html[data-tf-pricenet] .tf-pw.tf-pw-net .tf-pw-n {
+  display: inline;
+}
+
+html[data-tf-pricenet] .tf-pw.tf-pw-net .tf-pw-sub > * {
+  flex-shrink: 0;
+}
+
+html[data-tf-pricenet] .tf-pw.tf-pw-net .tf-pw-sub > .tf-pw-bit:not(.tf-pw-n, .tf-pw-a) {
+  flex-shrink: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tf-pw .tf-pw-mode {
+  display: inline-flex;
+  flex: none;
+  gap: 1px;
+  margin-right: auto;
+  margin-left: 2px;
+  padding: 1px;
+  border-radius: 5px;
+  background: var(--highlight-background-minimal, rgba(255, 255, 255, 0.04));
+}
+
+.tf-pw .tf-pw-word {
+  box-sizing: border-box;
+  height: 16px;
+  margin: 0;
+  padding: 0 6px;
+  border: 0;
+  border-radius: 4px;
+  background: none;
+  color: var(--tf-pw-sub);
+  font: inherit;
+  font-size: 11px;
+  line-height: 16px;
+  cursor: pointer;
+}
+
+.tf-pw .tf-pw-word:hover {
+  color: var(--tf-pw-text);
+}
+
+.tf-pw .tf-pw-word[aria-pressed='true'] {
+  background: var(--highlight-background-heavy, rgba(255, 255, 255, 0.12));
+  color: var(--tf-pw-text);
+  cursor: default;
+}
+
+.tf-pw .tf-pw-word:focus-visible {
+  outline: 2px solid var(--primary-color, #237bff);
+  outline-offset: 0;
+}
+
+html[data-tf-pricenet] .tf-pw.tf-pw-net .tf-pw-row:not(.tf-pw-stale) .tf-pw-delta[data-gain] {
+  color: var(--tf-pw-green);
+}

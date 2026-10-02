@@ -1,0 +1,81 @@
+.tf-sp {
+  display: none;
+}
+
+html[data-tf-stickers][data-tf-stickercards] item-card app-sticker-overpay[data-tf-sp=''],
+html[data-tf-stickers][data-tf-stickerbadge] item-card app-sticker-overpay[data-tf-sp='w'] {
+  display: none !important;
+}
+
+html[data-tf-stickers][data-tf-stickercards] item-card .sticker-container .tf-sp:not(.tf-sp-w),
+html[data-tf-stickers][data-tf-stickerbadge] item-card .sticker-container .tf-sp-w {
+  --tf-sp-dim: color-mix(in srgb, var(--primary-text-color, #f5f5f5) 62%, transparent);
+  --tf-sp-green: #4ade80;
+  display: inline-flex;
+  flex: 0 1 auto;
+  min-width: 0;
+  max-width: calc(100cqw - 16px);
+}
+
+html[data-tf-stickers] item-card .sticker-container > .keychain-row:has(> .tf-sp) {
+  max-width: calc(100cqw - 8px);
+}
+
+html[data-tf-stickers][data-tf-stickercards] item-card .sticker-container > .tf-sp:not(.tf-sp-w),
+html[data-tf-stickers][data-tf-stickerbadge] item-card .sticker-container > .tf-sp-w {
+  display: flex;
+  width: fit-content;
+  margin: 0 0 4px 8px;
+}
+
+html[data-tf-theme='light'][data-tf-stickers][data-tf-stickercards] item-card .sticker-container .tf-sp:not(.tf-sp-w),
+html[data-tf-theme='light'][data-tf-stickers][data-tf-stickerbadge] item-card .sticker-container .tf-sp-w {
+  --tf-sp-green: #166534;
+  --action-button-floating-background: rgba(255, 255, 255, 0.8);
+}
+
+.tf-sp > .tf-sp-b {
+  display: flex;
+  min-width: 0;
+  height: 23px;
+  padding: 0 5px;
+  overflow: hidden;
+  border-radius: 4px;
+  color: var(--primary-text-color, #f5f5f5);
+  background:
+    linear-gradient(var(--item-actions-background-color, rgba(0, 0, 0, 0.1)) 0 0),
+    var(--action-button-floating-background, transparent);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 23px;
+  white-space: nowrap;
+}
+
+.tf-sp .tf-sp-m {
+  flex: 0 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tf-sp .tf-sp-o {
+  flex: none;
+  white-space: pre;
+}
+.tf-sp .tf-sp-o[data-cut] {
+  display: none;
+}
+
+.tf-sp:focus-visible {
+  border-radius: 4px;
+  outline: 2px solid #237bff;
+  outline-offset: 1px;
+}
+
+.tf-sp-w > .tf-sp-b {
+  height: 26px;
+  line-height: 26px;
+}
+
+.tf-sp .tf-sp-free {
+  color: var(--tf-sp-green);
+}

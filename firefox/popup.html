@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="tokens.css">
 <link rel="stylesheet" href="popup.css">
 <link rel="stylesheet" href="popup-segments.css">
+<link rel="stylesheet" href="popup-prices.css">
 <script src="popup.js" defer></script>
 </head>
 <body>
@@ -15,33 +16,170 @@
   <input type="checkbox" role="switch" id="enabled" name="enabled" aria-label="TrueFloat on csfloat.com" disabled>
 </header>
 <main>
-<fieldset>
-  <label class="row">
-    <span class="text">
-      <span class="name">Hide rarity glow (rarity border stays)</span>
-    </span>
-    <input type="checkbox" role="switch" id="noGlow" name="noGlow" disabled>
-  </label>
-  <label class="row">
-    <span class="text">
-      <span class="name">Real screenshots</span>
-      <span class="note">About 0.75 MB per card, from csfloat.pics. Paused while your browser saves data.</span>
-    </span>
-    <input type="checkbox" role="switch" id="shots" name="shots" disabled>
-  </label>
-  <div class="row" role="radiogroup" aria-labelledby="theme-name">
-    <span class="name" id="theme-name">Theme</span>
-    <span class="segments">
-      <label><input type="radio" name="theme" value="off" disabled>CSFloat</label>
-      <label><input type="radio" name="theme" value="dark" disabled>True dark</label>
-      <label><input type="radio" name="theme" value="light" disabled>Light</label>
-    </span>
-  </div>
+<fieldset role="none">
+  <fieldset class="group">
+    <legend><button type="button" aria-expanded="true" aria-controls="g-look">Look</button></legend>
+    <div class="rows" id="g-look">
+      <div class="row" role="radiogroup" aria-labelledby="theme-name">
+        <span class="name" id="theme-name">Theme</span>
+        <span class="segments">
+          <label><input type="radio" name="theme" value="off" disabled>CSFloat</label>
+          <label><input type="radio" name="theme" value="dark" disabled>True dark</label>
+          <label><input type="radio" name="theme" value="light" disabled>Light</label>
+        </span>
+      </div>
+      <div class="row range">
+        <label class="name" for="cols">Cards per row</label>
+        <output id="cols-value" for="cols">Auto</output>
+        <input type="range" id="cols" name="cols" min="1" max="8" step="1" value="1" disabled>
+      </div>
+      <label class="row"><span class="name">Hide rarity glow</span><input type="checkbox" role="switch" id="noGlow" name="noGlow" disabled></label>
+      <label class="row"><span class="name">Sticker Combos on guns only</span><input type="checkbox" role="switch" id="comboTab" name="comboTab" disabled></label>
+      <label class="row"><span class="name">Hover boxes</span><input type="checkbox" role="switch" id="tipBoxes" name="tipBoxes" disabled></label>
+      <label class="row"><span class="name">Real screenshots</span><input type="checkbox" role="switch" id="shots" name="shots" disabled></label>
+      <div class="row sub" role="radiogroup" aria-labelledby="shotRes-name">
+        <span class="name" id="shotRes-name">Sharpness</span>
+        <span class="segments">
+          <label><input type="radio" name="shotRes" value="full" disabled>Full</label>
+          <label><input type="radio" name="shotRes" value="high" disabled>High</label>
+          <label><input type="radio" name="shotRes" value="balanced" disabled>Balanced</label>
+        </span>
+      </div>
+    </div>
+  </fieldset>
+  <fieldset class="group">
+    <legend><button type="button" aria-expanded="false" aria-controls="g-grades">Grades</button></legend>
+    <div class="rows" id="g-grades" hidden>
+      <label class="row"><span class="name">Pattern grades</span><input type="checkbox" role="switch" id="grades" name="grades" disabled></label>
+      <label class="row sub"><span class="name">On csfloat.com/db</span><input type="checkbox" role="switch" id="dbGrades" name="dbGrades" disabled></label>
+      <label class="row sub"><span class="name">Grades on sell page</span><input type="checkbox" role="switch" id="sellGrades" name="sellGrades" disabled></label>
+      <label class="row sub"><span class="name">Gems in category menus</span><input type="checkbox" role="switch" id="menuGems" name="menuGems" disabled></label>
+      <label class="row sub"><span class="name">Charm grades</span><input type="checkbox" role="switch" id="charms" name="charms" disabled></label>
+      <label class="row sub"><span class="name">Tidy tier names</span><input type="checkbox" role="switch" id="tidyNames" name="tidyNames" disabled></label>
+      <label class="row sub"><span class="name">One line for one-tier groups</span><input type="checkbox" role="switch" id="oneTier" name="oneTier" disabled></label>
+      <label class="row sub"><span class="name">Seed nicknames</span><input type="checkbox" role="switch" id="seedNames" name="seedNames" disabled></label>
+      <label class="row"><span class="name">Special grade icons</span><input type="checkbox" role="switch" id="icons" name="icons" disabled></label>
+      <label class="row sub"><span class="name">Extra glint</span><input type="checkbox" role="switch" id="glint" name="glint" disabled></label>
+      <label class="row"><span class="name">CSFloat badges as icons</span><input type="checkbox" role="switch" id="csfGrades" name="csfGrades" disabled></label>
+    </div>
+  </fieldset>
+  <fieldset class="group">
+    <legend><button type="button" aria-expanded="false" aria-controls="g-tiers">Tier search</button></legend>
+    <div class="rows" id="g-tiers" hidden>
+      <label class="row"><span class="name">Tier search</span><input type="checkbox" role="switch" id="tierSearch" name="tierSearch" disabled></label>
+      <div class="row sub" role="radiogroup" aria-labelledby="tierPlace-name">
+        <span class="name" id="tierPlace-name">Show in</span>
+        <span class="segments">
+          <label><input type="radio" name="tierPlace" value="toolbar" disabled>Toolbar</label>
+          <label><input type="radio" name="tierPlace" value="filters" disabled>Filters</label>
+          <label><input type="radio" name="tierPlace" value="both" disabled>Both</label>
+        </span>
+      </div>
+      <label class="row sub"><span class="name">Search every seed</span><input type="checkbox" role="switch" id="tierAll" name="tierAll" disabled></label>
+      <label class="row sub"><span class="name">Tier premium</span><input type="checkbox" role="switch" id="tierPremium" name="tierPremium" disabled></label>
+      <label class="row sub"><span class="name">Summary bar</span><input type="checkbox" role="switch" id="tierStrip" name="tierStrip" disabled></label>
+      <label class="row sub"><span class="name">Pattern picker</span><input type="checkbox" role="switch" id="patternPicker" name="patternPicker" disabled></label>
+    </div>
+  </fieldset>
+  <fieldset class="group">
+    <legend><button type="button" aria-expanded="false" aria-controls="g-prices">Prices</button></legend>
+    <div class="rows" id="g-prices" hidden>
+      <label class="row"><span class="name">Market prices</span><input type="checkbox" role="switch" id="prices" name="prices" disabled></label>
+      <div class="credit"><a href="https://openskin.dev" target="_blank" rel="noopener noreferrer">Prices by OpenSkin</a></div>
+      <div class="row sub">
+        <label class="name" for="priceRef">Reference</label>
+        <select id="priceRef" name="priceRef" disabled>
+          <option value="buff-ask">Buff ask</option><option value="buff-bid">Buff bid</option>
+          <option value="youpin-ask">YouPin ask</option><option value="youpin-bid">YouPin bid</option>
+          <option value="steam-ask">Steam ask</option><option value="steam-bid">Steam bid</option>
+          <option value="skinport-ask">Skinport ask</option>
+          <option value="csfloat-ask">CSFloat ask</option><option value="csfloat-bid">CSFloat bid</option>
+        </select>
+      </div>
+      <label class="row sub"><span class="name">On cards</span><input type="checkbox" role="switch" id="pricesCards" name="pricesCards" aria-label="Market prices on cards" disabled></label>
+      <label class="row sub"><span class="name">No premium mark</span><input type="checkbox" role="switch" id="plainMark" name="plainMark" disabled></label>
+      <label class="row sub"><span class="name">In listing window</span><input type="checkbox" role="switch" id="pricesDialog" name="pricesDialog" aria-label="Market prices in listing window" disabled></label>
+      <label class="row sub"><span class="name">Ask | Net toggle</span><input type="checkbox" role="switch" id="priceNet" name="priceNet" disabled></label>
+      <label class="row sub"><span class="name">Buy orders</span><input type="checkbox" role="switch" id="buyOrders" name="buyOrders" aria-label="Buy orders in market prices" disabled></label>
+      <label class="row sub"><span class="name">In category menus</span><input type="checkbox" role="switch" id="menus" name="menus" disabled></label>
+      <label class="row"><span class="name">Sticker value</span><input type="checkbox" role="switch" id="stickers" name="stickers" disabled></label>
+      <label class="row sub"><span class="name">On cards</span><input type="checkbox" role="switch" id="stickerCards" name="stickerCards" aria-label="Sticker value on cards" disabled></label>
+      <label class="row sub"><span class="name">In listing window</span><input type="checkbox" role="switch" id="stickerPanel" name="stickerPanel" aria-label="Sticker value in listing window" disabled></label>
+      <label class="row sub"><span class="name">On listing window image</span><input type="checkbox" role="switch" id="stickerBadge" name="stickerBadge" disabled></label>
+      <label class="row sub"><span class="name">Compact sticker line</span><input type="checkbox" role="switch" id="stickerCompact" name="stickerCompact" disabled></label>
+    </div>
+  </fieldset>
+  <fieldset class="group">
+    <legend><button type="button" aria-expanded="false" aria-controls="g-catalog">Catalogue</button></legend>
+    <div class="rows" id="g-catalog" hidden>
+      <label class="row"><span class="name">Source on cards</span><input type="checkbox" role="switch" id="catalogCards" name="catalogCards" disabled></label>
+      <label class="row"><span class="name">Stickers on packages</span><input type="checkbox" role="switch" id="catalogStickers" name="catalogStickers" disabled></label>
+      <label class="row"><span class="name">Contents in listing window</span><input type="checkbox" role="switch" id="catalogWindow" name="catalogWindow" disabled></label>
+    </div>
+  </fieldset>
+  <fieldset class="group">
+    <legend><button type="button" aria-expanded="false" aria-controls="g-cards">Cards</button></legend>
+    <div class="rows" id="g-cards" hidden>
+      <label class="row"><span class="name">Short titles</span><input type="checkbox" role="switch" id="titles" name="titles" disabled></label>
+      <label class="row sub"><span class="name">ST / SV tags</span><input type="checkbox" role="switch" id="tags" name="tags" disabled></label>
+      <label class="row sub"><span class="name">Watch count in title</span><input type="checkbox" role="switch" id="watchRow" name="watchRow" disabled></label>
+      <label class="row"><span class="name">Wear badge</span><input type="checkbox" role="switch" id="wear" name="wear" disabled></label>
+      <label class="row"><span class="name">Listing age</span><input type="checkbox" role="switch" id="age" name="age" disabled></label>
+      <label class="row"><span class="name">Image buttons on hover</span><input type="checkbox" role="switch" id="buttons" name="buttons" disabled></label>
+      <label class="row"><span class="name">Buy buttons always shown</span><input type="checkbox" role="switch" id="buyRow" name="buyRow" disabled></label>
+      <label class="row"><span class="name">Price on one line</span><input type="checkbox" role="switch" id="priceLine" name="priceLine" disabled></label>
+      <label class="row"><span class="name">Status dot in float row</span><input type="checkbox" role="switch" id="statusDot" name="statusDot" disabled></label>
+      <label class="row"><span class="name">Auction timer on one line</span><input type="checkbox" role="switch" id="timer" name="timer" disabled></label>
+      <label class="row"><span class="name">Minimum bargain price</span><input type="checkbox" role="switch" id="bargain" name="bargain" disabled></label>
+    </div>
+  </fieldset>
+  <fieldset class="group">
+    <legend><button type="button" aria-expanded="false" aria-controls="g-listing">Listing window</button></legend>
+    <div class="rows" id="g-listing" hidden>
+      <label class="row"><span class="name">One-line description</span><input type="checkbox" role="switch" id="desc" name="desc" disabled></label>
+      <label class="row"><span class="name">Finish tags as chips</span><input type="checkbox" role="switch" id="chips" name="chips" disabled></label>
+      <label class="row"><span class="name">Seller on one row</span><input type="checkbox" role="switch" id="sellerRow" name="sellerRow" disabled></label>
+      <label class="row"><span class="name">Flat side panels</span><input type="checkbox" role="switch" id="quiet" name="quiet" disabled></label>
+      <label class="row"><span class="name">Quiet image buttons</span><input type="checkbox" role="switch" id="imageButtons" name="imageButtons" disabled></label>
+      <label class="row"><span class="name">Underlined tabs</span><input type="checkbox" role="switch" id="graph" name="graph" disabled></label>
+      <label class="row"><span class="name">Hide Recommendations</span><input type="checkbox" role="switch" id="recs" name="recs" disabled></label>
+      <label class="row"><span class="name">Compact similar list</span><input type="checkbox" role="switch" id="similarList" name="similarList" disabled></label>
+    </div>
+  </fieldset>
+  <fieldset class="group">
+    <legend><button type="button" aria-expanded="false" aria-controls="g-sales">Sales</button></legend>
+    <div class="rows" id="g-sales" hidden>
+      <label class="row"><span class="name">Sales graph</span><input type="checkbox" role="switch" id="salesGraph" name="salesGraph" disabled></label>
+      <label class="row sub"><span class="name">Open sales from the graph</span><input type="checkbox" role="switch" id="salesOpen" name="salesOpen" disabled></label>
+      <label class="row"><span class="name">Sales figures</span><input type="checkbox" role="switch" id="salesStats" name="salesStats" disabled></label>
+      <label class="row"><span class="name">Latest Sales table</span><input type="checkbox" role="switch" id="salesTable" name="salesTable" disabled></label>
+      <label class="row"><span class="name">Graph caption</span><input type="checkbox" role="switch" id="graphNote" name="graphNote" disabled></label>
+    </div>
+  </fieldset>
+  <fieldset class="group">
+    <legend><button type="button" aria-expanded="false" aria-controls="g-refresh">Refresh</button></legend>
+    <div class="rows" id="g-refresh" hidden>
+      <label class="row"><span class="name">Auto-refresh</span><input type="checkbox" role="switch" id="refresh" name="refresh" disabled></label>
+      <div class="row sub" role="radiogroup" aria-labelledby="pace-name">
+        <span class="name" id="pace-name">Pace</span>
+        <span class="segments">
+          <label><input type="radio" name="pace" value="40" disabled>40s</label>
+          <label><input type="radio" name="pace" value="60" disabled>1m</label>
+          <label><input type="radio" name="pace" value="120" disabled>2m</label>
+          <label><input type="radio" name="pace" value="300" disabled>5m</label>
+          <label><input type="radio" name="pace" value="600" disabled>10m</label>
+        </span>
+      </div>
+      <label class="row sub"><span class="name">Outline new listings</span><input type="checkbox" role="switch" id="fresh" name="fresh" disabled></label>
+      <label class="row sub"><span class="name">Alert on new tier listings</span><input type="checkbox" role="switch" id="tierAlert" name="tierAlert" disabled></label>
+      <label class="row sub"><span class="name">Alert sound</span><input type="checkbox" role="switch" id="alertSound" name="alertSound" disabled></label>
+    </div>
+  </fieldset>
 </fieldset>
 </main>
 <footer>
-  <p>Not affiliated with CSFloat, Valve or Steam.</p>
   <p id="version"></p>
+  <button type="button" id="reset">Reset to defaults</button>
 </footer>
 </body>
 </html>

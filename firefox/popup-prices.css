@@ -1,0 +1,50 @@
+select {
+  flex: none;
+  margin: 0;
+  padding: 3px 6px;
+  border: 1px solid var(--tf-line);
+  border-radius: 6px;
+  background: var(--tf-ink-raised);
+  color: var(--tf-fg);
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+select:focus-visible {
+  outline: 2px solid var(--tf-accent);
+  outline-offset: 1px;
+}
+
+select:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.credit {
+  margin-top: -4px;
+  padding: 0 14px 8px;
+  color: var(--tf-faint);
+  font-size: 11px;
+}
+
+.row:has(> input:is(:disabled, :not(:checked))) + .credit {
+  opacity: 0.5;
+}
+
+.credit a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--tf-line-strong);
+  text-underline-offset: 2px;
+}
+
+.credit a:hover {
+  color: var(--tf-muted);
+  text-decoration-color: currentColor;
+}
+
+.credit a:focus-visible {
+  outline: 2px solid var(--tf-accent);
+  outline-offset: 1px;
+}

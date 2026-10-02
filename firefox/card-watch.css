@@ -1,0 +1,110 @@
+html[data-tf-titles][data-tf-watchrow]
+  item-card:is([data-tf-has~='title'], span.tf-title *):not([data-tf-has~='bundle'], app-item-name .amount *)
+  app-item-image-actions
+  .top-right-container
+  > .action {
+  --detail-buttons-icon-size: 14px;
+  position: absolute;
+  right: 5px;
+  bottom: calc(100% + 21px + 1lh);
+  height: 19.2px;
+  max-width: 44px;
+  gap: 3px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  color: var(--subtext-color);
+  font-size: 14px;
+  transition: color 150ms;
+}
+
+@container (max-width: 230px) {
+  html[data-tf-titles][data-tf-watchrow]
+    item-card:is([data-tf-has~='title'], span.tf-title *):not([data-tf-has~='bundle'], app-item-name .amount *)
+    app-item-image-actions
+    .top-right-container
+    > .action {
+    font-size: 11px;
+  }
+}
+
+html[data-tf-titles][data-tf-watchrow][data-tf-tags][data-tf-wear]
+  item-card:is([data-tf-has~='title'], span.tf-title *):not([data-tf-has~='bundle'], app-item-name .amount *)
+  app-item-image-actions
+  .top-right-container
+  > .action {
+  bottom: calc(100% + 15px);
+}
+
+html[data-tf-titles][data-tf-watchrow]
+  item-card:is([data-tf-has~='title'], span.tf-title *):not([data-tf-has~='bundle'], app-item-name .amount *)
+  app-item-image-actions
+  .top-right-container
+  > .action:is(:hover, .selected) {
+  color: var(--primary-text-color);
+}
+
+html[data-tf-titles][data-tf-watchrow]
+  item-card:is([data-tf-has~='title'], span.tf-title *):not([data-tf-has~='bundle'], app-item-name .amount *)
+  app-item-image-actions
+  .top-right-container
+  > .action
+  > .count {
+  min-width: 0;
+  overflow: hidden;
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+html[data-tf-titles][data-tf-watchrow]
+  item-card:is([data-tf-has~='watch'], .top-right-container > .action *):not(
+    [data-tf-has~='bundle'],
+    app-item-name .amount *
+  )
+  .name-container:is([data-tf-has~='title'], span.tf-title *) {
+  box-sizing: border-box;
+  padding-inline-end: 20px;
+}
+
+html[data-tf-titles][data-tf-watchrow]
+  item-card:is([data-tf-has~='count'], .top-right-container > .action > .count *):not(
+    [data-tf-has~='bundle'],
+    app-item-name .amount *
+  )
+  .name-container:is([data-tf-has~='title'], span.tf-title *) {
+  padding-inline-end: 50px;
+}
+
+html[data-tf-age][data-tf-titles][data-tf-watchrow]
+  item-card:is([data-tf-has~='watch'], .top-right-container > .action *):not(
+    [data-tf-has~='bundle'],
+    app-item-name .amount *
+  )
+  .name-container:is([data-tf-has~='title'], span.tf-title *):is([data-tf-has~='age'], span.tf-age *) {
+  padding-inline-end: 0;
+}
+
+html[data-tf-age][data-tf-titles][data-tf-watchrow]
+  item-card:is([data-tf-has~='watch'], .top-right-container > .action *):not(
+    [data-tf-has~='bundle'],
+    app-item-name .amount *
+  )
+  .name-container:is([data-tf-has~='title'], span.tf-title *)
+  > span.tf-age {
+  margin-inline-end: var(--tf-watch, 44px);
+}
+
+html[data-tf-age][data-tf-titles][data-tf-watchrow]
+  item-card:is([data-tf-has~='watch'], .top-right-container > .action *):not(
+    [data-tf-has~='bundle'],
+    app-item-name .amount *
+  )
+  .name-container:is([data-tf-has~='title'], span.tf-title *)
+  > span.tf-age::after {
+  content: '\00b7';
+  padding-inline: 5px 4px;
+}

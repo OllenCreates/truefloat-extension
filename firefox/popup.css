@@ -1,5 +1,3 @@
-/* 001, 007 The toolbar popup's styles: dark only, 280px, the system sans, colours from tokens.css (web/brand).
-   Runs in the popup. */
 html {
   color-scheme: dark;
 }
@@ -18,7 +16,6 @@ body {
     sans-serif;
 }
 
-/* The one spectrum hairline, at the top edge. */
 body::before {
   content: '';
   display: block;
@@ -33,7 +30,6 @@ header {
   padding: 12px 14px 10px;
 }
 
-/* 007 Off disables the fieldset: its rows grey out and keep their values. */
 fieldset {
   margin: 0;
   padding: 0;
@@ -48,7 +44,6 @@ fieldset:disabled .row > :first-child {
   opacity: 0.5;
 }
 
-/* 007 The name grows, so the master switch sits at the header's far end. */
 h1 {
   flex: 1;
   margin: 0;
@@ -68,26 +63,14 @@ h1 {
   cursor: pointer;
 }
 
-.row:last-child {
+main {
   border-bottom: 1px solid var(--tf-line);
-}
-
-.text {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
 }
 
 .name {
   color: var(--tf-fg);
 }
 
-.note {
-  color: var(--tf-muted);
-  font-size: 12px;
-}
-
-/* A checkbox drawn as a switch. Blue is the interactive colour. */
 input[type='checkbox'] {
   appearance: none;
   flex: none;
@@ -126,12 +109,19 @@ input[type='checkbox']:disabled {
   cursor: default;
 }
 
+input[type='checkbox']:checked:disabled {
+  background: var(--tf-grey-3);
+}
+
 input[type='checkbox']:focus-visible {
   outline: 2px solid var(--tf-accent);
   outline-offset: 2px;
 }
 
 footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 6px 14px 12px;
   color: var(--tf-faint);
   font-size: 11px;
@@ -139,6 +129,34 @@ footer {
 
 footer p {
   margin: 4px 0 0;
+}
+
+#reset {
+  margin: 4px -4px 0 0;
+  padding: 2px 4px;
+  border: 0;
+  border-radius: 4px;
+  background: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+#reset:hover {
+  color: var(--tf-muted);
+}
+
+#reset.armed {
+  color: var(--tf-amber);
+}
+
+#reset:focus-visible {
+  outline: 2px solid var(--tf-accent);
+  outline-offset: 1px;
+}
+
+#reset.calm:focus-visible {
+  outline: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
