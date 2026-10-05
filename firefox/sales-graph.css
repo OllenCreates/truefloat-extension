@@ -30,7 +30,6 @@ html[data-tf-salesgraph] item-history-chart > .container:has(> .tf-sg[data-full]
   padding: 2px 2px 0;
   white-space: nowrap;
 }
-
 .tf-sg-tip,
 .tf-sg-wait {
   position: absolute;
@@ -38,7 +37,6 @@ html[data-tf-salesgraph] item-history-chart > .container:has(> .tf-sg[data-full]
   left: 50%;
   pointer-events: none;
 }
-
 .tf-sg-tip {
   top: 0;
   left: 0;
@@ -52,11 +50,9 @@ html[data-tf-salesgraph] item-history-chart > .container:has(> .tf-sg[data-full]
   font-size: 12px;
   white-space: nowrap;
 }
-
 .tf-sg-tip[data-on] {
   display: flex;
 }
-
 .tf-sg-tv {
   font-size: 14px;
   font-weight: 500;
@@ -97,6 +93,9 @@ html[data-tf-salesgraph] item-history-chart > .container:has(> .tf-sg[data-full]
 }
 .tf-sg-faint {
   opacity: 0.5;
+}
+.tf-sg-out {
+  fill: #3e98ff;
 }
 .tf-sg-lst,
 .tf-sg-hair {

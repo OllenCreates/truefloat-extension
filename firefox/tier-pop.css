@@ -508,3 +508,25 @@ html[data-tf-theme='light'] .tf-tip {
   white-space: pre-line;
   overflow-wrap: anywhere;
 }
+
+html .tf-tip.tf-tip-mat {
+  min-width: 0;
+  max-width: min(300px, calc(100vw - 16px));
+  padding: 4px 8px;
+  border: 2px solid var(--highlight-background, #2c2f36);
+  border-radius: 4px;
+  background: var(--dropdown-color, #1b1d24);
+  color: var(--primary-text-color, #fff);
+  box-shadow: none;
+  backdrop-filter: blur(10px);
+  font:
+    400 12px/16px Roboto,
+    'Helvetica Neue',
+    sans-serif;
+  letter-spacing: 0.0333em;
+  text-align: center;
+}
+html .tf-tip.tf-tip-mat > .tf-tip-b {
+  margin: 0;
+  line-height: inherit;
+}

@@ -89,22 +89,25 @@
       <div class="row sub">
         <label class="name" for="priceRef">Reference</label>
         <select id="priceRef" name="priceRef" disabled>
+          <option value="csfloat-ask">CSFloat ask</option><option value="csfloat-bid">CSFloat bid</option>
           <option value="buff-ask">Buff ask</option><option value="buff-bid">Buff bid</option>
           <option value="youpin-ask">YouPin ask</option><option value="youpin-bid">YouPin bid</option>
           <option value="steam-ask">Steam ask</option><option value="steam-bid">Steam bid</option>
           <option value="skinport-ask">Skinport ask</option>
-          <option value="csfloat-ask">CSFloat ask</option><option value="csfloat-bid">CSFloat bid</option>
         </select>
       </div>
       <label class="row sub"><span class="name">On cards</span><input type="checkbox" role="switch" id="pricesCards" name="pricesCards" aria-label="Market prices on cards" disabled></label>
       <label class="row sub"><span class="name">No premium mark</span><input type="checkbox" role="switch" id="plainMark" name="plainMark" disabled></label>
+      <label class="row sub"><span class="name">Trade-up wear</span><input type="checkbox" role="switch" id="tradeUp" name="tradeUp" disabled></label>
       <label class="row sub"><span class="name">In listing window</span><input type="checkbox" role="switch" id="pricesDialog" name="pricesDialog" aria-label="Market prices in listing window" disabled></label>
       <label class="row sub"><span class="name">Ask | Net toggle</span><input type="checkbox" role="switch" id="priceNet" name="priceNet" disabled></label>
+      <label class="row sub"><span class="name">Hide extreme price gaps</span><input type="checkbox" role="switch" id="priceGapHide" name="priceGapHide" disabled></label>
       <label class="row sub"><span class="name">Buy orders</span><input type="checkbox" role="switch" id="buyOrders" name="buyOrders" aria-label="Buy orders in market prices" disabled></label>
       <label class="row sub"><span class="name">In category menus</span><input type="checkbox" role="switch" id="menus" name="menus" disabled></label>
       <label class="row"><span class="name">Sticker value</span><input type="checkbox" role="switch" id="stickers" name="stickers" disabled></label>
       <label class="row sub"><span class="name">On cards</span><input type="checkbox" role="switch" id="stickerCards" name="stickerCards" aria-label="Sticker value on cards" disabled></label>
       <label class="row sub"><span class="name">In listing window</span><input type="checkbox" role="switch" id="stickerPanel" name="stickerPanel" aria-label="Sticker value in listing window" disabled></label>
+      <label class="row sub"><span class="name">Stickers panel on the right</span><input type="checkbox" role="switch" id="stickerRight" name="stickerRight" disabled></label>
       <label class="row sub"><span class="name">On listing window image</span><input type="checkbox" role="switch" id="stickerBadge" name="stickerBadge" disabled></label>
       <label class="row sub"><span class="name">Compact sticker line</span><input type="checkbox" role="switch" id="stickerCompact" name="stickerCompact" disabled></label>
     </div>
@@ -115,6 +118,8 @@
       <label class="row"><span class="name">Source on cards</span><input type="checkbox" role="switch" id="catalogCards" name="catalogCards" disabled></label>
       <label class="row"><span class="name">Stickers on packages</span><input type="checkbox" role="switch" id="catalogStickers" name="catalogStickers" disabled></label>
       <label class="row"><span class="name">Contents in listing window</span><input type="checkbox" role="switch" id="catalogWindow" name="catalogWindow" disabled></label>
+      <label class="row"><span class="name">Collection window</span><input type="checkbox" role="switch" id="collectionWindow" name="collectionWindow" disabled></label>
+      <label class="row"><span class="name">Supply status</span><input type="checkbox" role="switch" id="supplyStatus" name="supplyStatus" disabled></label>
     </div>
   </fieldset>
   <fieldset class="group">
@@ -139,6 +144,8 @@
       <label class="row"><span class="name">One-line description</span><input type="checkbox" role="switch" id="desc" name="desc" disabled></label>
       <label class="row"><span class="name">Finish tags as chips</span><input type="checkbox" role="switch" id="chips" name="chips" disabled></label>
       <label class="row"><span class="name">Seller on one row</span><input type="checkbox" role="switch" id="sellerRow" name="sellerRow" disabled></label>
+      <label class="row"><span class="name">Tidy top</span><input type="checkbox" role="switch" id="tidyTop" name="tidyTop" disabled></label>
+      <label class="row"><span class="name">Buy orders on one line signed out</span><input type="checkbox" role="switch" id="ordersLine" name="ordersLine" disabled></label>
       <label class="row"><span class="name">Flat side panels</span><input type="checkbox" role="switch" id="quiet" name="quiet" disabled></label>
       <label class="row"><span class="name">Quiet image buttons</span><input type="checkbox" role="switch" id="imageButtons" name="imageButtons" disabled></label>
       <label class="row"><span class="name">Underlined tabs</span><input type="checkbox" role="switch" id="graph" name="graph" disabled></label>
@@ -147,10 +154,19 @@
     </div>
   </fieldset>
   <fieldset class="group">
+    <legend><button type="button" aria-expanded="false" aria-controls="g-offer">Make Offer</button></legend>
+    <div class="rows" id="g-offer" hidden>
+      <label class="row"><span class="name">Market asks</span><input type="checkbox" role="switch" id="offerAsks" name="offerAsks" disabled></label>
+      <label class="row"><span class="name">Top buy order and 30 d average</span><input type="checkbox" role="switch" id="offerContext" name="offerContext" disabled></label>
+      <label class="row"><span class="name">Pattern note on graded items</span><input type="checkbox" role="switch" id="offerGraded" name="offerGraded" disabled></label>
+    </div>
+  </fieldset>
+  <fieldset class="group">
     <legend><button type="button" aria-expanded="false" aria-controls="g-sales">Sales</button></legend>
     <div class="rows" id="g-sales" hidden>
       <label class="row"><span class="name">Sales graph</span><input type="checkbox" role="switch" id="salesGraph" name="salesGraph" disabled></label>
       <label class="row sub"><span class="name">Open sales from the graph</span><input type="checkbox" role="switch" id="salesOpen" name="salesOpen" disabled></label>
+      <label class="row"><span class="name">Smart graph scale</span><input type="checkbox" role="switch" id="salesSmart" name="salesSmart" disabled></label>
       <label class="row"><span class="name">Sales figures</span><input type="checkbox" role="switch" id="salesStats" name="salesStats" disabled></label>
       <label class="row"><span class="name">Latest Sales table</span><input type="checkbox" role="switch" id="salesTable" name="salesTable" disabled></label>
       <label class="row"><span class="name">Graph caption</span><input type="checkbox" role="switch" id="graphNote" name="graphNote" disabled></label>

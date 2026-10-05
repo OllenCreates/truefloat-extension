@@ -1,4 +1,4 @@
-// TrueFloat 1.0.0: background.js, built from src/grades-file.js, src/background.js, src/prices-file.js, src/prices-bg.js, src/catalog-file.js, src/catalog-bg.js.
+// TrueFloat 1.1.0: background.js, built from src/grades-file.js, src/background.js, src/prices-file.js, src/prices-bg.js, src/catalog-supply-file.js, src/catalog-file.js, src/catalog-bg.js.
 (() => {
 'use strict';
 // ---- src/grades-file.js
@@ -159,6 +159,8 @@ if (reset || ['enabled', 'grades', 'tierSearch', 'tierPremium'].some((k) => c[k]
 api.storage.local.remove('premiumPlain').catch(() => {});
 if (reset || ['prices', 'pricesDialog', 'priceNet'].some((k) => c[k]?.newValue === false))
 api.storage.local.remove('priceNetOn').catch(() => {});
+if (reset || ['enabled', 'prices', 'collectionWindow'].some((k) => c[k]?.newValue === false))
+api.storage.local.remove('collectionPrice').catch(() => {});
 });
 }
 // ---- src/prices-file.js
@@ -263,6 +265,12 @@ const [HOUR, DAY] = [36e5, 864e5];
 const { ms, row, width, head, valid, asks, tagOf, hash16, drain, pack, unpack } = priceFile;
 const settings = () => api.storage.sync.get(['enabled', 'prices']);
 let [mem, gen] = [ (null), 0];
+const memOf = ( hash, j) => ({
+hash,
+items: j.items,
+w: width(j),
+tu: j.tradeup && typeof j.tradeup === 'object' ? JSON.stringify(j.tradeup) : '',
+});
 const drop = () => ((mem = null), gen++, api.storage.local.remove(['prices', 'pricesMeta']));
 const check = async () => {
 const { enabled, prices } = await settings();
@@ -298,7 +306,7 @@ if (hash === meta.hash) return void (await api.storage.local.set({ pricesMeta })
 const stored = await pack(body);
 if (g !== gen) return;
 await api.storage.local.set({ prices: stored, pricesMeta }).then(
-() => void (g === gen && (mem = { hash, items: j.items, w: width(j) })),
+() => void (g === gen && (mem = memOf(hash, j))),
 () => later(DAY),
 );
 };
@@ -317,7 +325,7 @@ return (loading ??= (async () => {
 const got = (await api.storage.local.get(['prices', 'pricesMeta']));
 if (typeof got.prices !== 'string' || !got.pricesMeta?.hash) return null;
 const j = await unpack(got.prices);
-return head(j) && g === gen ? (mem = { hash: got.pricesMeta.hash, items: j.items, w: width(j) }) : null;
+return head(j) && g === gen ? (mem = memOf(got.pricesMeta.hash, j)) : null;
 })()
 .catch(() => null)
 .finally(() => (loading = null)));
@@ -360,6 +368,12 @@ api.runtime.onMessage.addListener(( message, sender, answer) => {
 const own = ( k) =>
 message !== null && typeof message === 'object' && Object.hasOwn(message, k) ? message[k] : undefined;
 if (message === 'due' && ours(sender)) return void run();
+if (message === 'tradeup' && ours(sender)) {
+settings()
+.then((s) => (s.enabled === false || s.prices === false ? '' : load().then((d) => d?.tu ?? '')))
+.then(answer, () => answer(''));
+return true;
+}
 if (own('tf') !== 'price' || !ours(sender) || !asks(own('q'))) return;
 lookup(own('q')).then(answer, () => answer(null));
 return true;
@@ -367,6 +381,36 @@ return true;
 api.storage.onChanged.addListener((c, area) => {
 if (area === 'sync' && c.prices?.newValue === false) drop().catch(() => {});
 });
+}
+// ---- src/catalog-supply-file.js
+function catalogSupplyKept(raw, boxes, sets) {
+if (raw === undefined) return undefined;
+const obj = ( v) => v !== null && typeof v === 'object' && !Array.isArray(v);
+const is = ( re, v) => typeof v === 'string' && re.test(v);
+const CHANNEL = /^(weekly_drop|rare_drop|armory|operation|store|other)$/;
+const [STATE, DATE, EVIDENCE] = [
+/^(active|ended|unknown)$/,
+/^\d{4}-(0[1-9]|1[0-2])-\d{2}$/,
+/^(game_files|valve|reported|datamined)$/,
+];
+const entry = (v) => {
+if (!Array.isArray(v) || v.length < 3 || v.length > 4) return null;
+const [channel, state, since, evidence = null] = v;
+if (!is(CHANNEL, channel) || !is(STATE, state) || !(since === null || is(DATE, since))) return null;
+return [channel, state, since, is(EVIDENCE, evidence) ? evidence : null];
+};
+const kept = (m, known) => {
+const out = {};
+if (!obj(m) || Object.keys( (m)).length > 4096) return out;
+for (const [k, v] of Object.entries( (m))) {
+const e = known.has(k) ? entry(v) : null;
+if (e) out[k] = e;
+}
+return out;
+};
+const own = ( k) =>
+obj(raw) && Object.hasOwn( (raw), k) ? (raw)[k] : undefined;
+return { containers: kept(own('containers'), boxes), collections: kept(own('collections'), sets) };
 }
 // ---- src/catalog-file.js
 const catalogKept = (() => {
@@ -478,7 +522,8 @@ pool: pools.has(pool) ? pool : null,
 const skins = [...shaped].map(([k, [name, tier, cs, sets, ps]]) => {
 return [k, [name, tier, known(boxes, cs), known(collections, sets), known(pools, ps)]];
 });
-const data = { schema: 1, tiers: [...tiers], names: Object.fromEntries(names) };
+const supply = catalogSupplyKept(own(d, 'supply'), boxes, collections);
+const data = { schema: 1, tiers: [...tiers], names: Object.fromEntries(names), supply };
 const out = { skins, containers: boxes, pools, collections, events, stickers };
 for (const [k, v] of Object.entries(out)) Object.assign(data, { [k]: Object.fromEntries(v) });
 return { catalog_version: version, data };
@@ -490,7 +535,7 @@ return catalogKept;
 const api = globalThis.browser ?? globalThis.chrome;
 const URL_CATALOG = 'https://truefloat.app/api/v1/catalog/ext';
 const [HOUR, DAY] = [36e5, 864e5];
-const KEYS = ['catalogCards', 'catalogStickers', 'catalogWindow'];
+const KEYS = ['catalogCards', 'catalogStickers', 'catalogWindow', 'supplyStatus'];
 const settings = () => api.storage.sync.get(['enabled', ...KEYS]);
 const wanted = ( s) => KEYS.some((k) => s[k] !== false);
 const off = async () => !wanted(await settings());

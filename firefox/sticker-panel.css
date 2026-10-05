@@ -1,4 +1,4 @@
-html[data-tf-stickers][data-tf-stickerpanel] item-detail > .container > .grid-summary > .tf-pw.tf-sw {
+html[data-tf-stickers][data-tf-stickerpanel] item-detail > .container > :is(.grid-summary, .grid-similar) > .tf-pw.tf-sw {
   --tf-pw-text: var(--primary-text-color, #f5f5f5);
   --tf-pw-name: color-mix(in srgb, var(--primary-text-color, #f5f5f5) 60%, var(--subtext-color, #a3a3a3));
   --tf-pw-sub: color-mix(in srgb, var(--subtext-color, #a3a3a3) 83%, transparent);
@@ -16,7 +16,7 @@ html[data-tf-stickers][data-tf-stickerpanel] item-detail > .container > .grid-su
   font-variant-numeric: tabular-nums;
 }
 
-html[data-tf-stickers][data-tf-stickerpanel]:not([data-tf-quiet]) item-detail > .container > .grid-summary > .tf-sw {
+html[data-tf-stickers][data-tf-stickerpanel]:not([data-tf-quiet]) item-detail > .container > :is(.grid-summary, .grid-similar) > .tf-sw {
   padding: 12px 15px;
   border-top: 0;
   border-radius: 6px;
@@ -26,7 +26,7 @@ html[data-tf-stickers][data-tf-stickerpanel]:not([data-tf-quiet]) item-detail > 
 html[data-tf-theme='light'][data-tf-stickers][data-tf-stickerpanel]
   item-detail
   > .container
-  > .grid-summary
+  > :is(.grid-summary, .grid-similar)
   > .tf-pw.tf-sw {
   --tf-pw-green: #166534;
   --tf-pw-amber: #b45309;
@@ -92,4 +92,29 @@ html[data-tf-stickers][data-tf-stickerpanel] item-detail > .container:has(> .gri
 .tf-sw .tf-pw-me:focus-visible {
   outline: 2px solid #237bff;
   outline-offset: 1px;
+}
+
+html[data-tf-stickers][data-tf-stickerpanel] item-detail > .container > .grid-similar > .tf-pw.tf-sw {
+  margin-bottom: 12px;
+  padding-top: 0;
+  border-top: 0;
+}
+
+html:is([data-tf-prices][data-tf-pricesdialog], [data-tf-stickers][data-tf-stickerpanel])
+  item-detail
+  > .container
+  > .grid-summary:has(> .tf-pw)
+  > .buy-orders {
+  flex: 1 0 auto;
+  height: auto;
+}
+
+html:is([data-tf-prices][data-tf-pricesdialog], [data-tf-stickers][data-tf-stickerpanel])
+  item-detail
+  > .container
+  > .grid-summary:has(> .tf-pw)
+  > .buy-orders
+  > .order-container {
+  position: relative;
+  max-height: 300px;
 }

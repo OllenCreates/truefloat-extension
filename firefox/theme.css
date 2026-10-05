@@ -1,17 +1,17 @@
 html[data-tf-theme='dark'] {
   color-scheme: dark;
-  --tf-t-bg: #0a0a0a;
-  --tf-t-surface: #111111;
-  --tf-t-raised: #141414;
-  --tf-t-hover: #1a1a1a;
-  --tf-t-line: #1f1f1f;
-  --tf-t-line-strong: #2a2a2a;
+  --tf-t-bg: #000000;
+  --tf-t-surface: #0a0a0a;
+  --tf-t-raised: #101010;
+  --tf-t-hover: #171717;
+  --tf-t-line: #1c1c1c;
+  --tf-t-line-strong: #292929;
   --tf-t-text: #f5f5f5;
   --tf-t-muted: #a3a3a3;
   --tf-t-tint-1: rgba(255, 255, 255, 0.04);
   --tf-t-tint-2: rgba(255, 255, 255, 0.07);
   --tf-t-tint-3: rgba(255, 255, 255, 0.12);
-  --tf-t-float: rgba(17, 17, 17, 0.6);
+  --tf-t-float: rgba(0, 0, 0, 0.6);
   --tf-t-float-hover: rgba(38, 38, 38, 0.8);
   --tf-t-disabled: rgba(255, 255, 255, 0.38);
 }

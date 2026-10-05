@@ -1,4 +1,4 @@
-// TrueFloat 1.0.0: main.js, built from src/main-once.js, src/settings.js, src/selectors.js, src/tap-base.js, src/tap.js, src/tap-fields.js, src/tap-keys.js, src/tap-stickers.js, src/tap-history.js, src/tap-db.js, src/tap-inventory.js, src/tap-orders.js, src/rate.js, src/press.js, src/ticker.js, src/card-marks.js, src/card-hub.js, src/shot-match.js, src/shot-viewport.js, src/shot-sharp.js, src/shots.js, src/card-read.js, src/card-layout.js, src/age.js, src/attention.js, src/fresh.js, src/alert.js, src/refresh.js, src/chip-text.js, src/chip-line.js, src/chip.js, src/bargain.js, src/price-fit.js, src/dialog-about.js, src/dialog.js, src/tip-words.js, src/tip-box.js, src/grade-art-rows.js, src/grade-art.js, src/grade-art-mid.js, src/grade-panel-draw.js, src/grade-panel.js, src/csf-grades.js, src/grade-index.js, src/grade-says.js, src/grade-charm.js, src/grade-port.js, src/catalog-index.js, src/catalog-goods.js, src/catalog-images.js, src/catalog-data.js, src/grade-words.js, src/grade-names.js, src/grade-read.js, src/grades.js, src/frame.js, src/sales-units.js, src/sales-plot.js, src/sales-table.js, src/sales-open.js, src/sales-graph.js, src/sales.js, src/db-draw.js, src/db-grades.js, src/tier-names.js, src/tier-query.js, src/tier-net.js, src/tier-page.js, src/tier-body.js, src/tier-nav.js, src/tier-pop-guide.js, src/tier-pop.js, src/tier-picker.js, src/tier-patterns.js, src/tier-row.js, src/tier-strip.js, src/premium-plain.js, src/premium-rows.js, src/premium-math.js, src/premium-words.js, src/premium-line.js, src/premium-sample.js, src/premium-books.js, src/tier-premium.js, src/sell-words.js, src/prices-window.js, src/prices-slots.js, src/prices.js, src/prices-money.js, src/prices-view.js, src/prices-fees.js, src/prices-net.js, src/prices-panel-parts.js, src/buy-orders-line.js, src/buy-orders-guard.js, src/buy-orders.js, src/prices-panel-draw.js, src/prices-panel.js, src/prices-chip.js, src/plain-mark.js, src/prices-pop.js, src/prices-hold.js, src/prices-cards.js, src/sticker-math.js, src/sticker-pop.js, src/sticker-cards.js, src/sticker-panel-draw.js, src/sticker-panel.js, src/menu-names.js, src/menu-draw.js, src/menu-pop.js, src/menu-keep.js, src/menu-cards.js, src/tier-leave.js, src/tier-fit.js, src/tier-pick.js, src/tier-draw.js, src/tier-bar.js, src/sell-queue.js, src/sell-grades.js, src/combo-tab.js, src/catalog-from.js, src/catalog-fit.js, src/catalog-cards.js, src/catalog-pop.js, src/catalog-strip.js, src/catalog-grid.js, src/catalog-rows.js, src/catalog-window.js, src/main.js.
+// TrueFloat 1.1.0: main.js, built from src/main-once.js, src/settings.js, src/selectors.js, src/tap-base.js, src/tap.js, src/tap-fields.js, src/tap-keys.js, src/tap-stickers.js, src/tap-history.js, src/tap-db.js, src/tap-inventory.js, src/tap-orders.js, src/rate.js, src/press.js, src/ticker.js, src/card-marks.js, src/card-hub.js, src/shot-match.js, src/shot-viewport.js, src/shot-sharp.js, src/shots.js, src/card-read.js, src/card-layout.js, src/age.js, src/attention.js, src/fresh.js, src/alert.js, src/refresh.js, src/chip-text.js, src/chip-line.js, src/chip.js, src/bargain.js, src/price-fit.js, src/dialog-about.js, src/dialog.js, src/tip-words.js, src/tip-box.js, src/grade-art-rows.js, src/grade-art.js, src/grade-art-mid.js, src/grade-panel-draw.js, src/grade-panel.js, src/csf-grades.js, src/grade-index.js, src/grade-says.js, src/grade-charm.js, src/grade-port.js, src/catalog-index.js, src/catalog-goods.js, src/catalog-images.js, src/catalog-data.js, src/catalog-supply.js, src/grade-words.js, src/grade-names.js, src/grade-read.js, src/grades.js, src/frame.js, src/sales-units.js, src/sales-smart.js, src/sales-plot.js, src/sales-table.js, src/sales-open.js, src/sales-tip.js, src/sales-graph.js, src/sales.js, src/db-draw.js, src/db-grades.js, src/tier-names.js, src/tier-query.js, src/tier-net.js, src/tier-page.js, src/tier-body.js, src/tier-nav.js, src/tier-pop-guide.js, src/tier-pop.js, src/tier-picker.js, src/tier-patterns.js, src/tier-row.js, src/tier-strip.js, src/premium-plain.js, src/premium-rows.js, src/premium-math.js, src/premium-words.js, src/premium-line.js, src/premium-sample.js, src/premium-books.js, src/tier-premium.js, src/sell-words.js, src/prices-window.js, src/prices-slots.js, src/prices.js, src/prices-money.js, src/prices-view.js, src/prices-fees.js, src/prices-net.js, src/prices-panel-parts.js, src/buy-orders-line.js, src/buy-orders-guard.js, src/buy-orders.js, src/prices-panel-draw.js, src/prices-panel.js, src/prices-chip.js, src/plain-mark.js, src/prices-pop.js, src/prices-hold.js, src/prices-cards.js, src/offer-read.js, src/offer-draw.js, src/offer.js, src/tradeup.js, src/tradeup-cards.js, src/sticker-math.js, src/sticker-pop.js, src/sticker-cards.js, src/sticker-panel-draw.js, src/sticker-panel.js, src/menu-names.js, src/menu-draw.js, src/menu-pop.js, src/menu-keep.js, src/menu-cards.js, src/tier-leave.js, src/tier-fit.js, src/tier-pick.js, src/tier-draw.js, src/tier-bar.js, src/sell-queue.js, src/sell-grades.js, src/combo-tab.js, src/catalog-from.js, src/catalog-fit.js, src/catalog-cards.js, src/catalog-pop.js, src/catalog-strip.js, src/catalog-grid.js, src/catalog-rows.js, src/catalog-window.js, src/catalog-supply-line.js, src/collection-data.js, src/collection-go.js, src/collection-draw.js, src/collection-menu.js, src/collection-parts.js, src/collection-window.js, src/left-tidy.js, src/main-taps.js, src/main.js, src/main-tail.js.
 (() => {
 'use strict';
 // ---- src/main-once.js
@@ -38,6 +38,8 @@ bargain: Object.freeze({ default: true, attr: 'data-tf-bargain' }),
 desc: Object.freeze({ default: true, attr: 'data-tf-desc' }),
 chips: Object.freeze({ default: true, attr: 'data-tf-chips' }),
 sellerRow: Object.freeze({ default: true, attr: 'data-tf-sellerrow' }),
+tidyTop: Object.freeze({ default: true, attr: 'data-tf-tidytop' }),
+ordersLine: Object.freeze({ default: true, attr: 'data-tf-ordersline' }),
 quiet: Object.freeze({ default: true, attr: 'data-tf-quiet' }),
 imageButtons: Object.freeze({ default: true, attr: 'data-tf-imagebuttons' }),
 graph: Object.freeze({ default: true, attr: 'data-tf-graph' }),
@@ -48,6 +50,7 @@ salesGraph: Object.freeze({ default: true, attr: 'data-tf-salesgraph' }),
 salesOpen: Object.freeze({ default: true, attr: 'data-tf-salesopen' }),
 salesTable: Object.freeze({ default: true, attr: 'data-tf-salestable' }),
 salesStats: Object.freeze({ default: true, attr: 'data-tf-salesstats' }),
+salesSmart: Object.freeze({ default: true, attr: 'data-tf-salessmart' }),
 dbGrades: Object.freeze({ default: true, attr: 'data-tf-dbgrades' }),
 sellGrades: Object.freeze({ default: true, attr: 'data-tf-sellgrades' }),
 tierSearch: Object.freeze({ default: true, attr: 'data-tf-tiers' }),
@@ -57,11 +60,13 @@ tierPremium: Object.freeze({ default: true, attr: 'data-tf-premium' }),
 tierStrip: Object.freeze({ default: true, attr: 'data-tf-tierstrip' }),
 patternPicker: Object.freeze({ default: true, attr: 'data-tf-picker' }),
 prices: Object.freeze({ default: true, attr: 'data-tf-prices' }),
-priceRef: Object.freeze({ default: 'buff-ask', attr: 'data-tf-priceref' }),
+priceRef: Object.freeze({ default: 'csfloat-ask', attr: 'data-tf-priceref' }),
 pricesCards: Object.freeze({ default: true, attr: 'data-tf-pricescards' }),
 plainMark: Object.freeze({ default: true, attr: 'data-tf-plainmark' }),
+tradeUp: Object.freeze({ default: true, attr: 'data-tf-tradeup' }),
 pricesDialog: Object.freeze({ default: true, attr: 'data-tf-pricesdialog' }),
 priceNet: Object.freeze({ default: true, attr: 'data-tf-pricenet' }),
+priceGapHide: Object.freeze({ default: true, attr: 'data-tf-pricegaphide' }),
 buyOrders: Object.freeze({ default: true, attr: 'data-tf-buyorders' }),
 menus: Object.freeze({ default: true, attr: 'data-tf-menus' }),
 menuGems: Object.freeze({ default: true, attr: 'data-tf-menugems' }),
@@ -75,12 +80,18 @@ comboTab: Object.freeze({ default: true, attr: 'data-tf-combotab' }),
 stickers: Object.freeze({ default: true, attr: 'data-tf-stickers' }),
 stickerCards: Object.freeze({ default: true, attr: 'data-tf-stickercards' }),
 stickerPanel: Object.freeze({ default: true, attr: 'data-tf-stickerpanel' }),
+stickerRight: Object.freeze({ default: true, attr: 'data-tf-stickerright' }),
 stickerBadge: Object.freeze({ default: true, attr: 'data-tf-stickerbadge' }),
 stickerCompact: Object.freeze({ default: true, attr: 'data-tf-stickercompact' }),
 catalogCards: Object.freeze({ default: true, attr: 'data-tf-catcards' }),
 catalogStickers: Object.freeze({ default: true, attr: 'data-tf-catstickers' }),
 catalogWindow: Object.freeze({ default: true, attr: 'data-tf-catwindow' }),
+collectionWindow: Object.freeze({ default: true, attr: 'data-tf-colwin' }),
+supplyStatus: Object.freeze({ default: true, attr: 'data-tf-supply' }),
 tipBoxes: Object.freeze({ default: true, attr: 'data-tf-tipboxes' }),
+offerAsks: Object.freeze({ default: true, attr: 'data-tf-offerasks' }),
+offerContext: Object.freeze({ default: true, attr: 'data-tf-offerctx' }),
+offerGraded: Object.freeze({ default: true, attr: 'data-tf-offergrade' }),
 });
 // ---- src/selectors.js
 const TF_SELECTORS = Object.freeze({
@@ -132,6 +143,14 @@ sellCard: 'app-sell-home app-item-container item-card',
 sellQueue: 'app-sell-home app-sell-queue div.items',
 actionRows: '.actions-container, app-sell-queue .actions, item-card .item-tmpl > .action',
 overlays: 'item-detail, mat-dialog-container, .mat-mdc-menu-panel, .mat-mdc-select-panel',
+offer: 'app-make-offer-dialog',
+offerMin: '.details > .minimum-offer',
+offerField: '.details > .inputs > .offer-price-field',
+offerInput: ':scope > mat-form-field input.mat-mdc-input-element',
+offerError: ':scope > mat-form-field mat-error',
+offerNotice: '.details > .notice',
+offerGrid: '.container > .content',
+offerCard: '.container > .content > .item',
 });
 // ---- src/tap-base.js
 const TAP_ORIGIN = 'https://csfloat.com';
@@ -864,7 +883,7 @@ let cardKept = true;
 function cardBatch( records) {
 if (!cardHub) return;
 const html = document.documentElement;
-const [set, changed, added, marked] = [new Set(), new Set(), new Set(), new Set()];
+const [set, changed, ticked, added, marked] = [new Set(), new Set(), new Set(), new Set(), new Set()];
 const [others, cardOf] = [ ([]), new Map()];
 const live = cardLive();
 for (const r of records) {
@@ -874,11 +893,15 @@ continue;
 }
 const el = r.target.nodeType === 1 ? (r.target) : r.target.parentElement;
 const card = el && (cardOf.get(el) ?? cardOf.set(el, el.closest(TF_SELECTORS.card) ?? false).get(el));
+if (card && r.type === 'childList' && !cardElements(r) && el.closest(TF_SELECTORS.auction)) {
+ticked.add(card);
+continue;
+}
 if (card && (r.type === 'childList' || ['data-tf-loaded', 'class', 'style'].includes(r.attributeName ?? '')))
 if (live && (r.type !== 'childList' || (cardElements(r) && !(cardIn(el, card) && cardQuiet(r)))))
 marked.add(card);
 if (card && el && !changed.has(card) && cardOwn(r, el, card)) continue;
-if (card) changed.add(card);
+if (card) (changed.add(card), ticked.add(card));
 else others.push(r);
 for (const n of (r.addedNodes)) {
 if (n.nodeType !== 1 || cardOurs(n)) continue;
@@ -890,7 +913,7 @@ for (const f of cardHub.features) {
 try {
 if (f.attrs.some((a) => set.has(a))) f.setting?.();
 if (f.other) others.forEach(f.other);
-f.cards( (changed), (added));
+f.cards( (f.clock ? ticked : changed), (added));
 f.settle?.();
 } catch {}
 }
@@ -1453,6 +1476,7 @@ if (enabled()) for (const card of document.querySelectorAll(TF_SELECTORS.card)) 
 };
 cardWatch({
 attrs: [attr],
+clock: true,
 setting: () =>
 enabled() ? syncAll() : document.querySelectorAll('item-card span.tf-age').forEach((e) => e.remove()),
 cards(changed, added) {
@@ -1956,7 +1980,7 @@ widths.observe(span);
 }
 const changed = span.textContent !== text;
 if (span.textContent !== text) span.textContent = text;
-if (changed) unfit.add(span);
+if (changed && ours) unfit.add(span);
 }
 const notes = '.cdk-describedby-message-container';
 const texts = { subtree: true, childList: true, characterData: true };
@@ -2283,15 +2307,17 @@ const y = Math.max(8, Math.min(a.top - 8, innerHeight - 8 - Math.min(full, inner
 return (r ? rr : lr) < 180 ? null : [r ? l.right + 8 : l.left - 8 - fit, y, fit, innerHeight - 16];
 }
 const tipOver = (l, a, full) => [l.left, Math.max(8, a.top - 6 - full), l.width, Math.max(40, a.top - 14)];
+const tipBehind = (el, anchor) =>
+!!anchor?.closest(TF_SELECTORS.offer) && !el.contains(anchor) && !!(el.compareDocumentPosition(anchor) & 4);
 const tipUnder = (anchor) =>
 !anchor.closest('[popover]') &&
-[...document.querySelectorAll(TF_SELECTORS.overlays)].some((o) => !o.contains(anchor));
+[...document.querySelectorAll(TF_SELECTORS.overlays)].some((o) => !o.contains(anchor) && !tipBehind(o, anchor));
 let tipFound = ([null, [], 0]);
 function tipRows(anchor) {
 if (tipFound[0] !== anchor || ++tipFound[2] >= 10 || tipFound[1].some((r) => !r.isConnected))
 tipFound = [anchor, anchor ? [...document.querySelectorAll(TF_SELECTORS.actionRows)] : [], 0];
 return tipFound[1]
-.filter((r) => !r.contains(anchor))
+.filter((r) => !r.contains(anchor) && !tipBehind(r, anchor))
 .map((r) => r.getBoundingClientRect())
 .filter((r) => r.width > 0 && r.height > 0);
 }
@@ -2354,7 +2380,7 @@ function createTipBox() {
 const tips = new WeakMap();
 let box = (null);
 let [anchor, side, want] = [null, null, null];
-let [by, frame, at, wide, inner] = ['', 0, '', 0, false];
+let [by, frame, at, wide, inner, mat] = ['', 0, '', 0, false, false];
 let cancel = () => {};
 const stop = () => (cancel(), (want = null));
 const later = (f, ms, a = null) => (stop(), (want = a), (cancel = tickAfter(f, ms)));
@@ -2380,8 +2406,9 @@ stop();
 const s = specOf(a);
 if (!s) return hide();
 if (anchor !== a) (hide(), a.setAttribute('aria-describedby', 'tf-tip'));
-[anchor, side, by, inner] = [a, s.side ? a.closest(s.side) : null, how, !!s.over];
+[anchor, side, by, inner, mat] = [a, s.side ? a.closest(s.side) : null, how, !!s.over, !!s.mat];
 box ??= Object.assign(tierEl('div', 'tf-tip'), { id: 'tf-tip', role: 'tooltip', popover: 'manual' });
+box.classList.toggle('tf-tip-mat', mat);
 box.replaceChildren(...tipDraw(s));
 [wide, at, box.style.maxWidth] = [0, '', inner && side ? `${side.getBoundingClientRect().width}px` : ''];
 if (!box.isConnected) (document.body.append(box), box.showPopover?.());
@@ -2401,7 +2428,9 @@ const up = full > below && above > below;
 const room = Math.max(80, up ? above : below);
 let [x, y, max] = [x0, up ? a.top - 6 - Math.min(full, room) : a.bottom + 6, room];
 const l = side?.isConnected ? side.getBoundingClientRect() : null;
-const b = (l && tipAside(l, a, (wide ||= w), full, inner, rows)) || null;
+if (mat && l)
+[x, y] = [Math.round(Math.max(l.left + 8, Math.min(a.left + (a.width - w) / 2, l.right - 8 - w))), a.bottom + 6];
+const b = (!mat && l && tipAside(l, a, (wide ||= w), full, inner, rows)) || null;
 if (b) [x, y, max] = [b[0], b[1], b[3]];
 const wd = b && (inner || b[2] < wide) ? b[2] : null;
 if (tipHits(rows, [x, y, wd ?? w, Math.min(full, max)])) return hide();
@@ -3158,6 +3187,7 @@ stickers.set(+k, name);
 kits.set(name, kits.has(name) ? null : +k);
 });
 catGoodsIndex(ix, tapOwn(d, 'names'));
+catSupplyIndex(ix, tapOwn(d, 'supply'), tapOwn(d, 'collections'));
 return ix;
 }
 // ---- src/catalog-goods.js
@@ -3229,7 +3259,7 @@ return null;
 })();
 function createCatalogImages() {
 const html = document.documentElement;
-const attrs = [TF_SETTINGS.catalogWindow.attr, TF_SETTINGS.catalogCards.attr];
+const attrs = [TF_SETTINGS.catalogWindow.attr, TF_SETTINGS.catalogCards.attr, TF_SETTINGS.collectionWindow.attr];
 let text = null;
 let [wrapped, tried] = [false, false];
 let hashes = null;
@@ -3238,6 +3268,7 @@ const charms = new Set();
 let kits = null;
 let missed = false;
 const subs = new Set();
+const sinks = new Set();
 const read = () => {
 const t = text;
 text = null;
@@ -3246,6 +3277,10 @@ try {
 j = catParse( (t));
 } catch {}
 if (wrapped) j = tapOwn(j, 'schema');
+for (const f of sinks)
+try {
+f(j);
+} catch {}
 const m = new Map();
 catEach(tapOwn(j, 'weapons'), (def, w) =>
 catEach(tapOwn(w, 'paints'), (paint, p) => {
@@ -3298,6 +3333,10 @@ for (const [k, n] of names) kits.set(n, kits.has(n) ? null : k);
 }
 return kits.get(name) ?? null;
 },
+parsed(fn) {
+if (typeof fn === 'function') sinks.add(fn);
+},
+need: () => ready(),
 on(fn) {
 if (typeof fn === 'function') subs.add(fn);
 },
@@ -3341,6 +3380,11 @@ return {
 ready: () => ix !== null,
 skin: (ref) => ix?.skins.get(str(ref)) ?? null,
 box: (id) => ix?.boxes.get(str(id)) ?? null,
+supply: {
+box: ( id) => ix?.supply?.boxes.get(str(id)) ?? null,
+set: ( id) => ix?.supply?.sets.get(str(id)) ?? null,
+setName: ( id) => ix?.supply?.setNames.get(str(id)) ?? null,
+},
 boxByName: (mhn) => ix?.byName.get(str(mhn)) ?? null,
 dropsFrom(ref) {
 const s = ix?.skins.get(str(ref));
@@ -3376,6 +3420,8 @@ stickerName: kitName,
 goodName: (kind, id) => (ix ? catGoodName(ix, images.name, kind, id) : null),
 goodsFrom: (mhn) => (ix && str(mhn) ? catGoodsFrom(ix, images.kit, str(mhn)).sort(order) : []),
 skinImage: images.get,
+schemaParsed: images.parsed,
+schemaNeed: images.need,
 onImages: images.on,
 imageOf: (mhn) =>
 tapMatches(CAT_TEXT, mhn) && !tapMatches(CAT_DOTS, mhn) ? CAT_IMAGE_HOST + catEncode(mhn) : null,
@@ -3390,6 +3436,79 @@ sticker: (kit) => (catInt(kit, 999999) ? `${CAT_SEARCH}sticker_index=${kit}` : n
 good: (kind, id) => (kind === 'charm' && !images.charm(id) ? null : catGoodLink(kind, id)),
 },
 };
+}
+// ---- src/catalog-supply.js
+const CAT_SVG = 'http://www.w3.org/2000/svg';
+const CAT_GLYPH = 'M1.5 3.5 6 1.5l4.5 2v5L6 10.5l-4.5-2zM1.5 3.5 6 5.5l4.5-2M6 5.5v5';
+const CAT_CHANNEL = /^(weekly_drop|rare_drop|armory|operation|store|other)$/;
+const CAT_DATE = /^(\d{4})-(0[1-9]|1[0-2])-\d{2}$/;
+const CAT_MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+const CAT_WORDS = new Map([
+['weekly_drop', ['drops weekly', 'stopped dropping']],
+['rare_drop', ['drops rarely', 'stopped dropping']],
+['armory', ['in the Armory', 'left the Armory']],
+['operation', ['', 'operation ended']],
+['store', ['in the store', 'left the store']],
+['other', ['', 'no new souvenirs since']],
+]);
+const CAT_NOTES = new Map([
+['datamined', 'From a data-mine of the game files.'],
+['reported', 'Reported, not confirmed by Valve.'],
+]);
+function catSupplyEntry(v) {
+if (!tapIsArray(v) || (v).length < 3 || (v).length > 4) return null;
+const [ch, st, since, ev] = [0, 1, 2, 3].map((i) => tapOwn(v, i));
+if (!tapMatches(CAT_CHANNEL, ch) || !tapMatches(/^(active|ended|unknown)$/, st)) return null;
+if (!(since === null || tapMatches(CAT_DATE, since))) return null;
+return [ch, st, since, CAT_NOTES.has(ev) ? ev : null];
+}
+function catSupplyIndex(ix, raw, names) {
+const read = ( m) => {
+const out = new Map();
+catEach(m, (k, v) => {
+const e = tapMatches(CAT_BOX_ID, k) || tapMatches(CAT_NAME, k) ? catSupplyEntry(v) : null;
+if (e) out.set(k, e);
+});
+return out;
+};
+const setNames = new Map();
+catEach(names, (k, v) => void (tapMatches(CAT_NAME, k) && tapMatches(CAT_TEXT, v) && setNames.set(k, v)));
+ix.supply = { boxes: read(tapOwn(raw, 'containers')), sets: read(tapOwn(raw, 'collections')), setNames };
+}
+function catalogSupplyWords(s) {
+if (!s || s[1] === 'unknown') return '';
+const w = CAT_WORDS.get(s[0])?.[s[1] === 'active' ? 0 : 1] ?? '';
+if (!w || s[1] === 'active') return w;
+const m = s[2] === null ? null : tapApply(tapExec, CAT_DATE, [s[2]]);
+if (m) return `${w} ${CAT_MONTHS[+m[2] - 1]} ${m[1]}`;
+return w === 'no new souvenirs since' ? 'no new souvenirs' : w;
+}
+function catalogSupplyTip(name, s) {
+const words = catalogSupplyWords(s);
+if (!s || !words) return null;
+const note = s[3] === null ? undefined : CAT_NOTES.get(s[3]);
+return note ? { body: `${name} · ${words}`, source: note } : { body: `${name} · ${words}` };
+}
+function catalogSupplyBest(catalog, from) {
+const all = [from.first, ...from.rest];
+const said = all.map((b) => {
+const s = catalog.supply.box(b.id);
+return catalogSupplyWords(s) ? s : null;
+});
+const at = said.findIndex((s) => s?.[1] === 'active');
+if (at < 0) return [from, said.every((s) => s?.[1] === 'ended') ? said[0] : null];
+return [{ ...from, first: all[at], rest: all.filter((_, i) => i !== at) }, said[at]];
+}
+const catalogSupplyOn = () => document.documentElement.hasAttribute(TF_SETTINGS.supplyStatus.attr);
+function catGlyph(into, s) {
+const svg = document.createElementNS(CAT_SVG, 'svg');
+svg.setAttribute('class', 'tf-cf-g');
+svg.setAttribute('viewBox', '0 0 12 12');
+svg.setAttribute('aria-hidden', 'true');
+if (catalogSupplyWords(s ?? null)) svg.setAttribute('data-tf-s', s?.[1] === 'active' ? 'on' : 'off');
+svg.appendChild(document.createElementNS(CAT_SVG, 'path')).setAttribute('d', CAT_GLYPH);
+into.append(svg);
+return svg;
 }
 // ---- src/grade-words.js
 const GRADE_VAGUE = new Set(
@@ -3737,6 +3856,11 @@ const text = (units, dp = 2) =>
 pre + units.toLocaleString('en-US', { minimumFractionDigits: dp, maximumFractionDigits: dp }) + post;
 return {
 learn(t, cents) {
+if (priceCurrency.fmt) {
+[lo, hi] = [priceCurrency.fmt.rate, priceCurrency.fmt.rate];
+[pre, post] = [priceCurrency.fmt.pre, priceCurrency.fmt.post];
+return;
+}
 const m = SALES_NUM.exec((t ?? '').trim());
 if (!m) return;
 const v = Math.round(+m[2].replaceAll(',', '') * 100);
@@ -3745,9 +3869,9 @@ const [a, b] = [(v - 1) / cents, v / cents];
 [lo, hi] = a < hi && b > lo ? [Math.max(lo, a), Math.min(hi, b)] : [a, b];
 },
 known: () => hi < Infinity,
-local: ( c) => (c * (lo + hi)) / 200,
+local: ( c) => (c * hi) / 100,
 text,
-cents: ( c) => text(Math.ceil((c * (lo + hi)) / 2) / 100),
+cents: ( c) => text(Math.ceil(c * hi) / 100),
 };
 }
 const salesMedian = (xs) => [...xs].sort((a, b) => a - b)[(xs.length - 1) >> 1];
@@ -3755,6 +3879,96 @@ function salesSpan(ms) {
 const m = ms / 6e4;
 const [unit, per] = m < 60 ? ['m', 1] : m < 2880 ? ['h', 60] : m < 20160 ? ['d', 1440] : ['w', 10080];
 return `${Math.max(1, Math.round(m / per))} ${unit}`;
+}
+// ---- src/sales-smart.js
+function salesMean(pts, from, to) {
+let [sum, n] = [0, 0];
+for (const p of pts) if (p.day > from && p.day <= to) [sum, n] = [sum + p.avg * p.count, n + p.count];
+return n ? { mean: sum / n, n } : null;
+}
+function salesKeptMean(pts) {
+const band = salesBand(pts.map((p) => p.avg));
+const kept = band ? pts.filter((p) => p.avg >= band[0] && p.avg <= band[1]) : [];
+return salesMean(kept, 0, Infinity);
+}
+function salesMeanChips(pts) {
+const end = pts[pts.length - 1].day;
+return [7, 30, 90].map((d) => {
+const [a, b] = [salesMean(pts, end - d * DAY_MS, end), salesMean(pts, end - 2 * d * DAY_MS, end - d * DAY_MS)];
+return [`${d} d`, a && b ? Math.round((a.mean / b.mean - 1) * 1000) / 10 : null];
+});
+}
+const SMART_RANGES = {
+'1M': [
+30,
+'1-month',
+[
+['7 d', 7, 3],
+['30 d', 30, 7],
+],
+],
+'3M': [
+90,
+'3-month',
+[
+['7 d', 7, 3],
+['30 d', 30, 7],
+['90 d', 90, 14],
+],
+],
+'1Y': [
+365,
+'1-year',
+[
+['30 d', 30, 7],
+['90 d', 90, 14],
+['6 mo', 182, 30],
+['1 y', 365, 30],
+],
+],
+ALL: [
+0,
+'All-time',
+[
+['90 d', 90, 14],
+['1 y', 365, 30],
+['all time', 0, 30],
+],
+],
+};
+const SMART_MIN = 3;
+function salesWindow(pts, from, to) {
+const days = pts.filter((p) => p.day > from && p.day <= to).sort((a, b) => a.avg - b.avg);
+const n = days.reduce((s, p) => s + p.count, 0);
+let k = (n - 1) >> 1;
+for (const p of days) if (n && (k -= p.count) < 0) return { mid: p.avg, n };
+return null;
+}
+function salesChips(name, pts) {
+const chips = [];
+if (!pts.length) return chips;
+const end = pts[pts.length - 1].day;
+let last = -Infinity;
+for (const [label, days, w] of SMART_RANGES[name]?.[2] ?? []) {
+const back = days || Math.round((end - pts[0].day) / DAY_MS) - w + 1;
+const now = salesWindow(pts, end - w * DAY_MS, end);
+const then = salesWindow(pts, end - (back + w) * DAY_MS, end - back * DAY_MS);
+if (back < w || back - last < w || !now || !then || Math.min(now.n, then.n) < SMART_MIN) continue;
+chips.push([label, Math.round((now.mid / then.mid - 1) * 1000) / 10]);
+last = back;
+}
+return chips;
+}
+function salesBand(ys, keep = null) {
+const s = [...ys].sort((a, b) => a - b);
+if (!s.length) return null;
+const q = ( f, i = (s.length - 1) * f, j = Math.floor(i)) =>
+s[j] + ((s[j + 1] ?? s[j]) - s[j]) * (i - j);
+const reach = Math.max(3 * (q(0.75) - q(0.25)), q(0.5) / 4);
+let [lo, hi] = [Math.max(q(0.01), q(0.25) - reach), Math.min(q(0.99), q(0.75) + reach)];
+if (keep !== null) [lo, hi] = [Math.min(lo, keep), Math.max(hi, keep)];
+const pad = (hi - lo) * 0.1 || hi * 0.1;
+return [Math.max(0, lo - pad), hi + pad];
 }
 // ---- src/sales-plot.js
 const plotEl = (tag, attrs, parent) => parent.appendChild(artSet(document.createElementNS(SVG_NS, tag), attrs));
@@ -3768,31 +3982,33 @@ strip.append(s);
 }
 return strip;
 }
-function salesPlot(svg, w, h, line, dots, listing, fmt) {
+function salesPlot(svg, w, h, all, dots, listing, fmt, fit = null) {
 svg.replaceChildren();
 artSet(svg, { width: w, height: h, viewBox: `0 0 ${w} ${h}` });
 const [B, T] = [20, 12];
 const log = dots.length > 0;
-const pts = log ? dots : line;
-const xs = [...line, ...dots].map((p) => p.x);
+const pts = log ? dots : all;
+const xs = [...all, ...dots].map((p) => p.x);
 const ys = [...pts.map((p) => p.y), listing?.y ?? pts[0].y];
 const [x0, x1] = [Math.min(...xs) - DAY_MS / 2, Math.max(...xs) + DAY_MS / 2];
 let [lo, hi] = [Math.min(...ys), Math.max(...ys)];
 const pad = (hi - lo) * 0.05 || hi * 0.05;
-[lo, hi] = log ? [lo / 1.08, hi * 1.08] : [Math.max(0, lo - pad), hi + pad];
+[lo, hi] = log ? [lo / 1.08, hi * 1.08] : (fit ?? [Math.max(0, lo - pad), hi + pad]);
+const keep = ( p) => log || (p.y >= lo && p.y <= hi);
+const [line, off] = [all.filter(keep), all.filter((p) => !keep(p))];
 const Y = ( v) =>
 T + (1 - (log ? Math.log(v / lo) / Math.log(hi / lo) : (v - lo) / (hi - lo))) * (h - B - T);
 const grad = plotEl('linearGradient', { id: 'tf-sg-fill', x1: 0, y1: 0, x2: 0, y2: 1 }, plotEl('defs', {}, svg));
 for (const i of [0, 1]) plotEl('stop', { offset: i, 'stop-color': '#3e98ff', 'stop-opacity': i ? 0 : 0.25 }, grad);
 const g = plotEl('g', { class: 'tf-sg-grid' }, svg);
 const gap = ( a, b) => Math.abs(Y(a) - Y(b));
-let ticks = [];
+let ticks = ([]);
 for (let e = Math.floor(Math.log10(lo)); log && e <= Math.log10(hi) && ticks.length < 12; e++)
 for (const m of [1, 2, 5]) if (m * 10 ** e >= lo && m * 10 ** e <= hi) ticks.push(+(m * 10 ** e).toPrecision(6));
 if (ticks.length < 3) ticks = [];
 for (let i = 0, k = Math.max(0.01, 10 ** Math.floor(Math.log10((hi - lo) / 10))); !ticks.length && i < 12; i++) {
 const step = k * [1, 2, 2.5, 5][i % 4] * 10 ** Math.floor(i / 4);
-const vs = [];
+const vs = ([]);
 for (let v = Math.ceil(lo / step) * step; v <= hi && vs.length < 6; v += step) vs.push(+v.toPrecision(12));
 if (vs.length < 6 && vs.every((v, j) => !j || gap(v, vs[j - 1]) >= 30)) ticks = vs;
 }
@@ -3819,10 +4035,10 @@ plotEl('text', { x, y: h - 5, 'text-anchor': 'middle' }, g).textContent = d;
 if (line.length) {
 const d = line.map((p, i) => `${i ? 'L' : 'M'}${X(p.x).toFixed(1)} ${Y(p.y).toFixed(1)}`).join('');
 if (!log) {
-const maxN = Math.max(...line.map((p) => p.n ?? 0));
+const maxN = Math.max(...all.map((p) => p.n ?? 0));
 const bw = Math.max(1, Math.min(8, (X(DAY_MS) - X(0)) * 0.7));
 const vol = plotEl('g', { class: 'tf-sg-vol' }, svg);
-for (const p of line) {
+for (const p of all) {
 const bh = ((p.n ?? 0) / maxN) * (h - B - T) * 0.28;
 plotEl('rect', { x: X(p.x) - bw / 2, y: h - B - bh, width: bw, height: bh }, vol);
 }
@@ -3830,6 +4046,8 @@ plotEl('path', { fill: 'url(#tf-sg-fill)', d: `${d}V${h - B}H${X(line[0].x)}Z` }
 }
 plotEl('path', { class: `tf-sg-line${log ? ' tf-sg-faint' : ''}`, d }, svg);
 }
+for (const [x, y, s] of off.map((p) => (p.y > hi ? [X(p.x), T, 1] : [X(p.x), h - B, -1])))
+plotEl('path', { class: 'tf-sg-out', d: `M${x - 4} ${y + 5 * s}L${x} ${y - s}L${x + 4} ${y + 5 * s}Z` }, svg);
 if (listing) plotEl('line', { class: 'tf-sg-lst', x1: 0, x2: w - R + 2, y1: Y(listing.y), y2: Y(listing.y) }, svg);
 for (const p of dots) {
 const says = `${p.tip.filter((t) => t).join(', ')}; opens its listing`;
@@ -3859,7 +4077,7 @@ for (const p of pts) {
 const dd = (X(p.x) - px) ** 2 + (log ? (Y(p.y) - py) ** 2 : 0);
 if (dd < far) [best, far] = [p, dd];
 }
-const at = best && { p: best, x: X(best.x), y: Y(best.y) };
+const at = best && { p: best, x: X(best.x), y: Math.min(Math.max(Y(best.y), T), h - B) };
 put(hair, at && !log, `translateX(${at?.x}px)`);
 put(mark, at, `translate(${at?.x}px, ${at?.y}px)`);
 return at;
@@ -4023,13 +4241,29 @@ svg.setAttribute('tabindex', '-1');
 svg.addEventListener('focusin', (e) => e.target !== svg && (stop(e.target), show(dot(e))));
 svg.addEventListener('focusout', (e) => e.target !== svg && show(null));
 }
+// ---- src/sales-tip.js
+function salesTipLines(tip, want, make) {
+const kids = tip.children;
+if (kids.length !== want.length || want.some(([c], i) => kids[i].className !== c))
+return void tip.replaceChildren(...want.map(([c, t]) => make(c, t)));
+want.forEach(([, t], i) => {
+const n = (kids[i].firstChild);
+if (n?.nodeType === 3 && !n.nextSibling) n.nodeValue !== t && (n.nodeValue = t);
+else if (kids[i].textContent !== t) kids[i].textContent = t;
+});
+}
+const salesBoxes = new WeakMap();
+let salesSized = null;
+function salesWidths(dialog, again) {
+for (const box of [...(dialog?.querySelectorAll('.tf-sg[data-full]') ?? [])].map((g) => g.parentElement)) {
+salesSized ??= new ResizeObserver((entries) => {
+for (const { target: t } of entries) t.isConnected ? salesBoxes.get(t)?.() : salesSized?.unobserve(t);
+});
+if (box && !salesBoxes.has(box)) (salesBoxes.set(box, again), salesSized.observe(box));
+}
+}
 // ---- src/sales-graph.js
 const GRAPH_RANGES = { '1M': [30, '30-day'], '3M': [90, '90-day'], '1Y': [365, '1-year'], ALL: [0, 'All-time'] };
-function salesMean(pts, from, to) {
-let [sum, n] = [0, 0];
-for (const p of pts) if (p.day > from && p.day <= to) [sum, n] = [sum + p.avg * p.count, n + p.count];
-return n ? { mean: sum / n, n } : null;
-}
 function createSalesGraph(money, ask, gradeOf) {
 let [range, rangeFor] = ['1M', ''];
 const drawn = new WeakMap();
@@ -4039,6 +4273,7 @@ function sync(host, graph, sales, facts, ver) {
 const html = document.documentElement;
 const full = html.hasAttribute(TF_SETTINGS.salesGraph.attr);
 const stat = html.hasAttribute(TF_SETTINGS.salesStats.attr);
+const smart = html.hasAttribute(TF_SETTINGS.salesSmart.attr);
 const opens = html.hasAttribute(TF_SETTINGS.salesOpen.attr);
 const on = full || (stat && html.hasAttribute(TF_SETTINGS.salesTable.attr));
 const box = host.querySelector(':scope > .container');
@@ -4047,7 +4282,7 @@ const csf = host.querySelector('.range-selector .mat-button-toggle-checked')?.te
 if (graph && graph.item !== rangeFor) [range, rangeFor] = ['1M', graph.item];
 const want = full ? range : tapHasOwn(GRAPH_RANGES, csf) ? csf : '1M';
 const r = want === '40 sales' && !sales?.sales && !(graph && ask(graph)) ? '1M' : want;
-const how = [on, full, stat, opens, r].join();
+const how = [on, full, stat, opens, smart, r].join();
 const key = [how, graph?.item, !!sales, box?.clientWidth, facts?.price, facts?.key, ver].join();
 const old = box?.querySelector(':scope > .tf-sg');
 if (drawn.get(host) === key && old) return;
@@ -4061,9 +4296,10 @@ root.append(head);
 box.append(root);
 const end = pts[pts.length - 1].day;
 const dots = r === '40 sales';
-const [days, word] = GRAPH_RANGES[dots ? '1M' : r];
+const [days, word] = (smart ? SMART_RANGES : GRAPH_RANGES)[dots ? '1M' : r];
 const inRange = pts.filter((p) => !days || p.day > end - days * DAY_MS);
-const mean = salesMean(inRange, 0, Infinity);
+const all = salesMean(inRange, 0, Infinity);
+const mean = smart ? salesKeptMean(inRange) : all;
 const got = sales?.sales;
 const list = got?.length ? got : null;
 const median = list ? salesMedian(list.map((s) => s.price)) : 0;
@@ -4071,18 +4307,18 @@ const stats = [];
 if (dots && list) stats.push([`Last ${list.length} median`, money.cents(median)]);
 else if (mean) {
 const change = layoutSpan('tf-ss-c', '');
-for (const d of [7, 30, 90]) {
-const [a, b] = [salesMean(pts, end - d * DAY_MS, end), salesMean(pts, end - 2 * d * DAY_MS, end - d * DAY_MS)];
-const x = a && b ? Math.round((a.mean / b.mean - 1) * 1000) / 10 : null;
+const chips = smart ? salesChips(dots ? '1M' : r, pts) : salesMeanChips(pts);
+for (const [d, x] of chips) {
 const pct = x === null ? '–' : `${x < 0 ? '−' : '+'}${Math.abs(x).toFixed(1)}%`;
-change.append(layoutSpan('tf-ss-q', `${d} d`), layoutSpan(x ? `tf-ss-${x < 0 ? 'dn' : 'up'}` : '', pct));
+change.append(layoutSpan('tf-ss-q', d), layoutSpan(x ? `tf-ss-${x < 0 ? 'dn' : 'up'}` : '', pct));
 }
-stats.push([`${word} average`, money.cents(mean.mean)], ['Change', change]);
+stats.push([`${word} average`, money.cents(mean.mean)]);
+if (chips.length) stats.push(['Change', change]);
 }
 const rate =
 dots && list
 ? list.length / Math.max((list[0].sold - list[list.length - 1].sold) / DAY_MS, 1 / 24)
-: (mean?.n ?? 0) / Math.max(1, days || (end - pts[0].day) / DAY_MS);
+: (all?.n ?? 0) / Math.max(1, days || (end - pts[0].day) / DAY_MS);
 stats.push(['Sold / day', rate.toFixed(1)]);
 const ref = dots ? median : mean?.mean;
 if (full && facts) {
@@ -4127,14 +4363,17 @@ id: opens ? s.id : null,
 };
 });
 const hgt = Math.max(80, root.clientHeight - head.offsetHeight - 6);
-const near = salesPlot(svg, root.clientWidth, hgt, line, marks, listing, (v) => money.text(v));
+const ys = smart && !dots ? line.map((p) => p.y) : [];
+const fit = salesBand(ys, listing?.y);
+const near = salesPlot(svg, root.clientWidth, hgt, line, marks, listing, (v) => money.text(v), fit);
 const show = (at) => {
 tip.toggleAttribute('data-on', !!at);
 svg.toggleAttribute('data-go', !!at?.p.id);
 if (!at) return void near(null);
 const [s, o] = [svg.getBoundingClientRect(), root.getBoundingClientRect()];
-const hint = at.p.id ? [span('tl tf-sg-tk', 'Click or press Enter to view the sold listing')] : [];
-tip.replaceChildren(...at.p.tip.filter((t) => t).map((t, i) => span(i ? 'tl' : 'tv', t)), ...hint);
+const hint = at.p.id ? [['tf-sg-tl tf-sg-tk', 'Click or press Enter to view the sold listing']] : [];
+const said = at.p.tip.filter((t) => t).map((t, i) => [`tf-sg-${i ? 'tl' : 'tv'}`, t]);
+salesTipLines(tip, [...said, ...hint], layoutSpan);
 const [w, up, y] = [tip.offsetWidth, tip.offsetHeight + 12, at.y + s.top - o.top];
 const x = Math.min(dots ? Math.max(0, at.x - w / 2) : at.x + 14, root.clientWidth - w - 70);
 tip.style.transform = `translate(${x}px, ${dots ? (at.y < up ? y + 12 : y - up) : Math.max(0, y - 20)}px)`;
@@ -4200,12 +4439,14 @@ const ours = mine ?? (graph ? (kept.get(graph.item) ?? null) : null);
 const v = `${ver}|${grades.enabled()}|${artStamp()}`;
 for (const host of dialog?.querySelectorAll(TF_SELECTORS.salesTable) ?? []) table.sync(host, mine, facts, v);
 for (const host of dialog?.querySelectorAll(TF_SELECTORS.salesChart) ?? []) chart.sync(host, graph, ours, facts, v);
+salesWidths(dialog, later);
 }
 const later = frameLater(sync, (f) => requestAnimationFrame(f));
 const look = [
 ...attrs,
 TF_SETTINGS.salesStats.attr,
 TF_SETTINGS.salesOpen.attr,
+TF_SETTINGS.salesSmart.attr,
 TF_SETTINGS.grades.attr,
 ...ART_ATTRS,
 ];
@@ -4237,10 +4478,8 @@ byGrade.learn(listings);
 byPrice.learn(listings);
 later();
 },
-indexed() {
-ver++;
-later();
-},
+indexed: () => void (ver++, later()),
+graph: () => (on() ? graph : null),
 history(h) {
 if (h.kind === 'graph') graph = h;
 else {
@@ -4715,7 +4954,8 @@ const [my, { signal }] = [gen, ctl];
 return ( def, paint, cat, w) =>
 page(tierPlainUrl(def, paint, cat, w), (t) => tierPlainSeen(t, def, paint), signal, my, () => true);
 }
-return { probe, known, plains, until, left: count, cancel: () => (gen++, ctl.abort()), ours };
+const one = (url, parse, signal) => page(url, parse, signal, gen, () => true, true);
+return { probe, known, plains, one, until, left: count, cancel: () => (gen++, ctl.abort()), ours };
 }
 // ---- src/tier-page.js
 const tierGet = ( o, k) =>
@@ -4758,7 +4998,7 @@ queue.shift()?.();
 async function send(key, url, parse, signal, my, again) {
 for (let at = (lastAt = Math.max(tickNow(), lastAt + TIER_GAP)); at > tickNow(); at = sentAt + TIER_GAP)
 await new Promise((ok) => tapApply(tierLater, globalThis, [() => ok(0), at - tickNow()]));
-if (my !== gen()) return 'error';
+if (my !== gen() || signal.aborted) return 'error';
 const had = !again && fresh(key) ? cache.get(key)?.[1] : undefined;
 if (had) return had;
 const no = gate(tickNow());
@@ -6361,7 +6601,7 @@ return !n ? '' : f ? `${f.pre}${n}${f.post}` : `US$ ${n}`;
 }
 function priceDelta(pct, short = false) {
 if (!(typeof pct === 'number' && priceFinite(pct) && pct > -1e6 && pct < 1e6)) return '—';
-if (pct >= 999.5) return '>999%';
+if (pct >= 999.5) return document.documentElement.hasAttribute(TF_SETTINGS.priceGapHide.attr) ? '' : '>999%';
 const abs = pct < 0 ? -pct : pct;
 const [digits, cap] = short && abs >= 9.95 ? [0, 99] : [1, 99.9];
 const text = tapApply(priceFixed, pct < 0 && abs > cap ? cap : abs, [digits]);
@@ -6706,13 +6946,14 @@ const id = card ? byId.idFor(byId.keyOf(card)) : null;
 const key = id === null ? undefined : keys.get(id);
 return key === undefined ? null : [ (id), key];
 }
-function got(k) {
+function held(k) {
 for (const key of [k[1], `l:${k[0]}`]) {
 const v = kept.get(key);
-if (v && tickNow() - v[0] < ORDER_KEEP) return v[1];
+if (v && tickNow() - v[0] < ORDER_KEEP) return v;
 }
 return null;
 }
+const got = ( k) => held(k)?.[1] ?? null;
 function ask(k) {
 const path = `/api/v1/listings/${k[0]}/buy-orders`;
 const now = tickNow();
@@ -6775,6 +7016,11 @@ if (k && !got(k)) ask(k);
 },
 pop: (box, chip, m) => orderPut(box, words(chip.closest(TF_SELECTORS.card), true, m.ref), true),
 panel: (box, card, ref) => orderPut(box, words(card, false, ref), false),
+top(card) {
+const k = on() ? of(card) : null;
+const a = k ? held(k) : null;
+return a && a[1].rows > 0 ? [a[1].top, a[0] + ORDER_KEEP] : null;
+},
 watch: (f) => void subs.push(f),
 };
 }
@@ -7028,8 +7274,7 @@ const x = priceEl('span', 'tf-pc-x', priceDelta(delta, true));
 const pct = priceDelta(delta, true).replace(/^[+−]/, '');
 const same = pct === '0%' || pct === '0.0%';
 x.toggleAttribute('data-good', delta < 0 && !same && !row.stale);
-parts.push(dot(), x);
-say += same ? ' This listing is the same price.' : ` This listing is ${pct} ${delta < 0 ? 'cheaper' : 'dearer'}.`;
+if (x.textContent) parts.push(dot(), x), say += same ? ' This listing is the same price.' : ` This listing is ${pct} ${delta < 0 ? 'cheaper' : 'dearer'}.`;
 }
 const age = priceAgeEl('tf-pc-t', row);
 if (row.stale) age.title = `Price ${priceAge(row.age)} old`;
@@ -7412,7 +7657,7 @@ const named = ( card) => !!byName.idFor(byName.keyOf(card));
 let warm = false;
 const want = () => {
 const v = html.getAttribute(TF_SETTINGS.priceRef.attr) ?? TF_SETTINGS.priceRef.default;
-const m = tapMatches(PRICE_KEYS, v) ? tapApply(tapExec, PRICE_KEYS, [v]) : ['', 'buff', 'ask'];
+const m = tapMatches(PRICE_KEYS, v) ? tapApply(tapExec, PRICE_KEYS, [v]) : ['', 'csfloat', 'ask'];
 const i = PRICE_MARKETS.findIndex((x) => x[0] === m?.[1]);
 return [PRICE_MARKETS[i][0], PRICE_MARKETS[i][1], m?.[2] === 'bid' ? 'bid' : 'ask'];
 };
@@ -7475,6 +7720,7 @@ for (const card of document.querySelectorAll(TF_SELECTORS.card)) synced(card);
 };
 cardWatch({
 attrs: [...attrs, TF_SETTINGS.priceRef.attr, ...plain.attrs],
+clock: true,
 setting: () => {
 pop.close();
 if (on() && !warm) ((warm = true), prices.lookup(PRICE_WARM));
@@ -7499,6 +7745,451 @@ for (const key of plain.learn(listings)) fresh.add(key);
 for (const l of listings) if (typeof l[7] === 'string') prices.lookup(l[7], l[2]?.phase ?? null);
 byName.resync(fresh, synced);
 hold.fed(named);
+},
+};
+}
+// ---- src/offer-read.js
+const OFFER_TYPED = /^(\d{1,9})(?:\.(\d{0,2}))?$/;
+const OFFER_DAY = 864e5;
+const OFFER_OLD = 360;
+const offerDecode = decodeURIComponent;
+const offerUnlisten = EventTarget.prototype.removeEventListener;
+const offerLocal = (cents) => (priceCurrency.fmt ? priceCeil(cents * priceCurrency.fmt.rate) : NaN);
+const offerUsd = (minor) => (priceCurrency.fmt ? priceFloor(minor / priceCurrency.fmt.rate) : NaN);
+function offerAsks(slots, name, phase, amount, warns) {
+const rows = priceRows(slots, null, name, phase);
+const list = [];
+for (let i = 0; i < rows.length; i++) {
+const m = panelMarket(rows[i].name);
+if (rows[i].ask && m >= 0) panelPush(list, { name: PANEL_ORDER[m], ask: rows[i].ask ?? 0, age: rows[i].age });
+}
+for (let i = 1; i < list.length; i++)
+for (let j = i; j > 0 && list[j - 1].ask > list[j].ask; j--) {
+const x = list[j];
+list[j] = list[j - 1];
+list[j - 1] = x;
+}
+const out = [];
+for (let i = 0; i < list.length; i++) {
+const { name: who, ask, age } = list[i];
+const local = offerLocal(ask);
+const pct = amount && local > 0 ? priceDelta(((amount - local) / local) * 100) : '';
+const warn = warns && !!amount && amount >= local;
+panelPush(out, { name: who, age: age > OFFER_OLD ? priceAge(age) : '', low: !i, ask: priceNumber(ask), pct, warn });
+}
+return out;
+}
+function offerTyped(v) {
+const m = typeof v === 'string' ? tapApply(tapExec, OFFER_TYPED, [tapApply(priceTrim, v, [])]) : null;
+const minor = m ? +m[1] * 100 + +`${m[2] ?? ''}00`.slice(0, 2) : 0;
+return minor > 0 ? minor : null;
+}
+function offerMinimum(price, said) {
+const text = bargainAmount(price, said);
+if (!text) return null;
+let minor = 0;
+for (let i = 0; i < text.length; i++) if (text[i] >= '0' && text[i] <= '9') minor = minor * 10 + +text[i];
+return minor > 0 ? minor : null;
+}
+function offerAverage(h, name, grade) {
+const paint = grade?.split(':')[1];
+let same = false;
+try {
+same = !!h && h.kind === 'graph' && offerDecode(h.item.split('/')[4] ?? '') === name;
+} catch {}
+same &&= h?.query === (paint ? `?paint_index=${paint}` : '');
+if (!h || !same) return null;
+const from = tickNow() - 30 * OFFER_DAY;
+let [sum, n] = [0, 0];
+for (const p of h.points) if (p.day >= from) [sum, n] = [sum + p.count * p.avg, n + p.count];
+return n ? priceRound(sum / n) : null;
+}
+function offerTier(icons) {
+const r = icons[0]?.rows[0];
+if (!r) return '';
+return r.text.toLowerCase().includes(r.fam.toLowerCase()) ? r.text : `${r.fam} ${r.text}`;
+}
+// ---- src/offer-draw.js
+const OFFER_OURS = 'div.tf-of-box';
+const OFFER_TAG = /(?:^| )tf-of-/;
+const offerSaid = (new WeakMap());
+function offerParts(m, k) {
+const kids = [];
+if (k > 0) {
+const lead = priceEl('span', 'tf-of-t', 'Market prices');
+tipBox.tie(lead, m.note ? { body: m.note, side: '.cdk-overlay-pane', mat: true } : null);
+for (const el of [lead, priceEl('span', 'tf-of-h', 'Ask'), priceEl('span', 'tf-of-h', m.head)]) panelPush(kids, el);
+}
+for (let i = 0; i < m.rows.length && i < k; i++) {
+const r = m.rows[i];
+const tone = r.warn ? ' tf-of-warn' : '';
+const who = priceEl('span', `tf-of-n${r.low ? ' tf-of-low' : ''}${tone}`);
+for (const [cls, words] of [
+['tf-of-dot', ''],
+['tf-of-m', r.name],
+['tf-of-age', r.age ? `· ${r.age}` : ''],
+])
+if (cls === 'tf-of-dot' || words) priceEl('span', cls, words, who);
+for (const el of [who, priceEl('span', `tf-of-a${tone}`, r.ask), priceEl('span', `tf-of-p${tone}`, r.pct)])
+panelPush(kids, el);
+}
+if (m.ctx.length) {
+const row = priceEl('div', 'tf-of-ctx');
+for (let i = 0; i < m.ctx.length; i++) {
+const [cls, words, warn] = m.ctx[i];
+priceEl('span', `${cls}${warn ? ' tf-of-warn' : ''}`, i ? `\u00a0·\u00a0${words}` : words, row);
+}
+panelPush(kids, row);
+}
+return kids;
+}
+function offerBox(d, m, n) {
+const notice = d.querySelector(TF_SELECTORS.offerNotice);
+const k = Math.min(n, m.rows.length);
+if (!notice || n < 0 || (k <= 0 && !m.ctx.length)) return offerDrop(d);
+const el = d.querySelector(OFFER_OURS) ?? priceEl('div', 'tf-of-box');
+if (el.nextElementSibling !== notice) notice.before(el);
+const words = JSON.stringify([m, k]);
+if (offerSaid.get(el) === words) return;
+offerSaid.set(el, words);
+el.replaceChildren(...offerParts(m, k));
+}
+function offerFit(d, m, n) {
+const all = m.rows.length;
+const [card, grid] = [TF_SELECTORS.offerCard, TF_SELECTORS.offerGrid].map((s) => d.querySelector(s));
+if (!( (card)?.offsetHeight) || !grid) return (offerBox(d, m, all), all);
+const room = ( k) => {
+offerBox(d, m, k);
+const notice = d.querySelector(TF_SELECTORS.offerNotice);
+const g = grid.getBoundingClientRect();
+const scale = g.height / ( (grid).offsetHeight || 1) || 1;
+return notice ? (g.bottom - notice.getBoundingClientRect().bottom) / scale : 0;
+};
+let k = Math.min(n, all);
+let free = room(k);
+while (free < 1 && k > -1) free = room(--k);
+while (k < all && free >= 16) if ((free = room(++k)) < 1) return (room(--k), k);
+return k;
+}
+function offerDrop(scope) {
+for (const el of scope?.querySelectorAll(OFFER_OURS) ?? []) el.remove();
+}
+function offerTheirs(r) {
+const el = r.target.nodeType === 1 ? (r.target) : r.target.parentElement;
+const nodes = [...r.addedNodes, ...r.removedNodes];
+const ours = ( n) => n.nodeType === 1 && OFFER_TAG.test(`${n.getAttribute('class')}`);
+return !!el?.closest(TF_SELECTORS.offer) && !el.closest(OFFER_OURS) && !(nodes.length && nodes.every(ours));
+}
+function offerIn(nodes) {
+const found = ([]);
+for (const n of nodes) {
+const el = n.nodeType === 1 ? (n) : null;
+if (el?.matches(TF_SELECTORS.offer)) found.push(el);
+else if (el?.firstElementChild) found.push(...el.querySelectorAll(TF_SELECTORS.offer));
+}
+return found;
+}
+function offerRecords(records, gone) {
+const box = ( n) => n.nodeType === 1 && n.matches('.cdk-overlay-container');
+let [moved, changed] = [false, false];
+for (const r of records)
+if (r.target === document.documentElement || (r.target === document.body && [...r.addedNodes].some(box)))
+[moved, changed] = [true, true];
+else if (r.target !== document.body) {
+const went = offerIn(r.removedNodes);
+went.forEach(gone);
+const come = offerIn(r.addedNodes).length > 0;
+moved ||= come || went.length > 0;
+changed ||= come || offerTheirs(r);
+}
+return [moved, changed];
+}
+// ---- src/offer.js
+function createOffer(prices, orders, graph, icons) {
+const html = document.documentElement;
+const mine = (['offerAsks', 'offerContext', 'offerGraded']);
+const on = ( k) => html.hasAttribute(TF_SETTINGS[k].attr);
+const live = () => mine.some(on);
+const byName = createShotMatch(7, Object.is);
+const byPrice = createShotMatch(5, Object.is);
+const byCard = createShotMatch(2, ( a, b) => a.phase === b.phase);
+const byGrade = createShotMatch(4, Object.is);
+const bound = (new WeakMap());
+const turns = (new WeakMap());
+const timers = (new WeakMap());
+const fits = (new WeakMap());
+function draw(d) {
+const card = d.querySelector(TF_SELECTORS.card);
+const key = card ? byName.keyOf(card) : null;
+if (bound.get(d) !== key) offerDrop(d);
+bound.set(d, key);
+const [name, cents, facts, grade] = [byName.idFor(key), byPrice.idFor(key), byCard.idFor(key), byGrade.idFor(key)];
+const phase = facts?.phase ?? null;
+const price = card?.querySelector(TF_SELECTORS.price)?.textContent?.trim() ?? '';
+const any = on('offerAsks') || on('offerContext');
+const sure = any && !!cents && typeof name === 'string' && priceSeen(cents, price);
+const asks = sure && on('offerAsks') && !(phase === null && tapMatches(PANEL_DOPPLER, name));
+const [last, out] = turns.get(d) ?? [0, false];
+const at = last + 1;
+turns.set(d, [at, asks]);
+const seen = ([card, `${name}`, phase, grade, price, sure]);
+if (!asks || out || !d.querySelector(OFFER_OURS)) paint(d, seen, null);
+const took = ( s) => {
+if (turns.get(d)?.[0] !== at) return;
+turns.set(d, [at, false]);
+paint(d, seen, s);
+};
+if (asks) tapApply(panelThen, prices.lookup(name, phase), [took]);
+}
+function paint(d, [card, name, phase, grade, price, sure], slots) {
+if (!d.isConnected) return;
+const field = d.querySelector(TF_SELECTORS.offerField);
+const inputs = field?.querySelectorAll(TF_SELECTORS.offerInput);
+const input = inputs?.length === 1 ? (inputs[0]) : null;
+const typed = sure && input ? offerTyped(input.value) : null;
+const told = !!field?.querySelector(TF_SELECTORS.offerError);
+const valid = typed !== null && !told && !input?.matches('.ng-invalid');
+const line = d.querySelector(TF_SELECTORS.offerMin);
+const text = [...(line?.childNodes ?? [])].map((n) => (n.nodeType === 3 ? n.nodeValue : '')).join('');
+const amount = valid ? typed : sure ? offerMinimum(price, text) : null;
+const graded = offerTier(icons(grade));
+const rows = slots && on('offerAsks') ? offerAsks(slots, name, phase, amount, valid && !graded) : [];
+const tier = rows.length && on('offerGraded') ? graded : '';
+const order = sure && on('offerContext') ? orders.top(card) : null;
+const avg = sure && on('offerContext') ? offerAverage(graph(), name, grade) : null;
+const under = valid && order !== null && offerUsd( (typed)) < order[0];
+const ctx = [];
+if (order) panelPush(ctx, ['tf-of-bo', `Top buy order ${priceMoney(order[0], true)}`, under]);
+if (avg !== null) panelPush(ctx, ['tf-of-av', `30 d avg ${priceMoney(avg, true)}`, false]);
+const note = tier ? `Markets ignore the pattern · ${tier}` : '';
+fits.set(d, offerFit(d, { rows, head: valid ? 'Offer' : 'Min', note, ctx }, fits.get(d) ?? Infinity));
+timers.get(d)?.();
+if (live()) timers.set(d, tickAfter(later, Math.min(6e4, (order ? order[1] - tickNow() : 6e4) + 50)));
+}
+const later = frameLater(
+() => document.querySelectorAll(TF_SELECTORS.offer).forEach(draw),
+(f) => requestAnimationFrame(f),
+);
+const keys = [...mine, 'prices', 'grades', 'salesGraph', 'salesTable'];
+const look = keys.map((k) => TF_SETTINGS[ (k)].attr);
+let heard = false;
+function follow() {
+watch.disconnect();
+const all = live();
+watch.observe(html, { attributeFilter: all ? look : mine.map((k) => TF_SETTINGS[k].attr) });
+if (all !== heard) hear((heard = all));
+if (!all) return;
+if (document.body) watch.observe(document.body, { childList: true });
+const box = [...(document.body?.children ?? [])].find((el) => el.matches('.cdk-overlay-container'));
+if (box) watch.observe(box, { childList: true, subtree: true });
+for (const d of box?.querySelectorAll(TF_SELECTORS.offer) ?? [])
+watch.observe(d, { childList: true, subtree: true, characterData: true, attributeFilter: ['class', 'href'] });
+}
+function hear(yes) {
+if (yes) {
+tapApply(tapListen, document, ['input', later, { capture: true, passive: true }]);
+tapApply(tapListen, globalThis, ['resize', later, { passive: true }]);
+} else {
+tapApply(offerUnlisten, document, ['input', later, { capture: true, passive: true }]);
+tapApply(offerUnlisten, globalThis, ['resize', later, { passive: true }]);
+}
+}
+const watch = new MutationObserver((records) => {
+const [moved, changed] = offerRecords(records, (d) => timers.get(d)?.());
+if (moved) follow();
+if (changed) later();
+});
+follow();
+orders.watch(() => void (live() && later()));
+return {
+feed(l) {
+for (const m of [byName, byPrice, byCard, byGrade]) m.learn(l);
+if (live()) later();
+},
+};
+}
+// ---- src/tradeup.js
+const TU_WEARS = ['FN', 'MW', 'FT', 'WW', 'BS'];
+const TU_WEAR_NAMES = ['Factory New', 'Minimal Wear', 'Field-Tested', 'Well-Worn', 'Battle-Scarred'];
+const TU_MARKETS = ['buff', 'youpin', 'steam', 'skinport', 'csfloat'];
+const TU_EDGE = 0.0002;
+const tuNum = ( v) => typeof v === 'number' && Number.isFinite(v);
+const tuRows = ( a, n, w, nulls = false) =>
+Array.isArray(a) &&
+a.length === n &&
+a.every((r) => Array.isArray(r) && r.length === w && r.every((v) => tuNum(v) || (nulls && v === null)));
+function tradeupCheck(t) {
+const o = (t);
+if (!o || o.schema !== 1 || typeof o.inputs !== 'object' || typeof o.pools !== 'object') return null;
+for (const p of Object.values(o.pools)) {
+const n = Array.isArray(p?.x) ? p.x.length : 0;
+const st =
+p?.evst === null
+? p.covst === null && p.medst === null
+: tuRows(p?.evst, n, 10, true) && tuRows(p.covst, n, 10) && tuRows(p.medst, n, 10, true);
+if (!n || p.x[0] !== 0 || !tuNum(p.n) || p.n < 1 || !['glove', 'knife'].includes(p.kind) || !st) return null;
+if (!p.x.every(( v, i) => tuNum(v) && (i === 0 || v > p.x[i - 1])))
+return null;
+if (!tuRows(p.wear, n, 6)) return null;
+if (!tuRows(p.ev, n, 10, true) || !tuRows(p.cov, n, 10) || !tuRows(p.med, n, 10, true)) return null;
+if (p.r !== null && !(Array.isArray(p.r) && p.r.length === 2 && p.r.every(tuNum))) return null;
+}
+for (const v of Object.values(o.inputs)) {
+if (!Array.isArray(v) || !tuNum(v[0]) || !tuNum(v[1]) || !(v[1] > v[0]) || !o.pools[v[2]]) return null;
+}
+return o;
+}
+const tuMajor = (c) => c.reduce((best, v, i) => (v > c[best] ? i : best), 0);
+function tradeupModel(t, key, float, st, sv, market, side) {
+const input = t.inputs[key];
+if (sv || !input || float === null) return null;
+const [smin, smax, name, col] = input;
+const pool = t.pools[name];
+const ev = st ? pool.evst : pool.ev;
+if (!ev || float < smin || float > smax) return null;
+const x = (float - smin) / (smax - smin);
+let i = 0;
+while (i + 1 < pool.x.length && pool.x[i + 1] <= x) i++;
+const m = TU_MARKETS.indexOf(market);
+const k = m * 2 + (side === 'bid' ? 1 : 0);
+const value = m < 0 ? null : ev[i][k];
+if (value === null) return null;
+const counts = pool.wear[i];
+const wear = tuMajor(counts);
+let start = i;
+while (start > 0 && tuMajor(pool.wear[start - 1]) === wear) start--;
+const better = start > 0 && tuMajor(pool.wear[start - 1]) < wear ? tuMajor(pool.wear[start - 1]) : -1;
+const cut = better < 0 ? null : Math.floor((smin + pool.x[start] * (smax - smin)) * 1e4) / 1e4;
+const out = pool.r ? pool.r[0] + x * (pool.r[1] - pool.r[0]) : null;
+const edge = out !== null && [0.07, 0.15, 0.38, 0.45].some((e) => Math.abs(out - e) < TU_EDGE);
+const cov = (st ? (pool.covst) : pool.cov)[i][k];
+const med = (st ? (pool.medst) : pool.med)[i][k];
+return {
+kind: pool.kind,
+n: pool.n,
+counts,
+wear,
+mixed: counts[wear] < pool.n,
+better,
+cut,
+x,
+out,
+edge,
+ev: value,
+cov,
+med,
+col,
+float,
+st,
+};
+}
+function tradeupWords(m) {
+const wear = m.wear < 5 ? `${m.mixed ? '~' : ''}${TU_WEARS[m.wear]} ` : '';
+const cut = m.cut === null ? '' : ` · ${TU_WEARS[m.better]} below ${m.cut.toFixed(4)}`;
+return `→ ${wear}${m.kind}${cut}`;
+}
+// ---- src/tradeup-cards.js
+const TU_MAX_TEXT = 2 * 1024 * 1024;
+const tuParse = JSON.parse;
+function tradeupTip(m, cents, market, side) {
+const name = PRICE_MARKETS.find((x) => x[0] === market)?.[1] ?? market;
+const fifth = Math.round(m.ev / 5);
+const many = m.kind === 'glove' ? 'gloves' : 'knives';
+const rows = [
+...(m.out !== null ? [{ c: ['Output float', m.out.toFixed(4)] }] : []),
+{ c: [m.wear < 5 ? TU_WEAR_NAMES[m.wear] : 'Vanilla', `${m.counts[m.wear]} of ${m.n} ${many}`] },
+{ c: [`Expected ${m.kind}`, priceMoney(m.ev)] },
+{ c: ['Median outcome', priceMoney(m.med ?? 0)], tone: 'dim' },
+{ c: ['One fifth', priceMoney(fifth)] },
+...(cents ? [{ c: ['Against this price', `${(fifth / cents).toFixed(2)}×`] }] : []),
+];
+const col = m.col ? `, all from ${m.col}` : '';
+const dop =
+m.kind === 'knife'
+? ' A Doppler counts once per knife, at its Phase 1–4 median; Ruby, Sapphire, Black Pearl and Emerald are rarer.'
+: '';
+return {
+head: 'Trade-up',
+aside: `${m.st ? 'StatTrak™ · ' : ''}${name} ${side}`,
+rows,
+body: `Five of this skin, all at ${m.float.toFixed(4)}${col}. Equal odds per ${m.kind}; ${m.cov} of ${m.n} priced.${dop}`,
+note: m.edge ? 'Near a wear edge: the game may round either way.' : undefined,
+source: 'Mixing floats or collections changes this. Before fees.',
+};
+}
+function createTradeupCards() {
+const html = document.documentElement;
+const attrs = [TF_SETTINGS.prices.attr, TF_SETTINGS.tradeUp.attr];
+const on = () => attrs.every((a) => html.hasAttribute(a));
+let data = null;
+const byCard = createShotMatch(
+2,
+( a, b) => a.float === b.float && a.st === b.st && a.sv === b.sv,
+);
+const byGrade = createShotMatch(4, Object.is);
+const byPrice = createShotMatch(5, Object.is);
+const drawn = new WeakMap();
+const ref = () => {
+const v = html.getAttribute(TF_SETTINGS.priceRef.attr) ?? TF_SETTINGS.priceRef.default;
+const m = tapMatches(PRICE_KEYS, v) ? tapApply(tapExec, PRICE_KEYS, [v]) : null;
+return [m?.[1] ?? 'csfloat', m?.[2] === 'bid' ? 'bid' : 'ask'];
+};
+function clear(card) {
+for (const el of card.querySelectorAll('span.tf-tu')) (tipBox.tie(el, null), el.remove());
+}
+function sync(card) {
+const grid = on() && !!data && !card.closest(TF_SELECTORS.dialog) && !!card.closest('app-item-container');
+const key = grid ? byCard.keyOf(card) : null;
+const [facts, grade, cents] = [byCard.idFor(key), byGrade.idFor(key), byPrice.idFor(key)];
+const row = card.querySelector(TF_SELECTORS.priceRow);
+const dp = typeof grade === 'string' ? grade.split(':').slice(0, 2).join(':') : '';
+const [market, side] = ref();
+const m = data && facts && dp && row ? tradeupModel(data, dp, facts.float, facts.st, facts.sv, market, side) : null;
+if (!m || !row) return clear(card);
+if (cents) priceSeen(cents, card.querySelector(TF_SELECTORS.price)?.textContent);
+const own = card.querySelector(TF_SELECTORS.auction) ? null : cents;
+const spans = card.querySelectorAll('span.tf-tu');
+for (let i = 1; i < spans.length; i++) spans[i].remove();
+const span = (
+spans[0] ?? Object.assign(layoutSpan('tf-tu', ''), { tabIndex: 0, role: 'group' })
+);
+const words = tradeupWords(m);
+const sig = JSON.stringify([words, m.ev, m.med, own, market, side, priceMoney(1e4)]);
+if (drawn.get(span) !== sig) {
+span.textContent = words;
+span.ariaLabel = `Trade-up ${words.slice(2)}`;
+drawn.set(span, sig);
+}
+tipBox.tie(span, () => tradeupTip(m, own, market, side));
+const after = card.querySelector(':scope .footer > :is(button.tf-pc, span.tf-pcw)') ?? row;
+if (span.previousElementSibling !== after) after.after(span);
+}
+const synced = byCard.tracked(sync);
+const syncAll = () => {
+for (const card of document.querySelectorAll(TF_SELECTORS.card)) synced(card);
+};
+const prev = gradeSide.got;
+gradeSide.got = (v) => {
+try {
+if (tapOwn(v, 'tf') !== 'tradeup') return prev(v);
+const text = tapOwn(v, 'text');
+const next = typeof text === 'string' && text.length <= TU_MAX_TEXT ? tradeupCheck(tuParse(text)) : null;
+if (next) ((data = next), shotOnce(syncAll));
+} catch {}
+};
+cardWatch({
+attrs: [...attrs, TF_SETTINGS.priceRef.attr],
+setting: () => shotOnce(syncAll),
+cards(changed, added) {
+if (on() && data) for (const card of new Set([...changed, ...added])) synced(card);
+},
+});
+return {
+wanted: on,
+feed(listings) {
+if (!on()) return;
+const fresh = new Set([...byCard.learn(listings), ...byGrade.learn(listings), ...byPrice.learn(listings)]);
+byCard.resync(fresh, synced);
 },
 };
 }
@@ -7909,6 +8600,12 @@ const orders = `${TF_SELECTORS.dialogGrid} > ${TF_SELECTORS.buyOrders}`;
 let shown = null;
 let [want, turn, queued] = ['', 0, 0];
 function place(below) {
+if (!shown) return;
+const grid = below.closest(TF_SELECTORS.dialogGrid);
+const right = html.hasAttribute(TF_SETTINGS.stickerRight.attr)
+? grid?.querySelector(':scope > .grid-similar')
+: null;
+if (right && right.getClientRects().length) return void (right.firstElementChild !== shown && right.prepend(shown));
 const next = below.parentElement?.querySelector(':scope > .tf-pw:not(.tf-sw)') ?? below;
 if (shown && shown.nextElementSibling !== next) next.before(shown);
 }
@@ -7974,7 +8671,7 @@ sync();
 } catch {}
 },
 ]));
-const look = [...attrs, TF_SETTINGS.prices.attr];
+const look = [...attrs, TF_SETTINGS.prices.attr, TF_SETTINGS.stickerRight.attr];
 const follow = () => dialogFollow(watch, look, { attributeFilter: ['href'] });
 const watch = new MutationObserver(() => {
 follow();
@@ -9097,8 +9794,6 @@ return !!n && !!w && w.textContent === n.box && w.scrollWidth <= w.clientWidth;
 };
 }
 // ---- src/catalog-cards.js
-const CAT_SVG = 'http://www.w3.org/2000/svg';
-const CAT_GLYPH = 'M1.5 3.5 6 1.5l4.5 2v5L6 10.5l-4.5-2zM1.5 3.5 6 5.5l4.5-2M6 5.5v5';
 function catEl(tag, cls, text, into) {
 const el = document.createElement(tag);
 el.className = cls;
@@ -9122,15 +9817,6 @@ img.src = url;
 into?.append(img);
 return img;
 }
-function catGlyph(into) {
-const svg = document.createElementNS(CAT_SVG, 'svg');
-svg.setAttribute('class', 'tf-cf-g');
-svg.setAttribute('viewBox', '0 0 12 12');
-svg.setAttribute('aria-hidden', 'true');
-svg.appendChild(document.createElementNS(CAT_SVG, 'path')).setAttribute('d', CAT_GLYPH);
-into.append(svg);
-return svg;
-}
 const CAT_PRESSES = ['pointerdown', 'mousedown', 'pointerup', 'mouseup', 'auxclick', 'click'];
 function createCatalogCards(catalog) {
 const html = document.documentElement;
@@ -9149,12 +9835,14 @@ function clear(card) {
 for (const el of card.querySelectorAll('span.tf-cf')) (fit.drop(el), el.remove());
 for (const el of card.querySelectorAll('[data-tf-cf]')) el.removeAttribute('data-tf-cf');
 }
-function line(from) {
+function line(from, s) {
 const [el, names] = [catEl('span', 'tf-cf'), catalogLabel(catalog, from.first)];
 const a = catLink('tf-cf-a', catalog.link.box(from.first), undefined, el);
-catGlyph(a);
+catGlyph(a, s);
 catEl('span', 'tf-cf-w', names[0], a);
-if (!from.rest.length) a.title = catalogTitle(from);
+const tip = from.rest.length ? null : catalogSupplyTip(catalogTitle(from), s);
+if (tip) tipBox.tie(a, tip);
+else if (!from.rest.length) a.title = catalogTitle(from);
 fit.add(el, names, from.first.name);
 for (const t of CAT_PRESSES) a.addEventListener(t, (e) => e.stopPropagation());
 if (from.rest.length) pop.more(el, (a), from, () => fit.whole(el));
@@ -9170,11 +9858,12 @@ const row = name?.parentElement;
 const clipped = clip.every((a) => html.hasAttribute(a)) && !!name?.querySelector(':scope > span.tf-title');
 const spacer = clipped ? card.querySelector('app-seller-details-widget > div.seller-details > div') : null;
 if (!from || !name || !row || (clipped && !spacer)) return clear(card);
+const [src, best] = catalogSupplyOn() ? catalogSupplyBest(catalog, from) : [from, null];
 let [el = null, ...extra] = card.querySelectorAll('span.tf-cf');
 for (const x of extra) (fit.drop(x), x.remove());
-const sig = `${gen}\n${from.first.id}\n${from.rest.map((b) => b.id).join(' ')}\n${from.bare ?? ''}`;
+const sig = `${gen}\n${src.first.id}\n${src.rest.map((b) => b.id).join(' ')}\n${from.bare ?? ''}${best?.[1]}${catalogSupplyOn()}`;
 if (!el || drawn.get(el) !== sig) {
-const next = line(from);
+const next = line(src, best);
 if (el) (fit.drop(el), el.remove());
 drawn.set((el = next), sig);
 }
@@ -9189,7 +9878,7 @@ for (const card of document.querySelectorAll(TF_SELECTORS.card))
 if (!only || only(byGrade.keyOf(card))) synced(card);
 };
 cardWatch({
-attrs: [attr, ...clip],
+attrs: [attr, ...clip, TF_SETTINGS.supplyStatus.attr],
 setting: syncAll,
 cards(changed, added) {
 if (on()) for (const card of new Set([...changed, ...added])) synced(card);
@@ -9254,9 +9943,15 @@ function show(b, from, whole) {
 hide();
 const p = (pop = catEl('div', 'tf-cp'));
 [p.role, p.ariaLabel, p.popover] = ['dialog', b.ariaLabel, 'manual'];
-if (!whole()) catLink('tf-cp-a', catalog.link.box(from.first), from.first.name, p);
+const status = ( box) =>
+catalogSupplyOn() ? catalogSupplyWords(catalog.supply.box(box.id)) : '';
+const row = ( box) => {
+const a = catLink('tf-cp-a', catalog.link.box(box), box.name, p);
+if (status(box)) catEl('span', 'tf-cp-s', ` · ${status(box)}`, a);
+};
+if (!whole() || status(from.first)) row(from.first);
 catEl('div', 'tf-cp-h', b.ariaLabel ?? '', p);
-for (const box of from.rest) catLink('tf-cp-a', catalog.link.box(box), box.name, p);
+for (const box of from.rest) row(box);
 p.onpointerenter = () => cancel();
 p.onpointerleave = () => pinned || later(hide, 200);
 panelHold(p, b, 'tf-cp');
@@ -9616,113 +10311,650 @@ v.indexed();
 } catch {}
 });
 const cards = createCatalogCards(catalog);
-const views = [cards, createCatalogStrip(catalog), createCatalogWindow(catalog)];
+const supply = createSupplyLine(catalog);
+const views = [cards, createCatalogStrip(catalog), createCatalogWindow(catalog), supply];
 catalog.onImages(() => cards.named());
 return {
-wanted: cards.wanted,
+catalog,
+wanted: () => cards.wanted() || supply.wanted(),
 feed(listings) {
+for (const v of [cards, supply])
 try {
-cards.feed(listings);
+v.feed(listings);
 } catch {}
 },
 };
 }
-// ---- src/main.js
-const shots = createShots();
-const layout = createCardLayout();
-const age = createAge();
-const grades = createGrades(() => {
-sales.indexed();
-dbGrades.indexed();
-menus.indexed();
-priceCards.indexed();
-sell.indexed();
-});
-const rate = createRate();
-const refresh = createRefresh(rate);
-const sales = createSales(grades);
-const dbGrades = createDbGrades(grades);
-const chip = createChip(refresh);
-const premium = createPremium();
-const prices = createPrices();
-const orders = createBuyOrders(refresh.running);
-const pricePanel = createPricePanel(prices, orders);
-const priceCards = createPriceCards(prices, grades.icons, orders);
-const stickerCards = createStickerCards();
-const stickerPanel = createStickerPanel(prices);
-const catalogViews = createCatalogViews();
-const menus = createMenus(prices, grades.index);
-const tiers = createTiers(grades.index, rate, premium, chip);
-const sell = createSellGrades(grades, premium, tiers.net);
-installTap(
-(history, db, inv) =>
-inv
-? sell.enabled()
-: db
-? dbGrades.enabled()
-: history
-? sales.enabled()
-: shots.enabled() ||
-layout.enabled() ||
-age.enabled() ||
-grades.enabled() ||
-refresh.running() ||
-sales.enabled() ||
-tiers.wanted() ||
-pricePanel.wanted() ||
-priceCards.wanted() ||
-stickerCards.wanted() ||
-stickerPanel.wanted() ||
-catalogViews.wanted(),
-(listings, search, own, query, raw) => {
-if (!listings.length) {
-for (const f of search ? [tiers.seen, premium.grid] : [])
-try {
-f(listings, query, raw);
-} catch {}
-return;
+// ---- src/catalog-supply-line.js
+function createSupplyLine(catalog) {
+const html = document.documentElement;
+const attr = TF_SETTINGS.supplyStatus.attr;
+const on = () => html.hasAttribute(attr) && catalog.ready();
+const byGrade = createShotMatch(4, Object.is);
+const byCard = createShotMatch(2, ( a, b) => a.sv === b.sv);
+const bySt = createShotMatch(9, stickerSame);
+const drawn = new WeakMap();
+function source(card) {
+const key = byGrade.keyOf(card);
+const grade = (byGrade.idFor(key));
+if (!grade) return null;
+const from = catalogFrom(catalog, grade, byCard.idFor(key), bySt.idFor(key));
+const first = from ? catalogSupplyBest(catalog, from)[0].first : null;
+if (first) return [first.name, catalog.supply.box(first.id)];
+const set = catalog.skin(grade.slice(0, grade.lastIndexOf(':')))?.collections[0];
+return set ? [catalog.supply.setName(set) ?? set, catalog.supply.set(set)] : null;
 }
-shotOnce(() => {
-try {
-shots.feed(listings);
-} catch {}
-try {
-if (search) tiers.seen(listings, query, raw);
-} catch {}
-try {
-if (search) premium.grid(listings, query, raw);
-} catch {}
-try {
-layout.feed(listings);
-} catch {}
-try {
-age.feed(listings);
-} catch {}
-try {
-grades.feed(listings);
-} catch {}
-try {
-refresh.feed(listings, search, own);
-} catch {}
-orders.feed(listings);
-try {
-priceCards.feed(listings);
-} catch {}
-try {
-stickerCards.feed(listings);
-} catch {}
-catalogViews.feed(listings);
-});
-try {
-sales.feed(listings);
-} catch {}
-try {
-pricePanel.feed(listings);
-} catch {}
-try {
-stickerPanel.feed(listings);
-} catch {}
+function clear(card) {
+for (const el of card.querySelectorAll('div.tf-sl')) (tipBox.tie(el, null), el.remove());
+}
+function sync(card) {
+const name = on() && card.closest(TF_SELECTORS.dialog) ? card.querySelector('app-item-name') : null;
+const src = name ? source(card) : null;
+const tip = src ? catalogSupplyTip(src[0], src[1]) : null;
+if (!name || !tip) return clear(card);
+const el = card.querySelector('div.tf-sl') ?? catEl('div', 'tf-sl');
+const sig = JSON.stringify(tip);
+if (drawn.get(el) !== sig) {
+el.textContent = tip.body ?? '';
+if (tip.source) tipBox.tie(el, { source: tip.source });
+else tipBox.tie(el, null);
+drawn.set(el, sig);
+}
+if (el.previousElementSibling !== name) name.after(el);
+}
+const synced = byGrade.tracked(sync);
+const syncAll = () => {
+for (const card of document.querySelectorAll(`${TF_SELECTORS.dialog} ${TF_SELECTORS.card}`)) synced(card);
+};
+cardWatch({
+attrs: [attr],
+setting: syncAll,
+cards(changed, added) {
+if (on()) for (const card of new Set([...changed, ...added])) if (card.closest(TF_SELECTORS.dialog)) synced(card);
 },
+});
+return {
+wanted: () => html.hasAttribute(attr),
+feed(listings) {
+const fresh = new Set([byGrade, byCard, bySt].flatMap((m) => [...m.learn(listings)]));
+if (on()) byGrade.resync(fresh, synced);
+},
+indexed: () => void (on() && syncAll()),
+};
+}
+// ---- src/collection-data.js
+const COL_KEY = /^set_[a-z0-9_]{1,64}$/;
+const COL_WEARS = ([
+['FN', 'Factory New', 0, 0.07],
+['MW', 'Minimal Wear', 0.07, 0.15],
+['FT', 'Field-Tested', 0.15, 0.38],
+['WW', 'Well-Worn', 0.38, 0.45],
+['BS', 'Battle-Scarred', 0.45, 1],
+]);
+const colFloat = (v) => typeof v === 'number' && v >= 0 && v <= 1;
+const colCents = (v) => {
+const ok = tapIsArray(v) && v.length === 5 && [0, 1, 2, 3, 4].every((i) => catInt(tapOwn(v, i), 2e9));
+return ok ? [0, 1, 2, 3, 4].map((i) => tapOwn(v, i)) : [0, 0, 0, 0, 0];
+};
+function colIndex(j) {
+const sets = new Map();
+const byName = new Map();
+for (const c of catList(tapOwn(j, 'collections'), 4096, (x) => tapMatches(COL_KEY, tapOwn(x, 'key')))) {
+const [key, name] = [tapOwn(c, 'key'), tapOwn(c, 'name')];
+if (!tapMatches(CAT_TEXT, name)) continue;
+sets.set(key, { key, name, souvenir: tapOwn(c, 'has_souvenir') === true, skins: [] });
+byName.set(name, byName.has(name) ? null : key);
+}
+const seen = new Set();
+catEach(tapOwn(j, 'weapons'), (def, w) => {
+const [weapon, type] = [tapOwn(w, 'name'), tapOwn(w, 'type')];
+if (!tapMatches(CAT_ID, def) || !tapMatches(CAT_TEXT, weapon)) return;
+catEach(tapOwn(w, 'paints'), (paint, p) => {
+const [name, min, max, rarity] = ['name', 'min', 'max', 'rarity'].map((f) => tapOwn(p, f));
+if (!tapMatches(CAT_ID, paint) || +paint === 0 || !tapMatches(CAT_TEXT, name)) return;
+if (!colFloat(min) || !colFloat(max) || min >= max || !catInt(rarity, 7)) return;
+const skin = {
+def: +def,
+paint: +paint,
+weapon,
+name,
+min,
+max,
+rarity,
+star: type === 'Knives' || type === 'Gloves',
+st: tapOwn(p, 'stattrak') === true,
+sv: tapOwn(p, 'souvenir') === true,
+normal: colCents(tapOwn(p, 'normal_prices')),
+stattrak: colCents(tapOwn(p, 'stattrak_prices')),
+};
+for (const key of catList(tapOwn(p, 'collections'), 64, catIs(COL_KEY))) {
+const set = sets.get(key);
+const k = `${key}|${weapon}|${name}`;
+if (!set || seen.has(k) || set.skins.length >= 512) continue;
+seen.add(k);
+set.skins.push(skin);
+}
+});
+});
+return { sets, byName };
+}
+const colMarketName = (s, wear, cat) =>
+`${s.star ? '★ ' : ''}${cat === 2 ? 'StatTrak™ ' : cat === 3 ? 'Souvenir ' : ''}${s.weapon} | ${s.name} (${COL_WEARS[wear][1]})`;
+function colRange(s, wear) {
+const [, , lo, hi] = COL_WEARS[wear];
+const [a, b] = [Math.max(lo, s.min), Math.min(hi, s.max)];
+return a < b ? [a, b] : null;
+}
+const colWearOf = (f) => {
+const i = COL_WEARS.findIndex(([, , , hi]) => f < hi);
+return i < 0 ? 4 : i;
+};
+// ---- src/collection-go.js
+const COL_ID = /^\d{1,24}$/;
+const COL_FLOAT = /^(0|1|0\.\d{1,8})$/;
+const COL_WAIT = 4000;
+const [COL_GAP, COL_MINUTE] = [2000, 10];
+const colPush = History.prototype.pushState;
+const ColHashChange = HashChangeEvent;
+const colDispatch = EventTarget.prototype.dispatchEvent;
+function createColGuard(net) {
+const sent = [];
+let flying = false;
+return {
+take() {
+const now = tickNow();
+while (sent.length && sent[0] <= now - 6e4) sent.shift();
+const last = sent.length ? sent[sent.length - 1] : 0;
+if (flying || net.until(TIER_RESERVE) > now || now - last < COL_GAP || sent.length >= COL_MINUTE) return false;
+flying = true;
+sent.push(now);
+return true;
+},
+done() {
+flying = false;
+},
+one: net.one,
+};
+}
+function colQuery(s, wear, cat) {
+const [, , lo, hi] = COL_WEARS[wear];
+const [a, b] = [`${lo}`, `${hi}`];
+if (
+![1, 2, 3].includes(cat) ||
+!catInt(s.def, 65535) ||
+!catInt(s.paint, 65535) ||
+!tapMatches(COL_FLOAT, a) ||
+!tapMatches(COL_FLOAT, b)
+)
+return null;
+return `def_index=${s.def}&paint_index=${s.paint}&category=${cat}&min_float=${a}&max_float=${b}`;
+}
+function colSearch(s, wear, cat) {
+const q = colQuery(s, wear, cat);
+return q ? `https://csfloat.com/search?${q}` : null;
+}
+function colFirstId(text) {
+let j = null;
+try {
+j = catParse(text);
+} catch {}
+const rows = tapIsArray(j) ? j : tapOwn(j, 'data');
+const id = tapIsArray(rows) && rows.length ? tapOwn(tapOwn(rows, 0), 'id') : null;
+return tapMatches(COL_ID, id) ? id : null;
+}
+async function colCheapest(s, wear, cat, guard) {
+const q = colQuery(s, wear, cat);
+if (!q || !tierSignedIn()) return null;
+if (!guard.take()) return null;
+const ctl = new AbortController();
+let late = ( _) => {};
+const stop = tickAfter(() => (ctl.abort(), late(null)), COL_WAIT);
+try {
+const url = `${TAP_ORIGIN}${TAP_SEARCH}?limit=3&sort_by=lowest_price&type=buy_now&${q}`;
+const got = await Promise.race([guard.one(url, colFirstId, ctl.signal), new Promise((ok) => (late = ok))]);
+return typeof got === 'string' && tapMatches(COL_ID, got) ? got : null;
+} catch {
+return null;
+} finally {
+stop();
+guard.done();
+}
+}
+function colOpenListing(id) {
+if (!tapMatches(COL_ID, id)) return;
+tapApply(colPush, history, [null, '', `/item/${id}`]);
+tapApply(colDispatch, globalThis, [new ColHashChange('hashchange')]);
+}
+async function colGo(s, tile, wear, cat, guard, close) {
+if (tile.ariaBusy === 'true') return;
+tile.ariaBusy = 'true';
+const id = await colCheapest(s, wear, cat, guard);
+tile.ariaBusy = null;
+if (id) return void (close(), colOpenListing(id));
+const url = colSearch(s, wear, cat);
+if (url) tapApply(tapOpen, globalThis, [url, '_blank', 'noopener,noreferrer']);
+}
+// ---- src/collection-draw.js
+const COL_RARITY_WORDS = [...CAT_TIER_WORDS, 'Contraband'];
+const COL_SOURCES = ([
+['csfloat', 'CSFloat'],
+['cheapest', 'Cheapest'],
+['buff', 'Buff'],
+['youpin', 'YouPin'],
+['steam', 'Steam'],
+['skinport', 'Skinport'],
+]);
+function colLines(rows, own, src) {
+const asks = rows.flatMap((r) =>
+r.ask !== null ? [ ([r.key, r.name, r.ask])] : [],
+);
+if (own !== null && !asks.some(([k]) => k === 'csfloat')) asks.push(['csfloat', 'CSFloat', own]);
+asks.sort((a, b) => a[2] - b[2]);
+if (src === 'cheapest') return asks[0] ? [priceMoney(asks[0][2], true), asks[0][1], true] : ['–', '', false];
+const main = asks.find(([k]) => k === src);
+const low = asks.find(([k]) => k !== src);
+const cheaper = low && (!main || low[2] < main[2]) ? `${low[1]} ${priceMoney(low[2], true)}` : '';
+return [main ? priceMoney(main[2], true) : '–', cheaper, !!main];
+}
+const colEl = (tag, cls, text, into) => catEl(tag, cls, text, into);
+function colClick(el, fn) {
+tapApply(tapListen, el, ['click', fn]);
+}
+function colGroups(set) {
+const by = ( a, b) =>
+a.weapon < b.weapon ? -1 : a.weapon > b.weapon ? 1 : a.name < b.name ? -1 : a.name > b.name ? 1 : 0;
+const out = [];
+for (let r = 7; r >= 1; r--) {
+const skins = set.skins.filter((s) => !s.star && s.rarity === r).sort(by);
+if (skins.length) out.push([COL_RARITY_WORDS[r - 1] ?? 'Other', CAT_TIERS[r - 1] ?? CAT_TIERS[0], skins]);
+}
+const star = set.skins.filter((s) => s.star).sort(by);
+const gloves = star.length && star.every((s) => /Gloves|Wraps/.test(s.weapon));
+if (star.length) out.push([gloves ? '★ Gloves' : '★ Knives', CAT_TIERS[6], star]);
+return out;
+}
+function colBody(set, catalog, prices, pick) {
+const body = colEl('div', 'tf-col-body');
+const tiles = [];
+for (const [word, colour, skins] of colGroups(set)) {
+const group = colEl('section', 'tf-col-g', undefined, body);
+group.style.setProperty('--tf-col-c', colour);
+group.ariaLabel = word;
+const head = colEl('div', 'tf-col-gh', undefined, group);
+colEl('span', 'tf-col-gt', word, head);
+colEl('span', 'tf-col-gn', `${skins.length}`, head);
+const row = colEl('div', 'tf-col-tiles', undefined, group);
+for (const s of skins) {
+const tile = (colEl('a', 'tf-col-tile', undefined, row));
+[tile.target, tile.rel, tile.referrerPolicy] = ['_blank', 'noopener noreferrer', 'no-referrer'];
+tile.title = `${s.star ? '★ ' : ''}${s.weapon} | ${s.name}`;
+const box = colEl('span', 'tf-col-img', undefined, tile);
+const url = catalog.skinImage(s.def, s.paint);
+if (url) catImg('tf-col-i', url, '', box);
+colEl('span', 'tf-col-n', s.name, tile);
+colEl('span', 'tf-col-w', s.weapon, tile);
+const [price, other] = [colEl('span', 'tf-col-p', '', tile), colEl('span', 'tf-col-o', '', tile)];
+colClick(tile, ( e) => {
+if (!e.isTrusted || e.button || e.ctrlKey || e.metaKey || e.shiftKey || e.altKey) return;
+if (!tile.href) return void e.preventDefault();
+if (!tierSignedIn()) return;
+e.preventDefault();
+pick(s, tile);
+});
+tiles.push([s, tile, price, other]);
+}
+}
+let [gen, tries] = [0, 0];
+function draw(wear, cat, source, again = false) {
+const my = ++gen;
+if (!again) tries = 0;
+const asks = [];
+for (const [s, tile, price, other] of tiles) {
+const range = colRange(s, wear);
+const none = !range
+? `no ${COL_WEARS[wear][0]}`
+: cat === 2 && !s.st
+? 'no StatTrak'
+: cat === 3 && !s.sv
+? 'no Souvenir'
+: '';
+const href = none ? null : colSearch(s, wear, cat);
+if (href) tile.href = href;
+else tile.removeAttribute('href');
+tile.classList.toggle('tf-col-none', !!none);
+price.classList.remove('tf-col-dash');
+[price.textContent, other.textContent] = [none, ''];
+tile.ariaLabel = `${tile.title}, ${none || COL_WEARS[wear][1]}`;
+if (none) continue;
+price.textContent = '…';
+const name = colMarketName(s, wear, cat);
+const own = (cat === 3 ? [] : cat === 2 ? s.stattrak : s.normal)[wear] || null;
+const ask = prices.lookup(name);
+asks.push(ask);
+ask.then((slots) => {
+if (my !== gen) return;
+const [main, second, priced] = colLines(priceRows(slots, null, name), own, source);
+[price.textContent, other.textContent] = [main, second];
+price.classList.toggle('tf-col-dash', !priced);
+tile.ariaLabel = `${tile.title}, ${COL_WEARS[wear][1]}, ${priced ? main : 'no price'}${second ? `, ${second}` : ''}`;
+});
+}
+pricePromise.all(asks).then((all) => {
+if (my === gen && all.some((s) => s === null) && !prices.answers() && ++tries <= 6)
+tickAfter(() => void (my === gen && draw(wear, cat, source, true)), 2500);
+});
+}
+return { body, draw, count: tiles.length };
+}
+// ---- src/collection-menu.js
+function colMenu(into, current, pick) {
+const wrap = colEl('span', 'tf-col-src', undefined, into);
+const btn = (colEl('button', 'tf-col-sel', undefined, wrap));
+[btn.type, btn.ariaHasPopup, btn.ariaExpanded] = ['button', 'listbox', 'false'];
+const label = colEl('span', 'tf-col-sell', '', btn);
+colEl('span', 'tf-col-caret', '', btn).ariaHidden = 'true';
+const list = colEl('div', 'tf-col-menu', undefined, wrap);
+[list.role, list.ariaLabel, list.hidden] = ['listbox', 'Price source', true];
+const opts = COL_SOURCES.map(([key, word]) => {
+const o = (colEl('div', 'tf-col-opt', undefined, list));
+[o.role, o.tabIndex] = ['option', -1];
+colEl('span', 'tf-col-chk', '', o).ariaHidden = 'true';
+colEl('span', 'tf-col-ow', word, o);
+colClick(o, ( e) => e.isTrusted && choose(key));
+return o;
+});
+const at = () =>
+Math.max(
+0,
+COL_SOURCES.findIndex(([k]) => k === current()),
+);
+function set( key) {
+const i = Math.max(
+0,
+COL_SOURCES.findIndex(([k]) => k === key),
+);
+label.textContent = COL_SOURCES[i][1];
+btn.ariaLabel = `Price source: ${COL_SOURCES[i][1]}`;
+opts.forEach((o, j) => (o.ariaSelected = `${j === i}`));
+}
+function drop() {
+list.hidden = false;
+btn.ariaExpanded = 'true';
+opts[at()].focus({ preventScroll: true });
+}
+function close(back = true) {
+if (list.hidden) return;
+list.hidden = true;
+btn.ariaExpanded = 'false';
+if (back) btn.focus({ preventScroll: true });
+}
+function choose( key) {
+close();
+if (key !== current()) (set(key), pick(key));
+}
+colClick(btn, ( e) => e.isTrusted && (list.hidden ? drop() : close()));
+tapApply(tapListen, btn, [
+'keydown',
+( e) => {
+if (!e.isTrusted || !['ArrowDown', 'ArrowUp'].includes(e.key)) return;
+e.preventDefault();
+drop();
+},
+]);
+tapApply(tapListen, list, [
+'keydown',
+( e) => {
+if (!e.isTrusted) return;
+const i = opts.findIndex((o) => o === document.activeElement);
+const to = { ArrowDown: i + 1, ArrowUp: i - 1, Home: 0, End: opts.length - 1 }[e.key];
+if (to !== undefined) opts[Math.min(Math.max(to, 0), opts.length - 1)].focus({ preventScroll: true });
+else if (e.key === 'Enter' || e.key === ' ') i >= 0 && choose(COL_SOURCES[i][0]);
+else if (e.key === 'Escape') close();
+else if (e.key === 'Tab') return close(false);
+else return;
+e.preventDefault();
+e.stopPropagation();
+},
+]);
+tapApply(tapListen, wrap, [
+'focusout',
+( e) => {
+if (!(e.relatedTarget instanceof Node && wrap.contains(e.relatedTarget))) close(false);
+},
+]);
+set(current());
+return { set };
+}
+// ---- src/collection-parts.js
+const COL_GRID =
+'M1 1h3v3H1zM6.5 1h3v3h-3zM12 1h3v3h-3zM1 6.5h3v3H1zM6.5 6.5h3v3h-3zM12 6.5h3v3h-3zM1 12h3v3H1zM6.5 12h3v3h-3zM12 12h3v3h-3z';
+function colGridIcon() {
+const svg = document.createElementNS(CAT_SVG, 'svg');
+svg.setAttribute('class', 'tf-col-ico');
+svg.setAttribute('viewBox', '0 0 16 16');
+svg.setAttribute('aria-hidden', 'true');
+const path = document.createElementNS(CAT_SVG, 'path');
+path.setAttribute('d', COL_GRID);
+svg.append(path);
+return svg;
+}
+function colListing() {
+const t = document.title;
+const wear = COL_WEARS.findIndex(([, word]) => t.includes(`(${word})`));
+const f = parseFloat(document.querySelector(`${TF_SELECTORS.dialog} ${TF_SELECTORS.floatValue}`)?.textContent ?? '');
+const cat = t.includes('StatTrak™') ? 2 : t.startsWith('Souvenir ') ? 3 : 1;
+return { wear: wear >= 0 ? wear : colFloat(f) ? colWearOf(f) : 2, cat };
+}
+function colButton(text, into, fn) {
+const b = (colEl('button', 'tf-col-b', text, into));
+b.type = 'button';
+colClick(b, ( e) => e.isTrusted && fn());
+return b;
+}
+function colDismiss(d, close) {
+tapApply(tapListen, d, [
+'keydown',
+( e) => {
+if (e.key !== 'Escape') return;
+e.preventDefault();
+e.stopPropagation();
+close();
+},
+]);
+colClick(d, ( e) => {
+const r = d.getBoundingClientRect();
+const out = e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom;
+if (e.target === d && out) close();
+});
+}
+// ---- src/collection-window.js
+function createCollectionWindow(catalog, prices, guard) {
+const html = document.documentElement;
+const attr = TF_SETTINGS.collectionWindow.attr;
+let ix = null;
+catalog.schemaParsed((j) => void (ix = colIndex(j)));
+let link = null;
+let marks = [];
+let key = '';
+let win = null;
+let src = 'csfloat';
+let redraw = () => {};
+const prev = gradeSide.got;
+gradeSide.got = (v) => {
+try {
+if (tapOwn(v, 'tf') !== 'colprice') return prev(v);
+const w = tapOwn(v, 'v');
+if (COL_SOURCES.some(([k]) => k === w)) ((src = w), redraw());
+} catch {}
+};
+function close() {
+if (!win) return;
+const was = win;
+win = null;
+was.close();
+was.remove();
+if (link?.isConnected) link.focus({ preventScroll: true });
+}
+function openSet() {
+const set = ix?.sets.get(key);
+if (win || !set?.skins.length) return;
+let { wear, cat } = colListing();
+const [canSt, canSv] = [set.skins.some((s) => s.st), set.souvenir || set.skins.some((s) => s.sv)];
+if ((cat === 2 && !canSt) || (cat === 3 && !canSv)) cat = 1;
+const d = (colEl('dialog', 'tf-col'));
+d.ariaLabel = set.name;
+const head = colEl('header', 'tf-col-head', undefined, d);
+const title = colEl('div', 'tf-col-title', undefined, head);
+colEl('h2', 'tf-col-name', set.name, title);
+const { body, draw, count } = colBody(set, catalog, prices, (s, tile) => void colGo(s, tile, wear, cat, guard, close));
+colEl('span', 'tf-col-count', `${count} skins`, title);
+const ctl = colEl('div', 'tf-col-ctl', undefined, head);
+const menu = colMenu(
+ctl,
+() => src,
+(k) => {
+src = k;
+gradeSide.post({ tf: 'colprice', v: src });
+show();
+},
+);
+const seg = colEl('div', 'tf-col-seg', undefined, ctl);
+[seg.role, seg.ariaLabel] = ['group', 'Wear'];
+const wears = COL_WEARS.map(([short, word], i) => {
+const b = colButton(short, seg, () => ((wear = i), show()));
+b.title = word;
+return b;
+});
+const flip = ( c) => () => ((cat = cat === c ? 1 : c), show());
+const stb = canSt ? colButton('StatTrak', ctl, flip(2)) : null;
+const svb = canSv ? colButton('Souvenir', ctl, flip(3)) : null;
+stb?.classList.add('tf-col-st');
+svb?.classList.add('tf-col-st', 'tf-col-sv');
+const x = colButton('×', ctl, close);
+[x.className, x.ariaLabel, x.title] = ['tf-col-b tf-col-x', 'Close', 'Close (Esc)'];
+d.append(body);
+function show() {
+wears.forEach((b, i) => (b.ariaPressed = `${i === wear}`));
+if (stb) stb.ariaPressed = `${cat === 2}`;
+if (svb) svb.ariaPressed = `${cat === 3}`;
+menu.set(src);
+draw(wear, cat, src);
+}
+show();
+colDismiss(d, close);
+tapApply(tapListen, d, ['close', () => win === d && close()]);
+win = d;
+redraw = () => win === d && show();
+document.body.append(d);
+d.showModal();
+wears[wear].focus({ preventScroll: true });
+}
+function sync() {
+const dialog = html.hasAttribute(attr) ? document.querySelector(TF_SELECTORS.dialog) : null;
+const line = dialog?.querySelector(`:scope > .container > ${TF_SELECTORS.about} > .collection`);
+const text = [...(line?.childNodes ?? [])].filter((n) => n.nodeType === 3).map((n) => n.nodeValue).join('').trim();
+if (text && !ix) catalog.schemaNeed();
+const k = (text && ix?.byName.get(text)) || '';
+if (!line || !k) {
+[key, link] = ['', (link?.remove(), null)];
+marks = (marks.forEach((m) => m.remove()), []);
+return close();
+}
+if (k !== key) close();
+key = k;
+if (link?.parentElement !== line) {
+link?.remove();
+marks.forEach((m) => m.remove());
+const icon = colGridIcon();
+line.prepend(icon);
+const more = colEl('span', 'tf-col-more', '', line);
+more.ariaHidden = 'true';
+marks = [icon, more];
+link = (colEl('button', 'tf-col-link', undefined, line));
+[link.type, link.ariaHasPopup] = ['button', 'dialog'];
+colClick(link, ( e) => e.isTrusted && openSet());
+}
+const n = ix?.sets.get(k)?.skins.length ?? 0;
+const words = [` · ${n} skins ›`, `Show all skins in ${text}`];
+if (marks[1].textContent !== words[0]) marks[1].textContent = words[0];
+if (link.ariaLabel !== words[1]) [link.ariaLabel, link.title] = [words[1], words[1]];
+}
+const later = frameLater(sync, (f) => tapApply(catFrame, globalThis, [f]));
+const follow = () => dialogFollow(watch, [attr], { characterData: true });
+const watch = new MutationObserver(() => {
+follow();
+later();
+});
+follow();
+catalog.onImages(later);
+}
+// ---- src/left-tidy.js
+const LEFT_TAGS = /^\s*([A-Z0-9_]+;\s*)+$/;
+function leftParas(f) {
+const out = [];
+let cur = '';
+const push = () => ((cur = cur.replace(/\s+/g, ' ').trim()) && out.push(cur), (cur = ''));
+for (const n of f.childNodes) {
+if (n.nodeType === 3) cur += n.nodeValue ?? '';
+else if (n instanceof HTMLBRElement) push();
+else if (n instanceof HTMLElement && n.tagName === 'I') {
+push();
+const t = (n.textContent ?? '').replace(/\s+/g, ' ').trim();
+if (t && !LEFT_TAGS.test(t)) out.push(`“${t}”`);
+} else if (n instanceof HTMLElement && !n.className.startsWith('tf-')) cur += n.textContent ?? '';
+}
+push();
+return out;
+}
+function createLeftTidy() {
+const html = document.documentElement;
+const attr = TF_SETTINGS.tidyTop.attr;
+let mine = [];
+let want = '';
+function clear() {
+mine.forEach((el) => (tipBox.tie(el, null), el.remove()));
+[mine, want] = [[], ''];
+}
+function sync() {
+const dialog = html.hasAttribute(attr) ? document.querySelector(TF_SELECTORS.dialog) : null;
+const grid = dialog?.querySelector(':scope > .container > .grid-summary');
+const flavour = grid?.querySelector(':scope > .item-schema-details:not(.hidden) > .flavour-text');
+const seller = grid?.querySelector(':scope > .seller-details');
+const trades = seller?.querySelector('app-user-delivery .metric.green > span > div > div');
+const name = dialog?.querySelector(':scope > .container > .grid-item item-card .name-container');
+const paras = flavour ? leftParas(flavour) : [];
+const n = (trades?.textContent ?? '').replace(/\D/g, '');
+const now = grid ? `${paras.join('\n')}|${n}|${!!name}|${!!seller}` : '';
+const placed = mine.every((el) => el.isConnected);
+if (now === want && placed) return;
+clear();
+want = now;
+if (!grid) return;
+const outer = trades?.parentElement;
+if (outer && n && n.length < 10) {
+const t = catEl('span', 'tf-trades', ` · ${(+n).toLocaleString('en-US')} trades`);
+outer.after(t);
+mine.push(t);
+}
+if (!paras.length) return;
+if (!name) return;
+const i = (catEl('button', 'tf-about-i', 'i'));
+[i.type, i.ariaLabel] = ['button', 'Description'];
+tipBox.tie(i, { head: 'Description', body: paras.join('\n\n') });
+name.append(i);
+mine.push(i);
+}
+const later = frameLater(sync, (f) => tapApply(catFrame, globalThis, [f]));
+const follow = () => dialogFollow(watch, [attr], { characterData: true });
+const watch = new MutationObserver((records) => {
+follow();
+if (records.some((r) => !mine.some((el) => el === r.target || el.contains(r.target)))) later();
+});
+follow();
+}
+// ---- src/main-taps.js
+function mainTaps(rate, refresh, sales, dbGrades, tiers, sell) {
+return [
 (record) => {
 try {
 rate.see(record);
@@ -9761,7 +10993,118 @@ try {
 sell.feed(items);
 } catch {}
 },
+];
+}
+// ---- src/main.js
+const shots = createShots();
+const layout = createCardLayout();
+const age = createAge();
+const grades = createGrades(() => {
+sales.indexed();
+dbGrades.indexed();
+menus.indexed();
+priceCards.indexed();
+sell.indexed();
+});
+const rate = createRate();
+const refresh = createRefresh(rate);
+const sales = createSales(grades);
+const dbGrades = createDbGrades(grades);
+const chip = createChip(refresh);
+const premium = createPremium();
+const prices = createPrices();
+const orders = createBuyOrders(refresh.running);
+const pricePanel = createPricePanel(prices, orders);
+const offer = createOffer(prices, orders, () => sales.graph(), grades.icons);
+const priceCards = createPriceCards(prices, grades.icons, orders);
+const tradeups = createTradeupCards();
+const stickerCards = createStickerCards();
+const stickerPanel = createStickerPanel(prices);
+const catalogViews = createCatalogViews();
+createLeftTidy();
+const menus = createMenus(prices, grades.index);
+const tiers = createTiers(grades.index, rate, premium, chip);
+createCollectionWindow(catalogViews.catalog, prices, createColGuard(tiers.net));
+const sell = createSellGrades(grades, premium, tiers.net);
+installTap(
+(history, db, inv) =>
+inv
+? sell.enabled()
+: db
+? dbGrades.enabled()
+: history
+? sales.enabled()
+: shots.enabled() ||
+layout.enabled() ||
+age.enabled() ||
+grades.enabled() ||
+refresh.running() ||
+sales.enabled() ||
+tiers.wanted() ||
+pricePanel.wanted() ||
+priceCards.wanted() ||
+tradeups.wanted() ||
+stickerCards.wanted() ||
+stickerPanel.wanted() ||
+catalogViews.wanted(),
+(listings, search, own, query, raw) => {
+if (!listings.length) {
+for (const f of search ? [tiers.seen, premium.grid] : [])
+try {
+f(listings, query, raw);
+} catch {}
+return;
+}
+shotOnce(() => {
+try {
+shots.feed(listings);
+} catch {}
+try {
+if (search) tiers.seen(listings, query, raw);
+} catch {}
+try {
+if (search) premium.grid(listings, query, raw);
+} catch {}
+try {
+layout.feed(listings);
+} catch {}
+try {
+age.feed(listings);
+} catch {}
+try {
+grades.feed(listings);
+} catch {}
+try {
+refresh.feed(listings, search, own);
+} catch {}
+orders.feed(listings);
+try {
+priceCards.feed(listings);
+} catch {}
+try {
+tradeups.feed(listings);
+} catch {}
+try {
+stickerCards.feed(listings);
+} catch {}
+catalogViews.feed(listings);
+});
+try {
+sales.feed(listings);
+} catch {}
+try {
+pricePanel.feed(listings);
+} catch {}
+try {
+offer.feed(listings);
+} catch {}
+try {
+stickerPanel.feed(listings);
+} catch {}
+},
+...mainTaps(rate, refresh, sales, dbGrades, tiers, sell),
 );
+// ---- src/main-tail.js
 createBargain();
 createPriceFit();
 createDialog();

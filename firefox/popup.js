@@ -1,4 +1,4 @@
-// TrueFloat 1.0.0: popup.js, built from src/settings.js, src/popup.js.
+// TrueFloat 1.1.0: popup.js, built from src/settings.js, src/popup.js.
 (() => {
 'use strict';
 // ---- src/settings.js
@@ -31,6 +31,8 @@ bargain: Object.freeze({ default: true, attr: 'data-tf-bargain' }),
 desc: Object.freeze({ default: true, attr: 'data-tf-desc' }),
 chips: Object.freeze({ default: true, attr: 'data-tf-chips' }),
 sellerRow: Object.freeze({ default: true, attr: 'data-tf-sellerrow' }),
+tidyTop: Object.freeze({ default: true, attr: 'data-tf-tidytop' }),
+ordersLine: Object.freeze({ default: true, attr: 'data-tf-ordersline' }),
 quiet: Object.freeze({ default: true, attr: 'data-tf-quiet' }),
 imageButtons: Object.freeze({ default: true, attr: 'data-tf-imagebuttons' }),
 graph: Object.freeze({ default: true, attr: 'data-tf-graph' }),
@@ -41,6 +43,7 @@ salesGraph: Object.freeze({ default: true, attr: 'data-tf-salesgraph' }),
 salesOpen: Object.freeze({ default: true, attr: 'data-tf-salesopen' }),
 salesTable: Object.freeze({ default: true, attr: 'data-tf-salestable' }),
 salesStats: Object.freeze({ default: true, attr: 'data-tf-salesstats' }),
+salesSmart: Object.freeze({ default: true, attr: 'data-tf-salessmart' }),
 dbGrades: Object.freeze({ default: true, attr: 'data-tf-dbgrades' }),
 sellGrades: Object.freeze({ default: true, attr: 'data-tf-sellgrades' }),
 tierSearch: Object.freeze({ default: true, attr: 'data-tf-tiers' }),
@@ -50,11 +53,13 @@ tierPremium: Object.freeze({ default: true, attr: 'data-tf-premium' }),
 tierStrip: Object.freeze({ default: true, attr: 'data-tf-tierstrip' }),
 patternPicker: Object.freeze({ default: true, attr: 'data-tf-picker' }),
 prices: Object.freeze({ default: true, attr: 'data-tf-prices' }),
-priceRef: Object.freeze({ default: 'buff-ask', attr: 'data-tf-priceref' }),
+priceRef: Object.freeze({ default: 'csfloat-ask', attr: 'data-tf-priceref' }),
 pricesCards: Object.freeze({ default: true, attr: 'data-tf-pricescards' }),
 plainMark: Object.freeze({ default: true, attr: 'data-tf-plainmark' }),
+tradeUp: Object.freeze({ default: true, attr: 'data-tf-tradeup' }),
 pricesDialog: Object.freeze({ default: true, attr: 'data-tf-pricesdialog' }),
 priceNet: Object.freeze({ default: true, attr: 'data-tf-pricenet' }),
+priceGapHide: Object.freeze({ default: true, attr: 'data-tf-pricegaphide' }),
 buyOrders: Object.freeze({ default: true, attr: 'data-tf-buyorders' }),
 menus: Object.freeze({ default: true, attr: 'data-tf-menus' }),
 menuGems: Object.freeze({ default: true, attr: 'data-tf-menugems' }),
@@ -68,12 +73,18 @@ comboTab: Object.freeze({ default: true, attr: 'data-tf-combotab' }),
 stickers: Object.freeze({ default: true, attr: 'data-tf-stickers' }),
 stickerCards: Object.freeze({ default: true, attr: 'data-tf-stickercards' }),
 stickerPanel: Object.freeze({ default: true, attr: 'data-tf-stickerpanel' }),
+stickerRight: Object.freeze({ default: true, attr: 'data-tf-stickerright' }),
 stickerBadge: Object.freeze({ default: true, attr: 'data-tf-stickerbadge' }),
 stickerCompact: Object.freeze({ default: true, attr: 'data-tf-stickercompact' }),
 catalogCards: Object.freeze({ default: true, attr: 'data-tf-catcards' }),
 catalogStickers: Object.freeze({ default: true, attr: 'data-tf-catstickers' }),
 catalogWindow: Object.freeze({ default: true, attr: 'data-tf-catwindow' }),
+collectionWindow: Object.freeze({ default: true, attr: 'data-tf-colwin' }),
+supplyStatus: Object.freeze({ default: true, attr: 'data-tf-supply' }),
 tipBoxes: Object.freeze({ default: true, attr: 'data-tf-tipboxes' }),
+offerAsks: Object.freeze({ default: true, attr: 'data-tf-offerasks' }),
+offerContext: Object.freeze({ default: true, attr: 'data-tf-offerctx' }),
+offerGraded: Object.freeze({ default: true, attr: 'data-tf-offergrade' }),
 });
 // ---- src/popup.js
 const api = globalThis.browser ?? globalThis.chrome;
@@ -111,9 +122,10 @@ const TIES = [
 ['grades', 'dbGrades', 'sellGrades', 'menuGems', 'charms', 'tidyNames', 'oneTier', 'seedNames', 'tierSearch'],
 ['tierSearch', 'tierPlace', 'tierAll', 'tierPremium', 'tierStrip'],
 ['tierStrip', 'patternPicker'],
-['prices', 'priceRef', 'pricesCards', 'pricesDialog', 'menus', 'buyOrders'],
+['prices', 'priceRef', 'pricesCards', 'tradeUp', 'pricesDialog', 'menus', 'buyOrders'],
 ['pricesCards', 'plainMark'],
 ['pricesDialog', 'priceNet'],
+['prices', 'offerAsks'],
 ['stickers', 'stickerCards', 'stickerPanel', 'stickerBadge', 'stickerCompact'],
 ['titles', 'tags', 'watchRow'],
 ['refresh', 'pace', 'fresh', 'tierAlert'],
@@ -164,7 +176,7 @@ tie();
 },
 () => {},
 );
-const dropLocal = () => api.storage.local.remove(['priceNetOn', 'premiumPlain']).catch(() => {});
+const dropLocal = () => api.storage.local.remove(['priceNetOn', 'premiumPlain', 'collectionPrice']).catch(() => {});
 const reset = byId('reset');
 const win = ( (globalThis));
 let [armed, shown, pointer] = [false, 0, false];

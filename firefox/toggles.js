@@ -1,4 +1,4 @@
-// TrueFloat 1.0.0: toggles.js, built from src/settings.js, src/premium-plain.js, src/premium-store.js, src/prices-window.js, src/prices-port.js, src/prices-net-port.js, src/catalog-ask.js, src/toggles.js.
+// TrueFloat 1.1.0: toggles.js, built from src/settings.js, src/premium-plain.js, src/premium-store.js, src/prices-window.js, src/prices-port.js, src/prices-net-port.js, src/collection-price-port.js, src/catalog-ask.js, src/tradeup-ask.js, src/toggles.js.
 (() => {
 'use strict';
 // ---- src/settings.js
@@ -31,6 +31,8 @@ bargain: Object.freeze({ default: true, attr: 'data-tf-bargain' }),
 desc: Object.freeze({ default: true, attr: 'data-tf-desc' }),
 chips: Object.freeze({ default: true, attr: 'data-tf-chips' }),
 sellerRow: Object.freeze({ default: true, attr: 'data-tf-sellerrow' }),
+tidyTop: Object.freeze({ default: true, attr: 'data-tf-tidytop' }),
+ordersLine: Object.freeze({ default: true, attr: 'data-tf-ordersline' }),
 quiet: Object.freeze({ default: true, attr: 'data-tf-quiet' }),
 imageButtons: Object.freeze({ default: true, attr: 'data-tf-imagebuttons' }),
 graph: Object.freeze({ default: true, attr: 'data-tf-graph' }),
@@ -41,6 +43,7 @@ salesGraph: Object.freeze({ default: true, attr: 'data-tf-salesgraph' }),
 salesOpen: Object.freeze({ default: true, attr: 'data-tf-salesopen' }),
 salesTable: Object.freeze({ default: true, attr: 'data-tf-salestable' }),
 salesStats: Object.freeze({ default: true, attr: 'data-tf-salesstats' }),
+salesSmart: Object.freeze({ default: true, attr: 'data-tf-salessmart' }),
 dbGrades: Object.freeze({ default: true, attr: 'data-tf-dbgrades' }),
 sellGrades: Object.freeze({ default: true, attr: 'data-tf-sellgrades' }),
 tierSearch: Object.freeze({ default: true, attr: 'data-tf-tiers' }),
@@ -50,11 +53,13 @@ tierPremium: Object.freeze({ default: true, attr: 'data-tf-premium' }),
 tierStrip: Object.freeze({ default: true, attr: 'data-tf-tierstrip' }),
 patternPicker: Object.freeze({ default: true, attr: 'data-tf-picker' }),
 prices: Object.freeze({ default: true, attr: 'data-tf-prices' }),
-priceRef: Object.freeze({ default: 'buff-ask', attr: 'data-tf-priceref' }),
+priceRef: Object.freeze({ default: 'csfloat-ask', attr: 'data-tf-priceref' }),
 pricesCards: Object.freeze({ default: true, attr: 'data-tf-pricescards' }),
 plainMark: Object.freeze({ default: true, attr: 'data-tf-plainmark' }),
+tradeUp: Object.freeze({ default: true, attr: 'data-tf-tradeup' }),
 pricesDialog: Object.freeze({ default: true, attr: 'data-tf-pricesdialog' }),
 priceNet: Object.freeze({ default: true, attr: 'data-tf-pricenet' }),
+priceGapHide: Object.freeze({ default: true, attr: 'data-tf-pricegaphide' }),
 buyOrders: Object.freeze({ default: true, attr: 'data-tf-buyorders' }),
 menus: Object.freeze({ default: true, attr: 'data-tf-menus' }),
 menuGems: Object.freeze({ default: true, attr: 'data-tf-menugems' }),
@@ -68,12 +73,18 @@ comboTab: Object.freeze({ default: true, attr: 'data-tf-combotab' }),
 stickers: Object.freeze({ default: true, attr: 'data-tf-stickers' }),
 stickerCards: Object.freeze({ default: true, attr: 'data-tf-stickercards' }),
 stickerPanel: Object.freeze({ default: true, attr: 'data-tf-stickerpanel' }),
+stickerRight: Object.freeze({ default: true, attr: 'data-tf-stickerright' }),
 stickerBadge: Object.freeze({ default: true, attr: 'data-tf-stickerbadge' }),
 stickerCompact: Object.freeze({ default: true, attr: 'data-tf-stickercompact' }),
 catalogCards: Object.freeze({ default: true, attr: 'data-tf-catcards' }),
 catalogStickers: Object.freeze({ default: true, attr: 'data-tf-catstickers' }),
 catalogWindow: Object.freeze({ default: true, attr: 'data-tf-catwindow' }),
+collectionWindow: Object.freeze({ default: true, attr: 'data-tf-colwin' }),
+supplyStatus: Object.freeze({ default: true, attr: 'data-tf-supply' }),
 tipBoxes: Object.freeze({ default: true, attr: 'data-tf-tipboxes' }),
+offerAsks: Object.freeze({ default: true, attr: 'data-tf-offerasks' }),
+offerContext: Object.freeze({ default: true, attr: 'data-tf-offerctx' }),
+offerGraded: Object.freeze({ default: true, attr: 'data-tf-offergrade' }),
 });
 // ---- src/premium-plain.js
 const PREMIUM_PLAIN = Object.freeze({
@@ -273,8 +284,47 @@ api.storage.local.get(NET_KEY).then(
 },
 };
 }
+// ---- src/collection-price-port.js
+const COLPRICE_KEY = 'collectionPrice';
+const COLPRICE_WORDS = ['csfloat', 'cheapest', 'buff', 'youpin', 'steam', 'skinport'];
+function colPricePick(d) {
+if (d === null || typeof d !== 'object' || Object.getPrototypeOf(d) !== Object.prototype) return null;
+const own = ( k) => (Object.hasOwn(d, k) ? (d)[k] : null);
+const v = own('v');
+const ok = Object.keys(d).length === 2 && own('tf') === 'colprice' && typeof v === 'string';
+return ok && COLPRICE_WORDS.includes(v) ? v : null;
+}
+function createColPricePort(port) {
+const html = document.documentElement;
+const on = () => html.hasAttribute(TF_SETTINGS.collectionWindow.attr);
+let [sent, puts] = [false, 0];
+port?.addEventListener('message', (m) => {
+const pick = colPricePick(m.data);
+if (pick === null || !on() || ++puts > 100) return;
+api.storage.local.set({ [COLPRICE_KEY]: pick }).catch(() => {});
+});
+return {
+send() {
+if (!port || !on()) return void (sent = false);
+if (sent) return;
+sent = true;
+api.storage.local.get(COLPRICE_KEY).then(
+(got) => {
+const v = got[COLPRICE_KEY];
+if (typeof v === 'string' && COLPRICE_WORDS.includes(v)) port.postMessage({ tf: 'colprice', v });
+},
+() => {},
+);
+},
+};
+}
 // ---- src/catalog-ask.js
-const CATALOG_ATTRS = [TF_SETTINGS.catalogCards.attr, TF_SETTINGS.catalogStickers.attr, TF_SETTINGS.catalogWindow.attr];
+const CATALOG_ATTRS = [
+TF_SETTINGS.catalogCards.attr,
+TF_SETTINGS.catalogStickers.attr,
+TF_SETTINGS.catalogWindow.attr,
+TF_SETTINGS.supplyStatus.attr,
+];
 const catalogOn = () => CATALOG_ATTRS.some((a) => document.documentElement.hasAttribute(a));
 function createCatalogAsk(port) {
 let asked = false;
@@ -288,6 +338,25 @@ api.runtime.sendMessage('catalog').then(
 );
 };
 api.storage.onChanged.addListener((changes, area) => void (area === 'local' && changes.catalog && ask(true)));
+return ask;
+}
+// ---- src/tradeup-ask.js
+const TRADEUP_ATTRS = [TF_SETTINGS.prices.attr, TF_SETTINGS.tradeUp.attr];
+const tradeupOn = () => TRADEUP_ATTRS.every((a) => document.documentElement.hasAttribute(a));
+function createTradeupAsk(port) {
+let [asked, had] = [false, ''];
+const ask = (again) => {
+if (!tradeupOn()) return void (asked = false);
+if (!port || (asked && !again)) return;
+asked = true;
+api.runtime.sendMessage('tradeup').then(
+(text) =>
+typeof text === 'string' && text && text !== had && ((had = text), port.postMessage({ tf: 'tradeup', text })),
+() => {},
+);
+};
+const newer = (c) => c.pricesMeta?.newValue?.hash !== c.pricesMeta?.oldValue?.hash;
+api.storage.onChanged.addListener((c, area) => void (area === 'local' && c.pricesMeta && newer(c) && ask(true)));
 return ask;
 }
 // ---- src/toggles.js
@@ -348,7 +417,9 @@ gradesPort = line.port1;
 } catch {}
 const premiumStore = createPremiumStore(gradesPort);
 const netPort = createNetPort(gradesPort);
+const colPricePort = createColPricePort(gradesPort);
 const catalogAsk = createCatalogAsk(gradesPort);
+const tradeupAsk = createTradeupAsk(gradesPort);
 try {
 gradesPort?.addEventListener('message', (m) => premiumStore.put(m.data));
 createPricePort(gradesPort);
@@ -367,7 +438,7 @@ const read = () =>
 api.storage.sync
 .get()
 .then(mirror, () => {})
-.then(() => (gradesAsk(), premiumStore.send(), netPort.send(), catalogAsk()))
+.then(() => (gradesAsk(), premiumStore.send(), netPort.send(), colPricePort.send(), catalogAsk(), tradeupAsk()))
 .catch(() => {});
 read();
 api.storage.onChanged.addListener((changes, area) =>
