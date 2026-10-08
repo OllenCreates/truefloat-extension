@@ -1,4 +1,4 @@
-// TrueFloat 1.1.0: toggles.js, built from src/settings.js, src/premium-plain.js, src/premium-store.js, src/prices-window.js, src/prices-port.js, src/prices-net-port.js, src/collection-price-port.js, src/catalog-ask.js, src/tradeup-ask.js, src/toggles.js.
+// TrueFloat 1.1.1: toggles.js, built from src/settings.js, src/premium-plain.js, src/premium-store.js, src/prices-window.js, src/prices-port.js, src/prices-net-port.js, src/collection-price-port.js, src/catalog-ask.js, src/tradeup-ask.js, src/toggles.js.
 (() => {
 'use strict';
 // ---- src/settings.js
@@ -53,7 +53,7 @@ tierPremium: Object.freeze({ default: true, attr: 'data-tf-premium' }),
 tierStrip: Object.freeze({ default: true, attr: 'data-tf-tierstrip' }),
 patternPicker: Object.freeze({ default: true, attr: 'data-tf-picker' }),
 prices: Object.freeze({ default: true, attr: 'data-tf-prices' }),
-priceRef: Object.freeze({ default: 'csfloat-ask', attr: 'data-tf-priceref' }),
+priceRef: Object.freeze({ default: 'lowest-ask', attr: 'data-tf-priceref' }),
 pricesCards: Object.freeze({ default: true, attr: 'data-tf-pricescards' }),
 plainMark: Object.freeze({ default: true, attr: 'data-tf-plainmark' }),
 tradeUp: Object.freeze({ default: true, attr: 'data-tf-tradeup' }),
@@ -366,7 +366,8 @@ theme: /^(dark|light)$/,
 cols: /^([2-8]|10|12)$/,
 pace: RegExp(`^(${PACES.join('|')})$`),
 shotRes: /^(full|high|balanced)$/,
-priceRef: /^(buff-ask|buff-bid|youpin-ask|youpin-bid|steam-ask|steam-bid|skinport-ask|csfloat-ask|csfloat-bid)$/,
+priceRef:
+/^(lowest-ask|buff-ask|buff-bid|youpin-ask|youpin-bid|steam-ask|steam-bid|skinport-ask|csfloat-ask|csfloat-bid)$/,
 tierPlace: /^(toolbar|filters|both)$/,
 };
 function mirror(values) {

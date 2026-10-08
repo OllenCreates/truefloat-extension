@@ -1,4 +1,4 @@
-// TrueFloat 1.1.0: popup.js, built from src/settings.js, src/popup.js.
+// TrueFloat 1.1.1: popup.js, built from src/settings.js, src/popup.js.
 (() => {
 'use strict';
 // ---- src/settings.js
@@ -53,7 +53,7 @@ tierPremium: Object.freeze({ default: true, attr: 'data-tf-premium' }),
 tierStrip: Object.freeze({ default: true, attr: 'data-tf-tierstrip' }),
 patternPicker: Object.freeze({ default: true, attr: 'data-tf-picker' }),
 prices: Object.freeze({ default: true, attr: 'data-tf-prices' }),
-priceRef: Object.freeze({ default: 'csfloat-ask', attr: 'data-tf-priceref' }),
+priceRef: Object.freeze({ default: 'lowest-ask', attr: 'data-tf-priceref' }),
 pricesCards: Object.freeze({ default: true, attr: 'data-tf-pricescards' }),
 plainMark: Object.freeze({ default: true, attr: 'data-tf-plainmark' }),
 tradeUp: Object.freeze({ default: true, attr: 'data-tf-tradeup' }),

@@ -1,4 +1,4 @@
-// TrueFloat 1.1.0: background.js, built from src/grades-file.js, src/background.js, src/prices-file.js, src/prices-bg.js, src/catalog-supply-file.js, src/catalog-file.js, src/catalog-bg.js.
+// TrueFloat 1.1.1: background.js, built from src/grades-file.js, src/background.js, src/prices-file.js, src/prices-bg.js, src/catalog-supply-file.js, src/catalog-file.js, src/catalog-bg.js.
 (() => {
 'use strict';
 // ---- src/grades-file.js

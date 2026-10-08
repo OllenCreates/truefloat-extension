@@ -48,6 +48,38 @@
     </div>
   </fieldset>
   <fieldset class="group">
+    <legend><button type="button" aria-expanded="false" aria-controls="g-prices">Prices</button></legend>
+    <div class="rows" id="g-prices" hidden>
+      <label class="row"><span class="name">Market prices</span><input type="checkbox" role="switch" id="prices" name="prices" disabled></label>
+      <div class="credit"><a href="https://openskin.dev" target="_blank" rel="noopener noreferrer">Prices by OpenSkin</a></div>
+      <div class="row">
+        <label class="name" for="priceRef">Price shown</label>
+        <select id="priceRef" name="priceRef" disabled>
+          <option value="lowest-ask">Cheapest ask</option>
+          <option value="csfloat-ask">CSFloat ask</option><option value="csfloat-bid">CSFloat bid</option>
+          <option value="buff-ask">Buff ask</option><option value="buff-bid">Buff bid</option>
+          <option value="youpin-ask">YouPin ask</option><option value="youpin-bid">YouPin bid</option>
+          <option value="steam-ask">Steam ask</option><option value="steam-bid">Steam bid</option>
+          <option value="skinport-ask">Skinport ask</option>
+        </select>
+      </div>
+      <label class="row sub"><span class="name">On cards</span><input type="checkbox" role="switch" id="pricesCards" name="pricesCards" aria-label="Market prices on cards" disabled></label>
+      <label class="row sub"><span class="name">No premium mark</span><input type="checkbox" role="switch" id="plainMark" name="plainMark" disabled></label>
+      <label class="row sub"><span class="name">Trade-up wear</span><input type="checkbox" role="switch" id="tradeUp" name="tradeUp" disabled></label>
+      <label class="row sub"><span class="name">In listing window</span><input type="checkbox" role="switch" id="pricesDialog" name="pricesDialog" aria-label="Market prices in listing window" disabled></label>
+      <label class="row sub"><span class="name">Ask | Net toggle</span><input type="checkbox" role="switch" id="priceNet" name="priceNet" disabled></label>
+      <label class="row sub"><span class="name">Hide extreme price gaps</span><input type="checkbox" role="switch" id="priceGapHide" name="priceGapHide" disabled></label>
+      <label class="row sub"><span class="name">Buy orders</span><input type="checkbox" role="switch" id="buyOrders" name="buyOrders" aria-label="Buy orders in market prices" disabled></label>
+      <label class="row sub"><span class="name">In category menus</span><input type="checkbox" role="switch" id="menus" name="menus" disabled></label>
+      <label class="row"><span class="name">Sticker value</span><input type="checkbox" role="switch" id="stickers" name="stickers" disabled></label>
+      <label class="row sub"><span class="name">On cards</span><input type="checkbox" role="switch" id="stickerCards" name="stickerCards" aria-label="Sticker value on cards" disabled></label>
+      <label class="row sub"><span class="name">In listing window</span><input type="checkbox" role="switch" id="stickerPanel" name="stickerPanel" aria-label="Sticker value in listing window" disabled></label>
+      <label class="row sub"><span class="name">Stickers panel on the right</span><input type="checkbox" role="switch" id="stickerRight" name="stickerRight" disabled></label>
+      <label class="row sub"><span class="name">On listing window image</span><input type="checkbox" role="switch" id="stickerBadge" name="stickerBadge" disabled></label>
+      <label class="row sub"><span class="name">Compact sticker line</span><input type="checkbox" role="switch" id="stickerCompact" name="stickerCompact" disabled></label>
+    </div>
+  </fieldset>
+  <fieldset class="group">
     <legend><button type="button" aria-expanded="false" aria-controls="g-grades">Grades</button></legend>
     <div class="rows" id="g-grades" hidden>
       <label class="row"><span class="name">Pattern grades</span><input type="checkbox" role="switch" id="grades" name="grades" disabled></label>
@@ -79,37 +111,6 @@
       <label class="row sub"><span class="name">Tier premium</span><input type="checkbox" role="switch" id="tierPremium" name="tierPremium" disabled></label>
       <label class="row sub"><span class="name">Summary bar</span><input type="checkbox" role="switch" id="tierStrip" name="tierStrip" disabled></label>
       <label class="row sub"><span class="name">Pattern picker</span><input type="checkbox" role="switch" id="patternPicker" name="patternPicker" disabled></label>
-    </div>
-  </fieldset>
-  <fieldset class="group">
-    <legend><button type="button" aria-expanded="false" aria-controls="g-prices">Prices</button></legend>
-    <div class="rows" id="g-prices" hidden>
-      <label class="row"><span class="name">Market prices</span><input type="checkbox" role="switch" id="prices" name="prices" disabled></label>
-      <div class="credit"><a href="https://openskin.dev" target="_blank" rel="noopener noreferrer">Prices by OpenSkin</a></div>
-      <div class="row sub">
-        <label class="name" for="priceRef">Reference</label>
-        <select id="priceRef" name="priceRef" disabled>
-          <option value="csfloat-ask">CSFloat ask</option><option value="csfloat-bid">CSFloat bid</option>
-          <option value="buff-ask">Buff ask</option><option value="buff-bid">Buff bid</option>
-          <option value="youpin-ask">YouPin ask</option><option value="youpin-bid">YouPin bid</option>
-          <option value="steam-ask">Steam ask</option><option value="steam-bid">Steam bid</option>
-          <option value="skinport-ask">Skinport ask</option>
-        </select>
-      </div>
-      <label class="row sub"><span class="name">On cards</span><input type="checkbox" role="switch" id="pricesCards" name="pricesCards" aria-label="Market prices on cards" disabled></label>
-      <label class="row sub"><span class="name">No premium mark</span><input type="checkbox" role="switch" id="plainMark" name="plainMark" disabled></label>
-      <label class="row sub"><span class="name">Trade-up wear</span><input type="checkbox" role="switch" id="tradeUp" name="tradeUp" disabled></label>
-      <label class="row sub"><span class="name">In listing window</span><input type="checkbox" role="switch" id="pricesDialog" name="pricesDialog" aria-label="Market prices in listing window" disabled></label>
-      <label class="row sub"><span class="name">Ask | Net toggle</span><input type="checkbox" role="switch" id="priceNet" name="priceNet" disabled></label>
-      <label class="row sub"><span class="name">Hide extreme price gaps</span><input type="checkbox" role="switch" id="priceGapHide" name="priceGapHide" disabled></label>
-      <label class="row sub"><span class="name">Buy orders</span><input type="checkbox" role="switch" id="buyOrders" name="buyOrders" aria-label="Buy orders in market prices" disabled></label>
-      <label class="row sub"><span class="name">In category menus</span><input type="checkbox" role="switch" id="menus" name="menus" disabled></label>
-      <label class="row"><span class="name">Sticker value</span><input type="checkbox" role="switch" id="stickers" name="stickers" disabled></label>
-      <label class="row sub"><span class="name">On cards</span><input type="checkbox" role="switch" id="stickerCards" name="stickerCards" aria-label="Sticker value on cards" disabled></label>
-      <label class="row sub"><span class="name">In listing window</span><input type="checkbox" role="switch" id="stickerPanel" name="stickerPanel" aria-label="Sticker value in listing window" disabled></label>
-      <label class="row sub"><span class="name">Stickers panel on the right</span><input type="checkbox" role="switch" id="stickerRight" name="stickerRight" disabled></label>
-      <label class="row sub"><span class="name">On listing window image</span><input type="checkbox" role="switch" id="stickerBadge" name="stickerBadge" disabled></label>
-      <label class="row sub"><span class="name">Compact sticker line</span><input type="checkbox" role="switch" id="stickerCompact" name="stickerCompact" disabled></label>
     </div>
   </fieldset>
   <fieldset class="group">
