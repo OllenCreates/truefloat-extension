@@ -1,11 +1,12 @@
-html[data-tf-tierplace='filters'] .tf-ts-slot {
+html[data-tf-tierplace='filters'] app-search-bar .tf-ts-slot {
   display: none !important;
 }
-html[data-tf-tierplace='toolbar'] .tf-tr {
+html[data-tf-tierplace='toolbar'] app-advanced-search .tf-tr {
   display: none;
 }
 
-html[data-tf-tier] app-advanced-search search-paint-seed-input mat-chip-row {
+html[data-tf-tier] app-advanced-search search-paint-seed-input mat-chip-row,
+html[data-tf-dbtier-on] app-float-db-search search-paint-seed-input mat-chip-row {
   display: none;
 }
 .tf-tr {

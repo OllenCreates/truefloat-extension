@@ -1,4 +1,4 @@
-// TrueFloat 1.1.1: main.js, built from src/main-once.js, src/settings.js, src/selectors.js, src/tap-base.js, src/tap.js, src/tap-fields.js, src/tap-keys.js, src/tap-stickers.js, src/tap-history.js, src/tap-db.js, src/tap-inventory.js, src/tap-orders.js, src/rate.js, src/press.js, src/ticker.js, src/card-marks.js, src/card-hub.js, src/shot-match.js, src/shot-viewport.js, src/shot-sharp.js, src/shots.js, src/card-read.js, src/card-layout.js, src/age.js, src/attention.js, src/fresh.js, src/alert.js, src/refresh.js, src/chip-text.js, src/chip-line.js, src/chip.js, src/bargain.js, src/price-fit.js, src/dialog-about.js, src/dialog.js, src/tip-words.js, src/tip-box.js, src/grade-art-rows.js, src/grade-art.js, src/grade-art-mid.js, src/grade-panel-draw.js, src/grade-panel.js, src/csf-grades.js, src/grade-index.js, src/grade-says.js, src/grade-charm.js, src/grade-port.js, src/catalog-index.js, src/catalog-goods.js, src/catalog-images.js, src/catalog-data.js, src/catalog-supply.js, src/grade-words.js, src/grade-names.js, src/grade-read.js, src/grades.js, src/frame.js, src/sales-units.js, src/sales-smart.js, src/sales-plot.js, src/sales-table.js, src/sales-open.js, src/sales-tip.js, src/sales-graph.js, src/sales.js, src/db-draw.js, src/db-grades.js, src/tier-names.js, src/tier-query.js, src/tier-net.js, src/tier-page.js, src/tier-body.js, src/tier-nav.js, src/tier-pop-guide.js, src/tier-pop.js, src/tier-picker.js, src/tier-patterns.js, src/tier-row.js, src/tier-strip.js, src/premium-plain.js, src/premium-rows.js, src/premium-math.js, src/premium-words.js, src/premium-line.js, src/premium-sample.js, src/premium-books.js, src/tier-premium.js, src/sell-words.js, src/prices-window.js, src/prices-slots.js, src/prices.js, src/prices-money.js, src/prices-view.js, src/prices-fees.js, src/prices-net.js, src/prices-panel-parts.js, src/buy-orders-line.js, src/buy-orders-guard.js, src/buy-orders.js, src/prices-panel-draw.js, src/prices-panel.js, src/prices-chip.js, src/plain-mark.js, src/prices-pop.js, src/prices-hold.js, src/prices-want.js, src/prices-cards.js, src/offer-read.js, src/offer-draw.js, src/offer.js, src/tradeup.js, src/tradeup-cards.js, src/sticker-math.js, src/sticker-pop.js, src/sticker-cards.js, src/sticker-panel-draw.js, src/sticker-panel.js, src/menu-names.js, src/menu-draw.js, src/menu-pop.js, src/menu-keep.js, src/menu-cards.js, src/tier-leave.js, src/tier-fit.js, src/tier-pick.js, src/tier-draw.js, src/tier-bar.js, src/sell-queue.js, src/sell-grades.js, src/combo-tab.js, src/catalog-from.js, src/catalog-fit.js, src/catalog-cards.js, src/catalog-pop.js, src/catalog-strip.js, src/catalog-grid.js, src/catalog-rows.js, src/catalog-window.js, src/catalog-supply-line.js, src/collection-data.js, src/collection-go.js, src/collection-draw.js, src/collection-menu.js, src/collection-parts.js, src/collection-window.js, src/left-tidy.js, src/main-taps.js, src/main.js, src/main-tail.js.
+// TrueFloat 1.1.2: main.js, built from src/main-once.js, src/settings.js, src/selectors.js, src/tap-base.js, src/tap.js, src/tap-fields.js, src/tap-keys.js, src/tap-stickers.js, src/tap-history.js, src/tap-db.js, src/tap-inventory.js, src/tap-orders.js, src/rate.js, src/press.js, src/ticker.js, src/card-marks.js, src/card-hub.js, src/shot-match.js, src/shot-viewport.js, src/shot-sharp.js, src/shots.js, src/card-read.js, src/card-layout.js, src/age.js, src/attention.js, src/fresh.js, src/alert.js, src/refresh.js, src/chip-text.js, src/chip-line.js, src/chip.js, src/bargain.js, src/price-fit.js, src/dialog-about.js, src/dialog.js, src/tip-words.js, src/tip-box.js, src/grade-art-rows.js, src/grade-art.js, src/grade-art-mid.js, src/grade-panel-draw.js, src/grade-panel.js, src/csf-grades.js, src/grade-index.js, src/grade-says.js, src/grade-charm.js, src/grade-port.js, src/catalog-index.js, src/catalog-goods.js, src/catalog-images.js, src/catalog-data.js, src/catalog-supply.js, src/grade-words.js, src/grade-names.js, src/grade-read.js, src/grades.js, src/frame.js, src/sales-units.js, src/sales-smart.js, src/sales-plot.js, src/sales-table.js, src/sales-open.js, src/sales-tip.js, src/sales-graph.js, src/sales.js, src/db-draw.js, src/db-grades.js, src/tier-names.js, src/tier-pages.js, src/tier-query.js, src/tier-net.js, src/tier-page.js, src/tier-body.js, src/tier-nav.js, src/tier-pop-guide.js, src/tier-pop.js, src/tier-picker.js, src/tier-patterns.js, src/tier-row.js, src/tier-strip.js, src/premium-plain.js, src/premium-rows.js, src/premium-math.js, src/premium-words.js, src/premium-line.js, src/premium-sample.js, src/premium-books.js, src/tier-premium.js, src/sell-words.js, src/prices-window.js, src/prices-slots.js, src/prices.js, src/prices-money.js, src/prices-view.js, src/prices-fees.js, src/prices-net.js, src/prices-panel-parts.js, src/buy-orders-line.js, src/buy-orders-guard.js, src/buy-orders.js, src/prices-panel-draw.js, src/prices-panel.js, src/prices-chip.js, src/plain-mark.js, src/prices-pop.js, src/prices-hold.js, src/prices-want.js, src/prices-cards.js, src/offer-read.js, src/offer-draw.js, src/offer.js, src/tradeup.js, src/tradeup-cards.js, src/sticker-rule.js, src/sticker-math.js, src/sticker-pop.js, src/sticker-cards.js, src/sticker-panel-draw.js, src/sticker-panel.js, src/menu-names.js, src/menu-draw.js, src/menu-pop.js, src/menu-keep.js, src/menu-cards.js, src/tier-leave.js, src/tier-fit.js, src/tier-pick.js, src/tier-draw.js, src/tier-bar.js, src/db-tiers.js, src/sell-queue.js, src/sell-grades.js, src/combo-tab.js, src/catalog-from.js, src/catalog-fit.js, src/catalog-cards.js, src/catalog-pop.js, src/catalog-strip.js, src/catalog-grid.js, src/catalog-rows.js, src/catalog-window.js, src/catalog-supply-line.js, src/collection-data.js, src/collection-go.js, src/collection-draw.js, src/collection-menu.js, src/collection-parts.js, src/collection-window.js, src/left-tidy.js, src/main-taps.js, src/main.js, src/main-tail.js.
 (() => {
 'use strict';
 // ---- src/main-once.js
@@ -54,6 +54,7 @@ salesSmart: Object.freeze({ default: true, attr: 'data-tf-salessmart' }),
 dbGrades: Object.freeze({ default: true, attr: 'data-tf-dbgrades' }),
 sellGrades: Object.freeze({ default: true, attr: 'data-tf-sellgrades' }),
 tierSearch: Object.freeze({ default: true, attr: 'data-tf-tiers' }),
+dbTiers: Object.freeze({ default: true, attr: 'data-tf-dbtiers' }),
 tierPlace: Object.freeze({ default: 'both', attr: 'data-tf-tierplace' }),
 tierAll: Object.freeze({ default: true, attr: 'data-tf-tierall' }),
 tierPremium: Object.freeze({ default: true, attr: 'data-tf-premium' }),
@@ -83,6 +84,10 @@ stickerPanel: Object.freeze({ default: true, attr: 'data-tf-stickerpanel' }),
 stickerRight: Object.freeze({ default: true, attr: 'data-tf-stickerright' }),
 stickerBadge: Object.freeze({ default: true, attr: 'data-tf-stickerbadge' }),
 stickerCompact: Object.freeze({ default: true, attr: 'data-tf-stickercompact' }),
+stickerRule: Object.freeze({ default: 'strict', attr: 'data-tf-stickerrule' }),
+stickerW1: Object.freeze({ default: 20, attr: 'data-tf-stickerw1' }),
+stickerW2: Object.freeze({ default: 10, attr: 'data-tf-stickerw2' }),
+stickerW3: Object.freeze({ default: 0, attr: 'data-tf-stickerw3' }),
 catalogCards: Object.freeze({ default: true, attr: 'data-tf-catcards' }),
 catalogStickers: Object.freeze({ default: true, attr: 'data-tf-catstickers' }),
 catalogWindow: Object.freeze({ default: true, attr: 'data-tf-catwindow' }),
@@ -130,6 +135,10 @@ signedIn: 'app-header button.user',
 dbTable: 'app-float-dbtable',
 dbHistoryButton: 'app-float-dbtable button.floatdb-history-btn',
 dbHistoryTitle: 'app-history-dialog .t-text > .title',
+dbSearch: 'app-float-db-search',
+dbBar: 'app-float-dbtable div.search-container > div.bar',
+dbFilterButton: ':scope > div.filter-btn',
+dbResults: 'app-float-dbtable div.search-container > div.table-container',
 menuCard: 'app-skin-bar-overlay app-skin-bar-item > div.item',
 menuText: ':scope > .item-details > .text-container',
 menuFrom: ':scope > .sub-text',
@@ -432,10 +441,8 @@ const ref = tapOwn(entry, 'reference');
 if (ref !== undefined && ref !== null && typeof ref !== 'object') return null;
 const est = tapStNum(tapOwn(ref, 'predicted_price'), TAP_ST_CENTS);
 const charm = tapStNum(tapOwn(ref, 'keychain_price'), TAP_ST_CENTS);
-const overpay = tapOwn(ref, 'sticker_overpay');
-const total = tapStNum(tapOwn(overpay, 'total_price'), TAP_ST_CENTS);
-if (est === false || charm === false || total === false) return null;
-const out = { est, charm, total, st: [], kc: [] };
+if (est === false || charm === false) return null;
+const out = { est, charm, st: [], kc: [] };
 for (let i = 0; i < stickers.length; i++) {
 const s = tapSticker(tapOwn(stickers, i));
 if (!s) return null;
@@ -2879,13 +2886,16 @@ const GRADE_SIDE = { playside: 'Playside', backside: 'Backside', both: 'Both sid
 const GRADE_WORDS = ' one two three four five six seven eight nine i ii iii iv v vi vii viii ix'.split(' ');
 const GRADE_HIDDEN = new Set(['2598147723']);
 const GRADE_HIDDEN_SYSTEMS = new Set(['3785705023|The Relationship Between Pattern and Wear (Float)']);
+const GRADE_LEAD = ['3701293527', '3699311493'];
 const GRADE_WEAR = new Set(['clean']);
 const gradeWorn = (d, s, shown) =>
 GRADE_WEAR.has(d.families[s.family].id) && !/scratch|wear|float/i.test(shown) ? 'scratches' : '';
 function gradeRank(d, si, li) {
 const s = d.systems[si];
 const wear = +GRADE_WEAR.has(d.families[s.family].id);
-return (((li * 2 + wear) * 1001 + s.levels[li].n) * 4096 + s.guide) * 8192 + si;
+const lead = GRADE_LEAD.indexOf(`${d.guides[s.guide].steam_id}`);
+const place = lead < 0 ? GRADE_LEAD.length : lead;
+return (((place * 1024 + li * 2 + wear) * 1001 + s.levels[li].n) * 4096 + s.guide) * 8192 + si;
 }
 function gradeMark(label, key, kind) {
 if (/\btop\s*(\d+|one|two|three|four|five|six|seven|eight|nine|ten)\b/i.test(label)) return '↑';
@@ -3250,6 +3260,18 @@ return key && ok ? `${CAT_SEARCH}${key}=${id}` : null;
 const CAT_STEAM = 'https://community.akamai.steamstatic.com/economy/image/';
 const CAT_STEAM_RE = /^https:\/\/community\.akamai\.steamstatic\.com\/economy\/image\/([A-Za-z0-9_-]{16,400})$/;
 const CAT_HASH = /^[A-Za-z0-9_-]{16,400}$/;
+const CAT_WEARS = ['Factory New', 'Minimal Wear', 'Field-Tested', 'Well-Worn', 'Battle-Scarred'];
+const CAT_PHASE = /^(.*Doppler) \(([^)]{1,32})\)$/;
+function catSkinName(w, p) {
+const [gun, skin, min] = [tapOwn(w, 'name'), tapOwn(p, 'name'), tapOwn(p, 'min')];
+if (!tapMatches(CAT_TEXT, gun) || !tapMatches(CAT_TEXT, skin)) return null;
+const lo = typeof min === 'number' ? min : 0;
+const ph = tapApply(tapExec, CAT_PHASE, [skin]);
+const star = tapOwn(w, 'type') === 'Weapons' ? '' : '★ ';
+const wear = CAT_WEARS[lo < 0.07 ? 0 : lo < 0.15 ? 1 : lo < 0.38 ? 2 : lo < 0.45 ? 3 : 4];
+const name = `${star}${gun} | ${ph ? ph[1] : skin} (${wear})${ph ? ` [${ph[2]}]` : ''}`;
+return tapMatches(CAT_TEXT, name) ? name : null;
+}
 const catSchemaCopy = (() => {
 try {
 return globalThis.Storage.prototype.getItem.bind(globalThis.sessionStorage, 'ITEM_SCHEMA_V2');
@@ -3285,9 +3307,10 @@ const m = new Map();
 catEach(tapOwn(j, 'weapons'), (def, w) =>
 catEach(tapOwn(w, 'paints'), (paint, p) => {
 const url = tapOwn(p, 'image');
-const hit = typeof url === 'string' && tapMatches(CAT_ID, def) && tapMatches(CAT_ID, paint);
-const got = hit ? tapApply(tapExec, CAT_STEAM_RE, [url]) : null;
-if (got && m.size < 65536) m.set(`${+def}:${+paint}`, got[1]);
+const ids = tapMatches(CAT_ID, def) && tapMatches(CAT_ID, paint);
+const got = ids && typeof url === 'string' ? tapApply(tapExec, CAT_STEAM_RE, [url]) : null;
+const v = got ? got[1] : ids && catSkinName(w, p);
+if (v && m.size < 65536) m.set(`${+def}:${+paint}`, v);
 }),
 );
 catEach(tapOwn(j, 'stickers'), (kit, st) => {
@@ -3321,7 +3344,8 @@ f();
 get(def, paint) {
 if (!catInt(def, 65535) || !catInt(paint, 65535) || !ready()) return null;
 const h = hashes?.get(`${def}:${paint}`);
-return tapMatches(CAT_HASH, h) ? CAT_STEAM + h : null;
+if (tapMatches(CAT_HASH, h)) return CAT_STEAM + h;
+return tapMatches(CAT_TEXT, h) ? CAT_IMAGE_HOST + catEncode(h) : null;
 },
 name: (kit) => (catInt(kit, 999999) && ready() && names.get(kit)) || null,
 charm: (id) => catInt(id, 999999) && ready() && charms.has(id),
@@ -3648,7 +3672,7 @@ const GRADE_NAMES_SRC = [
 '517 ★ Paracord Knife|Case Hardened=44|Doppler=415 Ruby,416 Sapphire,417 Black Pearl,418 Phase 1,419 Phase 2,420 Phase 3,421 Phase 4|Fade=38|Marble Fade=413|Scorched=175',
 '516 ★ Shadow Daggers|Case Hardened=44|Doppler=415 Ruby,418 Phase 1,420 Phase 3,421 Phase 4,617 Black Pearl,618 Phase 2,619 Sapphire|Fade=38|Gamma Doppler=568 Emerald,569 Phase 1,570 Phase 2,571 Phase 3,572 Phase 4|Scorched=175',
 '525 ★ Skeleton Knife|Case Hardened=44|Doppler=415 Ruby,416 Sapphire,417 Black Pearl,418 Phase 1,419 Phase 2,420 Phase 3,421 Phase 4|Fade=38|Marble Fade=413|Scorched=175|Urban Masked=143',
-'5034 ★ Specialist Gloves|Big Swell=1437|Cloud Chaser=1440|Crimson Kimono=10033|Crimson Web=10061|Emerald Web=10034|Fade=10063|Lime Polycam=1413|Pillow Punchers=1438',
+'5034 ★ Specialist Gloves|Big Swell=1437|Blackbook=1414|Cloud Chaser=1440|Crimson Kimono=10033|Crimson Web=10061|Emerald Web=10034|Fade=10063|Lime Polycam=1413|Pillow Punchers=1438',
 "5030 ★ Sport Gloves|Amphibious=10045|Arid=10019|Bronze Morph=10046|Hedge Maze=10038|Nocts=10076|Occult=1417|Omega=10047|Pandora's Box=10037|Ultra Violent=1410|Vice=10048|Violet Beadwork=1405",
 '522 ★ Stiletto Knife|Case Hardened=44|Doppler=415 Ruby,416 Sapphire,417 Black Pearl,418 Phase 1,419 Phase 2,420 Phase 3,421 Phase 4|Fade=38|Marble Fade=413|Scorched=175',
 '518 ★ Survival Knife|Case Hardened=44|Doppler=415 Ruby,416 Sapphire,417 Black Pearl,418 Phase 1,419 Phase 2,420 Phase 3,421 Phase 4|Fade=38|Marble Fade=413|Scorched=175',
@@ -3656,13 +3680,16 @@ const GRADE_NAMES_SRC = [
 '519 ★ Ursus Knife|Case Hardened=44|Doppler=415 Ruby,416 Sapphire,417 Black Pearl,418 Phase 1,419 Phase 2,420 Phase 3,421 Phase 4|Fade=38|Marble Fade=413|Scorched=175',
 ];
 const GRADE_CHARMS_SRC = [
+'78 Charm | 8 Ball IGL',
 '21 Charm | Baby Karat CT',
 '30 Charm | Baby Karat T',
+'8 Charm | Big Kev',
 '81 Charm | Butane Buddy',
 "5 Charm | Chicken Lil'",
 '11 Charm | Diamond Dog',
 '18 Charm | Die-cast AK',
 '13 Charm | Diner Dog',
+'25 Charm | Disco MAC',
 '79 Charm | Flash Bomb',
 '73 Charm | Glitter Bomb',
 '7 Charm | Hot Howl',
@@ -3684,6 +3711,7 @@ const GRADE_CHARMS_SRC = [
 '47 Charm | Magmatude',
 '49 Charm | Quick Silver',
 '29 Charm | Semi-Precious',
+'32 Charm | Stitch-Loaded',
 "2 Charm | That's Bananas",
 '20 Charm | Titeenium AWP',
 ];
@@ -4748,9 +4776,9 @@ const parts = [
 ];
 return parts.filter((p, i) => !parts[i + 1]?.toLowerCase().startsWith(p.toLowerCase()));
 }
-function tierItem(ix, search) {
+function tierItem(ix, search, page = TIER_PAGES.search) {
 const q = new URLSearchParams(search);
-const [d, p] = [q.getAll('def_index'), q.getAll('paint_index')];
+const [d, p] = [q.getAll(page.def), q.getAll(page.paint)];
 const key = d.length === 1 && p.length === 1 ? `${+d[0]},${+p[0]}` : '';
 const sys = ix.items.get(key);
 if (!sys) return null;
@@ -4766,6 +4794,33 @@ const differ = new Set(guides.map((g) => g.by)).size > 1;
 for (const g of guides) [g.head, g.aside] = differ ? [g.by, g.name] : [g.name, g.by];
 const [def, paint] = ix.d.systems[sys[0]].items.find(( it) => `${it}` === key);
 return { key, ix, def, paint, guides };
+}
+// ---- src/tier-pages.js
+const TIER_PAGES = Object.freeze({
+search: Object.freeze({
+path: '/search',
+seed: 'paint_seed',
+def: 'def_index',
+paint: 'paint_index',
+ask: TAP_SEARCH,
+wait: 4000,
+}),
+db: Object.freeze({ path: '/db', seed: 'paintSeed', def: 'defIndex', paint: 'paintIndex', ask: TAP_DB, wait: 0 }),
+});
+function tierNativeAt(q, list, page, enc) {
+const parts = [];
+let [at, had] = [-1, -1];
+for (const [k, v] of q) {
+if (k === page.seed) {
+if (had < 0) had = parts.length;
+continue;
+}
+parts.push(`${enc(k)}=${enc(v)}`);
+if (k === page.paint) at = parts.length;
+}
+const where = had >= 0 ? had : at >= 0 ? at : parts.length;
+if (list) parts.splice(where, 0, `${page.seed}=${list}`);
+return `${page.path}${parts.length ? `?${parts.join('&')}` : ''}`;
 }
 // ---- src/tier-query.js
 const TIER_C = 35;
@@ -4818,18 +4873,18 @@ if (row) rows.push(row);
 const next = tapOwn(body, 'cursor');
 return { seeds, rows, n: list.length, next: list.length === 50 && tapMatches(TIER_CURSOR, next) ? next : null };
 }
-function tierKey(search) {
-const all = new TierParams(search).getAll('paint_seed');
+function tierKey(search, seed = 'paint_seed') {
+const all = new TierParams(search).getAll(seed);
 const seeds = all.length === 1 ? all[0].split(',').map(Number) : [];
 return [...new Set(seeds)].sort((a, b) => a - b).join(',');
 }
 const tierKeyOf = (seeds) => [...new Set(seeds)].sort((a, b) => a - b).join(',');
-function tierSeedsOf(search) {
-const all = new TierParams(search).getAll('paint_seed');
+function tierSeedsOf(search, seed = 'paint_seed') {
+const all = new TierParams(search).getAll(seed);
 const seeds = all.length === 1 && all[0] ? all[0].split(',').map(Number) : [];
 return seeds.length <= TIER_CAP && seeds.every((v) => tierInt(v, 0, 1000)) ? seeds : [];
 }
-function tierNative(search, seeds) {
+function tierNative(search, seeds, page = TIER_PAGES.search) {
 const q = new TierParams(search);
 const list = seeds ? tierList(seeds, TIER_CAP) : '';
 if (list === null) return null;
@@ -4840,6 +4895,7 @@ tierEnc(v)
 .replace(/%24/g, '$')
 .replace(/%2C/gi, ',')
 .replace(/%3B/gi, ';');
+if (page !== TIER_PAGES.search) return tierNativeAt(q, list, page, enc);
 const parts = list ? [`paint_seed=${list}`] : [];
 const keys = [...TIER_ORDER.slice(1), ...[...q.keys()].filter((k) => !TIER_ORDER.includes(k))];
 for (const k of new Set(keys)) {
@@ -5086,31 +5142,32 @@ const TIER_WAIT = 4000;
 const TIER_ANSWER = 10000;
 const TIER_FAIL = 'CSFloat did not apply the seed filter';
 const tierSearch = () => location.search;
-const tierAt = () => location.pathname === '/search';
-function createTierNav(ours, lost) {
+const tierAt = (page = TIER_PAGES.search) => location.pathname === page.path;
+function createTierNav(ours, lost, page = TIER_PAGES.search) {
 let [want, n, waits, no, gone] = [ (null), 0, '', 0, ''];
 return {
 go(to, key, replace = false) {
-if ((to !== '/search' && !to.startsWith('/search?')) || !tierAt() || tierKey(tierSearch()) === key) return;
+const [at, seed] = [page.path, page.seed];
+if ((to !== at && !to.startsWith(`${at}?`)) || !tierAt(page) || tierKey(tierSearch(), seed) === key) return;
 const my = ++n;
 want = key;
 const since = tapApply(tierPerfNow, tierPerf, []);
 tapApply(replace ? tierSwap : tierPush, history, [null, '', TAP_ORIGIN + to]);
 tapApply(tierFire, globalThis, [new TierPop('popstate', { state: null })]);
-const here = () => my === n && want === key && tierAt() && tierKey(tierSearch()) === key;
+const here = () => my === n && want === key && tierAt(page) && tierKey(tierSearch(), seed) === key;
 const asked = () => {
 try {
 for (const e of tapApply(tierEntries, tierPerf, ['resource'])) {
 if (e.startTime < since || ours(e.name)) continue;
 const u = new TierURL(e.name);
-if (u.origin === TAP_ORIGIN && u.pathname === TAP_SEARCH && tierKey(u.search) === key) return true;
+if (u.origin === TAP_ORIGIN && u.pathname === page.ask && tierKey(u.search, seed) === key) return true;
 }
 } catch {}
 return false;
 };
 const load = () => (replace ? location.replace(TAP_ORIGIN + to) : location.assign(TAP_ORIGIN + to));
-const check = () => here() && !asked() && ((want = null), load());
-tapApply(tierLater, globalThis, [check, TIER_WAIT]);
+const check = () => !!page.wait && here() && !asked() && ((want = null), load());
+tapApply(tierLater, globalThis, [check, page.wait]);
 },
 opened(query) {
 const [k, my] = [tierKey(query), ++no];
@@ -5206,7 +5263,7 @@ levels[0].label.toLowerCase() !== name.toLowerCase()
 return { one, row, lt };
 }
 // ---- src/tier-pop.js
-function createTierPop(item, on, chose, clear, worth) {
+function createTierPop(item, on, chose, clear, worth, browse = true) {
 const html = document.documentElement;
 let [pop, anchor] = [null, null];
 const sys = ( si) => item().ix.d.systems[si];
@@ -5248,7 +5305,7 @@ tierEl('span', 'tf-ts-t', said),
 ];
 const cls = one ? 'tf-ts-c tf-ts-one' : 'tf-ts-c';
 const quiet = one ? [lt, note || l.note || ''].filter(Boolean).join(' ') : (l.note ?? '');
-const named = tierNamed(l);
+const named = browse && tierNamed(l);
 const b = tierButton(cls, () => chose(gi, si, li, false), gem, ...words, ...nt(quiet), ...val, n);
 b.ariaPressed = `${now?.g === gi && now.si === si && now.li === li}`;
 const tip = tierLevelTip(l, v, named);
@@ -5557,7 +5614,7 @@ reset,
 // ---- src/tier-row.js
 const TIER_ON = 'data-tf-tier';
 const tierPartsWhy = (n) => `CSFloat searches ${TIER_CAP} patterns at a time, so this tier comes in ${n} parts`;
-function createTierRow(pick, clear, show) {
+function createTierRow(pick, clear, show, host = 'app-advanced-search', onAttr = TIER_ON) {
 const html = document.documentElement;
 let drawn = '';
 function make(s) {
@@ -5597,33 +5654,34 @@ return row;
 }
 return {
 draw(s) {
-html.toggleAttribute(TIER_ON, !!s?.on);
+html.toggleAttribute(onAttr, !!s?.on);
+const [rowsAt, ours] = [`${host} .tf-tr`, `${host} .tf-tr, ${host} .tf-tr-chip`];
 const stamp = s ? `${s.stamp}|${artStamp()}|${s.prem?.text}|${s.prem?.title}` : '';
 let had = (null);
 if (stamp !== drawn) {
 drawn = stamp;
-const [act, rows] = [document.activeElement, [...document.querySelectorAll('.tf-tr')]];
+const [act, rows] = [document.activeElement, [...document.querySelectorAll(rowsAt)]];
 const ri = act ? rows.findIndex((r) => r.contains(act)) : -1;
 const cls = ri >= 0 ? (act?.classList[0] ?? '') : '';
 if (cls) had = [ri, cls, [...rows[ri].getElementsByClassName(cls)].indexOf( (act))];
-for (const el of document.querySelectorAll('.tf-tr, .tf-tr-chip')) el.remove();
+for (const el of document.querySelectorAll(ours)) el.remove();
 }
 if (!s) return;
-for (const input of document.querySelectorAll('app-advanced-search search-paint-seed-input')) {
+for (const input of document.querySelectorAll(`${host} search-paint-seed-input`)) {
 const at = input.closest('app-search-row');
 if (at && !at.previousElementSibling?.matches('.tf-tr')) at.before(make(s));
 if (s.on && !input.previousElementSibling?.matches('.tf-tr-chip'))
 input.before(tierEl('span', 'tf-tr-chip', s.chip));
 }
 if (!had) return;
-const row = document.querySelectorAll('.tf-tr')[had[0]];
+const row = document.querySelectorAll(rowsAt)[had[0]];
 const to = row?.getElementsByClassName(had[1])[had[2]] ?? row?.querySelector('.tf-tr-pick');
 if (to instanceof HTMLElement) to.focus({ preventScroll: true });
 },
 };
 }
 // ---- src/tier-strip.js
-function createTierStrip(clear, show) {
+function createTierStrip(clear, show, anchor = 'app-search-bar', before = false) {
 let [el, drawn] = [ (null), ''];
 const bar = tierEl('span', 'tf-tstrip-bar', tierEl('span', ''));
 const seg = (text, lead = '', title = '', cls = '') => {
@@ -5695,13 +5753,14 @@ return [tierEl('span', 'tf-tstrip-body', ...kids), end];
 }
 return {
 draw(s) {
-const host = document.querySelector('app-search-bar');
+const host = document.querySelector(anchor);
 if (!s || !host) return void (el?.remove(), ([el, drawn] = [null, '']));
-if (el && el.previousElementSibling !== host) (el.remove(), ([el, drawn] = [null, '']));
+if (el && (before ? el.nextElementSibling : el.previousElementSibling) !== host)
+(el.remove(), ([el, drawn] = [null, '']));
 if (!el) {
 el = tierEl('div', 'tf-tstrip');
 [el.role, el.ariaLabel] = ['group', 'Tier search'];
-host.after(el);
+before ? host.before(el) : host.after(el);
 }
 if (drawn !== s.stamp) {
 const act = document.activeElement;
@@ -8201,34 +8260,54 @@ byCard.resync(fresh, synced);
 },
 };
 }
-// ---- src/sticker-math.js
-const STICKER_KEEP = Object.freeze([
-Object.freeze({ below: 0.25, keep: 0.6 }),
-Object.freeze({ below: 0.5, keep: 0.3 }),
-Object.freeze({ below: 0.9, keep: 0.1 }),
-Object.freeze({ below: Infinity, keep: 0 }),
+// ---- src/sticker-rule.js
+const STICKER_EDGES = Object.freeze([0.1, 0.25]);
+const STICKER_CHEAP = 1000;
+const STICKER_PCT = /^(100|[1-9]?\d)$/;
+function stickerRuleOf(id, keeps, cheap) {
+const bands = [];
+for (let i = 0; i <= STICKER_EDGES.length; i++)
+bands[i] = Object.freeze({ below: i < STICKER_EDGES.length ? STICKER_EDGES[i] : Infinity, keep: keeps[i] });
+return Object.freeze({ id, bands: Object.freeze(bands), cheap, key: `${id} ${keeps.join(' ')} ${cheap}` });
+}
+const STICKER_STRICT = stickerRuleOf('strict', [0.2, 0.1, 0], STICKER_CHEAP);
+const STICKER_RULES = Object.freeze({
+strict: STICKER_STRICT,
+guides: stickerRuleOf('guides', [0.6, 0.3, 0.1], STICKER_CHEAP),
+full: stickerRuleOf('full', [1, 1, 1], 0),
+});
+const STICKER_RULE_ATTRS = Object.freeze([
+TF_SETTINGS.stickerRule.attr,
+TF_SETTINGS.stickerW1.attr,
+TF_SETTINGS.stickerW2.attr,
+TF_SETTINGS.stickerW3.attr,
 ]);
+function stickerRule() {
+const html = document.documentElement;
+const id = html.getAttribute(STICKER_RULE_ATTRS[0]);
+if (id === 'guides' || id === 'full') return STICKER_RULES[id];
+if (id !== 'custom') return STICKER_STRICT;
+const keeps = [];
+for (let i = 1; i < STICKER_RULE_ATTRS.length; i++) {
+const v = html.getAttribute(STICKER_RULE_ATTRS[i]);
+if (!tapMatches(STICKER_PCT, v)) return STICKER_STRICT;
+keeps[i - 1] = +v / 100;
+}
+return stickerRuleOf('custom', keeps, STICKER_CHEAP);
+}
+function stickerKeep(wear, price, rule) {
+if (!(wear > 0)) return 1;
+if (price !== null && price < rule.cheap) return 0;
+const pct = stickerRound(wear * 100);
+let i = 0;
+while (pct >= rule.bands[i].below * 100) i++;
+return rule.bands[i].keep;
+}
+// ---- src/sticker-math.js
 const STICKER_CRAFT = 4;
 const STICKER_FREE = 100;
 const STICKER_CHECK = Object.freeze({ few: 5, far: 1.5, gap: 100, steam: 2, gone: 2880 });
 const [stickerFixed, stickerRound] = [Number.prototype.toFixed, Math.round];
-function stickerKeep(wear) {
-if (!(wear > 0)) return 1;
-for (let i = 0; i < STICKER_KEEP.length; i++) if (wear < STICKER_KEEP[i].below) return STICKER_KEEP[i].keep;
-return 0;
-}
-function stickerBands() {
-let s = 'clean 100%';
-let from = 0;
-const n = ( x) => stickerRound(x * 100);
-for (let i = 0; i < STICKER_KEEP.length; i++) {
-const { below, keep } = STICKER_KEEP[i];
-const to = below === Infinity ? '% and over' : `–${n(below)}%`;
-s += `, ${from ? `${n(from)}${to}` : `wear under ${n(below)}%`} ${n(keep)}%`;
-from = below;
-}
-return s;
-}
 const stickerPct = (x) => (x * 100 > 100 ? '>100%' : `${tapApply(stickerFixed, x * 100, [1])}%`);
 function stickerSame(a, b) {
 if (a.st.length !== b.st.length || a.kc.length !== b.kc.length) return false;
@@ -8241,14 +8320,13 @@ return true;
 const STICKER_TYPE = /^(?:(?:Sticker|Patch|Charm|Sticker Slab|Souvenir Charm) \| )?(.+)$/;
 const STICKER_REEL = /^(?:Souvenir )?Charm \| (.{1,40}?) Highlight \| (\S{1,40}) (.{1,60})$/;
 const stickerLabel = (name) => tapApply(tapExec, STICKER_TYPE, [name])?.[1] ?? name;
-function stickerModel(f, price, bid = false) {
+function stickerModel(f, price, bid = false, rule = STICKER_STRICT) {
 const groups = [];
-let [clean, counted, scraped, missing, craft] = [0, 0, 0, 0, 0];
+let [clean, counted, scraped, craft] = [0, 0, 0, 0];
 for (let i = 0; i < f.st.length; i++) {
 const s = f.st[i];
-const keep = stickerKeep(s.wear);
+const keep = stickerKeep(s.wear, s.price, rule);
 if (keep < 1) scraped++;
-if (s.price === null) missing++;
 clean += s.price ?? 0;
 counted += (s.price ?? 0) * keep;
 let g = null;
@@ -8271,9 +8349,7 @@ const est = f.est;
 const over = est === null ? null : price - est;
 const sp = over === null || over <= 0 ? null : counted > 0 ? over / counted : Infinity;
 const free = !bid && over !== null && over <= 0 && counted >= STICKER_FREE;
-const base = f.total ?? (missing ? 0 : clean);
-const csf = over !== null && over >= 0 && base > 0 ? over / base : null;
-return { price, est, clean, counted, groups, craft, scraped, missing, sp, free, csf, kc: f.kc };
+return { price, est, clean, counted, groups, craft, scraped, sp, free, kc: f.kc, rule };
 }
 function stickerReel(name) {
 const m = tapApply(tapExec, STICKER_REEL, [name]);
@@ -8327,21 +8403,41 @@ else if (m.scraped && !none) parts[parts.length] = `${m.scraped} scraped`;
 for (let i = 0; i < m.kc.length; i++) if (m.kc[i].kind === 'slab') parts[parts.length] = 'slab';
 return [parts, m.free];
 }
-function stickerBandTip() {
-const rows = stickerBands()
-.split(', ')
-.map((b) => ({ c: [`${b[0].toUpperCase()}${b.slice(1, b.lastIndexOf(' '))}`, b.slice(b.lastIndexOf(' ') + 1)] }));
+function stickerBandRows(rule, money) {
+const n = ( x) => `${stickerRound(x * 100)}%`;
+const rows = [['clean', '100%']];
+let from = 0;
+for (let i = 0; i < rule.bands.length; i++) {
+const { below, keep } = rule.bands[i];
+if (i + 1 < rule.bands.length && rule.bands[i + 1].keep === keep) continue;
+const [lo, hi] = [from ? n(from) : '', below === Infinity ? '' : n(below)];
+const what =
+!lo && !hi ? 'any wear' : !lo ? `wear under ${hi}` : !hi ? `${lo} and over` : `${lo.slice(0, -1)}–${hi}`;
+rows[rows.length] = [what, n(keep)];
+from = below;
+}
+if (rule.cheap) rows[rows.length] = [`scraped under ${money(rule.cheap)}`, '0%'];
+return rows;
+}
+function stickerBandTip(rule) {
+const rows = stickerBandRows(rule, (c) => stickerMoney(c, true)).map(([a, b]) => ({
+c: [`${a[0].toUpperCase()}${a.slice(1)}`, b],
+}));
 return { head: 'Scraped stickers count less', rows, source: "CSFloat's own SP counts them at full value." };
 }
 const stickerShort = (label) => label.split(' | ')[0] || label;
+function stickerName(m, g) {
+const short = stickerShort(g.label);
+const same = m.groups.some((h) => h.label !== g.label && stickerShort(h.label) === short);
+return `${g.n > 1 ? `${g.n}× ` : ''}${same ? g.label : short}`;
+}
 function stickerTip(m) {
 const rows = [];
 for (let i = 0; i < m.groups.length; i++) {
 const g = m.groups[i];
-const worn = g.keep < 1 ? `${stickerRound(g.wear * 100)}% scraped` : '';
-const mid = [worn, g.craft ? `${g.craft}× craft` : ''].filter(Boolean).join(' · ');
-const name = `${g.n > 1 ? `${g.n}× ` : ''}${stickerShort(g.label)}`;
-rows[rows.length] = { c: [name, worn ? [mid, 'warn'] : mid, g.each === null ? '—' : stickerMoney(g.counted)] };
+const worn = g.wear > 0 ? `${stickerRound(g.wear * 100)}% scraped` : '';
+const at = g.each === null ? '—' : stickerMoney(g.counted);
+rows[rows.length] = { c: [stickerName(m, g), worn ? [worn, 'warn'] : '', at] };
 }
 for (let i = 0; i < m.kc.length; i++) {
 const k = m.kc[i];
@@ -8360,14 +8456,18 @@ said === stickerMoney(0)
 : m.sp === null
 ? `${said} under the estimate${free}`
 : `${said} over the estimate: ${why}`;
-const csf = m.csf === null ? '' : `\nCSFloat's SP ${stickerPct(m.csf)} counts scraped stickers at full value.`;
 return {
 head: 'Stickers',
-aside: `${stickerMoney(m.counted)} of ${stickerMoney(m.clean)}`,
+aside: m.counted < m.clean ? `${stickerMoney(m.counted)} of ${stickerMoney(m.clean)}` : stickerMoney(m.clean),
 rows,
 note,
 tone: m.free ? 'good' : undefined,
-source: `Scraped stickers count less: ${stickerBands()}.${csf}`,
+source:
+m.rule.id === 'full'
+? 'Scraped stickers count in full.'
+: `Counted by wear: ${stickerBandRows(m.rule, (c) => stickerMoney(c, true))
+.map(([a, b]) => `${a} ${b}`)
+.join(', ')}`,
 };
 }
 // ---- src/sticker-cards.js
@@ -8424,9 +8524,10 @@ const box = on() && html.hasAttribute(attrs[w ? 2 : 1]) ? card.querySelector(TF_
 const key = box ? byFacts.keyOf(card) : null;
 const [facts, cents] = [byFacts.idFor(key), byPrice.idFor(key)];
 if (facts && cents) priceSeen(cents, card.querySelector(TF_SELECTORS.price)?.textContent);
+const rule = stickerRule();
 const m =
 box && facts && cents
-? stickerModel( (facts), cents, !!card.querySelector(TF_SELECTORS.auction))
+? stickerModel( (facts), cents, !!card.querySelector(TF_SELECTORS.auction), rule)
 : null;
 const said = m ? stickerCardParts(m, html.hasAttribute(compact)) : null;
 if (!box || !m || !said) return clear(card);
@@ -8468,7 +8569,7 @@ const syncAll = () => {
 for (const card of document.querySelectorAll(TF_SELECTORS.card)) synced(card);
 };
 cardWatch({
-attrs: [...attrs, compact],
+attrs: [...attrs, compact, ...STICKER_RULE_ATTRS],
 setting: syncAll,
 cards(changed, added) {
 for (const card of new Set([...changed, ...added])) synced(card);
@@ -8486,19 +8587,15 @@ if (on()) byFacts.resync(fresh, synced);
 };
 }
 // ---- src/sticker-panel-draw.js
-const stickerNum = (c) => (priceFinite(c) && c >= 0 ? priceNumber(stickerRound(c)) : '');
-function stickerRow(list, name, amount, bits, cls = '', amountCls = '') {
+let stickerFull = false;
+function stickerRow(list, name, value, sub = '', cls = '') {
 const row = stickerEl('div', `tf-pw-row${cls}`, undefined, list);
 const top = stickerEl('div', 'tf-pw-top', undefined, row);
 const who = stickerEl('span', 'tf-pw-who', undefined, top);
 stickerEl('span', 'tf-pw-dot', undefined, who).ariaHidden = 'true';
 stickerEl('span', 'tf-pw-name', name, who).title = name;
-stickerEl('span', `tf-pw-ask${amountCls}`, amount, top);
-const sub = stickerEl('div', 'tf-pw-sub', undefined, row);
-for (let i = 0; i < bits.length; i++) {
-if (i) stickerEl('span', 'tf-pw-sep', undefined, sub).ariaHidden = 'true';
-stickerEl('span', bits[i][1] || 'tf-pw-bit', bits[i][0], sub);
-}
+stickerEl('span', 'tf-pw-ask', value, top);
+if (sub) stickerEl('div', 'tf-pw-sub tf-sw-worn', sub, row);
 return row;
 }
 function stickerFlagBit(row, f, ref, qty) {
@@ -8516,29 +8613,33 @@ body: f.far
 `${f.most} at most.`,
 });
 }
+function stickerFoot(m, full) {
+if (m.est === null) return null;
+const gap = stickerMoney(Math.abs(m.price - m.est), true);
+const free = m.free && !full ? 'Stickers free' : '';
+if (gap === stickerMoney(0, true)) return [free || 'At estimate', ''];
+if (m.price < m.est) return [free, `${gap} under estimate`];
+const sp = full ? (m.clean > 0 ? (m.price - m.est) / m.clean : null) : m.counted > 0 ? m.sp : null;
+const none = !full && m.clean > 0 ? 'All scraped' : 'No sticker prices';
+return [sp === null ? none : `${stickerPct(sp)} SP`, `${gap} over estimate`];
+}
 function stickerPanelDraw(m, flags) {
 const box = stickerEl('section', 'tf-pw tf-sw');
 const title = m.groups.length ? 'Stickers' : 'Charm';
 box.ariaLabel = title;
 const head = stickerEl('div', 'tf-pw-head', undefined, box);
 stickerEl('span', 'tf-pw-title', title, head);
-const what = m.groups.length ? `counted ${stickerNum(m.counted)} · ${priceUnit()}` : priceUnit();
-tipBox.tie(stickerEl('span', 'tf-pw-what', what, head), stickerBandTip());
 const list = stickerEl('div', 'tf-pw-list', undefined, box);
+const foot = stickerEl('div', 'tf-sw-foot', undefined, box);
+const fill = () => {
+const full = stickerFull && m.counted < m.clean;
+list.replaceChildren();
+foot.replaceChildren();
 for (let i = 0; i < m.groups.length; i++) {
 const g = m.groups[i];
-const bits = [];
-const each = g.each === null ? '' : stickerNum(g.each);
-if (g.each === null) bits[bits.length] = ['no reference price', ''];
-else if (g.keep < 1) {
-bits[bits.length] = [`${each} clean${g.n > 1 ? ' each' : ''}`, ''];
-bits[bits.length] = [`${stickerRound(g.wear * 100)}% scraped`, 'tf-pw-bit tf-sw-worn'];
-bits[bits.length] = [`counted ${stickerRound(g.keep * 100)}%`, ''];
-} else bits[bits.length] = [g.n > 1 ? `${each} each` : 'clean', ''];
-if (g.craft) bits[bits.length] = [`${g.craft}× craft`, ''];
-const name = `${g.n > 1 ? `${g.n}× ` : ''}${g.label}`;
-const amount = g.each === null ? '—' : stickerNum(g.counted);
-stickerFlagBit(stickerRow(list, name, amount, bits, '', g.keep < 1 ? ' tf-sw-dim' : ''), flags[i], g.each, g.qty);
+const value = g.each === null ? '—' : stickerMoney(full ? g.each * g.n : g.counted, true);
+const worn = g.wear > 0 ? `${stickerRound(g.wear * 100)}% scraped` : '';
+stickerFlagBit(stickerRow(list, stickerName(m, g), value, worn), flags[i], g.each, g.qty);
 }
 for (let i = 0; i < m.kc.length; i++) {
 const k = m.kc[i];
@@ -8546,54 +8647,38 @@ const reel = k.kind === 'reel' ? stickerReel(k.name) : null;
 const label = stickerLabel(k.name);
 const name =
 k.kind === 'slab' ? `Slab: ${label}` : reel ? `Highlight: ${reel.player} ${reel.play}` : `Charm: ${label}`;
-const bits = [];
-if (k.kind === 'slab') bits[bits.length] = ['sealed sticker', ''];
-if (reel) bits[bits.length] = [reel.event, ''];
-if (k.pattern !== null && k.kind === 'charm') bits[bits.length] = [`pattern ${k.pattern}`, ''];
-bits[bits.length] = ["in CSFloat's estimate", ''];
-const row = stickerRow(list, name, k.price === null ? '—' : stickerNum(k.price), bits);
+const row = stickerRow(list, name, 'in estimate', '', ' tf-sw-dim');
 if (k.kind === 'slab') stickerFlagBit(row, flags[m.groups.length + i], k.price, k.qty);
 }
-if (m.est !== null && m.groups.length) {
-const est = stickerNum(m.est);
-const gap = stickerNum(m.price >= m.est ? m.price - m.est : m.est - m.price);
-const even = gap === stickerNum(0);
-const up = m.price > m.est && !even;
-const name = m.free
-? 'Stickers free'
-: m.sp === null || even
-? `${even ? 'At' : 'Under'} the estimate`
-: m.counted > 0
-? `SP ${stickerPct(m.sp)}`
-: m.clean > 0
-? 'All scraped'
-: 'No sticker prices';
-const csf = m.csf !== null ? `CSFloat ${stickerPct(m.csf)}` : 'no CSFloat SP';
-const vs = even
-? `at the estimate of ${est}`
-: up
-? `over the estimate of ${est}`
-: m.free
-? `under the estimate of ${est}`
-: `estimate ${est}`;
-const bits = [
-[vs, ''],
-[csf, ''],
-];
-const amount = `${even ? '' : up ? '+' : '−'}${gap}`;
-const row = stickerRow(list, name, amount, bits, ` tf-pw-me${m.free ? ' tf-sw-free' : ''}`);
-row.querySelector('.tf-pw-name')?.removeAttribute('title');
-Object.assign(row, { tabIndex: 0, role: 'group', ariaLabel: `${name} ${amount}, ${vs}, ${csf}` });
-const { note, tone, source } = stickerTip(m);
-tipBox.tie(row, {
-body: "SP: how much of the counted sticker value this listing asks over CSFloat's estimate for the skin, float and charm included.",
-note,
-tone,
-source,
-side: '.tf-sw',
-over: true,
+const said = m.groups.length ? stickerFoot(m, full) : null;
+if (!said) return;
+if (said[0]) stickerEl('span', m.free && !full ? 'tf-sw-free' : 'tf-sw-lead', said[0], foot);
+if (said[1]) stickerEl('span', 'tf-sw-tail', `${said[0] ? ' · ' : ''}${said[1]}`, foot);
+};
+if (m.counted < m.clean) {
+const group = stickerEl('span', 'tf-sw-mode', undefined, head);
+group.setAttribute('role', 'group');
+group.ariaLabel = 'Sticker value as';
+const words = [];
+for (let i = 0; i < 2; i++) {
+const b = salesButton((i === 1) === stickerFull, () => {
+stickerFull = i === 1;
+for (let j = 0; j < 2; j++) words[j].setAttribute('aria-pressed', String(j === i));
+fill();
 });
+b.className = 'tf-pw-word';
+b.textContent = i ? 'Full' : 'Counted';
+group.append(b);
+words[i] = b;
+tipBox.tie(
+b,
+i
+? { head: 'Full value', body: "Every sticker at its clean price, the way CSFloat's own SP counts them." }
+: stickerBandTip(m.rule),
+);
 }
+}
+fill();
 return list.childElementCount ? box : null;
 }
 // ---- src/sticker-panel.js
@@ -8619,13 +8704,15 @@ if (shown && shown.nextElementSibling !== next) next.before(shown);
 }
 function draw(m, flags, below) {
 const next = stickerPanelDraw(m, flags);
-const had = !!shown?.contains(document.activeElement);
+const word = shown?.contains(document.activeElement) ? document.activeElement?.textContent : '';
 if (shown && next) shown.replaceWith(next);
 else shown?.remove();
 shown = next;
 place(below);
-if (had)
-(next?.querySelector('.tf-pw-me'))?.focus({ preventScroll: true });
+if (word) {
+const same = [...(next?.querySelectorAll('button') ?? [])].find((b) => b.textContent === word);
+same?.focus({ preventScroll: true });
+}
 }
 function check( m, below, at) {
 const asks = [];
@@ -8659,14 +8746,15 @@ const [facts, cents] = [byFacts.idFor(key), byPrice.idFor(key)];
 if (below && facts && cents) priceSeen(cents, card?.querySelector(TF_SELECTORS.price)?.textContent);
 const priced = html.hasAttribute(TF_SETTINGS.prices.attr);
 const bid = !!card?.querySelector(TF_SELECTORS.auction);
-const now = below && facts && cents ? `${key}\n${cents}\n${priceUnit()}\n${priced}\n${bid}` : '';
+const rule = stickerRule();
+const now = below && facts && cents ? `${key}\n${cents}\n${priceUnit()}\n${priced}\n${bid}\n${rule.key}` : '';
 if (now === want) {
 if (below) place(below);
 return;
 }
 [want, turn] = [now, turn + 1];
 if (!below || !now) return void (shown?.remove(), (shown = null));
-const m = stickerModel( (facts), (cents), bid);
+const m = stickerModel( (facts), (cents), bid, rule);
 draw(m, [], below);
 if (shown && priced) check(m, below, turn);
 }
@@ -8679,7 +8767,7 @@ sync();
 } catch {}
 },
 ]));
-const look = [...attrs, TF_SETTINGS.prices.attr, TF_SETTINGS.stickerRight.attr];
+const look = [...attrs, TF_SETTINGS.prices.attr, TF_SETTINGS.stickerRight.attr, ...STICKER_RULE_ATTRS];
 const follow = () => dialogFollow(watch, look, { attributeFilter: ['href'] });
 const watch = new MutationObserver(() => {
 follow();
@@ -9548,6 +9636,130 @@ if (!tierApplied(listings, query, t.item.def, t.item.paint)) ((t.failed = true),
 else if (pats.seen(listings, query, raw)) tick();
 },
 };
+}
+// ---- src/db-tiers.js
+function createDbTiers(index) {
+const [html, page, S] = [document.documentElement, TIER_PAGES.db, TF_SELECTORS];
+const attrs = [TF_SETTINGS.dbTiers.attr, TF_SETTINGS.tierSearch.attr, TF_SETTINGS.tierStrip.attr, ...ART_ATTRS];
+const t = { item: null, sel: null };
+const [none, quiet] = [() => false, () => {}];
+const nav = createTierNav(none, quiet, page);
+const mem = createTierMemory();
+const key = () => tierKey(tierSearch(), page.seed);
+const part = () => (t.sel ? t.sel.keys.indexOf(key()) : -1);
+const pop = createTierPop(
+() => t.item,
+() => (part() >= 0 ? t.sel : null),
+choose,
+clear,
+() => null,
+false,
+);
+const step = tierPaced(show);
+const row = createTierRow((b) => pop.toggle(b), clear, step, S.dbSearch, 'data-tf-dbtier-on');
+const strip = createTierStrip(clear, step, S.dbResults, true);
+function show(i) {
+const to = t.sel && tierNative(tierSearch(), t.sel.parts[i], page);
+if (to && t.sel) nav.go(to, t.sel.keys[i]);
+}
+function choose(g, si, li) {
+pop.close(true);
+const [it, lv] = [t.item, tierLevels(pop.sys(si))[li]];
+if (!it || !lv) return;
+const before = mem.ours(key(), it.key)?.before ?? tierSeedsOf(tierSearch(), page.seed);
+const parts = tierParts(lv.seeds, null);
+t.sel = { g, si, li, lv, parts, keys: parts.map(tierKeyOf), stop: '', until: 0 };
+mem.keep(it, t.sel, before);
+show(0);
+tick();
+}
+function clear() {
+const mine = mem.ours(key(), t.item?.key);
+t.sel = null;
+const before = mine?.before ?? [];
+const to = mine && tierNative(tierSearch(), before.length ? before : null, page);
+if (to) nav.go(to, tierKeyOf(before));
+tick();
+}
+let missed = '';
+function recognize( k) {
+if (!k || missed === `${t.item.key}|${k}`) return;
+missed = `${t.item.key}|${k}`;
+t.item.guides.forEach(( g, gi) => {
+for (const si of g.systems)
+tierLevels(pop.sys(si)).forEach((lv, li) => {
+const parts = tierParts(lv.seeds, null);
+const keys = parts.map(tierKeyOf);
+if (t.sel || !keys.includes(k)) return;
+mem.keep(t.item, (t.sel = { g: gi, si, li, lv, parts, keys, stop: '', until: 0 }), []);
+});
+});
+}
+let slot = null;
+let drawn = '';
+function draw() {
+const i = part();
+const on = i >= 0 && t.sel ? t.sel : null;
+const g = t.item?.guides[on?.g ?? 0];
+const label = on ? on.lv.label : '';
+const path = on && g ? tierPath(t.item, g, pop.sysName(on.si), on.lv.whole ? '' : label) : [];
+const [n, parts] = [on ? on.parts[i].length : 0, on?.parts.length ?? 0];
+const tail = parts > 1 ? ` · ${i + 1}/${parts}` : '';
+const si = on?.si ?? g?.systems[0];
+const mark = (top = false) =>
+t.item ? pop.glyph(si, on?.lv.mark ?? (top ? (tierLevels(pop.sys(si))[0]?.mark ?? '') : ''), 18) : null;
+const stamp = `${t.item?.key}|${on ? on.keys[i] : ''}|${artStamp()}`;
+const chip = on ? `${label}${tail} · ${n} seed${n === 1 ? '' : 's'}` : '';
+row.draw(t.item ? { stamp, mark, path, on: !!on, part: i, parts, busy: false, chip, note: '', prem: null,
+hold: false } : null);
+const shows = !!on && html.hasAttribute(attrs[2]);
+strip.draw(shows ? { stamp: `${stamp}|${path.join('>')}`, mark: () => mark(), path, step: null, wait: '',
+prem: null, book: null, note: '', on: true, x: true, part: i, parts } : null);
+const bar = document.querySelector(S.dbBar);
+const filter = bar?.querySelector(S.dbFilterButton);
+if (!t.item) return void (slot?.remove(), (slot = null));
+if (!filter) return void slot?.remove();
+if (slot?.previousElementSibling !== filter) {
+if (!slot) [slot, drawn] = [tierEl('div', 'tf-ts-slot'), ''];
+filter.after(slot);
+}
+if (drawn === stamp) return;
+drawn = stamp;
+const had = slot.contains(document.activeElement) || pop.under(slot.firstElementChild);
+const main = tierButton('tf-ts-btn', () => pop.toggle(main), mark(true) ?? '');
+[main.ariaHasPopup, main.ariaExpanded] = ['dialog', 'false'];
+main.ariaLabel = main.title = on ? `${path.join(', ')}${tail}` : 'Pattern tiers';
+pop.close();
+slot.replaceChildren(main);
+if (had) main.focus();
+}
+let [queued, rest, last, gave] = [false, false, ([null, '', null]), new Set()];
+const sync = () => {
+queued = false;
+const [ix, { pathname, search }] = [index(), location];
+const want = ix && html.hasAttribute(attrs[0]) && html.hasAttribute(attrs[1]) && pathname === page.path;
+if (want && (last[0] !== ix || last[1] !== search)) last = [ix, search, tierItem(ix, search, page)];
+const now = want ? last[2] : null;
+const k = tierKey(search, page.seed);
+const left = pathname === page.path ? mem.ours(k, now?.key) : undefined;
+if (left && left.k !== now?.key && !gave.has(search)) {
+gave.add(search);
+const q = new URLSearchParams(search);
+const own = `${+(q.get(page.def) ?? '')},${+(q.get(page.paint) ?? '')}` === left.k ? left.before : [];
+const to = tierNative(search, own.length ? own : null, page);
+if (to) return void (nav.go(to, tierKeyOf(own), true), tick());
+}
+if (!now && !t.item && rest) return;
+if (now?.key !== t.item?.key || now?.ix !== t.item?.ix) ((t.item = now), (t.sel = null), pop.reset());
+const back = t.item && mem.ours(k, t.item.key);
+if (back && back.k === t.item.key && back.ix === t.item.ix && t.sel !== back.sel) t.sel = back.sel;
+if (t.item && part() < 0) recognize(k);
+draw();
+rest = !t.item;
+};
+const tick = () => queued || ((queued = true), requestAnimationFrame(sync));
+cardWatch({ attrs, cards: () => {}, settle: tick });
+return { indexed: tick };
 }
 // ---- src/sell-queue.js
 const SELL_PRICE = /^price$/i;
@@ -11011,6 +11223,7 @@ const age = createAge();
 const grades = createGrades(() => {
 sales.indexed();
 dbGrades.indexed();
+dbTiers.indexed();
 menus.indexed();
 priceCards.indexed();
 sell.indexed();
@@ -11033,6 +11246,7 @@ const catalogViews = createCatalogViews();
 createLeftTidy();
 const menus = createMenus(prices, grades.index);
 const tiers = createTiers(grades.index, rate, premium, chip);
+const dbTiers = createDbTiers(grades.index);
 createCollectionWindow(catalogViews.catalog, prices, createColGuard(tiers.net));
 const sell = createSellGrades(grades, premium, tiers.net);
 installTap(

@@ -1,4 +1,4 @@
-// TrueFloat 1.1.1: popup.js, built from src/settings.js, src/popup.js.
+// TrueFloat 1.1.2: popup.js, built from src/settings.js, src/popup.js.
 (() => {
 'use strict';
 // ---- src/settings.js
@@ -47,6 +47,7 @@ salesSmart: Object.freeze({ default: true, attr: 'data-tf-salessmart' }),
 dbGrades: Object.freeze({ default: true, attr: 'data-tf-dbgrades' }),
 sellGrades: Object.freeze({ default: true, attr: 'data-tf-sellgrades' }),
 tierSearch: Object.freeze({ default: true, attr: 'data-tf-tiers' }),
+dbTiers: Object.freeze({ default: true, attr: 'data-tf-dbtiers' }),
 tierPlace: Object.freeze({ default: 'both', attr: 'data-tf-tierplace' }),
 tierAll: Object.freeze({ default: true, attr: 'data-tf-tierall' }),
 tierPremium: Object.freeze({ default: true, attr: 'data-tf-premium' }),
@@ -76,6 +77,10 @@ stickerPanel: Object.freeze({ default: true, attr: 'data-tf-stickerpanel' }),
 stickerRight: Object.freeze({ default: true, attr: 'data-tf-stickerright' }),
 stickerBadge: Object.freeze({ default: true, attr: 'data-tf-stickerbadge' }),
 stickerCompact: Object.freeze({ default: true, attr: 'data-tf-stickercompact' }),
+stickerRule: Object.freeze({ default: 'strict', attr: 'data-tf-stickerrule' }),
+stickerW1: Object.freeze({ default: 20, attr: 'data-tf-stickerw1' }),
+stickerW2: Object.freeze({ default: 10, attr: 'data-tf-stickerw2' }),
+stickerW3: Object.freeze({ default: 0, attr: 'data-tf-stickerw3' }),
 catalogCards: Object.freeze({ default: true, attr: 'data-tf-catcards' }),
 catalogStickers: Object.freeze({ default: true, attr: 'data-tf-catstickers' }),
 catalogWindow: Object.freeze({ default: true, attr: 'data-tf-catwindow' }),
@@ -91,6 +96,7 @@ const api = globalThis.browser ?? globalThis.chrome;
 (document.getElementById('version')).textContent = `v${api.runtime.getManifest().version}`;
 function stored(box, type) {
 if (box.type === 'range') return +box.value > 1 ? +box.value : 0;
+if (box.type === 'number') return Math.min(100, Math.max(0, Math.round(+box.value) || 0));
 if (box.type === 'radio' || box.type === 'select-one') return typeof type === 'number' ? +box.value : box.value;
 return box.checked;
 }
@@ -120,13 +126,14 @@ if (Array.isArray(open)) for (const head of heads) fold(head, open.includes(sect
 const TIES = [
 ['shots', 'shotRes'],
 ['grades', 'dbGrades', 'sellGrades', 'menuGems', 'charms', 'tidyNames', 'oneTier', 'seedNames', 'tierSearch'],
-['tierSearch', 'tierPlace', 'tierAll', 'tierPremium', 'tierStrip'],
+['tierSearch', 'dbTiers', 'tierPlace', 'tierAll', 'tierPremium', 'tierStrip'],
 ['tierStrip', 'patternPicker'],
 ['prices', 'priceRef', 'pricesCards', 'tradeUp', 'pricesDialog', 'menus', 'buyOrders'],
 ['pricesCards', 'plainMark'],
 ['pricesDialog', 'priceNet'],
 ['prices', 'offerAsks'],
 ['stickers', 'stickerCards', 'stickerPanel', 'stickerBadge', 'stickerCompact'],
+['stickers', 'stickerRule', 'stickerW1', 'stickerW2', 'stickerW3'],
 ['titles', 'tags', 'watchRow'],
 ['refresh', 'pace', 'fresh', 'tierAlert'],
 ['tierAlert', 'alertSound'],
@@ -142,13 +149,14 @@ for (const key of keys)
 for (const box of (document.getElementsByName(key)))
 box.disabled = !on;
 }
+byId('stickerCustom').hidden = !document.querySelector('input[name="stickerRule"][value="custom"]:checked');
 }
 api.storage.sync.get().then(
 (values) => {
 for (const [key, setting] of Object.entries(TF_SETTINGS)) {
 const on = typeof values[key] === typeof setting.default ? values[key] : setting.default;
 const boxes = ([...document.getElementsByName(key)]);
-const offered = boxes.some((box) => offers(box).includes(String(on)));
+const offered = boxes.some((box) => box.type === 'number' || offers(box).includes(String(on)));
 const choice = String(!offered ? setting.default : on);
 for (const box of boxes) {
 if (box.type === 'range') {
@@ -158,11 +166,12 @@ box.setAttribute('aria-valuetext', (out.textContent = stored(box, 0) ? box.value
 box.value = String(on);
 show();
 box.addEventListener('input', show);
-} else if (box.type === 'select-one') box.value = choice;
+} else if (box.type === 'select-one' || box.type === 'number') box.value = choice;
 else box.checked = box.type === 'radio' ? box.value === choice : on === true;
 box.disabled = false;
 box.addEventListener('change', () => {
 api.storage.sync.set({ [key]: stored(box, setting.default) });
+if (box.type === 'number') box.value = String(stored(box, 0));
 tie();
 });
 }

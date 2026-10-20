@@ -1,4 +1,4 @@
-// TrueFloat 1.1.1: toggles.js, built from src/settings.js, src/premium-plain.js, src/premium-store.js, src/prices-window.js, src/prices-port.js, src/prices-net-port.js, src/collection-price-port.js, src/catalog-ask.js, src/tradeup-ask.js, src/toggles.js.
+// TrueFloat 1.1.2: toggles.js, built from src/settings.js, src/premium-plain.js, src/premium-store.js, src/prices-window.js, src/prices-port.js, src/prices-net-port.js, src/collection-price-port.js, src/catalog-ask.js, src/tradeup-ask.js, src/toggles.js.
 (() => {
 'use strict';
 // ---- src/settings.js
@@ -47,6 +47,7 @@ salesSmart: Object.freeze({ default: true, attr: 'data-tf-salessmart' }),
 dbGrades: Object.freeze({ default: true, attr: 'data-tf-dbgrades' }),
 sellGrades: Object.freeze({ default: true, attr: 'data-tf-sellgrades' }),
 tierSearch: Object.freeze({ default: true, attr: 'data-tf-tiers' }),
+dbTiers: Object.freeze({ default: true, attr: 'data-tf-dbtiers' }),
 tierPlace: Object.freeze({ default: 'both', attr: 'data-tf-tierplace' }),
 tierAll: Object.freeze({ default: true, attr: 'data-tf-tierall' }),
 tierPremium: Object.freeze({ default: true, attr: 'data-tf-premium' }),
@@ -76,6 +77,10 @@ stickerPanel: Object.freeze({ default: true, attr: 'data-tf-stickerpanel' }),
 stickerRight: Object.freeze({ default: true, attr: 'data-tf-stickerright' }),
 stickerBadge: Object.freeze({ default: true, attr: 'data-tf-stickerbadge' }),
 stickerCompact: Object.freeze({ default: true, attr: 'data-tf-stickercompact' }),
+stickerRule: Object.freeze({ default: 'strict', attr: 'data-tf-stickerrule' }),
+stickerW1: Object.freeze({ default: 20, attr: 'data-tf-stickerw1' }),
+stickerW2: Object.freeze({ default: 10, attr: 'data-tf-stickerw2' }),
+stickerW3: Object.freeze({ default: 0, attr: 'data-tf-stickerw3' }),
 catalogCards: Object.freeze({ default: true, attr: 'data-tf-catcards' }),
 catalogStickers: Object.freeze({ default: true, attr: 'data-tf-catstickers' }),
 catalogWindow: Object.freeze({ default: true, attr: 'data-tf-catwindow' }),
@@ -369,6 +374,10 @@ shotRes: /^(full|high|balanced)$/,
 priceRef:
 /^(lowest-ask|buff-ask|buff-bid|youpin-ask|youpin-bid|steam-ask|steam-bid|skinport-ask|csfloat-ask|csfloat-bid)$/,
 tierPlace: /^(toolbar|filters|both)$/,
+stickerRule: /^(strict|guides|full|custom)$/,
+stickerW1: /^(100|[1-9]?\d)$/,
+stickerW2: /^(100|[1-9]?\d)$/,
+stickerW3: /^(100|[1-9]?\d)$/,
 };
 function mirror(values) {
 const root = document.documentElement;

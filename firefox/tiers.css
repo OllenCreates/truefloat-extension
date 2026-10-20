@@ -395,3 +395,9 @@ html[data-tf-nocombo]
   > mat-button-toggle:nth-of-type(2):not(.mat-button-toggle-checked) {
   display: none;
 }
+app-float-dbtable div.bar > .tf-ts-slot {
+  margin: 0 auto 0 8px;
+}
+app-float-dbtable div.search-container > .tf-tstrip {
+  margin: 0;
+}
