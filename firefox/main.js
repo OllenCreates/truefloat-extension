@@ -1,4 +1,4 @@
-// TrueFloat 1.1.2: main.js, built from src/main-once.js, src/settings.js, src/selectors.js, src/tap-base.js, src/tap.js, src/tap-fields.js, src/tap-keys.js, src/tap-stickers.js, src/tap-history.js, src/tap-db.js, src/tap-inventory.js, src/tap-orders.js, src/rate.js, src/press.js, src/ticker.js, src/card-marks.js, src/card-hub.js, src/shot-match.js, src/shot-viewport.js, src/shot-sharp.js, src/shots.js, src/card-read.js, src/card-layout.js, src/age.js, src/attention.js, src/fresh.js, src/alert.js, src/refresh.js, src/chip-text.js, src/chip-line.js, src/chip.js, src/bargain.js, src/price-fit.js, src/dialog-about.js, src/dialog.js, src/tip-words.js, src/tip-box.js, src/grade-art-rows.js, src/grade-art.js, src/grade-art-mid.js, src/grade-panel-draw.js, src/grade-panel.js, src/csf-grades.js, src/grade-index.js, src/grade-says.js, src/grade-charm.js, src/grade-port.js, src/catalog-index.js, src/catalog-goods.js, src/catalog-images.js, src/catalog-data.js, src/catalog-supply.js, src/grade-words.js, src/grade-names.js, src/grade-read.js, src/grades.js, src/frame.js, src/sales-units.js, src/sales-smart.js, src/sales-plot.js, src/sales-table.js, src/sales-open.js, src/sales-tip.js, src/sales-graph.js, src/sales.js, src/db-draw.js, src/db-grades.js, src/tier-names.js, src/tier-pages.js, src/tier-query.js, src/tier-net.js, src/tier-page.js, src/tier-body.js, src/tier-nav.js, src/tier-pop-guide.js, src/tier-pop.js, src/tier-picker.js, src/tier-patterns.js, src/tier-row.js, src/tier-strip.js, src/premium-plain.js, src/premium-rows.js, src/premium-math.js, src/premium-words.js, src/premium-line.js, src/premium-sample.js, src/premium-books.js, src/tier-premium.js, src/sell-words.js, src/prices-window.js, src/prices-slots.js, src/prices.js, src/prices-money.js, src/prices-view.js, src/prices-fees.js, src/prices-net.js, src/prices-panel-parts.js, src/buy-orders-line.js, src/buy-orders-guard.js, src/buy-orders.js, src/prices-panel-draw.js, src/prices-panel.js, src/prices-chip.js, src/plain-mark.js, src/prices-pop.js, src/prices-hold.js, src/prices-want.js, src/prices-cards.js, src/offer-read.js, src/offer-draw.js, src/offer.js, src/tradeup.js, src/tradeup-cards.js, src/sticker-rule.js, src/sticker-math.js, src/sticker-pop.js, src/sticker-cards.js, src/sticker-panel-draw.js, src/sticker-panel.js, src/menu-names.js, src/menu-draw.js, src/menu-pop.js, src/menu-keep.js, src/menu-cards.js, src/tier-leave.js, src/tier-fit.js, src/tier-pick.js, src/tier-draw.js, src/tier-bar.js, src/db-tiers.js, src/sell-queue.js, src/sell-grades.js, src/combo-tab.js, src/catalog-from.js, src/catalog-fit.js, src/catalog-cards.js, src/catalog-pop.js, src/catalog-strip.js, src/catalog-grid.js, src/catalog-rows.js, src/catalog-window.js, src/catalog-supply-line.js, src/collection-data.js, src/collection-go.js, src/collection-draw.js, src/collection-menu.js, src/collection-parts.js, src/collection-window.js, src/left-tidy.js, src/main-taps.js, src/main.js, src/main-tail.js.
+// TrueFloat 1.1.3: main.js, built from src/main-once.js, src/settings.js, src/selectors.js, src/tap-base.js, src/tap.js, src/tap-fields.js, src/tap-keys.js, src/tap-stickers.js, src/tap-history.js, src/tap-db.js, src/tap-inventory.js, src/tap-orders.js, src/rate.js, src/press.js, src/ticker.js, src/card-marks.js, src/card-hub.js, src/shot-match.js, src/shot-viewport.js, src/shot-sharp.js, src/shots.js, src/card-read.js, src/card-layout.js, src/age.js, src/attention.js, src/fresh.js, src/alert.js, src/refresh.js, src/chip-text.js, src/chip-line.js, src/chip.js, src/bargain.js, src/price-fit.js, src/dialog-about.js, src/dialog.js, src/tip-words.js, src/tip-box.js, src/grade-art-rows.js, src/grade-art.js, src/grade-art-mid.js, src/grade-panel-draw.js, src/grade-panel.js, src/csf-grades.js, src/grade-index.js, src/grade-says.js, src/grade-charm.js, src/grade-port.js, src/catalog-index.js, src/catalog-goods.js, src/catalog-images.js, src/catalog-data.js, src/catalog-supply.js, src/grade-words.js, src/grade-names.js, src/grade-read.js, src/grades.js, src/frame.js, src/sales-units.js, src/sales-smart.js, src/sales-plot.js, src/sales-table.js, src/sales-open.js, src/sales-tip.js, src/sales-graph.js, src/sales.js, src/db-draw.js, src/db-grades.js, src/tier-names.js, src/tier-pages.js, src/tier-query.js, src/tier-net.js, src/tier-page.js, src/tier-body.js, src/tier-nav.js, src/tier-pop-guide.js, src/tier-pop.js, src/tier-picker.js, src/tier-patterns.js, src/tier-row.js, src/tier-strip.js, src/premium-plain.js, src/premium-rows.js, src/premium-math.js, src/premium-words.js, src/premium-line.js, src/premium-sample.js, src/premium-books.js, src/tier-premium.js, src/sell-words.js, src/prices-window.js, src/prices-slots.js, src/prices.js, src/prices-money.js, src/prices-view.js, src/prices-fees.js, src/prices-net.js, src/prices-panel-parts.js, src/buy-orders-line.js, src/buy-orders-guard.js, src/buy-orders.js, src/prices-panel-draw.js, src/prices-panel.js, src/prices-chip.js, src/plain-mark.js, src/prices-pop.js, src/prices-hold.js, src/prices-want.js, src/prices-cards.js, src/offer-read.js, src/offer-draw.js, src/offer.js, src/tradeup.js, src/tradeup-cards.js, src/sticker-rule.js, src/sticker-math.js, src/sticker-pop.js, src/sticker-cards.js, src/sticker-panel-draw.js, src/sticker-panel.js, src/menu-names.js, src/menu-draw.js, src/menu-pop.js, src/menu-keep.js, src/menu-cards.js, src/tier-leave.js, src/tier-fit.js, src/tier-pick.js, src/tier-draw.js, src/tier-bar.js, src/db-merge-sort.js, src/db-tiers.js, src/db-merge.js, src/sell-queue.js, src/sell-grades.js, src/combo-tab.js, src/catalog-from.js, src/catalog-fit.js, src/catalog-cards.js, src/catalog-pop.js, src/catalog-strip.js, src/catalog-grid.js, src/catalog-rows.js, src/catalog-window.js, src/catalog-supply-line.js, src/collection-data.js, src/collection-go.js, src/collection-draw.js, src/collection-menu.js, src/collection-parts.js, src/collection-window.js, src/left-tidy.js, src/main-taps.js, src/main.js, src/main-tail.js.
 (() => {
 'use strict';
 // ---- src/main-once.js
@@ -55,10 +55,12 @@ dbGrades: Object.freeze({ default: true, attr: 'data-tf-dbgrades' }),
 sellGrades: Object.freeze({ default: true, attr: 'data-tf-sellgrades' }),
 tierSearch: Object.freeze({ default: true, attr: 'data-tf-tiers' }),
 dbTiers: Object.freeze({ default: true, attr: 'data-tf-dbtiers' }),
+dbMerge: Object.freeze({ default: true, attr: 'data-tf-dbmerge' }),
 tierPlace: Object.freeze({ default: 'both', attr: 'data-tf-tierplace' }),
 tierAll: Object.freeze({ default: true, attr: 'data-tf-tierall' }),
 tierPremium: Object.freeze({ default: true, attr: 'data-tf-premium' }),
 tierStrip: Object.freeze({ default: true, attr: 'data-tf-tierstrip' }),
+leftLow: Object.freeze({ default: true, attr: 'data-tf-leftlow' }),
 patternPicker: Object.freeze({ default: true, attr: 'data-tf-picker' }),
 prices: Object.freeze({ default: true, attr: 'data-tf-prices' }),
 priceRef: Object.freeze({ default: 'lowest-ask', attr: 'data-tf-priceref' }),
@@ -174,6 +176,7 @@ const tapSide = {
 schema: ( text) => {},
 orders: ( rate) => false,
 rows: ( path, answer) => {},
+open: () => null,
 };
 const tapApply = Reflect.apply;
 const tapExec = RegExp.prototype.exec;
@@ -216,7 +219,11 @@ return null;
 }
 }
 function open(method, url) {
-const result = apply(original, this, arguments);
+let args = (arguments);
+try {
+args = tapSide.open(this, arguments) ?? args;
+} catch {}
+const result = apply(original, this, args);
 try {
 const had = apply(dropToken, tokens, [this]);
 const u = wants(method, url);
@@ -4796,6 +4803,7 @@ const [def, paint] = ix.d.systems[sys[0]].items.find(( it) => `${it}` === key);
 return { key, ix, def, paint, guides };
 }
 // ---- src/tier-pages.js
+const DB_STEP = 'tfStep';
 const TIER_PAGES = Object.freeze({
 search: Object.freeze({
 path: '/search',
@@ -4811,7 +4819,7 @@ function tierNativeAt(q, list, page, enc) {
 const parts = [];
 let [at, had] = [-1, -1];
 for (const [k, v] of q) {
-if (k === page.seed) {
+if (k === page.seed || k === DB_STEP) {
 if (had < 0) had = parts.length;
 continue;
 }
@@ -4884,9 +4892,9 @@ const all = new TierParams(search).getAll(seed);
 const seeds = all.length === 1 && all[0] ? all[0].split(',').map(Number) : [];
 return seeds.length <= TIER_CAP && seeds.every((v) => tierInt(v, 0, 1000)) ? seeds : [];
 }
-function tierNative(search, seeds, page = TIER_PAGES.search) {
+function tierNative(search, seeds, page = TIER_PAGES.search, max = TIER_CAP) {
 const q = new TierParams(search);
-const list = seeds ? tierList(seeds, TIER_CAP) : '';
+const list = seeds ? tierList(seeds, max) : '';
 if (list === null) return null;
 const enc = ( v) =>
 tierEnc(v)
@@ -9198,7 +9206,9 @@ const tierClock = (at) => `${new Date(at).getHours()}:${`${new Date(at).getMinut
 function tierLeft(c) {
 if (!c) return null;
 const say = `${c.n}${c.of ? ` of ${c.of}` : ''} CSFloat requests left this hour, resets ${tierClock(c.at)}`;
-return { left: `${c.n} left`, low: c.n < 40, say };
+const low = c.n < 40;
+const left = low || !document.documentElement.hasAttribute(TF_SETTINGS.leftLow.attr) ? `${c.n} left` : '';
+return { left, low, say };
 }
 const tierSaid = (el, v) => (v?.left && el.append(' · ', tierEl('span', v.low ? 'tf-tstrip-warn' : '', v.left)), el);
 function tierProgress({ done, total }, left) {
@@ -9637,16 +9647,95 @@ else if (pats.seen(listings, query, raw)) tick();
 },
 };
 }
+// ---- src/db-merge-sort.js
+const DB_PAGE = 100;
+const DB_ASK = 200;
+const dbId = (r) => `${tapOwn(r, 'a') ?? ''}`;
+function dbIdCmp(x, y) {
+const [a, b] = [`${tapOwn(x, 'float_id') ?? ''}`, `${tapOwn(y, 'float_id') ?? ''}`];
+return a.length - b.length || (a < b ? -1 : a > b ? 1 : 0);
+}
+const dbFloat = (r) => (typeof tapOwn(r, 'float_value') === 'number' ? tapOwn(r, 'float_value') : 2);
+const dbUpdated = (r) => `${tapOwn(r, 'updated') ?? ''}`;
+const DB_ORDERS = {
+__proto__: null,
+1: (x, y) => dbFloat(x) - dbFloat(y) || dbIdCmp(x, y),
+'-1': (x, y) => dbFloat(y) - dbFloat(x) || dbIdCmp(x, y),
+3: (x, y) => dbIdCmp(x, y),
+4: (x, y) => (dbUpdated(x) < dbUpdated(y) ? 1 : dbUpdated(x) > dbUpdated(y) ? -1 : 0) || dbIdCmp(x, y),
+};
+const dbOrder = (q) => (DB_ORDERS[q.get('order') ?? '1'] ? (q.get('order') ?? '1') : null);
+function createDbSession(seeds, cmp) {
+const parts = seeds.map((s) => ({ seeds: s, rows: ([]), ids: new Set(), off: 0, n: 0 }));
+const st = parts.map(() => ({ in: false, done: false, used: 0, near: false }));
+const live = (i) => st[i].in && !st[i].done;
+const out = [];
+return {
+parts,
+st,
+out,
+add(i, body, first) {
+const list = tapOwn(body, 'results');
+if (!tapIsArray(list)) return false;
+const p = parts[i];
+p.off += list.length;
+for (const r of list) if (r && typeof r === 'object' && !p.ids.has(dbId(r))) (p.ids.add(dbId(r)), p.rows.push(r));
+const n = tapOwn(body, 'count');
+if (first && typeof n === 'number' && n >= 0)
+[p.n, st[i].near] = [n, tapOwn(body, 'count_is_approximate') === true];
+st[i].in = true;
+st[i].done = list.length < DB_ASK;
+return true;
+},
+fill(to) {
+while (out.length < to) {
+let best = -1;
+for (let i = 0; i < parts.length; i++) {
+if (!st[i].in) continue;
+const r = parts[i].rows[st[i].used];
+if (r === undefined) {
+if (!st[i].done) return out.length;
+} else if (best < 0 || cmp(r, parts[best].rows[st[best].used]) < 0) best = i;
+}
+if (best < 0) break;
+out.push(parts[best].rows[st[best].used++]);
+}
+return out.length;
+},
+reset() {
+out.length = 0;
+for (const s of st) s.used = 0;
+},
+count() {
+const n = parts.reduce((t, p) => t + p.n, 0);
+return [n, st.some((s) => s.near || !s.in)];
+},
+next() {
+const last = ( j) => parts[j].rows[parts[j].rows.length - 1];
+let best = -1;
+for (let i = 0; i < parts.length; i++)
+if (
+live(i) &&
+(best < 0 || last(i) === undefined || (last(best) !== undefined && cmp(last(i), last(best)) < 0))
+)
+best = i;
+return best;
+},
+end: () => !st.some((_, i) => live(i)),
+};
+}
 // ---- src/db-tiers.js
 function createDbTiers(index) {
-const [html, page, S] = [document.documentElement, TIER_PAGES.db, TF_SELECTORS];
-const attrs = [TF_SETTINGS.dbTiers.attr, TF_SETTINGS.tierSearch.attr, TF_SETTINGS.tierStrip.attr, ...ART_ATTRS];
+const [html, page, S, T] = [document.documentElement, TIER_PAGES.db, TF_SELECTORS, TF_SETTINGS];
+const attrs = [T.dbTiers.attr, T.tierSearch.attr, T.tierStrip.attr, ...ART_ATTRS, T.dbMerge.attr];
 const t = { item: null, sel: null };
 const [none, quiet] = [() => false, () => {}];
-const nav = createTierNav(none, quiet, page);
-const mem = createTierMemory();
+const [nav, mem] = [createTierNav(none, quiet, page), createTierMemory()];
 const key = () => tierKey(tierSearch(), page.seed);
 const part = () => (t.sel ? t.sel.keys.indexOf(key()) : -1);
+const one = () => html.hasAttribute(T.dbMerge.attr) && !!dbOrder(new URLSearchParams(tierSearch()));
+const split = ( s) => (one() ? [s] : tierParts(s, null));
+const shapes = ( s) => [s, ...tierParts(s, null)].map(tierKeyOf);
 const pop = createTierPop(
 () => t.item,
 () => (part() >= 0 ? t.sel : null),
@@ -9658,16 +9747,16 @@ false,
 const step = tierPaced(show);
 const row = createTierRow((b) => pop.toggle(b), clear, step, S.dbSearch, 'data-tf-dbtier-on');
 const strip = createTierStrip(clear, step, S.dbResults, true);
-function show(i) {
-const to = t.sel && tierNative(tierSearch(), t.sel.parts[i], page);
-if (to && t.sel) nav.go(to, t.sel.keys[i]);
+function show(i, replace = false) {
+const to = t.sel && tierNative(tierSearch(), t.sel.parts[i], page, 1000);
+if (to && t.sel) nav.go(to, t.sel.keys[i], replace);
 }
 function choose(g, si, li) {
 pop.close(true);
 const [it, lv] = [t.item, tierLevels(pop.sys(si))[li]];
 if (!it || !lv) return;
 const before = mem.ours(key(), it.key)?.before ?? tierSeedsOf(tierSearch(), page.seed);
-const parts = tierParts(lv.seeds, null);
+const parts = split(lv.seeds);
 t.sel = { g, si, li, lv, parts, keys: parts.map(tierKeyOf), stop: '', until: 0 };
 mem.keep(it, t.sel, before);
 show(0);
@@ -9688,10 +9777,9 @@ missed = `${t.item.key}|${k}`;
 t.item.guides.forEach(( g, gi) => {
 for (const si of g.systems)
 tierLevels(pop.sys(si)).forEach((lv, li) => {
-const parts = tierParts(lv.seeds, null);
-const keys = parts.map(tierKeyOf);
-if (t.sel || !keys.includes(k)) return;
-mem.keep(t.item, (t.sel = { g: gi, si, li, lv, parts, keys, stop: '', until: 0 }), []);
+if (t.sel || !shapes(lv.seeds).includes(k)) return;
+const parts = split(lv.seeds);
+mem.keep(t.item, (t.sel = { g: gi, si, li, lv, parts, keys: parts.map(tierKeyOf), stop: '', until: 0 }), []);
 });
 });
 }
@@ -9715,8 +9803,7 @@ hold: false } : null);
 const shows = !!on && html.hasAttribute(attrs[2]);
 strip.draw(shows ? { stamp: `${stamp}|${path.join('>')}`, mark: () => mark(), path, step: null, wait: '',
 prem: null, book: null, note: '', on: true, x: true, part: i, parts } : null);
-const bar = document.querySelector(S.dbBar);
-const filter = bar?.querySelector(S.dbFilterButton);
+const filter = document.querySelector(S.dbBar)?.querySelector(S.dbFilterButton);
 if (!t.item) return void (slot?.remove(), (slot = null));
 if (!filter) return void slot?.remove();
 if (slot?.previousElementSibling !== filter) {
@@ -9754,12 +9841,129 @@ if (now?.key !== t.item?.key || now?.ix !== t.item?.ix) ((t.item = now), (t.sel 
 const back = t.item && mem.ours(k, t.item.key);
 if (back && back.k === t.item.key && back.ix === t.item.ix && t.sel !== back.sel) t.sel = back.sel;
 if (t.item && part() < 0) recognize(k);
+const re = t.sel && t.sel.lv.seeds.length > TIER_CAP && shapes(t.sel.lv.seeds).includes(k) && split(t.sel.lv.seeds);
+if (re && t.sel && (part() < 0 || tierKeyOf(re[0]) !== t.sel.keys[0]))
+return void ((t.sel.parts = re), (t.sel.keys = re.map(tierKeyOf)), show(0, true), tick());
 draw();
 rest = !t.item;
 };
 const tick = () => queued || ((queued = true), requestAnimationFrame(sync));
 cardWatch({ attrs, cards: () => {}, settle: tick });
 return { indexed: tick };
+}
+// ---- src/db-merge.js
+const dbGet = ( k) =>
+(Reflect.getOwnPropertyDescriptor(XMLHttpRequest.prototype, k)?.get);
+const [dbText, dbStatus, dbParse, dbWrite] = [dbGet('responseText'), dbGet('status'), JSON.parse, JSON.stringify];
+const DB_WAIT = 15000;
+const DB_VOLATILE = ['token', 'fid', 'limit', 'start', DB_STEP];
+function createDbMerge() {
+const html = document.documentElement;
+let m = (null);
+const baseOf = (q) =>
+[...q]
+.filter(([k]) => !DB_VOLATILE.includes(k))
+.map(([k, v]) => `${k}=${v}`)
+.sort()
+.join('&');
+const query = (q) => q.toString().replace(/%2C/gi, ',');
+function move(q, fire) {
+tapApply(tierSwap, history, [null, '', `${TAP_ORIGIN}${location.pathname}?${query(q)}`]);
+if (fire) tapApply(tierFire, globalThis, [new TierPop('popstate', { state: null })]);
+}
+function tidy() {
+const now = new URLSearchParams(location.search);
+if (location.pathname === '/db' && now.has(DB_STEP)) (now.delete(DB_STEP), move(now, false));
+}
+function next(my) {
+const q = new URLSearchParams(location.search);
+q.delete(DB_STEP);
+if (my !== m || my.halt || location.pathname !== '/db' || baseOf(q) !== my.base) return tidy();
+q.set(DB_STEP, `${my.step + 1}`);
+move(q, true);
+const at = my.step;
+tapApply(tierLater, globalThis, [() => my === m && my.step === at && ((my.halt = true), tidy()), DB_WAIT]);
+}
+function listen(xhr, answer) {
+const load = ( e) => {
+if (!e.isTrusted) return;
+const status = tapApply(dbStatus, xhr, []);
+let a;
+try {
+a = answer(status, status === 200 ? dbParse(tapApply(dbText, xhr, [])) : null);
+} catch {}
+if (!a) return;
+const text = dbWrite(a);
+for (const [k, v] of [
+['responseText', text],
+['response', text],
+['status', 200],
+])
+tapDefine(xhr, k, { get: () => v, configurable: true });
+};
+tapApply(tapListen, xhr, ['load', load, { once: true }]);
+}
+const reopen = (args, u, q) => {
+const a = [args[0], `${u.origin}${u.pathname}?${query(q)}`];
+for (let i = 2; i < args.length; i++) a[i] = args[i];
+return a;
+};
+tapSide.open = (xhr, args) => {
+const [method, url] = [args[0], args[1]];
+if (!tapMatches(TAP_GET, method) || typeof url !== 'string' || location.pathname !== '/db') return null;
+if (!html.hasAttribute(TF_SETTINGS.dbTiers.attr)) return null;
+const u = new TierURL(url, document.baseURI);
+if (u.origin !== TAP_ORIGIN || u.pathname !== TAP_DB) return null;
+const q = u.searchParams;
+const step = q.get(DB_STEP);
+q.delete(DB_STEP);
+const list = (q.get('paintSeed') ?? '').split(',').map(Number);
+const small = list.length <= TIER_CAP || !list.every((v) => tierInt(v, 0, 1000));
+if (small) return step === null ? null : reopen(args, u, q);
+const parts = [];
+for (let i = 0; i < list.length; i += TIER_CAP) parts.push(list.slice(i, i + TIER_CAP));
+const ask = (seeds, start, wide) => {
+q.set('paintSeed', seeds.join());
+if (start !== null) q.set('start', `${start}`);
+if (wide) q.set('limit', `${DB_ASK}`);
+return reopen(args, u, q);
+};
+const [order, base, start] = [dbOrder(q), baseOf(q), q.get('start')];
+if (!order || !html.hasAttribute(TF_SETTINGS.dbMerge.attr)) return ask(parts[0], null, false);
+if (start !== null) {
+const my = m;
+if (!my || my.base !== base) return ask(parts[0], +start, false);
+const [K, i] = [+start, my.s.next()];
+listen(xhr, (status, body) => {
+if (status === 200 && i >= 0) my.s.add(i, body, false);
+my.s.fill(K + DB_PAGE);
+const results = my.s.out.slice(K, K + DB_PAGE);
+if (status !== 200 && results.length < DB_PAGE && !my.s.end()) return false;
+const [count, near] = my.s.count();
+return { results, count, count_is_approximate: near };
+});
+const p = my.s.parts[i < 0 ? 0 : i];
+return ask(p.seeds, p.off, true);
+}
+const go = m && m.base === base && !m.halt && step !== null && +step === m.step + 1;
+const cmp = (DB_ORDERS[order]);
+const my = go && m ? m : { base, s: createDbSession(parts, cmp), step: 0, halt: false };
+if (go) my.step++;
+m = my;
+const i = my.step;
+listen(xhr, (status, body) => {
+const [ok, live] = [status === 200 && my.s.add(i, body, true), my === m];
+if (!ok && i === 0) return void (live && tidy());
+if (!ok || !live) my.halt = true;
+my.s.reset();
+my.s.fill(DB_PAGE);
+const last = my.halt || i === my.s.parts.length - 1;
+if (live) tapApply(tierLater, globalThis, [() => (last ? tidy() : next(my)), 0]);
+const [count, near] = my.s.count();
+return { results: my.s.out.slice(0, DB_PAGE), count, count_is_approximate: near };
+});
+return ask(my.s.parts[i].seeds, null, true);
+};
 }
 // ---- src/sell-queue.js
 const SELL_PRICE = /^price$/i;
@@ -11247,6 +11451,7 @@ createLeftTidy();
 const menus = createMenus(prices, grades.index);
 const tiers = createTiers(grades.index, rate, premium, chip);
 const dbTiers = createDbTiers(grades.index);
+createDbMerge();
 createCollectionWindow(catalogViews.catalog, prices, createColGuard(tiers.net));
 const sell = createSellGrades(grades, premium, tiers.net);
 installTap(

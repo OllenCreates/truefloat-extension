@@ -1,4 +1,4 @@
-// TrueFloat 1.1.2: toggles.js, built from src/settings.js, src/premium-plain.js, src/premium-store.js, src/prices-window.js, src/prices-port.js, src/prices-net-port.js, src/collection-price-port.js, src/catalog-ask.js, src/tradeup-ask.js, src/toggles.js.
+// TrueFloat 1.1.3: toggles.js, built from src/settings.js, src/premium-plain.js, src/premium-store.js, src/prices-window.js, src/prices-port.js, src/prices-net-port.js, src/collection-price-port.js, src/catalog-ask.js, src/tradeup-ask.js, src/toggles.js.
 (() => {
 'use strict';
 // ---- src/settings.js
@@ -48,10 +48,12 @@ dbGrades: Object.freeze({ default: true, attr: 'data-tf-dbgrades' }),
 sellGrades: Object.freeze({ default: true, attr: 'data-tf-sellgrades' }),
 tierSearch: Object.freeze({ default: true, attr: 'data-tf-tiers' }),
 dbTiers: Object.freeze({ default: true, attr: 'data-tf-dbtiers' }),
+dbMerge: Object.freeze({ default: true, attr: 'data-tf-dbmerge' }),
 tierPlace: Object.freeze({ default: 'both', attr: 'data-tf-tierplace' }),
 tierAll: Object.freeze({ default: true, attr: 'data-tf-tierall' }),
 tierPremium: Object.freeze({ default: true, attr: 'data-tf-premium' }),
 tierStrip: Object.freeze({ default: true, attr: 'data-tf-tierstrip' }),
+leftLow: Object.freeze({ default: true, attr: 'data-tf-leftlow' }),
 patternPicker: Object.freeze({ default: true, attr: 'data-tf-picker' }),
 prices: Object.freeze({ default: true, attr: 'data-tf-prices' }),
 priceRef: Object.freeze({ default: 'lowest-ask', attr: 'data-tf-priceref' }),

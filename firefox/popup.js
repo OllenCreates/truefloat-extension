@@ -1,4 +1,4 @@
-// TrueFloat 1.1.2: popup.js, built from src/settings.js, src/popup.js.
+// TrueFloat 1.1.3: popup.js, built from src/settings.js, src/popup.js.
 (() => {
 'use strict';
 // ---- src/settings.js
@@ -48,10 +48,12 @@ dbGrades: Object.freeze({ default: true, attr: 'data-tf-dbgrades' }),
 sellGrades: Object.freeze({ default: true, attr: 'data-tf-sellgrades' }),
 tierSearch: Object.freeze({ default: true, attr: 'data-tf-tiers' }),
 dbTiers: Object.freeze({ default: true, attr: 'data-tf-dbtiers' }),
+dbMerge: Object.freeze({ default: true, attr: 'data-tf-dbmerge' }),
 tierPlace: Object.freeze({ default: 'both', attr: 'data-tf-tierplace' }),
 tierAll: Object.freeze({ default: true, attr: 'data-tf-tierall' }),
 tierPremium: Object.freeze({ default: true, attr: 'data-tf-premium' }),
 tierStrip: Object.freeze({ default: true, attr: 'data-tf-tierstrip' }),
+leftLow: Object.freeze({ default: true, attr: 'data-tf-leftlow' }),
 patternPicker: Object.freeze({ default: true, attr: 'data-tf-picker' }),
 prices: Object.freeze({ default: true, attr: 'data-tf-prices' }),
 priceRef: Object.freeze({ default: 'lowest-ask', attr: 'data-tf-priceref' }),
@@ -127,7 +129,8 @@ const TIES = [
 ['shots', 'shotRes'],
 ['grades', 'dbGrades', 'sellGrades', 'menuGems', 'charms', 'tidyNames', 'oneTier', 'seedNames', 'tierSearch'],
 ['tierSearch', 'dbTiers', 'tierPlace', 'tierAll', 'tierPremium', 'tierStrip'],
-['tierStrip', 'patternPicker'],
+['dbTiers', 'dbMerge'],
+['tierStrip', 'patternPicker', 'leftLow'],
 ['prices', 'priceRef', 'pricesCards', 'tradeUp', 'pricesDialog', 'menus', 'buyOrders'],
 ['pricesCards', 'plainMark'],
 ['pricesDialog', 'priceNet'],
