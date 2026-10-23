@@ -1,4 +1,4 @@
-// TrueFloat 1.1.3: background.js, built from src/grades-file.js, src/background.js, src/prices-file.js, src/prices-bg.js, src/catalog-supply-file.js, src/catalog-file.js, src/catalog-bg.js.
+// TrueFloat 1.1.4: background.js, built from src/grades-file.js, src/background.js, src/prices-file.js, src/prices-bg.js, src/catalog-supply-file.js, src/catalog-file.js, src/catalog-bg.js.
 (() => {
 'use strict';
 // ---- src/grades-file.js
@@ -139,7 +139,11 @@ const { gradesMeta: m } = await api.storage.local.get('gradesMeta');
 if (m) await api.storage.local.set({ gradesMeta: { ...m, next: 0 } });
 };
 api.runtime.onStartup.addListener(() => void (mark().catch(() => {}), prune()));
-api.runtime.onInstalled.addListener(() => void api.storage.local.remove('folded').catch(() => {}));
+api.runtime.onInstalled.addListener(({ reason }) => {
+void api.storage.local.remove('folded').catch(() => {});
+if (reason === 'install')
+void api.storage.local.set({ since: Date.now(), seenNews: api.runtime.getManifest().version }).catch(() => {});
+});
 api.runtime.onMessage.addListener((message, sender, answer) => {
 if (sender.id !== api.runtime.id || (message !== 'grades' && message !== 'due')) return;
 run();

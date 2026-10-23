@@ -1,4 +1,4 @@
-// TrueFloat 1.1.3: main.js, built from src/main-once.js, src/settings.js, src/selectors.js, src/tap-base.js, src/tap.js, src/tap-fields.js, src/tap-keys.js, src/tap-stickers.js, src/tap-history.js, src/tap-db.js, src/tap-inventory.js, src/tap-orders.js, src/rate.js, src/press.js, src/ticker.js, src/card-marks.js, src/card-hub.js, src/shot-match.js, src/shot-viewport.js, src/shot-sharp.js, src/shots.js, src/card-read.js, src/card-layout.js, src/age.js, src/attention.js, src/fresh.js, src/alert.js, src/refresh.js, src/chip-text.js, src/chip-line.js, src/chip.js, src/bargain.js, src/price-fit.js, src/dialog-about.js, src/dialog.js, src/tip-words.js, src/tip-box.js, src/grade-art-rows.js, src/grade-art.js, src/grade-art-mid.js, src/grade-panel-draw.js, src/grade-panel.js, src/csf-grades.js, src/grade-index.js, src/grade-says.js, src/grade-charm.js, src/grade-port.js, src/catalog-index.js, src/catalog-goods.js, src/catalog-images.js, src/catalog-data.js, src/catalog-supply.js, src/grade-words.js, src/grade-names.js, src/grade-read.js, src/grades.js, src/frame.js, src/sales-units.js, src/sales-smart.js, src/sales-plot.js, src/sales-table.js, src/sales-open.js, src/sales-tip.js, src/sales-graph.js, src/sales.js, src/db-draw.js, src/db-grades.js, src/tier-names.js, src/tier-pages.js, src/tier-query.js, src/tier-net.js, src/tier-page.js, src/tier-body.js, src/tier-nav.js, src/tier-pop-guide.js, src/tier-pop.js, src/tier-picker.js, src/tier-patterns.js, src/tier-row.js, src/tier-strip.js, src/premium-plain.js, src/premium-rows.js, src/premium-math.js, src/premium-words.js, src/premium-line.js, src/premium-sample.js, src/premium-books.js, src/tier-premium.js, src/sell-words.js, src/prices-window.js, src/prices-slots.js, src/prices.js, src/prices-money.js, src/prices-view.js, src/prices-fees.js, src/prices-net.js, src/prices-panel-parts.js, src/buy-orders-line.js, src/buy-orders-guard.js, src/buy-orders.js, src/prices-panel-draw.js, src/prices-panel.js, src/prices-chip.js, src/plain-mark.js, src/prices-pop.js, src/prices-hold.js, src/prices-want.js, src/prices-cards.js, src/offer-read.js, src/offer-draw.js, src/offer.js, src/tradeup.js, src/tradeup-cards.js, src/sticker-rule.js, src/sticker-math.js, src/sticker-pop.js, src/sticker-cards.js, src/sticker-panel-draw.js, src/sticker-panel.js, src/menu-names.js, src/menu-draw.js, src/menu-pop.js, src/menu-keep.js, src/menu-cards.js, src/tier-leave.js, src/tier-fit.js, src/tier-pick.js, src/tier-draw.js, src/tier-bar.js, src/db-merge-sort.js, src/db-tiers.js, src/db-merge.js, src/sell-queue.js, src/sell-grades.js, src/combo-tab.js, src/catalog-from.js, src/catalog-fit.js, src/catalog-cards.js, src/catalog-pop.js, src/catalog-strip.js, src/catalog-grid.js, src/catalog-rows.js, src/catalog-window.js, src/catalog-supply-line.js, src/collection-data.js, src/collection-go.js, src/collection-draw.js, src/collection-menu.js, src/collection-parts.js, src/collection-window.js, src/left-tidy.js, src/main-taps.js, src/main.js, src/main-tail.js.
+// TrueFloat 1.1.4: main.js, built from src/main-once.js, src/settings.js, src/selectors.js, src/tap-base.js, src/tap.js, src/tap-fields.js, src/tap-keys.js, src/tap-stickers.js, src/tap-history.js, src/tap-db.js, src/tap-inventory.js, src/tap-orders.js, src/rate.js, src/press.js, src/ticker.js, src/card-marks.js, src/card-hub.js, src/shot-match.js, src/shot-viewport.js, src/shot-sharp.js, src/shots.js, src/card-read.js, src/card-layout.js, src/age.js, src/attention.js, src/fresh.js, src/alert.js, src/refresh.js, src/chip-text.js, src/chip-line.js, src/chip.js, src/bargain.js, src/price-fit.js, src/dialog-about.js, src/dialog.js, src/tip-words.js, src/tip-box.js, src/grade-art-rows.js, src/grade-art.js, src/grade-art-mid.js, src/grade-panel-draw.js, src/grade-panel.js, src/csf-grades.js, src/grade-index.js, src/grade-says.js, src/grade-charm.js, src/grade-port.js, src/catalog-index.js, src/catalog-goods.js, src/catalog-images.js, src/catalog-data.js, src/catalog-supply.js, src/grade-words.js, src/grade-names.js, src/grade-read.js, src/grades.js, src/frame.js, src/sales-units.js, src/sales-smart.js, src/sales-plot.js, src/sales-table.js, src/sales-open.js, src/sales-tip.js, src/sales-graph.js, src/sales.js, src/db-draw.js, src/db-grades.js, src/tier-names.js, src/tier-pages.js, src/tier-query.js, src/tier-net.js, src/tier-page.js, src/tier-body.js, src/tier-nav.js, src/tier-pop-guide.js, src/tier-pop.js, src/tier-picker.js, src/tier-patterns.js, src/tier-row.js, src/tier-strip.js, src/premium-plain.js, src/premium-rows.js, src/premium-math.js, src/premium-words.js, src/premium-line.js, src/premium-sample.js, src/premium-books.js, src/tier-premium.js, src/sell-words.js, src/prices-window.js, src/prices-slots.js, src/prices.js, src/prices-money.js, src/prices-view.js, src/prices-fees.js, src/prices-net.js, src/prices-goods.js, src/prices-panel-parts.js, src/buy-orders-line.js, src/buy-orders-guard.js, src/buy-orders.js, src/prices-panel-draw.js, src/prices-panel.js, src/prices-chip.js, src/plain-mark.js, src/prices-pop.js, src/prices-hold.js, src/prices-want.js, src/prices-cards.js, src/offer-read.js, src/offer-draw.js, src/offer.js, src/tradeup.js, src/tradeup-cards.js, src/sticker-rule.js, src/sticker-math.js, src/sticker-pop.js, src/sticker-cards.js, src/sticker-panel-draw.js, src/sticker-panel.js, src/menu-names.js, src/menu-draw.js, src/menu-pop.js, src/menu-keep.js, src/menu-cards.js, src/tier-leave.js, src/tier-fit.js, src/tier-pick.js, src/tier-draw.js, src/tier-bar.js, src/db-merge-sort.js, src/db-tiers.js, src/db-merge.js, src/sell-queue.js, src/sell-grades.js, src/combo-tab.js, src/catalog-from.js, src/catalog-fit.js, src/catalog-cards.js, src/catalog-pop.js, src/catalog-strip.js, src/catalog-grid.js, src/catalog-rows.js, src/catalog-window.js, src/catalog-supply-line.js, src/collection-data.js, src/collection-go.js, src/collection-draw.js, src/collection-menu.js, src/collection-parts.js, src/collection-window.js, src/left-tidy.js, src/main-taps.js, src/main.js, src/main-tail.js.
 (() => {
 'use strict';
 // ---- src/main-once.js
@@ -70,6 +70,7 @@ tradeUp: Object.freeze({ default: true, attr: 'data-tf-tradeup' }),
 pricesDialog: Object.freeze({ default: true, attr: 'data-tf-pricesdialog' }),
 priceNet: Object.freeze({ default: true, attr: 'data-tf-pricenet' }),
 priceGapHide: Object.freeze({ default: true, attr: 'data-tf-pricegaphide' }),
+pricesGoods: Object.freeze({ default: true, attr: 'data-tf-pricesgoods' }),
 buyOrders: Object.freeze({ default: true, attr: 'data-tf-buyorders' }),
 menus: Object.freeze({ default: true, attr: 'data-tf-menus' }),
 menuGems: Object.freeze({ default: true, attr: 'data-tf-menugems' }),
@@ -99,6 +100,7 @@ tipBoxes: Object.freeze({ default: true, attr: 'data-tf-tipboxes' }),
 offerAsks: Object.freeze({ default: true, attr: 'data-tf-offerasks' }),
 offerContext: Object.freeze({ default: true, attr: 'data-tf-offerctx' }),
 offerGraded: Object.freeze({ default: true, attr: 'data-tf-offergrade' }),
+discordBar: Object.freeze({ default: true, attr: 'data-tf-discordbar' }),
 });
 // ---- src/selectors.js
 const TF_SELECTORS = Object.freeze({
@@ -113,6 +115,7 @@ statusWord: 'app-seller-details-widget > div.seller-details > span.text',
 floatValue: 'item-float-bar .wear-value',
 itemName: 'app-item-name .name-container > .item-name',
 subtext: 'app-item-name .subtext',
+itemImg: 'img.item-img',
 bundle: 'app-item-name .amount',
 paintSeed: 'item-float-bar .paint-seed',
 listingOff: 'button.status-button',
@@ -335,9 +338,14 @@ const entry = tapOwn(list, i);
 const item = tapOwn(entry, 'item');
 if (!item || typeof item !== 'object') continue;
 const link = tapLink(entry, item);
-if (!tapMatches(TAP_INSPECT, link)) continue;
+const hash = tapOwn(item, 'market_hash_name');
+const name = tapMatches(TAP_HASH_NAME, hash) ? hash : null;
+const own = tapOwn(entry, 'id');
+const lid = tapMatches(TAP_SALE_ID, own) ? own : null;
+const base = tapMatches(TAP_INSPECT, link) ? link : tapGoods(item, link, name, lid);
+if (base === null) continue;
 const state = tapOwn(entry, 'state');
-const key = state === undefined || state === 'listed' ? link : link + TAP_OFF;
+const key = state === undefined || state === 'listed' ? base : base + TAP_OFF;
 const id = tapOwn(item, 'cs2_screenshot_id');
 const at = tapOwn(entry, 'created_at');
 const shot = tapMatches(TAP_SHOT_ID, id) ? id : null;
@@ -348,10 +356,6 @@ const price = tapInt(tapOwn(entry, 'price'), 1e10) || null;
 const charm = tapCharm(item);
 if (shot === null && card === null && created === null && grade === null && price === null && charm === null)
 continue;
-const hash = tapOwn(item, 'market_hash_name');
-const name = tapMatches(TAP_HASH_NAME, hash) ? hash : null;
-const own = tapOwn(entry, 'id');
-const lid = tapMatches(TAP_SALE_ID, own) ? own : null;
 const value = [
 key,
 shot,
@@ -393,6 +397,14 @@ const pattern = tapOwn(item, 'keychain_pattern');
 const ok = tapOwn(item, 'type') === 'charm' && tapInteger(index) && tapInteger(pattern);
 return ok && index > 0 && index < 65536 && index !== 36 && index !== 37 && pattern >= 0 && pattern <= 1e5
 ? `${index}:${pattern}`
+: null;
+}
+const TAP_GOODS = '#goods:';
+const TAP_GOODS_KEY = /^#goods:\d{1,24}(#off)?$/;
+const TAP_GOODS_TYPE = /^(container|music_kit)$/;
+function tapGoods(item, link, name, lid) {
+return link === null && name !== null && lid !== null && tapMatches(TAP_GOODS_TYPE, tapOwn(item, 'type'))
+? TAP_GOODS + lid
 : null;
 }
 function tapLink(entry, item) {
@@ -6550,7 +6562,19 @@ return m ? tapApply(priceLower, m[1], []) : '';
 return '';
 }
 }
-function priceSeen(cents, text) {
+function priceDrawn(m) {
+const drawn = `${m[2]}${m[3]}`;
+let shown = 0;
+for (let i = 0; i < drawn.length; i++) if (drawn[i] !== ',') shown = shown * 10 + +drawn[i];
+return shown;
+}
+function priceDraws(cents, text) {
+const f = priceCurrency.fmt;
+if (!f || typeof text !== 'string' || text.length > 40) return false;
+const m = tapApply(tapExec, PRICE_SHOWN, [tapApply(priceTrim, text, [])]);
+return !!m && m[1] === f.pre && m[4] === f.post && priceCeil(cents * f.rate) === priceDrawn(m);
+}
+function priceSeen(cents, text, exact = false) {
 if (
 !( (tapInteger)(cents)) ||
 cents <= 0 ||
@@ -6560,20 +6584,19 @@ text.length > 40
 return false;
 const m = tapApply(tapExec, PRICE_SHOWN, [tapApply(priceTrim, text, [])]);
 if (!m) return false;
-const drawn = `${m[2]}${m[3]}`;
-let shown = 0;
-for (let i = 0; i < drawn.length; i++) if (drawn[i] !== ',') shown = shown * 10 + +drawn[i];
+const shown = priceDrawn(m);
 const fits = ( rate) => priceCeil(cents * rate) === shown;
 const [had, rates] = [priceCurrency.fmt, priceCurrency.rates];
 if (had && fits(had.rate) && had.pre === m[1] && had.post === m[4]) return true;
-if (cents < 1000) return false;
+const small = cents < 1000;
+if (small && !exact) return false;
 let rate = NaN;
 for (const code of [pricePicked(), priceCurrency.place]) {
 const r = code && rates ? tapApply(priceGet, rates, [code]) : undefined;
 if (!(rate > 0) && typeof r === 'number' && fits(r)) rate = r;
 }
 if (!(rate > 0) && fits(1)) rate = 1;
-if (!(rate > 0) && rates) {
+if (!(rate > 0) && rates && !small) {
 let [one, many] = [NaN, false];
 tapApply(priceEach, rates, [
 ( r) => fits(r) && (one > 0 && one !== r ? (many = true) : (one = r)),
@@ -6855,6 +6878,107 @@ const credit = priceEl('span', 'tf-pw-bit tf-pw-n', NET_WORDS.credit);
 tipBox.tie(credit, fee.tip);
 note.after(sep, credit);
 },
+};
+}
+// ---- src/prices-goods.js
+const GOODS_ITEM = /^\/item\/(\d{1,24})$/;
+const [goodsDecode, goodsSlice, goodsEnds, goodsTrim] = [
+decodeURIComponent,
+String.prototype.slice,
+String.prototype.endsWith,
+String.prototype.trim,
+];
+function createPriceGoods() {
+const html = document.documentElement;
+const attr = TF_SETTINGS.pricesGoods.attr;
+const on = () => html.hasAttribute(attr);
+const names = new Map();
+const ids = new Map();
+const subs = [];
+function nameOf(card) {
+if (card.querySelector(TF_SELECTORS.inspectLink)) return null;
+const pic = card.querySelector(TF_SELECTORS.itemImg)?.getAttribute('src');
+const title = card.querySelector(TF_SELECTORS.itemName)?.textContent;
+const short = typeof title === 'string' ? tapApply(goodsTrim, title, []) : '';
+if (typeof pic !== 'string' || pic.length > 2000 || !short) return null;
+if (tapApply(goodsSlice, pic, [0, CAT_IMAGE_HOST.length]) !== CAT_IMAGE_HOST) return null;
+let name;
+try {
+name = goodsDecode(tapApply(goodsSlice, pic, [CAT_IMAGE_HOST.length]));
+} catch {
+return null;
+}
+const ok = tapMatches(TAP_HASH_NAME, name) && tapMatches(PRICE_NAME, name) && tapApply(goodsEnds, name, [short]);
+return ok && names.has(name) ? name : null;
+}
+function confirm() {
+const rows = [];
+for (const card of document.querySelectorAll(TF_SELECTORS.card)) {
+const name = card.querySelector(TF_SELECTORS.auction) ? null : nameOf(card);
+const text = name && card.querySelector(TF_SELECTORS.price)?.textContent;
+const sane = typeof text === 'string' && text.length <= 40;
+const m = sane ? tapApply(tapExec, PRICE_SHOWN, [tapApply(goodsTrim, text, [])]) : null;
+const cents = [...(names.get( (name))?.values() ?? [])];
+if (m) rows.push({ cents, shown: priceDrawn(m), m });
+}
+if (rows.length < 3 || rows.some((r) => r.m[1] !== rows[0].m[1] || r.m[4] !== rows[0].m[4])) return false;
+const rates = priceCurrency.rates;
+const asked = [pricePicked(), priceCurrency.place].map((c) => (c && rates ? tapApply(priceGet, rates, [c]) : 0));
+const fit = ( r) =>
+rows.every((x) => x.cents.some((c) => c !== null && priceCeil(c * r) === x.shown));
+const ok = new Set([...asked, 1].filter((r) => typeof r === 'number' && r > 0 && fit(r)));
+if (ok.size !== 1) return false;
+priceCurrency.fmt = { rate: ([...ok][0]), pre: rows[0].m[1], post: rows[0].m[4] };
+return true;
+}
+let pass = (null);
+const tell = ( fed) => {
+for (const f of subs)
+try {
+f(fed);
+} catch {}
+};
+return {
+attr,
+card(card) {
+const name = on() ? nameOf(card) : null;
+if (name === null) return null;
+if (!priceCurrency.fmt && (shotPass === null || shotPass !== pass) && ((pass = shotPass), confirm()))
+tickAfter(() => tell([]), 0);
+const price = card.querySelector(TF_SELECTORS.price);
+if (price) cardInside(price, { subtree: true, characterData: true });
+const text = price?.textContent;
+const all = new Set( (names.get(name)).values());
+all.delete(null);
+if (all.size === 1 && !card.querySelector(TF_SELECTORS.auction)) priceSeen(all.values().next().value, text, true);
+const fits = [...all].filter((c) => priceDraws( (c), text));
+return [name, fits.length === 1 ? (fits[0]) : null, null];
+},
+window(card) {
+const m = on() ? tapApply(tapExec, GOODS_ITEM, [location.pathname]) : null;
+const kept = m ? ids.get(m[1]) : undefined;
+if (!kept || nameOf(card) !== kept[0]) return null;
+const text = card.querySelector(TF_SELECTORS.price)?.textContent;
+if (kept[1] !== null && !card.querySelector(TF_SELECTORS.auction)) priceSeen(kept[1], text, true);
+return [kept[0], kept[1] !== null && priceDraws(kept[1], text) ? kept[1] : null, null];
+},
+feed(listings) {
+if (!on() || !html.hasAttribute(TF_SETTINGS.prices.attr)) return;
+const fed = new Set();
+for (const l of listings) {
+const [key, name, cents, id] = [l[0], l[7], l[5], l[10]];
+if (!tapMatches(TAP_GOODS_KEY, key) || typeof name !== 'string' || id === null) continue;
+let byKey = names.get(name);
+if (!byKey) (names.set(name, (byKey = new Map())), shotBounded(names));
+byKey.set(key, cents);
+shotBounded(byKey);
+ids.set(id, [name, cents]);
+shotBounded(ids);
+fed.add(name);
+}
+if (fed.size) tell([...fed]);
+},
+watch: (f) => void subs.push(f),
 };
 }
 // ---- src/prices-panel-parts.js
@@ -7221,7 +7345,7 @@ const steps = [wear?.getAttribute('data-short') ?? null, ''];
 for (let i = 0; what && wear && i < 2 && what.scrollWidth > what.clientWidth; i++)
 if (steps[i] !== null) wear.textContent = steps[i];
 }
-function createPricePanel(prices, buyOrders) {
+function createPricePanel(prices, buyOrders, goods) {
 const html = document.documentElement;
 const attrs = [TF_SETTINGS.prices.attr, TF_SETTINGS.pricesDialog.attr];
 const on = () => html.hasAttribute(attrs[0]) && html.hasAttribute(attrs[1]);
@@ -7241,7 +7365,8 @@ const dialog = on() ? document.querySelector(TF_SELECTORS.dialog) : null;
 const below = dialog?.querySelector(orders);
 const card = dialog?.querySelector(TF_SELECTORS.card);
 const key = card ? byName.keyOf(card) : null;
-const [name, cents, facts] = [byName.idFor(key), byPrice.idFor(key), byCard.idFor(key)];
+const kit = card && key === null ? goods.window(card) : null;
+const [name, cents, facts] = kit ?? [byName.idFor(key), byPrice.idFor(key), byCard.idFor(key)];
 const [phase, wear] = [facts?.phase ?? null, facts?.wear ?? null];
 const ok = !!below && typeof name === 'string' && !(phase === null && tapMatches(PANEL_DOPPLER, name));
 if (ok && cents) priceSeen(cents, card?.querySelector(TF_SELECTORS.price)?.textContent);
@@ -7274,14 +7399,16 @@ later();
 ]);
 }
 const later = frameLater(sync, (f) => tapApply(panelFrame, globalThis, [f]));
-const look = [...attrs, TF_SETTINGS.priceRef.attr, TF_SETTINGS.priceNet.attr];
-const follow = () => dialogFollow(watch, look, { attributeFilter: ['href'] });
+const look = [...attrs, TF_SETTINGS.priceRef.attr, TF_SETTINGS.priceNet.attr, goods.attr];
+const follow = () =>
+dialogFollow(watch, look, { attributeFilter: html.hasAttribute(goods.attr) ? ['href', 'src'] : ['href'] });
 const watch = new MutationObserver(() => {
 follow();
 later();
 });
 follow();
 buyOrders.watch(later);
+goods.watch(() => later());
 return {
 wanted: on,
 feed(listings) {
@@ -7712,7 +7839,7 @@ return [PRICE_MARKETS[i][0], PRICE_MARKETS[i][1], m?.[2] === 'bid' ? 'bid' : 'as
 const PRICE_DOPPLER = /\| (?:Gamma )?Doppler \(/;
 const priceThen = Promise.prototype.then;
 const PRICE_WARM = 'AK-47 | Redline (Field-Tested)';
-function createPriceCards(prices, icons, orders) {
+function createPriceCards(prices, icons, orders, goods) {
 const html = document.documentElement;
 const attrs = [TF_SETTINGS.prices.attr, TF_SETTINGS.pricesCards.attr];
 const on = () => html.hasAttribute(attrs[0]) && html.hasAttribute(attrs[1]);
@@ -7739,7 +7866,8 @@ hold.free(card);
 }
 function sync(card) {
 const key = on() && !card.closest(TF_SELECTORS.dialog) ? byName.keyOf(card) : null;
-const [name, cents, facts] = [byName.idFor(key), byPrice.idFor(key), byCard.idFor(key)];
+const kit = key === null && on() && !card.closest(TF_SELECTORS.dialog) ? goods.card(card) : null;
+const [name, cents, facts] = kit ?? [byName.idFor(key), byPrice.idFor(key), byCard.idFor(key)];
 const phase = facts?.phase ?? null;
 const row = card.querySelector(TF_SELECTORS.priceRow);
 const grid = !!card.closest('app-item-container');
@@ -7788,7 +7916,7 @@ const syncAll = () => {
 for (const card of document.querySelectorAll(TF_SELECTORS.card)) synced(card);
 };
 cardWatch({
-attrs: [...attrs, TF_SETTINGS.priceRef.attr, ...plain.attrs],
+attrs: [...attrs, TF_SETTINGS.priceRef.attr, goods.attr, ...plain.attrs],
 clock: true,
 setting: () => {
 pop.close();
@@ -7801,6 +7929,8 @@ if (on()) for (const card of new Set([...changed, ...added])) synced(card);
 },
 });
 prices.watch(() => void (on() && shotOnce(syncAll)));
+const unkeyed = () => document.querySelectorAll(TF_SELECTORS.card).forEach((c) => byName.keyOf(c) ?? synced(c));
+goods.watch((names) => void (on() && (names.forEach((n) => prices.lookup(n)), shotOnce(unkeyed))));
 const shown = () => document.visibilityState !== 'hidden';
 setInterval(() => on() && shown() && shotOnce(syncAll), 6e4);
 document.addEventListener('visibilitychange', (e) => e.isTrusted && on() && shown() && shotOnce(syncAll));
@@ -11440,9 +11570,10 @@ const chip = createChip(refresh);
 const premium = createPremium();
 const prices = createPrices();
 const orders = createBuyOrders(refresh.running);
-const pricePanel = createPricePanel(prices, orders);
+const goods = createPriceGoods();
+const pricePanel = createPricePanel(prices, orders, goods);
 const offer = createOffer(prices, orders, () => sales.graph(), grades.icons);
-const priceCards = createPriceCards(prices, grades.icons, orders);
+const priceCards = createPriceCards(prices, grades.icons, orders, goods);
 const tradeups = createTradeupCards();
 const stickerCards = createStickerCards();
 const stickerPanel = createStickerPanel(prices);
@@ -11475,9 +11606,14 @@ tradeups.wanted() ||
 stickerCards.wanted() ||
 stickerPanel.wanted() ||
 catalogViews.wanted(),
-(listings, search, own, query, raw) => {
+(all, search, own, query, raw) => {
+const listings = all.filter((l) => !tapMatches(TAP_GOODS_KEY, l[0]));
+if (listings.length < all.length)
+try {
+goods.feed(all);
+} catch {}
 if (!listings.length) {
-for (const f of search ? [tiers.seen, premium.grid] : [])
+for (const f of search && !all.length ? [tiers.seen, premium.grid] : [])
 try {
 f(listings, query, raw);
 } catch {}

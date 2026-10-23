@@ -1,4 +1,4 @@
-// TrueFloat 1.1.3: popup.js, built from src/settings.js, src/popup.js.
+// TrueFloat 1.1.4: popup.js, built from src/settings.js, src/popup.js, src/popup-note.js.
 (() => {
 'use strict';
 // ---- src/settings.js
@@ -63,6 +63,7 @@ tradeUp: Object.freeze({ default: true, attr: 'data-tf-tradeup' }),
 pricesDialog: Object.freeze({ default: true, attr: 'data-tf-pricesdialog' }),
 priceNet: Object.freeze({ default: true, attr: 'data-tf-pricenet' }),
 priceGapHide: Object.freeze({ default: true, attr: 'data-tf-pricegaphide' }),
+pricesGoods: Object.freeze({ default: true, attr: 'data-tf-pricesgoods' }),
 buyOrders: Object.freeze({ default: true, attr: 'data-tf-buyorders' }),
 menus: Object.freeze({ default: true, attr: 'data-tf-menus' }),
 menuGems: Object.freeze({ default: true, attr: 'data-tf-menugems' }),
@@ -92,6 +93,7 @@ tipBoxes: Object.freeze({ default: true, attr: 'data-tf-tipboxes' }),
 offerAsks: Object.freeze({ default: true, attr: 'data-tf-offerasks' }),
 offerContext: Object.freeze({ default: true, attr: 'data-tf-offerctx' }),
 offerGraded: Object.freeze({ default: true, attr: 'data-tf-offergrade' }),
+discordBar: Object.freeze({ default: true, attr: 'data-tf-discordbar' }),
 });
 // ---- src/popup.js
 const api = globalThis.browser ?? globalThis.chrome;
@@ -131,7 +133,7 @@ const TIES = [
 ['tierSearch', 'dbTiers', 'tierPlace', 'tierAll', 'tierPremium', 'tierStrip'],
 ['dbTiers', 'dbMerge'],
 ['tierStrip', 'patternPicker', 'leftLow'],
-['prices', 'priceRef', 'pricesCards', 'tradeUp', 'pricesDialog', 'menus', 'buyOrders'],
+['prices', 'priceRef', 'pricesCards', 'tradeUp', 'pricesDialog', 'menus', 'buyOrders', 'pricesGoods'],
 ['pricesCards', 'plainMark'],
 ['pricesDialog', 'priceNet'],
 ['prices', 'offerAsks'],
@@ -218,4 +220,51 @@ win.name = '';
 say('Settings reset', 3000);
 reset.focus();
 }
+// ---- src/popup-note.js
+const NEWS = {
+version: '1.1.4',
+title: 'Market prices for cases',
+points: ['Market prices for cases, capsules, packages and music kits', "What's new in the popup after each update"],
+};
+const ASK_AFTER = 7 * 864e5;
+const note = (document.getElementById('news'));
+const plain = (document.querySelector('.discord'));
+const go = (document.getElementById('news-go'));
+const ver = api.runtime.getManifest().version;
+function show(head, title, points, link) {
+(document.getElementById('news-title')).textContent = head;
+(document.getElementById('news-text')).textContent = title;
+const list = document.createElement('ul');
+for (const point of points) list.append(Object.assign(document.createElement('li'), { textContent: point }));
+if (points.length) go.before(list);
+go.hidden = !link;
+if (link) {
+go.textContent = link;
+go.prepend( (plain.querySelector('svg')).cloneNode(true));
+}
+note.classList.toggle('ask', !!link);
+if (!link) plain.before(note);
+note.hidden = false;
+plain.hidden = !!link;
+}
+(document.getElementById('news-close')).addEventListener('click', () => {
+note.hidden = true;
+plain.hidden = false;
+});
+for (const link of [plain, go])
+link.addEventListener('click', () => void api.storage.local.set({ joined: true }).catch(() => {}));
+try {
+api.storage.local.get(['seenNews', 'asked', 'joined', 'since']).then(
+({ seenNews, asked, joined, since }) => {
+if (NEWS.version === ver && seenNews !== ver) {
+show(`What's new · ${ver}`, NEWS.title, NEWS.points);
+return api.storage.local.set({ seenNews: ver });
+}
+if (asked || joined || Date.now() - (typeof since === 'number' ? since : 0) < ASK_AFTER) return;
+show('Help shape TrueFloat', 'Report bugs and suggest features.', [], 'Join the Discord');
+return api.storage.local.set({ asked: true });
+},
+() => {},
+);
+} catch {}
 })();
