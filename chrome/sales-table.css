@@ -1,0 +1,135 @@
+html:is([data-tf-salestable], [data-tf-salesgraph]) item-detail > .container {
+  max-height: none;
+}
+
+html:is([data-tf-salestable], [data-tf-salesgraph]) item-detail > .container > .grid-similar {
+  overscroll-behavior-y: auto;
+}
+
+item-latest-sales :has(> .tf-sl-bar) {
+  display: flex;
+  flex-direction: column;
+}
+
+item-latest-sales :has(> .tf-sl-bar) > .table-container {
+  flex: 1 1 auto;
+  min-height: 0;
+}
+
+item-latest-sales:has(.tf-sl-bar) :is(table, thead, tbody) {
+  display: block;
+}
+
+item-latest-sales:has(.tf-sl-bar) tr {
+  display: flex;
+  height: auto;
+  min-height: 52px;
+}
+
+item-latest-sales:has(.tf-sl-bar) thead tr {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+item-latest-sales:has(.tf-sl-bar) th {
+  border-radius: 0 !important;
+}
+
+item-latest-sales:has(.tf-sl-bar) :is(td, th) {
+  display: flex;
+  flex: 0 0 96px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  box-sizing: border-box;
+  min-width: 0;
+  padding: 0 8px;
+  white-space: nowrap;
+}
+
+th.tf-sl-c {
+  font-weight: 500;
+}
+
+td.tf-sl-c {
+  border-bottom: 1px solid var(--highlight-background-minimal);
+  letter-spacing: 0.0178571429em;
+}
+
+.tf-sl-t {
+  color: var(--subtext-color);
+}
+
+tr:last-child > td.tf-sl-c {
+  border-bottom: 0;
+}
+
+item-latest-sales:has(.tf-sl-bar) .mat-column-price {
+  order: 1;
+  flex: 1 1 176px;
+}
+item-latest-sales:has(.tf-sl-bar) :is(.mat-column-badges, .tf-sl-gc) {
+  order: 2;
+  flex-basis: 136px;
+}
+item-latest-sales:has(.tf-sl-bar) .mat-column-seed {
+  order: 3;
+  flex: 1 1 104px;
+}
+item-latest-sales:has(.tf-sl-bar) .mat-column-wear {
+  order: 4;
+  flex: 1 1 208px;
+}
+item-latest-sales:has(.tf-sl-bar) .mat-column-age {
+  order: 5;
+  flex-basis: 84px;
+}
+item-latest-sales:has(.tf-sl-bar) :is(.mat-column-stickers, .tf-sl-c:not(.tf-sl-gc)) {
+  order: 6;
+}
+item-latest-sales:has(td.mat-column-seed):has(.tf-sl-bar) .tf-sl-c:not(.tf-sl-gc) {
+  order: 5;
+  flex-basis: 100px;
+}
+item-latest-sales:has(.tf-sl-bar) .mat-column-stickers {
+  flex: 3 1 160px;
+  overflow: hidden;
+  justify-content: safe center;
+}
+item-latest-sales:has(.tf-sl-bar) .mat-column-actions {
+  order: 7;
+  flex-basis: 88px;
+}
+item-latest-sales:not(:has(td.mat-column-seed)):has(.tf-sl-bar) :is(td, th):not(.mat-column-actions) {
+  flex-grow: 1;
+}
+
+item-latest-sales:has(.tf-sl-bar) td.mat-column-seed > span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+item-latest-sales:has(.tf-sl-bar) td.mat-column-wear > span:not(.tf-sl) > span {
+  margin-left: 2px;
+  color: var(--subtext-color);
+  font-size: 11px;
+}
+
+item-latest-sales:has(.tf-sl-bar) td.mat-column-stickers > app-sticker-view {
+  display: flex;
+  min-width: 0;
+  overflow: hidden;
+}
+
+td.mat-column-age:has(> .tf-sl-a) > :not(.tf-sl) {
+  display: none;
+}
+
+td.mat-column-badges:has(> .tf-sl-g) > app-item-badge,
+tr.sale-row:has(.tf-sl-m[data-out]) {
+  display: none;
+}
+
+tr.sale-row:has(.tf-sl-m[data-hl]) > td {
+  background: color-mix(in srgb, #3b82f6 8%, transparent);
+}

@@ -1,0 +1,62 @@
+item-detail > .container .tf-more,
+item-detail > .container .tf-chips,
+item-detail > .container .tf-graph-note {
+  display: none;
+}
+
+html[data-tf-desc] item-detail > .container > .grid-summary > .item-schema-details:not(.hidden) > .tf-more {
+  display: inline;
+  grid-column: 2;
+  grid-row: 1;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--primary-color);
+  font: inherit;
+  font-size: 12px;
+  line-height: 18px;
+  cursor: pointer;
+}
+
+html[data-tf-desc] item-detail > .container > .grid-summary > .item-schema-details:not(.hidden) > .tf-more[hidden] {
+  visibility: hidden;
+}
+
+html[data-tf-chips] item-detail > .container > .grid-summary > .item-schema-details:not(.hidden) > .tf-chips {
+  display: flex;
+  flex-wrap: wrap;
+  grid-column: 1 / -1;
+  order: 1;
+  gap: 4px;
+  margin: 2px 0;
+}
+
+html[data-tf-desc][data-tf-chips]
+  item-detail
+  > .container
+  > .grid-summary
+  > .item-schema-details:has(> .tf-more[aria-expanded='false'])
+  > .tf-chips {
+  display: none;
+}
+
+html[data-tf-chips] item-detail > .container .tf-chips > .tf-chip {
+  padding: 2px 5px;
+  border: 1px solid var(--highlight-background-heavy);
+  border-radius: 4px;
+  color: var(--subtext-color);
+  font:
+    500 10.5px/1 ui-monospace,
+    'Cascadia Mono',
+    Consolas,
+    monospace;
+  letter-spacing: 0.02em;
+}
+
+html[data-tf-graphnote] item-detail > .container > .grid-history:has(item-history-chart) > .header > .tf-graph-note {
+  display: block;
+  margin-top: 8px;
+  color: var(--subtext-color);
+  font-size: 12px;
+  line-height: 16px;
+}

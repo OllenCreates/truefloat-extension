@@ -1,0 +1,94 @@
+html[data-tf-desc] item-detail > .container > .grid-summary > .item-schema-details:not(.hidden) {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  column-gap: 10px;
+  row-gap: 3px;
+  font-size: 13px;
+}
+
+html[data-tf-desc] item-detail > .container > .grid-summary > .item-schema-details:not(.hidden) > .flavour-text {
+  display: -webkit-box;
+  grid-column: 1;
+  grid-row: 1;
+  max-height: none;
+  overflow: hidden;
+  line-height: 18px;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+html[data-tf-desc]
+  item-detail
+  > .container
+  > .grid-summary
+  > .item-schema-details:has(> .tf-more[aria-expanded='true'])
+  > .flavour-text {
+  display: block;
+  max-height: 190px;
+  overflow: auto;
+}
+
+html[data-tf-desc] item-detail > .container > .grid-summary > .item-schema-details:not(.hidden) > .collection {
+  grid-column: 1 / -1;
+  order: 2;
+  margin-top: 0;
+  overflow: hidden;
+  color: var(--subtext-color);
+  font-size: 12px;
+  line-height: 16px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+html[data-tf-desc]
+  item-detail
+  > .container
+  > .grid-summary
+  > .item-schema-details:has(> .tf-more[aria-expanded='true'])
+  > .collection {
+  white-space: normal;
+}
+
+html[data-tf-chips]
+  item-detail
+  > .container
+  > .grid-summary
+  > .item-schema-details:has(> .tf-chips)
+  > .flavour-text
+  > br:is(:has(+ i), :has(+ br + i)) {
+  display: none;
+}
+
+html[data-tf-chips]
+  item-detail
+  > .container
+  > .grid-summary
+  > .item-schema-details:has(> .tf-chips)
+  > .flavour-text
+  > i {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+html[data-tf-chips]:not([data-tf-desc])
+  item-detail
+  > .container
+  > .grid-summary
+  > .item-schema-details:not(.hidden):has(> .tf-chips) {
+  display: flex;
+  flex-direction: column;
+}
+
+html[data-tf-chips]:not([data-tf-desc])
+  item-detail
+  > .container
+  > .grid-summary
+  > .item-schema-details:not(.hidden)
+  > .collection {
+  order: 1;
+}

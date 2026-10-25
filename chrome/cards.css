@@ -1,0 +1,64 @@
+html:is(
+    [data-tf-cols='2'],
+    [data-tf-cols='3'],
+    [data-tf-cols='4'],
+    [data-tf-cols='5'],
+    [data-tf-cols='6'],
+    [data-tf-cols='7'],
+    [data-tf-cols='8'],
+    [data-tf-cols='10'],
+    [data-tf-cols='12']
+  )
+  app-item-container
+  > div.content-wrapper
+  > item-card
+  > mat-card {
+  width: auto !important;
+  min-width: 0 !important;
+  max-width: none !important;
+}
+
+html[data-tf-cols='2'] app-item-container > div.content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(max(180px, (100% - 2 * var(--item-gap, 15px)) / 2), 1fr));
+}
+
+html[data-tf-cols='3'] app-item-container > div.content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(max(180px, (100% - 3 * var(--item-gap, 15px)) / 3), 1fr));
+}
+
+html[data-tf-cols='4'] app-item-container > div.content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(max(180px, (100% - 4 * var(--item-gap, 15px)) / 4), 1fr));
+}
+
+html[data-tf-cols='5'] app-item-container > div.content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(max(180px, (100% - 5 * var(--item-gap, 15px)) / 5), 1fr));
+}
+
+html[data-tf-cols='6'] app-item-container > div.content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(max(180px, (100% - 6 * var(--item-gap, 15px)) / 6), 1fr));
+}
+
+html[data-tf-cols='7'] app-item-container > div.content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(max(180px, (100% - 7 * var(--item-gap, 15px)) / 7), 1fr));
+}
+
+html[data-tf-cols='8'] app-item-container > div.content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(max(180px, (100% - 8 * var(--item-gap, 15px)) / 8), 1fr));
+}
+
+html[data-tf-cols='10'] app-item-container > div.content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(max(180px, (100% - 10 * var(--item-gap, 15px)) / 10), 1fr));
+}
+
+html[data-tf-cols='12'] app-item-container > div.content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(max(180px, (100% - 12 * var(--item-gap, 15px)) / 12), 1fr));
+}

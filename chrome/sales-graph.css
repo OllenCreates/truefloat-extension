@@ -1,0 +1,143 @@
+item-history-chart > .container:has(> .tf-sg) {
+  position: relative;
+}
+
+html[data-tf-salesgraph] item-history-chart > .container:has(> .tf-sg[data-full]) > .chart-container {
+  display: none;
+}
+
+.tf-sg {
+  position: absolute;
+  left: 10px;
+  bottom: 12px;
+  color: var(--subtext-color);
+  font-size: 12.5px;
+}
+
+.tf-sg[data-full] {
+  position: relative;
+  inset: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  height: 100%;
+}
+
+.tf-sg-head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 2px 2px 0;
+  white-space: nowrap;
+}
+.tf-sg-tip,
+.tf-sg-wait {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  pointer-events: none;
+}
+.tf-sg-tip {
+  top: 0;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: var(--highlight-background);
+  backdrop-filter: blur(8px);
+  color: var(--primary-text-color);
+  font-size: 12px;
+  white-space: nowrap;
+}
+.tf-sg-tip[data-on] {
+  display: flex;
+}
+.tf-sg-tv {
+  font-size: 14px;
+  font-weight: 500;
+}
+.tf-sg-tl {
+  color: var(--subtext-color);
+}
+.tf-sg-tk {
+  margin-top: 3px;
+  font-size: 11px;
+}
+.tf-sg-wait {
+  transform: translate(-50%, -50%);
+}
+
+.tf-sg svg {
+  display: block;
+  overflow: visible;
+  font-size: 11px;
+}
+
+.tf-sg-grid line {
+  stroke: var(--highlight-background);
+}
+
+.tf-sg-grid text {
+  fill: var(--subtext-color);
+}
+
+.tf-sg-vol {
+  fill: rgba(62, 152, 255, 0.2);
+}
+
+.tf-sg-line {
+  fill: none;
+  stroke: #3e98ff;
+  stroke-width: 2;
+}
+.tf-sg-faint {
+  opacity: 0.5;
+}
+.tf-sg-out {
+  fill: #3e98ff;
+}
+.tf-sg-lst,
+.tf-sg-hair {
+  stroke: var(--primary-text-color);
+  stroke-opacity: 0.5;
+}
+.tf-sg-lst {
+  stroke-dasharray: 4 3;
+  stroke-opacity: 0.45;
+}
+.tf-sg-tag rect {
+  fill: var(--primary-text-color);
+}
+.tf-sg-tag text {
+  fill: var(--backing-background-color, #0a0a0a);
+  font-weight: 500;
+}
+.tf-sg-mark,
+.tf-sg-dot {
+  fill: var(--tf-dot, #3e98ff);
+  stroke: #1d1d1d;
+  stroke-width: 2;
+}
+.tf-sg-mark.ring,
+.tf-sg-dot.other {
+  fill: none;
+  stroke: var(--tf-dot, var(--primary-text-color));
+  stroke-width: 1.5;
+}
+.tf-sg-dot.none {
+  fill: #6b6b6b;
+}
+.tf-sg-hair[data-on],
+.tf-sg-mark[data-on] {
+  transition: transform 60ms ease-out;
+}
+.tf-sg svg[data-go] {
+  cursor: pointer;
+}
+.tf-sg-dot:focus {
+  outline: none;
+}
+.tf-sg-dot:focus-visible {
+  stroke: var(--primary-text-color);
+}

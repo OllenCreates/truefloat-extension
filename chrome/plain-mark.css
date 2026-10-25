@@ -1,0 +1,56 @@
+:is(item-card .footer > button.tf-pc, .tf-pp-plh) > .tf-pl {
+  display: inline-flex;
+  align-items: center;
+  height: 16px;
+  padding: 0 5px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--tf-pg) 13%, transparent);
+  color: var(--tf-pg);
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 16px;
+}
+html[data-tf-theme='light'] .tf-pl {
+  --tf-pg: #166534;
+}
+
+item-card
+  .footer
+  > button.tf-pc:is([data-tf-plain~='age'], [data-tf-plain~='dot'], [aria-expanded='true'][data-tf-plain*='pop-'])
+  > :is(.tf-pc-s:has(+ .tf-pc-t:not([data-stale])), .tf-pc-t:not([data-stale])) {
+  display: none;
+}
+item-card
+  .footer
+  > button.tf-pc:is([data-tf-plain~='age'], [data-tf-plain~='dot'], [aria-expanded='true'][data-tf-plain*='pop-'])
+  > .tf-pc-t[data-stale] {
+  font-size: 0;
+}
+item-card .footer > button.tf-pc:is([data-tf-plain~='dot'], [aria-expanded='true'][data-tf-plain~='pop-dot']) > .tf-pl {
+  width: 6px;
+  height: 6px;
+  padding: 0;
+  border-radius: 50%;
+  background: var(--tf-pg);
+  font-size: 0;
+}
+
+.tf-pp-pl {
+  display: grid;
+  gap: 3px;
+  margin-top: 4px;
+  padding: 7px 8px 1px;
+  border-top: 1px solid var(--tf-t-line, #1f1f1f);
+  color: var(--tf-p4);
+  font-size: 11px;
+  white-space: nowrap;
+}
+.tf-pp-plh {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 1px;
+  color: var(--tf-p2);
+  font-size: 12px;
+}

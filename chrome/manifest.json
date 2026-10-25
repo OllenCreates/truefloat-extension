@@ -1,0 +1,92 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "manifest_version": 3,
+  "name": "TrueFloat",
+  "version": "1.1.4",
+  "description": "Pattern grades, tier search and market prices on csfloat.com, and much more. Free, no account, no tracking.",
+  "homepage_url": "https://truefloat.app/",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "action": {
+    "default_title": "TrueFloat",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png"
+    }
+  },
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://csfloat.com/*"
+      ],
+      "js": [
+        "toggles.js"
+      ],
+      "css": [
+        "page.css",
+        "theme.css",
+        "theme-parts.css",
+        "cards.css",
+        "card-layout.css",
+        "card-title.css",
+        "card-watch.css",
+        "card-actions.css",
+        "card-price.css",
+        "chip.css",
+        "dialog.css",
+        "dialog-about.css",
+        "dialog-lower.css",
+        "dialog-parts.css",
+        "prices-panel.css",
+        "prices-panel-sub.css",
+        "prices-panel-net.css",
+        "prices-chip.css",
+        "plain-mark.css",
+        "prices-pop.css",
+        "sticker-cards.css",
+        "sticker-panel.css",
+        "catalog-cards.css",
+        "catalog-window.css",
+        "collection-window.css",
+        "grades.css",
+        "grade-corner.css",
+        "grade-panel.css",
+        "sales-table.css",
+        "sales-marks.css",
+        "sales-graph.css",
+        "db-grades.css",
+        "tiers.css",
+        "tier-pop.css",
+        "tier-row.css",
+        "menus.css"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://csfloat.com/*"
+      ],
+      "js": [
+        "main.js"
+      ],
+      "run_at": "document_start",
+      "world": "MAIN"
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src https://truefloat.app/api/v1/index https://truefloat.app/api/v1/prices https://truefloat.app/api/v1/catalog/ext; base-uri 'none'; form-action 'none'"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "minimum_chrome_version": "111"
+}

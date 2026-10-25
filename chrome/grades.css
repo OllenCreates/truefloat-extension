@@ -1,0 +1,115 @@
+item-card span.tf-csf {
+  display: none;
+}
+
+html[data-tf-csfgrades] item-card div.badge-container:is([data-tf-has~='csf'], span.tf-csf *) > app-item-badge {
+  display: none;
+}
+
+html[data-tf-csfgrades] item-card div.badge-container > span.tf-csf {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  line-height: 0;
+}
+
+button.tf-gb {
+  all: unset;
+  box-sizing: content-box;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 3px;
+  margin: -3px;
+  border-radius: 5px;
+  color: #fafafa;
+  line-height: 0;
+  cursor: pointer;
+}
+
+button.tf-gb[data-bare] {
+  margin-left: 0;
+}
+
+button.tf-gb svg {
+  display: block;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.6));
+  transition: transform 120ms ease-out;
+}
+
+button.tf-gb:hover svg,
+button.tf-gb[aria-expanded='true'] svg {
+  transform: scale(1.2);
+}
+
+button.tf-gb:focus-visible {
+  outline: 2px solid var(--primary-color, #237bff);
+}
+
+.tf-csf-f {
+  width: 10px;
+  height: 10px;
+  box-sizing: border-box;
+  padding-right: 1px;
+  border-radius: 3px;
+  background: #2a2e37;
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.22),
+    0 1px 2px rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font:
+    italic 700 9px/10px Georgia,
+    'Times New Roman',
+    serif;
+  text-align: center;
+}
+
+html[data-tf-theme='light'] button.tf-gb {
+  color: #0a0a0a;
+}
+
+html[data-tf-theme='light'] button.tf-gb svg {
+  filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.9));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  button.tf-gb svg {
+    transition: none;
+  }
+}
+
+span.tf-sell {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  margin-top: 4px;
+  color: var(--subtext-color, #9ea7b1);
+  font-size: 12px;
+  line-height: 16px;
+}
+
+span.tf-sell > button.tf-gb {
+  margin: -3px 0 -3px -3px;
+}
+
+span.tf-sell > .tf-sell-t {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+span.tf-sell > button.tf-sell-go {
+  all: unset;
+  flex: none;
+  margin-left: -2px;
+  color: inherit;
+  text-decoration: underline dotted;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+
+span.tf-sell > button.tf-sell-go:hover {
+  color: var(--primary-text-color, #fafafa);
+}

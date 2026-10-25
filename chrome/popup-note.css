@@ -1,0 +1,132 @@
+.discord[hidden],
+.news[hidden],
+#news-go[hidden] {
+  display: none;
+}
+
+.news {
+  position: relative;
+  overflow: hidden;
+  margin: 0 14px 8px;
+  padding: 10px 10px 11px 12px;
+  border: 1px solid var(--tf-line-strong);
+  border-radius: 8px;
+  background: var(--tf-ink-raised);
+}
+
+.news::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto;
+  height: 1px;
+  background: var(--tf-spectrum-soft);
+}
+
+.news ul {
+  margin: 6px 0 0;
+  padding-left: 15px;
+  color: var(--tf-text);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.news li::marker {
+  color: var(--tf-grey-4);
+}
+
+.news li + li {
+  margin-top: 2px;
+}
+
+.news p {
+  margin: 0;
+}
+
+.news-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--tf-muted);
+  font-size: 11px;
+}
+
+.news-head b {
+  font-weight: 600;
+}
+
+#news-close {
+  margin: -4px -4px -4px 0;
+  padding: 3px 6px;
+  border: 0;
+  border-radius: 4px;
+  background: none;
+  color: var(--tf-muted);
+  font-size: 11px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+#news-close:hover {
+  background: var(--tf-ink-hover);
+  color: var(--tf-fg);
+}
+
+#news-text {
+  margin: 3px 0 0;
+  color: var(--tf-fg);
+  font-weight: 600;
+}
+
+#news-go {
+  margin-top: 8px;
+  color: #8f98f8;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#news-go::after {
+  content: ' →';
+}
+
+#news-go:hover {
+  text-decoration: underline;
+}
+
+.news.ask .news-head b {
+  color: var(--tf-fg);
+  font-size: 13px;
+}
+
+.news.ask #news-text {
+  margin: 3px 0 0;
+  color: var(--tf-text);
+  font-weight: 400;
+}
+
+.news.ask #news-go {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 7px 10px;
+  border-radius: 6px;
+  background: #5865f2;
+  color: #fff;
+}
+
+.news.ask #news-go::after {
+  content: none;
+}
+
+.news.ask #news-go:hover {
+  background: #4752c4;
+  text-decoration: none;
+}
+
+#news-close:focus-visible,
+#news-go:focus-visible {
+  outline: 2px solid var(--tf-accent);
+  outline-offset: 1px;
+}

@@ -1,0 +1,195 @@
+html {
+  color-scheme: dark;
+}
+
+body {
+  width: 280px;
+  margin: 0;
+  background: var(--tf-ink);
+  color: var(--tf-text);
+  font:
+    13px/1.4 ui-sans-serif,
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    sans-serif;
+}
+
+body::before {
+  content: '';
+  display: block;
+  height: 2px;
+  background: var(--tf-spectrum);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 14px 10px;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+fieldset:disabled .row {
+  cursor: default;
+}
+
+fieldset:disabled .row > :first-child {
+  opacity: 0.5;
+}
+
+h1 {
+  flex: 1;
+  margin: 0;
+  color: var(--tf-fg);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.discord {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 14px 10px;
+  padding: 7px 10px;
+  border: 1px solid var(--tf-line);
+  border-radius: 8px;
+  color: var(--tf-fg);
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.discord svg {
+  flex: none;
+  color: #5865f2;
+}
+
+.discord:hover {
+  border-color: #5865f2;
+}
+
+.discord:focus-visible {
+  outline: 2px solid var(--tf-accent);
+  outline-offset: 1px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 14px;
+  border-top: 1px solid var(--tf-line);
+  cursor: pointer;
+}
+
+main {
+  border-bottom: 1px solid var(--tf-line);
+}
+
+.name {
+  color: var(--tf-fg);
+}
+
+input[type='checkbox'] {
+  appearance: none;
+  flex: none;
+  position: relative;
+  width: 32px;
+  height: 18px;
+  margin: 0;
+  border-radius: 9px;
+  background: var(--tf-grey-5);
+  cursor: pointer;
+  transition: background-color 150ms;
+}
+
+input[type='checkbox']::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--tf-fg);
+  transition: transform 150ms;
+}
+
+input[type='checkbox']:checked {
+  background: var(--tf-accent);
+}
+
+input[type='checkbox']:checked::before {
+  transform: translateX(14px);
+}
+
+input[type='checkbox']:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+input[type='checkbox']:checked:disabled {
+  background: var(--tf-grey-3);
+}
+
+input[type='checkbox']:focus-visible {
+  outline: 2px solid var(--tf-accent);
+  outline-offset: 2px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 14px 12px;
+  color: var(--tf-faint);
+  font-size: 11px;
+}
+
+footer p {
+  margin: 4px 0 0;
+}
+
+#reset {
+  margin: 4px -4px 0 0;
+  padding: 2px 4px;
+  border: 0;
+  border-radius: 4px;
+  background: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+#reset:hover {
+  color: var(--tf-muted);
+}
+
+#reset.armed {
+  color: var(--tf-amber);
+}
+
+#reset:focus-visible {
+  outline: 2px solid var(--tf-accent);
+  outline-offset: 1px;
+}
+
+#reset.calm:focus-visible {
+  outline: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  input[type='checkbox'],
+  input[type='checkbox']::before {
+    transition: none;
+  }
+}

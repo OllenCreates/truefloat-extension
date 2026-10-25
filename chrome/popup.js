@@ -1,0 +1,270 @@
+// TrueFloat 1.1.4: popup.js, built from src/settings.js, src/popup.js, src/popup-note.js.
+(() => {
+'use strict';
+// ---- src/settings.js
+const PACES = Object.freeze([40, 60, 120, 300, 600]);
+const TF_SETTINGS = Object.freeze({
+enabled: Object.freeze({ default: true, attr: '' }),
+noGlow: Object.freeze({ default: true, attr: 'data-tf-noglow' }),
+shots: Object.freeze({ default: true, attr: 'data-tf-shots' }),
+shotRes: Object.freeze({ default: 'high', attr: 'data-tf-shotres' }),
+theme: Object.freeze({ default: 'dark', attr: 'data-tf-theme' }),
+cols: Object.freeze({ default: 0, attr: 'data-tf-cols' }),
+titles: Object.freeze({ default: true, attr: 'data-tf-titles' }),
+wear: Object.freeze({ default: true, attr: 'data-tf-wear' }),
+tags: Object.freeze({ default: true, attr: 'data-tf-tags' }),
+watchRow: Object.freeze({ default: true, attr: 'data-tf-watchrow' }),
+buttons: Object.freeze({ default: true, attr: 'data-tf-buttons' }),
+timer: Object.freeze({ default: true, attr: 'data-tf-timer' }),
+buyRow: Object.freeze({ default: true, attr: 'data-tf-buyrow' }),
+priceLine: Object.freeze({ default: true, attr: 'data-tf-priceline' }),
+statusDot: Object.freeze({ default: true, attr: 'data-tf-statusdot' }),
+age: Object.freeze({ default: true, attr: 'data-tf-age' }),
+csfGrades: Object.freeze({ default: true, attr: 'data-tf-csfgrades' }),
+grades: Object.freeze({ default: true, attr: 'data-tf-grades' }),
+refresh: Object.freeze({ default: false, attr: 'data-tf-refresh' }),
+pace: Object.freeze({ default: 60, attr: 'data-tf-pace' }),
+fresh: Object.freeze({ default: false, attr: 'data-tf-fresh' }),
+tierAlert: Object.freeze({ default: false, attr: 'data-tf-tieralert' }),
+alertSound: Object.freeze({ default: false, attr: 'data-tf-alertsound' }),
+bargain: Object.freeze({ default: true, attr: 'data-tf-bargain' }),
+desc: Object.freeze({ default: true, attr: 'data-tf-desc' }),
+chips: Object.freeze({ default: true, attr: 'data-tf-chips' }),
+sellerRow: Object.freeze({ default: true, attr: 'data-tf-sellerrow' }),
+tidyTop: Object.freeze({ default: true, attr: 'data-tf-tidytop' }),
+ordersLine: Object.freeze({ default: true, attr: 'data-tf-ordersline' }),
+quiet: Object.freeze({ default: true, attr: 'data-tf-quiet' }),
+imageButtons: Object.freeze({ default: true, attr: 'data-tf-imagebuttons' }),
+graph: Object.freeze({ default: true, attr: 'data-tf-graph' }),
+graphNote: Object.freeze({ default: true, attr: 'data-tf-graphnote' }),
+recs: Object.freeze({ default: true, attr: 'data-tf-recs' }),
+similarList: Object.freeze({ default: true, attr: 'data-tf-similarlist' }),
+salesGraph: Object.freeze({ default: true, attr: 'data-tf-salesgraph' }),
+salesOpen: Object.freeze({ default: true, attr: 'data-tf-salesopen' }),
+salesTable: Object.freeze({ default: true, attr: 'data-tf-salestable' }),
+salesStats: Object.freeze({ default: true, attr: 'data-tf-salesstats' }),
+salesSmart: Object.freeze({ default: true, attr: 'data-tf-salessmart' }),
+dbGrades: Object.freeze({ default: true, attr: 'data-tf-dbgrades' }),
+sellGrades: Object.freeze({ default: true, attr: 'data-tf-sellgrades' }),
+tierSearch: Object.freeze({ default: true, attr: 'data-tf-tiers' }),
+dbTiers: Object.freeze({ default: true, attr: 'data-tf-dbtiers' }),
+dbMerge: Object.freeze({ default: true, attr: 'data-tf-dbmerge' }),
+tierPlace: Object.freeze({ default: 'both', attr: 'data-tf-tierplace' }),
+tierAll: Object.freeze({ default: true, attr: 'data-tf-tierall' }),
+tierPremium: Object.freeze({ default: true, attr: 'data-tf-premium' }),
+tierStrip: Object.freeze({ default: true, attr: 'data-tf-tierstrip' }),
+leftLow: Object.freeze({ default: true, attr: 'data-tf-leftlow' }),
+patternPicker: Object.freeze({ default: true, attr: 'data-tf-picker' }),
+prices: Object.freeze({ default: true, attr: 'data-tf-prices' }),
+priceRef: Object.freeze({ default: 'lowest-ask', attr: 'data-tf-priceref' }),
+pricesCards: Object.freeze({ default: true, attr: 'data-tf-pricescards' }),
+plainMark: Object.freeze({ default: true, attr: 'data-tf-plainmark' }),
+tradeUp: Object.freeze({ default: true, attr: 'data-tf-tradeup' }),
+pricesDialog: Object.freeze({ default: true, attr: 'data-tf-pricesdialog' }),
+priceNet: Object.freeze({ default: true, attr: 'data-tf-pricenet' }),
+priceGapHide: Object.freeze({ default: true, attr: 'data-tf-pricegaphide' }),
+pricesGoods: Object.freeze({ default: true, attr: 'data-tf-pricesgoods' }),
+buyOrders: Object.freeze({ default: true, attr: 'data-tf-buyorders' }),
+menus: Object.freeze({ default: true, attr: 'data-tf-menus' }),
+menuGems: Object.freeze({ default: true, attr: 'data-tf-menugems' }),
+tidyNames: Object.freeze({ default: true, attr: 'data-tf-tidynames' }),
+oneTier: Object.freeze({ default: true, attr: 'data-tf-onetier' }),
+seedNames: Object.freeze({ default: true, attr: 'data-tf-seednames' }),
+charms: Object.freeze({ default: true, attr: 'data-tf-charms' }),
+icons: Object.freeze({ default: true, attr: 'data-tf-icons' }),
+glint: Object.freeze({ default: true, attr: 'data-tf-glint' }),
+comboTab: Object.freeze({ default: true, attr: 'data-tf-combotab' }),
+stickers: Object.freeze({ default: true, attr: 'data-tf-stickers' }),
+stickerCards: Object.freeze({ default: true, attr: 'data-tf-stickercards' }),
+stickerPanel: Object.freeze({ default: true, attr: 'data-tf-stickerpanel' }),
+stickerRight: Object.freeze({ default: true, attr: 'data-tf-stickerright' }),
+stickerBadge: Object.freeze({ default: true, attr: 'data-tf-stickerbadge' }),
+stickerCompact: Object.freeze({ default: true, attr: 'data-tf-stickercompact' }),
+stickerRule: Object.freeze({ default: 'strict', attr: 'data-tf-stickerrule' }),
+stickerW1: Object.freeze({ default: 20, attr: 'data-tf-stickerw1' }),
+stickerW2: Object.freeze({ default: 10, attr: 'data-tf-stickerw2' }),
+stickerW3: Object.freeze({ default: 0, attr: 'data-tf-stickerw3' }),
+catalogCards: Object.freeze({ default: true, attr: 'data-tf-catcards' }),
+catalogStickers: Object.freeze({ default: true, attr: 'data-tf-catstickers' }),
+catalogWindow: Object.freeze({ default: true, attr: 'data-tf-catwindow' }),
+collectionWindow: Object.freeze({ default: true, attr: 'data-tf-colwin' }),
+supplyStatus: Object.freeze({ default: true, attr: 'data-tf-supply' }),
+tipBoxes: Object.freeze({ default: true, attr: 'data-tf-tipboxes' }),
+offerAsks: Object.freeze({ default: true, attr: 'data-tf-offerasks' }),
+offerContext: Object.freeze({ default: true, attr: 'data-tf-offerctx' }),
+offerGraded: Object.freeze({ default: true, attr: 'data-tf-offergrade' }),
+discordBar: Object.freeze({ default: true, attr: 'data-tf-discordbar' }),
+});
+// ---- src/popup.js
+const api = globalThis.browser ?? globalThis.chrome;
+(document.getElementById('version')).textContent = `v${api.runtime.getManifest().version}`;
+function stored(box, type) {
+if (box.type === 'range') return +box.value > 1 ? +box.value : 0;
+if (box.type === 'number') return Math.min(100, Math.max(0, Math.round(+box.value) || 0));
+if (box.type === 'radio' || box.type === 'select-one') return typeof type === 'number' ? +box.value : box.value;
+return box.checked;
+}
+const offers = (box) => (box instanceof HTMLSelectElement ? [...box.options].map((o) => o.value) : [box.value]);
+const heads = ([...document.querySelectorAll('legend > button')]);
+const section = ( head) => head.getAttribute('aria-controls') ?? '';
+const fold = (head, shown) => {
+head.setAttribute('aria-expanded', String(shown));
+document.getElementById(section(head))?.toggleAttribute('hidden', !shown);
+};
+for (const head of heads)
+head.addEventListener('click', () => {
+fold(head, head.getAttribute('aria-expanded') === 'false');
+const open = heads.filter((h) => h.getAttribute('aria-expanded') === 'true').map(section);
+try {
+api.storage.local.set({ open }).catch(() => {});
+} catch {}
+});
+try {
+api.storage.local.get('open').then(
+({ open }) => {
+if (Array.isArray(open)) for (const head of heads) fold(head, open.includes(section(head)));
+},
+() => {},
+);
+} catch {}
+const TIES = [
+['shots', 'shotRes'],
+['grades', 'dbGrades', 'sellGrades', 'menuGems', 'charms', 'tidyNames', 'oneTier', 'seedNames', 'tierSearch'],
+['tierSearch', 'dbTiers', 'tierPlace', 'tierAll', 'tierPremium', 'tierStrip'],
+['dbTiers', 'dbMerge'],
+['tierStrip', 'patternPicker', 'leftLow'],
+['prices', 'priceRef', 'pricesCards', 'tradeUp', 'pricesDialog', 'menus', 'buyOrders', 'pricesGoods'],
+['pricesCards', 'plainMark'],
+['pricesDialog', 'priceNet'],
+['prices', 'offerAsks'],
+['stickers', 'stickerCards', 'stickerPanel', 'stickerBadge', 'stickerCompact'],
+['stickers', 'stickerRule', 'stickerW1', 'stickerW2', 'stickerW3'],
+['titles', 'tags', 'watchRow'],
+['refresh', 'pace', 'fresh', 'tierAlert'],
+['tierAlert', 'alertSound'],
+['icons', 'glint'],
+['salesGraph', 'salesOpen'],
+];
+const byId = ( id) => (document.getElementById(id));
+const live = (id) => byId(id).checked && !byId(id).disabled;
+function tie() {
+for (const [lead, ...keys] of TIES) {
+const on = live(lead);
+for (const key of keys)
+for (const box of (document.getElementsByName(key)))
+box.disabled = !on;
+}
+byId('stickerCustom').hidden = !document.querySelector('input[name="stickerRule"][value="custom"]:checked');
+}
+api.storage.sync.get().then(
+(values) => {
+for (const [key, setting] of Object.entries(TF_SETTINGS)) {
+const on = typeof values[key] === typeof setting.default ? values[key] : setting.default;
+const boxes = ([...document.getElementsByName(key)]);
+const offered = boxes.some((box) => box.type === 'number' || offers(box).includes(String(on)));
+const choice = String(!offered ? setting.default : on);
+for (const box of boxes) {
+if (box.type === 'range') {
+const out = (document.getElementById(`${key}-value`));
+const show = () =>
+box.setAttribute('aria-valuetext', (out.textContent = stored(box, 0) ? box.value : 'Auto'));
+box.value = String(on);
+show();
+box.addEventListener('input', show);
+} else if (box.type === 'select-one' || box.type === 'number') box.value = choice;
+else box.checked = box.type === 'radio' ? box.value === choice : on === true;
+box.disabled = false;
+box.addEventListener('change', () => {
+api.storage.sync.set({ [key]: stored(box, setting.default) });
+if (box.type === 'number') box.value = String(stored(box, 0));
+tie();
+});
+}
+}
+const master = byId('enabled');
+const groups = document.querySelectorAll('fieldset.group');
+const fit = () => groups.forEach((group) => group.toggleAttribute('disabled', !master.checked));
+master.addEventListener('change', fit);
+fit();
+tie();
+},
+() => {},
+);
+const dropLocal = () => api.storage.local.remove(['priceNetOn', 'premiumPlain', 'collectionPrice']).catch(() => {});
+const reset = byId('reset');
+const win = ( (globalThis));
+let [armed, shown, pointer] = [false, 0, false];
+function say(words, ms = 0, arm = false) {
+clearTimeout(shown);
+reset.textContent = words;
+reset.classList.toggle('armed', (armed = arm));
+if (ms) shown = setTimeout(() => say('Reset to defaults'), ms);
+}
+reset.addEventListener('pointerdown', () => (pointer = true));
+reset.addEventListener('keydown', () => (pointer = false));
+reset.addEventListener('blur', () => reset.classList.remove('calm'));
+reset.addEventListener('click', () => {
+if (armed)
+return void dropLocal()
+.then(() => api.storage.sync.clear())
+.then(() => void (win.name = pointer ? 'tf-reset-pointer' : 'tf-reset'))
+.then(
+() => location.reload(),
+() => {},
+);
+say('Click again to reset every setting', 4000, true);
+});
+if (/^tf-reset/.test(win.name)) {
+reset.classList.toggle('calm', win.name === 'tf-reset-pointer');
+win.name = '';
+say('Settings reset', 3000);
+reset.focus();
+}
+// ---- src/popup-note.js
+const NEWS = {
+version: '1.1.4',
+title: 'Market prices for cases',
+points: ['Market prices for cases, capsules, packages and music kits', "What's new in the popup after each update"],
+};
+const ASK_AFTER = 7 * 864e5;
+const note = (document.getElementById('news'));
+const plain = (document.querySelector('.discord'));
+const go = (document.getElementById('news-go'));
+const ver = api.runtime.getManifest().version;
+function show(head, title, points, link) {
+(document.getElementById('news-title')).textContent = head;
+(document.getElementById('news-text')).textContent = title;
+const list = document.createElement('ul');
+for (const point of points) list.append(Object.assign(document.createElement('li'), { textContent: point }));
+if (points.length) go.before(list);
+go.hidden = !link;
+if (link) {
+go.textContent = link;
+go.prepend( (plain.querySelector('svg')).cloneNode(true));
+}
+note.classList.toggle('ask', !!link);
+if (!link) plain.before(note);
+note.hidden = false;
+plain.hidden = !!link;
+}
+(document.getElementById('news-close')).addEventListener('click', () => {
+note.hidden = true;
+plain.hidden = false;
+});
+for (const link of [plain, go])
+link.addEventListener('click', () => void api.storage.local.set({ joined: true }).catch(() => {}));
+try {
+api.storage.local.get(['seenNews', 'asked', 'joined', 'since']).then(
+({ seenNews, asked, joined, since }) => {
+if (NEWS.version === ver && seenNews !== ver) {
+show(`What's new · ${ver}`, NEWS.title, NEWS.points);
+return api.storage.local.set({ seenNews: ver });
+}
+if (asked || joined || Date.now() - (typeof since === 'number' ? since : 0) < ASK_AFTER) return;
+show('Help shape TrueFloat', 'Report bugs and suggest features.', [], 'Join the Discord');
+return api.storage.local.set({ asked: true });
+},
+() => {},
+);
+} catch {}
+})();

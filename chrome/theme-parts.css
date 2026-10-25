@@ -1,0 +1,50 @@
+html:is([data-tf-theme='dark'], [data-tf-theme='light']) .mat-mdc-form-field {
+  --mat-form-field-state-layer-color: var(--tf-t-text);
+  --mat-form-field-filled-input-text-color: var(--tf-t-text);
+  --mat-form-field-outlined-input-text-color: var(--tf-t-text);
+  --mat-form-field-filled-input-text-placeholder-color: var(--tf-t-muted);
+  --mat-form-field-outlined-input-text-placeholder-color: var(--tf-t-muted);
+  --mat-form-field-filled-label-text-color: var(--tf-t-muted);
+  --mat-form-field-outlined-label-text-color: var(--tf-t-muted);
+  --mat-form-field-outlined-outline-color: var(--tf-t-line-strong);
+  --mat-form-field-enabled-select-arrow-color: var(--tf-t-muted);
+  --mat-select-enabled-trigger-text-color: var(--tf-t-text);
+  --mat-select-placeholder-text-color: var(--tf-t-muted);
+  --mat-select-enabled-arrow-color: var(--tf-t-muted);
+}
+
+html:is([data-tf-theme='dark'], [data-tf-theme='light']) .mat-unthemed {
+  --mat-button-filled-label-text-color: var(--tf-t-text);
+  --mat-button-protected-label-text-color: var(--tf-t-text);
+  --mat-button-tonal-label-text-color: var(--tf-t-text);
+}
+
+html:is([data-tf-theme='dark'], [data-tf-theme='light']) .mat-mdc-raised-button.mat-primary {
+  --mat-button-protected-label-text-color: #ffffff;
+}
+
+html:is([data-tf-theme='dark'], [data-tf-theme='light']) item-card mat-card.item-card,
+html:is([data-tf-theme='dark'], [data-tf-theme='light']) .tf-tc-card,
+html:is([data-tf-theme='dark'], [data-tf-theme='light']) app-header .toolbar {
+  box-shadow: inset 0 0 0 1px var(--tf-t-line);
+}
+
+html:is([data-tf-theme='dark'], [data-tf-theme='light']) ::-webkit-scrollbar-thumb {
+  background-color: var(--tf-t-tint-3);
+}
+
+html:is([data-tf-theme='dark'], [data-tf-theme='light']) app-header svg > g[filter] > ellipse {
+  fill: transparent;
+}
+
+html[data-tf-theme='light'] .wear-badge {
+  color: #ffffff;
+}
+
+html[data-tf-theme='light'] app-advanced-search .mat-mdc-checkbox.mat-primary {
+  --mat-checkbox-unselected-icon-color: var(--tf-t-muted);
+}
+html[data-tf-theme='light'] .mat-mdc-checkbox.category-checkbox {
+  --quality-souvenir-color: #777600;
+  --quality-highlight-color: #966634;
+}

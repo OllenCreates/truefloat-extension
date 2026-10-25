@@ -1,0 +1,87 @@
+html[data-tf-graph] item-detail > .container > .grid-history > .header mat-button-toggle-group {
+  border-width: 0 0 1px;
+  border-radius: 0;
+  border-color: var(--highlight-background-heavy);
+  background: none;
+  --mat-button-toggle-divider-color: transparent;
+  --mat-button-toggle-selected-state-background-color: transparent;
+  --mat-button-toggle-text-color: var(--subtext-color);
+  --mat-button-toggle-selected-state-text-color: var(--primary-text-color);
+}
+
+html[data-tf-graph]
+  item-detail
+  > .container
+  > .grid-history
+  > .header
+  .mat-button-toggle-checked
+  .mat-button-toggle-label-content {
+  box-shadow: inset 0 -2px 0 var(--primary-text-color);
+}
+
+html[data-tf-graph] item-detail > .container > .grid-history > .header .new-badge {
+  display: none;
+}
+
+html[data-tf-recs]
+  item-detail
+  > .container
+  > .grid-history
+  > .header
+  mat-button-toggle:not(.mat-button-toggle-checked, :focus-within):has(.new-badge) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+html[data-tf-imagebuttons]
+  item-detail
+  > .container
+  > .grid-item
+  item-card
+  app-item-image-actions
+  .detail-buttons
+  .action:not(:hover, :focus-within, .selected, .description-button, :has(.description-button)) {
+  border-color: transparent;
+  background-color: transparent;
+}
+
+html[data-tf-similarlist] item-detail > .container > .grid-similar app-similar-items > .container {
+  gap: 0;
+}
+
+html[data-tf-similarlist] item-detail > .container > .grid-similar app-item-list-card > .compact-item {
+  height: auto;
+  min-height: 60px;
+  border-bottom: 1px solid var(--highlight-background-heavy);
+  border-radius: 0;
+  background-color: transparent;
+}
+
+html[data-tf-similarlist] item-detail > .container > .grid-similar app-item-list-card > .compact-item:hover {
+  background-color: var(--highlight-background-minimal);
+}
+
+html[data-tf-similarlist]
+  item-detail
+  > .container
+  > .grid-similar
+  app-item-list-card
+  > .compact-item
+  > .item-thumbnail {
+  width: 84px;
+  border-radius: 0;
+}
+
+html[data-tf-similarlist] item-detail > .container > .grid-similar app-item-list-card > .compact-item > .item-details {
+  gap: 4px;
+  padding: 4px 4px 4px 8px;
+}
+
+html[data-tf-similarlist] item-detail > .container > .grid-similar app-item-list-card .action-btn:not(:hover) {
+  border-color: transparent;
+  background-color: transparent;
+}

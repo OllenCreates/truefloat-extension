@@ -1,0 +1,140 @@
+item-detail > .container .tf-pw {
+  display: none;
+}
+
+html[data-tf-prices][data-tf-pricesdialog] item-detail > .container > .grid-summary > .tf-pw {
+  --tf-pw-text: var(--primary-text-color, #f5f5f5);
+  --tf-pw-name: color-mix(in srgb, var(--primary-text-color, #f5f5f5) 60%, var(--subtext-color, #a3a3a3));
+  --tf-pw-sub: color-mix(in srgb, var(--subtext-color, #a3a3a3) 83%, transparent);
+  --tf-pw-green: #4ade80;
+  --tf-pw-amber: #d6a24e;
+  display: block;
+  flex: none;
+  box-sizing: border-box;
+  min-width: 0;
+  max-width: 100%;
+  padding: 8px 0 10px;
+  border-top: 1px solid var(--highlight-background-heavy);
+  font-size: 13px;
+  line-height: 1.35;
+  font-variant-numeric: tabular-nums;
+}
+
+html[data-tf-prices][data-tf-pricesdialog]:not([data-tf-quiet]) item-detail > .container > .grid-summary > .tf-pw {
+  padding: 12px 15px;
+  border-top: 0;
+  border-radius: 6px;
+  background: var(--highlight-background-minimal);
+}
+
+html[data-tf-theme='light'][data-tf-prices][data-tf-pricesdialog] item-detail > .container > .grid-summary > .tf-pw {
+  --tf-pw-green: #16a34a;
+  --tf-pw-amber: #b45309;
+}
+
+.tf-pw > .tf-pw-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  height: 22px;
+}
+
+.tf-pw .tf-pw-title {
+  color: var(--subtext-color);
+  white-space: nowrap;
+}
+
+.tf-pw .tf-pw-what {
+  min-width: 0;
+  overflow: hidden;
+  color: var(--tf-pw-sub);
+  font-size: 11px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tf-pw > .tf-pw-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  margin-top: 2px;
+}
+
+.tf-pw .tf-pw-row {
+  padding: 5px 6px;
+  border-radius: 6px;
+}
+
+.tf-pw .tf-pw-row.tf-pw-me {
+  background: var(--highlight-background, rgba(255, 255, 255, 0.07));
+}
+
+.tf-pw .tf-pw-top {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 18px;
+}
+
+.tf-pw .tf-pw-who {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.tf-pw .tf-pw-dot {
+  flex: none;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+
+.tf-pw .tf-pw-low .tf-pw-top .tf-pw-dot,
+.tf-pw .tf-pw-key > .tf-pw-dot {
+  background: var(--tf-pw-green);
+}
+
+.tf-pw .tf-pw-name {
+  color: var(--tf-pw-name);
+  font-size: 12.5px;
+}
+
+.tf-pw .tf-pw-ref {
+  color: var(--tf-pw-sub);
+  font-size: 10px;
+}
+
+.tf-pw .tf-pw-ask {
+  margin-left: auto;
+  color: var(--tf-pw-text);
+  font-size: 12.5px;
+  white-space: nowrap;
+}
+
+.tf-pw .tf-pw-me :is(.tf-pw-name, .tf-pw-ask) {
+  color: var(--tf-pw-text);
+  font-weight: 600;
+}
+
+.tf-pw .tf-pw-low .tf-pw-ask {
+  color: var(--tf-pw-green);
+  font-weight: 600;
+}
+
+.tf-pw .tf-pw-delta {
+  flex: none;
+  width: 48px;
+  color: var(--tf-pw-name);
+  font-size: 12px;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.tf-pw .tf-pw-stale:not(.tf-pw-low) .tf-pw-ask,
+.tf-pw .tf-pw-stale .tf-pw-delta {
+  color: var(--tf-pw-sub);
+}

@@ -1,0 +1,215 @@
+html[data-tf-buyrow] app-item-container > .content-wrapper > item-card > mat-card.hover-enabled {
+  contain-intrinsic-size: auto none;
+}
+html[data-tf-buyrow] app-item-container > .content-wrapper > item-card[data-tf-has~='buy'] > mat-card.hover-enabled {
+  transform: none !important;
+}
+html[data-tf-buyrow][data-tf-over] .mat-mdc-tooltip-hide {
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+html[data-tf-buyrow]
+  app-item-container
+  > .content-wrapper
+  > item-card
+  > .hover-enabled
+  .actions-container:is([data-tf-has~='buy'], .buy *) {
+  height: calc(40px + var(--footer-padding));
+}
+html[data-tf-buyrow]
+  app-item-container
+  > .content-wrapper
+  > item-card
+  > .hover-enabled
+  .outer-actions:is([data-tf-has~='buy'], .actions > .buy *) {
+  height: calc(40px + 2 * var(--footer-padding)) !important;
+  border-color: transparent !important;
+  background: none !important;
+  transition: none !important;
+}
+html[data-tf-buyrow]
+  app-item-container
+  > .content-wrapper
+  > item-card
+  > .hover-enabled
+  .outer-actions
+  > .actions:is([data-tf-has~='buy'], .buy *) {
+  opacity: 1 !important;
+  transition: none !important;
+}
+
+html[data-tf-buyrow] app-item-container > .content-wrapper > item-card .actions > .buy {
+  display: grid !important;
+  grid-template-columns: 40px;
+  grid-auto-columns: minmax(0, 4fr) minmax(max-content, 3fr);
+  grid-auto-flow: column;
+}
+html[data-tf-buyrow] app-item-container > .content-wrapper > item-card .actions > .buy > .cart-btn {
+  width: 40px !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  padding: 0 !important;
+}
+html[data-tf-buyrow] app-item-container > .content-wrapper > item-card .actions > .buy > .cart-btn .text {
+  display: block !important;
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  margin: 0 !important;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+html[data-tf-buyrow] app-item-container > .content-wrapper > item-card .actions > .buy > .bargain-btn > button,
+html[data-tf-buyrow] app-item-container > .content-wrapper > item-card .actions > .buy > .buy-now-btn {
+  width: 100% !important;
+  min-width: 0 !important;
+  padding: 0 6px !important;
+}
+html[data-tf-buyrow] app-item-container > .content-wrapper > item-card .actions > .buy .mdc-button__label {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+@container (max-width: 200px) {
+  html[data-tf-buyrow] app-item-container > .content-wrapper > item-card .actions > .buy > .bargain-btn > button,
+  html[data-tf-buyrow] app-item-container > .content-wrapper > item-card .actions > .buy > .buy-now-btn {
+    padding: 0 4px !important;
+  }
+  html[data-tf-buyrow] app-item-container > .content-wrapper > item-card .actions > .buy .mdc-button__label {
+    font-size: 11px;
+  }
+}
+
+@container (min-width: 268px) {
+  html[data-tf-statusdot]:not([data-tf-age])
+    app-item-container
+    .footer:is([data-tf-has~='seller'], .footer-content + .seller-details-wrapper *) {
+    --tf-room: 10px;
+    display: grid;
+    grid-template: auto auto 1fr / minmax(0, 1fr);
+    align-items: end;
+  }
+  html[data-tf-statusdot]:not([data-tf-age])
+    app-item-container
+    .footer:is(
+      [data-tf-has~='offline'],
+      .footer-content + .seller-details-wrapper div.seller-details > svg:not(.online) *
+    ) {
+    --tf-room: 23px;
+  }
+  html[data-tf-statusdot]:not([data-tf-age])
+    app-item-container
+    .footer
+    > :is(.footer-content, .seller-details-wrapper) {
+    grid-area: 2 / 1;
+  }
+  html[data-tf-statusdot]:not([data-tf-age]) app-item-container .footer-content + .seller-details-wrapper {
+    padding-top: 23px;
+    align-self: stretch;
+    align-items: center !important;
+    pointer-events: none;
+  }
+  html[data-tf-statusdot]:not([data-tf-age]) app-item-container .footer-content + .seller-details-wrapper .text {
+    position: absolute;
+    clip-path: inset(50%);
+  }
+  html[data-tf-statusdot]:not([data-tf-age])
+    app-item-container
+    .footer-content
+    + .seller-details-wrapper
+    div.seller-details
+    > svg.online {
+    order: 1;
+    width: 10px;
+    height: 10px;
+    margin: -2px;
+    pointer-events: auto;
+  }
+  html[data-tf-statusdot]:not([data-tf-age])
+    app-item-container
+    .footer-content
+    + .seller-details-wrapper
+    div.seller-details
+    > svg:not(.online) {
+    width: 10px;
+    height: 10px;
+    margin-right: -3px;
+    pointer-events: auto;
+  }
+}
+@container (min-width: 320px) {
+  html[data-tf-statusdot][data-tf-age]
+    app-item-container
+    .footer:is([data-tf-has~='seller'], .footer-content + .seller-details-wrapper *) {
+    --tf-room: 60px;
+    display: grid;
+    grid-template: auto auto 1fr / minmax(0, 1fr);
+    align-items: end;
+  }
+  html[data-tf-statusdot][data-tf-age]
+    app-item-container
+    .footer:is(
+      [data-tf-has~='offline'],
+      .footer-content + .seller-details-wrapper div.seller-details > svg:not(.online) *
+    ) {
+    --tf-room: 73px;
+  }
+  html[data-tf-statusdot][data-tf-age] app-item-container .footer > :is(.footer-content, .seller-details-wrapper) {
+    grid-area: 2 / 1;
+  }
+  html[data-tf-statusdot][data-tf-age] app-item-container .footer-content + .seller-details-wrapper {
+    padding-top: 23px;
+    align-self: stretch;
+    align-items: center !important;
+    pointer-events: none;
+  }
+  html[data-tf-statusdot][data-tf-age] app-item-container .footer-content + .seller-details-wrapper .text {
+    position: absolute;
+    clip-path: inset(50%);
+  }
+  html[data-tf-statusdot][data-tf-age]
+    app-item-container
+    .footer-content
+    + .seller-details-wrapper
+    div.seller-details
+    > svg.online {
+    order: 1;
+    width: 10px;
+    height: 10px;
+    margin: -2px;
+    pointer-events: auto;
+  }
+  html[data-tf-statusdot][data-tf-age]
+    app-item-container
+    .footer-content
+    + .seller-details-wrapper
+    div.seller-details
+    > svg:not(.online) {
+    width: 10px;
+    height: 10px;
+    margin-right: -3px;
+    pointer-events: auto;
+  }
+  html[data-tf-statusdot][data-tf-age] app-item-container .footer-content + .seller-details-wrapper span.tf-age {
+    order: 1;
+    margin-left: 6px;
+    pointer-events: auto;
+  }
+  html[data-tf-statusdot][data-tf-age]
+    app-item-container
+    .footer-content
+    + .seller-details-wrapper
+    span.tf-age::before {
+    content: none;
+  }
+}
+html[data-tf-statusdot] app-item-container .footer-content .text-info {
+  padding-right: var(--tf-room, 0);
+}
+html[data-tf-buyrow] app-item-container > .content-wrapper > item-card .auction > :is(.bid-btn, .auto-bid-btn) {
+  min-width: auto !important;
+  padding-inline: 1px !important;
+}
+html[data-tf-buyrow] app-item-container > .content-wrapper > item-card :is(.buy > .buy-now-btn, .auction > .bid-btn) {
+  white-space: nowrap;
+}

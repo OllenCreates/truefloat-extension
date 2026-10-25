@@ -1,0 +1,130 @@
+.tf-gp {
+  position: fixed;
+  inset: auto;
+  margin: 0;
+  z-index: 2147483000;
+  box-sizing: border-box;
+  width: max-content;
+  min-width: 240px;
+  max-width: 400px;
+  max-height: min(460px, calc(100vh - 16px));
+  overflow: auto;
+  padding: 10px 12px 9px;
+  border: 1px solid var(--highlight-background-heavy, rgba(193, 206, 255, 0.12));
+  border-radius: 10px;
+  background: var(--module-background-color, #1b1d24);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  color: var(--primary-text-color, #fff);
+  font:
+    400 13px/1.35 Roboto,
+    'Helvetica Neue',
+    sans-serif;
+}
+
+.tf-gp-t {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) max-content;
+  column-gap: 10px;
+}
+
+.tf-gp-t[data-sides] {
+  grid-template-columns: auto minmax(0, 1fr) auto max-content;
+}
+
+.tf-gp-fam {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 4px;
+  font-weight: 600;
+}
+
+.tf-gp-r + .tf-gp-fam {
+  margin-top: 6px;
+  padding-top: 8px;
+  border-top: 1px solid var(--highlight-background, rgba(193, 206, 255, 0.08));
+}
+
+.tf-gp-r {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: subgrid;
+  align-items: center;
+  min-height: 20px;
+  margin: 0 -6px;
+  padding: 3px 6px;
+  border-radius: 6px;
+}
+
+.tf-gp-r[data-lit] {
+  background: var(--highlight-background, rgba(193, 206, 255, 0.08));
+}
+
+.tf-gp-r > svg {
+  display: block;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.45));
+}
+
+.tf-gp-seed {
+  color: var(--subtext-color, #9ea7b1);
+  font-size: 12px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.tf-gp-lv {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tf-gp-q {
+  margin-left: 6px;
+  padding: 0 5px;
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--subtext-color, #9ea7b1) 15%, transparent);
+  color: var(--subtext-color, #9ea7b1);
+  font-size: 11.5px;
+}
+
+.tf-gp-in {
+  color: var(--subtext-color, #9ea7b1);
+  font-size: 12px;
+}
+
+.tf-gp-sd:not(:empty) {
+  padding: 0 6px;
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--primary-text-color, #fff) 34%, transparent);
+  font-size: 11.5px;
+  font-weight: 500;
+  line-height: 17px;
+  white-space: nowrap;
+}
+
+.tf-gp-by,
+.tf-gp-src {
+  color: var(--subtext-color, #9ea7b1);
+  font-size: 12px;
+}
+
+.tf-gp-by {
+  max-width: 150px;
+  overflow: hidden;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+a.tf-gp-by:hover {
+  color: var(--primary-text-color, #fff);
+  text-decoration: underline;
+}
+
+.tf-gp-src {
+  display: block;
+  margin-top: 8px;
+  font-size: 11px;
+}
