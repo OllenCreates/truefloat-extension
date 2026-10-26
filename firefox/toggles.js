@@ -1,4 +1,4 @@
-// TrueFloat 1.1.4: toggles.js, built from src/settings.js, src/premium-plain.js, src/premium-store.js, src/prices-window.js, src/prices-port.js, src/prices-net-port.js, src/collection-price-port.js, src/catalog-ask.js, src/tradeup-ask.js, src/toggles.js, src/discord-bar.js.
+// TrueFloat 1.1.5: toggles.js, built from src/settings.js, src/premium-plain.js, src/premium-store.js, src/prices-window.js, src/prices-port.js, src/prices-net-port.js, src/collection-price-port.js, src/catalog-ask.js, src/tradeup-ask.js, src/toggles.js, src/discord-bar.js.
 (() => {
 'use strict';
 // ---- src/settings.js
@@ -50,6 +50,7 @@ tierSearch: Object.freeze({ default: true, attr: 'data-tf-tiers' }),
 dbTiers: Object.freeze({ default: true, attr: 'data-tf-dbtiers' }),
 dbMerge: Object.freeze({ default: true, attr: 'data-tf-dbmerge' }),
 tierPlace: Object.freeze({ default: 'both', attr: 'data-tf-tierplace' }),
+fadeBar: Object.freeze({ default: true, attr: 'data-tf-fadebar' }),
 tierAll: Object.freeze({ default: true, attr: 'data-tf-tierall' }),
 tierPremium: Object.freeze({ default: true, attr: 'data-tf-premium' }),
 tierStrip: Object.freeze({ default: true, attr: 'data-tf-tierstrip' }),
@@ -94,6 +95,11 @@ offerAsks: Object.freeze({ default: true, attr: 'data-tf-offerasks' }),
 offerContext: Object.freeze({ default: true, attr: 'data-tf-offerctx' }),
 offerGraded: Object.freeze({ default: true, attr: 'data-tf-offergrade' }),
 discordBar: Object.freeze({ default: true, attr: 'data-tf-discordbar' }),
+orderConds: Object.freeze({ default: true, attr: 'data-tf-orderconds' }),
+orderGuard: Object.freeze({ default: true, attr: 'data-tf-orderguard' }),
+orderMatch: Object.freeze({ default: true, attr: 'data-tf-ordermatch' }),
+orderTiers: Object.freeze({ default: true, attr: 'data-tf-ordertiers' }),
+orderSplit: Object.freeze({ default: true, attr: 'data-tf-ordersplit' }),
 });
 // ---- src/premium-plain.js
 const PREMIUM_PLAIN = Object.freeze({

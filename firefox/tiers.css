@@ -1,4 +1,5 @@
-.tf-ts-slot {
+.tf-ts-slot,
+.tf-fd-slot {
   position: relative;
   display: flex;
   align-items: center;
@@ -8,7 +9,8 @@
   overflow: hidden;
   background: rgba(255, 255, 255, 0.04);
 }
-.tf-ts-slot[data-tf-off] {
+.tf-ts-slot[data-tf-off],
+.tf-fd-slot[data-tf-off] {
   display: none;
 }
 app-search-bar div.drill-down[data-tf-crumb] div.container > .item {
@@ -158,14 +160,16 @@ html[data-tf-theme='light'] .tf-ts-slot > button.tf-chip[aria-pressed='true'] {
   color: #16181d;
 }
 .tf-ts-slot button,
-.tf-ts-pop button {
+.tf-ts-pop button,
+.tf-fd-slot button,
+.tf-fd-pop button {
   border: 0;
   background: none;
   color: inherit;
   font: inherit;
   cursor: pointer;
 }
-.tf-ts-slot .tf-ts-btn {
+:is(.tf-ts-slot, .tf-fd-slot) .tf-ts-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -400,4 +404,67 @@ app-float-dbtable div.bar > .tf-ts-slot {
 }
 app-float-dbtable div.search-container > .tf-tstrip {
   margin: 0;
+}
+.tf-fd-slot .tf-fd-btn {
+  gap: 7px;
+  padding: 0 10px;
+}
+.tf-fd-mark {
+  flex: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #e5903b 10%, #db5977 55%, #6775e1 95%);
+}
+.tf-fd-v {
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+.tf-fd-slot[data-tf-icon] .tf-fd-v {
+  display: none;
+}
+.tf-fd-slot[data-tf-icon] .tf-fd-btn[data-on] .tf-fd-mark {
+  box-shadow:
+    0 0 0 2px #1b1d24,
+    0 0 0 3.5px #f5f5f5;
+}
+.tf-fd-pop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2147482000;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 248px;
+  padding: 14px 14px 16px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background: var(--tf-t-surface, var(--module-background-color, #1b1d24));
+  color: var(--subtext-color, #9ea7b1);
+  box-shadow:
+    0 0 0 1px var(--tf-t-line-strong, rgba(255, 255, 255, 0.07)),
+    0 12px 32px rgba(0, 0, 0, 0.55);
+  font:
+    500 13px/1.35 Roboto,
+    'Helvetica Neue',
+    sans-serif;
+}
+.tf-fd-h {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 18px;
+  color: var(--primary-text-color, #fff);
+  font-size: 14px;
+}
+.tf-fd-pop .tf-fd-x {
+  font-size: 13px;
+}
+.tf-fd-pop .tf-fd-x:hover,
+.tf-fd-pop .tf-fd-x:focus-visible {
+  color: var(--primary-text-color, #fff);
+}
+.tf-fd-pop .tf-fd-x[hidden] {
+  display: none;
 }
