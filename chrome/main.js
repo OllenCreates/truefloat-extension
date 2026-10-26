@@ -1,4 +1,4 @@
-// TrueFloat 1.1.4: main.js, built from src/main-once.js, src/settings.js, src/selectors.js, src/tap-base.js, src/tap.js, src/tap-fields.js, src/tap-keys.js, src/tap-stickers.js, src/tap-history.js, src/tap-db.js, src/tap-inventory.js, src/tap-orders.js, src/rate.js, src/press.js, src/ticker.js, src/card-marks.js, src/card-hub.js, src/shot-match.js, src/shot-viewport.js, src/shot-sharp.js, src/shots.js, src/card-read.js, src/card-layout.js, src/age.js, src/attention.js, src/fresh.js, src/alert.js, src/refresh.js, src/chip-text.js, src/chip-line.js, src/chip.js, src/bargain.js, src/price-fit.js, src/dialog-about.js, src/dialog.js, src/tip-words.js, src/tip-box.js, src/grade-art-rows.js, src/grade-art.js, src/grade-art-mid.js, src/grade-panel-draw.js, src/grade-panel.js, src/csf-grades.js, src/grade-index.js, src/grade-says.js, src/grade-charm.js, src/grade-port.js, src/catalog-index.js, src/catalog-goods.js, src/catalog-images.js, src/catalog-data.js, src/catalog-supply.js, src/grade-words.js, src/grade-names.js, src/grade-read.js, src/grades.js, src/frame.js, src/sales-units.js, src/sales-smart.js, src/sales-plot.js, src/sales-table.js, src/sales-open.js, src/sales-tip.js, src/sales-graph.js, src/sales.js, src/db-draw.js, src/db-grades.js, src/tier-names.js, src/tier-pages.js, src/tier-query.js, src/tier-net.js, src/tier-page.js, src/tier-body.js, src/tier-nav.js, src/tier-pop-guide.js, src/tier-pop.js, src/tier-picker.js, src/tier-patterns.js, src/tier-row.js, src/tier-strip.js, src/premium-plain.js, src/premium-rows.js, src/premium-math.js, src/premium-words.js, src/premium-line.js, src/premium-sample.js, src/premium-books.js, src/tier-premium.js, src/sell-words.js, src/prices-window.js, src/prices-slots.js, src/prices.js, src/prices-money.js, src/prices-view.js, src/prices-fees.js, src/prices-net.js, src/prices-goods.js, src/prices-panel-parts.js, src/buy-orders-line.js, src/buy-orders-guard.js, src/buy-orders.js, src/prices-panel-draw.js, src/prices-panel.js, src/prices-chip.js, src/plain-mark.js, src/prices-pop.js, src/prices-hold.js, src/prices-want.js, src/prices-cards.js, src/offer-read.js, src/offer-draw.js, src/offer.js, src/tradeup.js, src/tradeup-cards.js, src/sticker-rule.js, src/sticker-math.js, src/sticker-pop.js, src/sticker-cards.js, src/sticker-panel-draw.js, src/sticker-panel.js, src/menu-names.js, src/menu-draw.js, src/menu-pop.js, src/menu-keep.js, src/menu-cards.js, src/tier-leave.js, src/tier-fit.js, src/tier-pick.js, src/tier-draw.js, src/tier-bar.js, src/db-merge-sort.js, src/db-tiers.js, src/db-merge.js, src/sell-queue.js, src/sell-grades.js, src/combo-tab.js, src/catalog-from.js, src/catalog-fit.js, src/catalog-cards.js, src/catalog-pop.js, src/catalog-strip.js, src/catalog-grid.js, src/catalog-rows.js, src/catalog-window.js, src/catalog-supply-line.js, src/collection-data.js, src/collection-go.js, src/collection-draw.js, src/collection-menu.js, src/collection-parts.js, src/collection-window.js, src/left-tidy.js, src/main-taps.js, src/main.js, src/main-tail.js.
+// TrueFloat 1.1.5: main.js, built from src/main-once.js, src/settings.js, src/selectors.js, src/tap-base.js, src/tap.js, src/tap-fields.js, src/tap-keys.js, src/tap-stickers.js, src/tap-history.js, src/tap-db.js, src/tap-inventory.js, src/tap-orders.js, src/rate.js, src/press.js, src/ticker.js, src/card-marks.js, src/card-hub.js, src/shot-match.js, src/shot-viewport.js, src/shot-sharp.js, src/shots.js, src/card-read.js, src/card-layout.js, src/age.js, src/attention.js, src/fresh.js, src/alert.js, src/refresh.js, src/chip-text.js, src/chip-line.js, src/chip.js, src/bargain.js, src/price-fit.js, src/dialog-about.js, src/dialog.js, src/tip-words.js, src/tip-box.js, src/grade-art-rows.js, src/grade-art.js, src/grade-art-mid.js, src/grade-panel-draw.js, src/grade-panel.js, src/csf-grades.js, src/grade-index.js, src/grade-says.js, src/grade-charm.js, src/grade-port.js, src/catalog-index.js, src/catalog-goods.js, src/catalog-images.js, src/catalog-data.js, src/catalog-supply.js, src/grade-words.js, src/grade-names.js, src/grade-read.js, src/grades.js, src/frame.js, src/sales-units.js, src/sales-smart.js, src/sales-plot.js, src/sales-table.js, src/sales-open.js, src/sales-tip.js, src/sales-graph.js, src/sales.js, src/db-draw.js, src/db-grades.js, src/tier-names.js, src/tier-pages.js, src/tier-query.js, src/tier-net.js, src/tier-page.js, src/tier-body.js, src/tier-nav.js, src/tier-pop-guide.js, src/tier-pop.js, src/tier-picker.js, src/tier-patterns.js, src/tier-row.js, src/tier-strip.js, src/premium-plain.js, src/premium-rows.js, src/premium-math.js, src/premium-words.js, src/premium-line.js, src/premium-sample.js, src/premium-books.js, src/tier-premium.js, src/sell-words.js, src/prices-window.js, src/prices-slots.js, src/prices.js, src/prices-money.js, src/prices-view.js, src/prices-fees.js, src/prices-net.js, src/prices-goods.js, src/prices-panel-parts.js, src/buy-orders-line.js, src/buy-orders-guard.js, src/buy-orders.js, src/prices-panel-draw.js, src/prices-panel.js, src/prices-chip.js, src/plain-mark.js, src/prices-pop.js, src/prices-hold.js, src/prices-want.js, src/prices-cards.js, src/offer-read.js, src/offer-draw.js, src/offer.js, src/order-money.js, src/order-plan.js, src/order-place.js, src/order-cond.js, src/order-rows.js, src/order-tier.js, src/order-sheet-parts.js, src/order-view.js, src/order-twin.js, src/order-sheet.js, src/order-native.js, src/order-filters.js, src/order-pick.js, src/order-inline.js, src/order-warn.js, src/order-create.js, src/tradeup.js, src/tradeup-cards.js, src/sticker-rule.js, src/sticker-math.js, src/sticker-pop.js, src/sticker-cards.js, src/sticker-panel-draw.js, src/sticker-panel.js, src/menu-names.js, src/menu-draw.js, src/menu-pop.js, src/menu-keep.js, src/menu-cards.js, src/tier-leave.js, src/fade-pop.js, src/fade-bar.js, src/tier-fit.js, src/tier-pick.js, src/tier-draw.js, src/tier-bar.js, src/db-merge-sort.js, src/db-tiers.js, src/db-merge.js, src/sell-queue.js, src/sell-grades.js, src/combo-tab.js, src/catalog-from.js, src/catalog-fit.js, src/catalog-cards.js, src/catalog-pop.js, src/catalog-strip.js, src/catalog-grid.js, src/catalog-rows.js, src/catalog-window.js, src/catalog-supply-line.js, src/collection-data.js, src/collection-go.js, src/collection-draw.js, src/collection-menu.js, src/collection-parts.js, src/collection-window.js, src/left-tidy.js, src/main-taps.js, src/main.js, src/main-tail.js.
 (() => {
 'use strict';
 // ---- src/main-once.js
@@ -57,6 +57,7 @@ tierSearch: Object.freeze({ default: true, attr: 'data-tf-tiers' }),
 dbTiers: Object.freeze({ default: true, attr: 'data-tf-dbtiers' }),
 dbMerge: Object.freeze({ default: true, attr: 'data-tf-dbmerge' }),
 tierPlace: Object.freeze({ default: 'both', attr: 'data-tf-tierplace' }),
+fadeBar: Object.freeze({ default: true, attr: 'data-tf-fadebar' }),
 tierAll: Object.freeze({ default: true, attr: 'data-tf-tierall' }),
 tierPremium: Object.freeze({ default: true, attr: 'data-tf-premium' }),
 tierStrip: Object.freeze({ default: true, attr: 'data-tf-tierstrip' }),
@@ -101,6 +102,11 @@ offerAsks: Object.freeze({ default: true, attr: 'data-tf-offerasks' }),
 offerContext: Object.freeze({ default: true, attr: 'data-tf-offerctx' }),
 offerGraded: Object.freeze({ default: true, attr: 'data-tf-offergrade' }),
 discordBar: Object.freeze({ default: true, attr: 'data-tf-discordbar' }),
+orderConds: Object.freeze({ default: true, attr: 'data-tf-orderconds' }),
+orderGuard: Object.freeze({ default: true, attr: 'data-tf-orderguard' }),
+orderMatch: Object.freeze({ default: true, attr: 'data-tf-ordermatch' }),
+orderTiers: Object.freeze({ default: true, attr: 'data-tf-ordertiers' }),
+orderSplit: Object.freeze({ default: true, attr: 'data-tf-ordersplit' }),
 });
 // ---- src/selectors.js
 const TF_SELECTORS = Object.freeze({
@@ -169,15 +175,18 @@ offerCard: '.container > .content > .item',
 // ---- src/tap-base.js
 const TAP_ORIGIN = 'https://csfloat.com';
 const TAP_PATH =
-/^\/api\/v1\/(listings(\/\d+(\/similar)?|\/\d{1,24}\/buy-orders)?|users\/\d{1,20}\/stall|me\/(watchlist|inventory)|history\/[^/]{1,400}\/(graph|sales)|floatdb\/search|meta\/(exchange-rates|location)|schema)$/;
+/^\/api\/v1\/(listings(\/\d+(\/similar)?|\/\d{1,24}\/buy-orders)?|buy-orders\/item|users\/\d{1,20}\/stall|me\/(watchlist|inventory)|history\/[^/]{1,400}\/(graph|sales)|floatdb\/search|meta\/(exchange-rates|location)|schema)$/;
 const TAP_META = /^\/api\/v1\/meta\//;
 const TAP_GET = /^get$/i;
+const [TAP_POST, TAP_SIMILAR] = [/^post$/i, '/api/v1/buy-orders/similar-orders'];
+const TAP_ORDER_ITEM = '/api/v1/buy-orders/item';
 const TAP_MAX_CHARS = 5 * 1024 * 1024;
 const TAP_SEARCH = '/api/v1/listings';
 const TAP_SCHEMA = '/api/v1/schema';
 const tapSide = {
 schema: ( text) => {},
 orders: ( rate) => false,
+book: ( status) => false,
 rows: ( path, answer) => {},
 open: () => null,
 };
@@ -187,6 +196,7 @@ const tapListen = EventTarget.prototype.addEventListener;
 const tapHasOwn = Object.hasOwn;
 const tapDefine = Reflect.defineProperty;
 const tapOpen = globalThis.open;
+const tapXhrOpen = globalThis.XMLHttpRequest?.prototype.open;
 const tapMatches = (pattern, value) => typeof value === 'string' && tapApply(tapExec, pattern, [value]) !== null;
 const tapOwn = (object, key) => (object != null && tapHasOwn(object, key) ? object[key] : undefined);
 // ---- src/tap.js
@@ -198,25 +208,23 @@ const getter = (object, key) =>
 ( (Reflect.getOwnPropertyDescriptor(object, key)).get);
 const unlisten = EventTarget.prototype.removeEventListener;
 const later = globalThis.setTimeout;
-const parse = JSON.parse;
-const PageURL = URL;
-const urlOrigin = getter(URL.prototype, 'origin');
-const urlPath = getter(URL.prototype, 'pathname');
-const urlSearch = getter(URL.prototype, 'search');
-const responseURL = getter(proto, 'responseURL');
-const responseType = getter(proto, 'responseType');
-const responseText = getter(proto, 'responseText');
-const readyState = getter(proto, 'readyState');
-const status = getter(proto, 'status');
+const [parse, PageURL] = [JSON.parse, URL];
+const [urlOrigin, urlPath, urlSearch] = ['origin', 'pathname', 'search'].map((k) => getter(URL.prototype, k));
+const [responseURL, responseType, responseText, readyState, status] = [
+...['responseURL', 'responseType', 'responseText', 'readyState', 'status'],
+].map((k) => getter(proto, k));
 const tokens = new WeakMap();
 const { get: tokenOf, set: setToken, delete: dropToken } = WeakMap.prototype;
-function allowed(url) {
-return apply(urlOrigin, url, []) === TAP_ORIGIN && tapMatches(TAP_PATH, apply(urlPath, url, []));
+function allowed(url, post) {
+const path = apply(urlPath, url, []);
+return apply(urlOrigin, url, []) === TAP_ORIGIN && (post ? path === TAP_SIMILAR : tapMatches(TAP_PATH, path));
 }
 function wants(method, url) {
 try {
-const u = tapMatches(TAP_GET, method) && typeof url === 'string' ? new PageURL(url, document.baseURI) : null;
-return u && allowed(u) ? u : null;
+const post = tapMatches(TAP_POST, method);
+const ok = (post || tapMatches(TAP_GET, method)) && typeof url === 'string';
+const u = ok ? new PageURL(url, document.baseURI) : null;
+return u && allowed(u, post) ? [u, post] : null;
 } catch {
 return null;
 }
@@ -229,10 +237,10 @@ args = tapSide.open(this, arguments) ?? args;
 const result = apply(original, this, args);
 try {
 const had = apply(dropToken, tokens, [this]);
-const u = wants(method, url);
-if (u) apply(setToken, tokens, [this, {}]);
-if (!!u !== had) apply(u ? tapListen : unlisten, this, ['load', onLoad]);
-if (u && apply(urlPath, u, []) === TAP_SEARCH) onOpen(apply(urlSearch, u, []));
+const w = wants(method, url);
+if (w) apply(setToken, tokens, [this, { post: w[1] }]);
+if (!!w !== had) apply(w ? tapListen : unlisten, this, ['load', onLoad]);
+if (w && apply(urlPath, w[0], []) === TAP_SEARCH) onOpen(apply(urlSearch, w[0], []));
 } catch {}
 return result;
 }
@@ -243,7 +251,7 @@ const xhr = this;
 const token = apply(tokenOf, tokens, [xhr]);
 const url = apply(responseURL, xhr, []);
 const final = new PageURL(url);
-if (!token || !allowed(final)) return;
+if (!token || !allowed(final, token.post)) return;
 const path = apply(urlPath, final, []);
 const search = path === TAP_SEARCH;
 let own = false;
@@ -262,7 +270,9 @@ const db = path === TAP_DB;
 const inv = path === TAP_INVENTORY;
 const orders = tapMatches(TAP_ORDERS, path);
 if (orders && tapSide.orders(tapRate(xhr)) !== true) return;
-const meta = tapMatches(TAP_META, path) || path === TAP_SCHEMA || orders ? path : '';
+const book = token.post || path === TAP_ORDER_ITEM;
+if (book && tapSide.book(apply(status, xhr, [])) !== true) return;
+const meta = tapMatches(TAP_META, path) || path === TAP_SCHEMA || orders || book ? path : '';
 const query = search ? apply(urlSearch, final, []) : '';
 const go = () => read(xhr, token, url, search, own, history, db, query, meta, inv);
 if (meta || wanted(!!history, db, inv)) apply(later, globalThis, [go, 0]);
@@ -278,7 +288,7 @@ const text = apply(responseText, xhr, []);
 if (typeof text !== 'string' || text.length > TAP_MAX_CHARS) return;
 if (meta === TAP_SCHEMA) return void tapSide.schema(text);
 let body = parse(text);
-if (tapMatches(TAP_ORDERS, meta)) return void tapSide.rows(meta, tapOrders(body));
+if (tapMatches(TAP_BOOKS, meta)) return void tapSide.rows(meta, tapOrders(body));
 if (history) return void ((body = tapHistory(history, body)) && onHistory(body));
 if (db) return void ((body = tapDb(body)).length && onDb(body));
 if (meta) return void onMeta(meta, body);
@@ -579,12 +589,14 @@ return items;
 }
 // ---- src/tap-orders.js
 const TAP_ORDERS = /^\/api\/v1\/listings\/(\d{1,24})\/buy-orders$/;
+const TAP_BOOKS = /^\/api\/v1\/(listings\/\d{1,24}\/buy-orders|buy-orders\/(similar-orders|item))$/;
 const TAP_ORDER_ROWS = 50;
 const TAP_ORDER_CENTS = 2e10;
 const TAP_ORDER_QTY = 1e7;
 const tapXhr = XMLHttpRequest.prototype;
 const tapHeader = tapXhr.getResponseHeader;
 const tapStatus = (Reflect.getOwnPropertyDescriptor(tapXhr, 'status')?.get);
+const tapKeys = Object.keys;
 function tapRate(xhr) {
 const n = ( k) => tapCount(tapApply(tapHeader, xhr, [`x-ratelimit-${k}`]));
 return { status: tapApply(tapStatus, xhr, []), limit: n('limit'), remaining: n('remaining'), reset: n('reset') };
@@ -594,20 +606,59 @@ const no = ( k) => tapOwn(item, k) == null;
 const empty = ( k, v = tapOwn(item, k)) => v == null || (tapIsArray(v) && v.length === 0);
 return no('float_value') && no('paint_seed') && no('keychain_pattern') && empty('stickers') && empty('keychains');
 }
+const tapWhole = (v, lo, hi) => tapInteger(v) && (v) >= lo && (v) <= hi;
+function tapCond(row) {
+const [hp, rule] = [tapOwn(row, 'hybrid_properties'), tapOwn(row, 'expression')];
+if (rule != null && !(typeof rule === 'string' && rule.length <= 4000)) return null;
+const c = ({ min: null, max: null, seeds: null, paint: null, kmin: null, kmax: null });
+[c.st, c.kc, c.rule, c.other] = [0, 0, !!rule, false];
+if (hp == null) return c;
+if (typeof hp !== 'object' || tapIsArray(hp)) return null;
+const keys = tapKeys(hp);
+for (let i = 0; i < keys.length && i < 32; i++) {
+const [k, v] = [keys[i], tapOwn(hp, keys[i])];
+const list = tapIsArray(v) ? v : null;
+if (v == null) continue;
+if (k === 'min_float' || k === 'max_float') {
+if (!(typeof v === 'number' && v >= 0 && v <= 1)) return null;
+c[k === 'min_float' ? 'min' : 'max'] = v;
+} else if (k === 'paint_seeds') {
+if (!list || list.length > 1001) return null;
+const seeds = [];
+for (let j = 0; j < list.length; j++) if (tapWhole(tapOwn(list, j), 0, 1000)) seeds.push(tapOwn(list, j));
+if (seeds.length !== list.length) return null;
+c.seeds = seeds.length ? seeds : null;
+} else if (k === 'paint_index') {
+if (!tapWhole(v, 1, 65535)) return null;
+c.paint = v;
+} else if (k === 'min_keychain_pattern' || k === 'max_keychain_pattern') {
+if (!tapWhole(v, 0, 99999)) return null;
+c[k === 'min_keychain_pattern' ? 'kmin' : 'kmax'] = v;
+} else if (k === 'applied_stickers' || k === 'applied_keychains') {
+if (!list || list.length > 10) return null;
+c[k === 'applied_stickers' ? 'st' : 'kc'] = list.length;
+} else c.other = true;
+}
+return c;
+}
 function tapOrders(body) {
-if (!tapIsArray(body) || body.length > TAP_ORDER_ROWS) return null;
+const rows = tapIsArray(body) ? body : body && typeof body === 'object' ? tapOwn(body, 'data') : null;
+if (!tapIsArray(rows) || rows.length > TAP_ORDER_ROWS) return null;
 let top = 0;
 let qty = 0;
-for (let i = 0; i < body.length; i++) {
-const row = tapOwn(body, i);
-const price = tapOwn(row, 'price');
-const n = tapOwn(row, 'qty');
-if (!(tapInteger(price) && price >= 1 && price <= TAP_ORDER_CENTS)) return null;
-if (!(tapInteger(n) && n >= 1 && n <= TAP_ORDER_QTY)) return null;
+const list = [];
+for (let i = 0; i < rows.length; i++) {
+const row = tapOwn(rows, i);
+const [price, n, name] = [tapOwn(row, 'price'), tapOwn(row, 'qty'), tapOwn(row, 'market_hash_name')];
+if (!tapWhole(price, 1, TAP_ORDER_CENTS) || !tapWhole(n, 1, TAP_ORDER_QTY)) return null;
+if (name != null && !tapMatches(TAP_HASH_NAME, name)) return null;
+const cond = tapCond(row);
+if (!cond) return null;
 if (price > top) top = price;
 qty += n;
+list.push({ price, qty: n, name: name ?? null, cond });
 }
-return { top, qty, rows: body.length };
+return { top, qty, rows: rows.length, list };
 }
 // ---- src/rate.js
 const RATE_SLOW = 0.5;
@@ -2672,7 +2723,8 @@ return ((Math.min(...ys) + Math.max(...ys) + 1) / 32) * h;
 }
 // ---- src/grade-panel-draw.js
 const PANEL_SIDES = 'Playside is the side you see in first person; backside, the other side.';
-function panelRender({ rows, lit, seed, unit = 'seed' }) {
+let gradeOrder = () => null;
+function panelRender({ rows, lit, seed, unit = 'seed', order: buy }) {
 const pop = layoutSpan('tf-gp', '');
 const table = layoutSpan('tf-gp-t', '');
 const sides = rows.some((r) => r.side);
@@ -2727,6 +2779,8 @@ by.onclick = (e) => e.stopPropagation();
 }
 row.append(by);
 table.append(row);
+const act = lit.has(r) ? (buy?.(r) ?? null) : null;
+if (act) table.append(tierEl('div', 'tf-gp-bor', tierButton('tf-gp-bo', act, 'Create buy order')));
 }
 }
 const from = new Set(order.map((r) => (r.guide ? 'Steam community guides' : 'CSFloat')));
@@ -2975,6 +3029,7 @@ title: guide.title,
 glyph,
 cols,
 mark,
+...{ si, li },
 };
 found.push([
 gradeRank(d, si, li),
@@ -3082,9 +3137,11 @@ tapApply(tapListen, globalThis, ['message', hello, true]);
 tapApply(gradeFire, globalThis, [new Event('tf-grades')]);
 }
 function gradeDecode(text) {
-let d;
+let [d, ver] = [ (null), ''];
 try {
-d = gradeParse( (text))?.data;
+const top = gradeParse( (text));
+const v = tapOwn(top, 'dataset_version');
+[d, ver] = [top?.data, typeof v === 'string' && /^[0-9a-f]{7}$/.test(v) ? v : ''];
 } catch {
 return null;
 }
@@ -3115,7 +3172,7 @@ for (const it of s.items) items.set(`${it}`, [...(items.get(`${it}`) ?? []), i])
 }
 for (const s of every)
 for (const lv of arr(s?.levels) ? s.levels : []) if (arr(lv?.seeds)) lv.seeds = [...new Set(lv.seeds)];
-return { d, items, every, charms };
+return { d, items, every, charms, ver };
 }
 // ---- src/catalog-index.js
 const catParse = JSON.parse;
@@ -3301,6 +3358,7 @@ return null;
 function createCatalogImages() {
 const html = document.documentElement;
 const attrs = [TF_SETTINGS.catalogWindow.attr, TF_SETTINGS.catalogCards.attr, TF_SETTINGS.collectionWindow.attr];
+attrs.push(TF_SETTINGS.orderTiers.attr, TF_SETTINGS.orderConds.attr);
 let text = null;
 let [wrapped, tried] = [false, false];
 let hashes = null;
@@ -3828,7 +3886,8 @@ const unit = charm ? 'pattern' : 'seed';
 const theirs = csf ?? [];
 let line = 13;
 const rows = [...icons.flatMap((g) => g.rows), ...theirs];
-const model = (lit) => () => ({ rows, lit: new Set(lit), seed, unit });
+const order = ( r) => gradeOrder(card, r, grade);
+const model = (lit) => () => ({ rows, lit: new Set(lit), seed, unit, order });
 const { also, shown } = csfBeside(icons, theirs);
 if (row && csf) {
 const span = layoutSpan('tf-csf', '');
@@ -4904,17 +4963,18 @@ const all = new TierParams(search).getAll(seed);
 const seeds = all.length === 1 && all[0] ? all[0].split(',').map(Number) : [];
 return seeds.length <= TIER_CAP && seeds.every((v) => tierInt(v, 0, 1000)) ? seeds : [];
 }
-function tierNative(search, seeds, page = TIER_PAGES.search, max = TIER_CAP) {
-const q = new TierParams(search);
-const list = seeds ? tierList(seeds, max) : '';
-if (list === null) return null;
-const enc = ( v) =>
+const tierQ = (v) =>
 tierEnc(v)
 .replace(/%40/g, '@')
 .replace(/%3A/gi, ':')
 .replace(/%24/g, '$')
 .replace(/%2C/gi, ',')
 .replace(/%3B/gi, ';');
+function tierNative(search, seeds, page = TIER_PAGES.search, max = TIER_CAP) {
+const q = new TierParams(search);
+const list = seeds ? tierList(seeds, max) : '';
+if (list === null) return null;
+const enc = tierQ;
 if (page !== TIER_PAGES.search) return tierNativeAt(q, list, page, enc);
 const parts = list ? [`paint_seed=${list}`] : [];
 const keys = [...TIER_ORDER.slice(1), ...[...q.keys()].filter((k) => !TIER_ORDER.includes(k))];
@@ -5163,6 +5223,11 @@ const TIER_ANSWER = 10000;
 const TIER_FAIL = 'CSFloat did not apply the seed filter';
 const tierSearch = () => location.search;
 const tierAt = (page = TIER_PAGES.search) => location.pathname === page.path;
+const tierOnItem = () => /^\/item\/\d+$/.test(location.pathname);
+function tierJump(to, replace = false) {
+tapApply(replace ? tierSwap : tierPush, history, [null, '', TAP_ORIGIN + to]);
+tapApply(tierFire, globalThis, [new TierPop('popstate', { state: null })]);
+}
 function createTierNav(ours, lost, page = TIER_PAGES.search) {
 let [want, n, waits, no, gone] = [ (null), 0, '', 0, ''];
 return {
@@ -5172,8 +5237,7 @@ if ((to !== at && !to.startsWith(`${at}?`)) || !tierAt(page) || tierKey(tierSear
 const my = ++n;
 want = key;
 const since = tapApply(tierPerfNow, tierPerf, []);
-tapApply(replace ? tierSwap : tierPush, history, [null, '', TAP_ORIGIN + to]);
-tapApply(tierFire, globalThis, [new TierPop('popstate', { state: null })]);
+tierJump(to, replace);
 const here = () => my === n && want === key && tierAt(page) && tierKey(tierSearch(), seed) === key;
 const asked = () => {
 try {
@@ -5256,6 +5320,20 @@ const b = tierButton('tf-ts-bw', act, 'Browse ›');
 b.title = b.ariaLabel = `Browse ${n} pattern${n === 1 ? '' : 's'}`;
 return tierEl('div', 'tf-ts-lv', row, b);
 }
+let tierOrder = null;
+function tierLevelButton(b, l, v, named, shown, browse, order) {
+const [tip, n] = [tierLevelTip(l, v, named), l.seeds.length];
+tipBox.tie(b, tip);
+if (!tip) b.title = tierRowAct(n, named);
+b.ariaLabel = tierRowName(shown, n, named, v && !v.none ? v.aria : '');
+if (!named && !order) return b;
+const lv = named ? tierBrowse(b, n, browse) : tierEl('div', 'tf-ts-lv', b);
+if (!order) return lv;
+const o = tierButton('tf-ts-bw tf-ts-or', order, 'Create buy order');
+o.title = o.ariaLabel = `Buy orders for ${n === 1 ? 'this seed' : `these ${n} seeds`}`;
+lv.append(o);
+return lv;
+}
 function tierNamed(lv) {
 const [html, names] = [document.documentElement, tapOwn(lv.raw, 'names')];
 const on = [TF_SETTINGS.patternPicker.attr, TF_SETTINGS.tierStrip.attr].every((a) => html.hasAttribute(a));
@@ -5282,8 +5360,14 @@ levels[0].label.toLowerCase() !== name.toLowerCase()
 : '';
 return { one, row, lt };
 }
+function tierPlace(pop, x, y, fixed) {
+if (!fixed) return void (pop.style.translate = `${x + scrollX}px ${y + scrollY}px`);
+pop.style.translate = '0px 0px';
+const o = pop.getBoundingClientRect();
+pop.style.translate = `${x - o.left}px ${y - o.top}px`;
+}
 // ---- src/tier-pop.js
-function createTierPop(item, on, chose, clear, worth, browse = true) {
+function createTierPop(item, on, chose, clear, worth, browse = true, host = null) {
 const html = document.documentElement;
 let [pop, anchor] = [null, null];
 const sys = ( si) => item().ix.d.systems[si];
@@ -5297,7 +5381,7 @@ const gems = gradeGems(item().ix.d, [si].flat(), html.getAttribute('data-tf-them
 return tierEl('span', 'tf-ts-g', ...gems.map(([g, c]) => artSvg(g, c, mark, h)));
 };
 function list() {
-const now = on();
+const [now, drawn] = [on(), item()];
 const rows = [];
 if (now) rows.push(tierButton('tf-ts-c tf-ts-clr', () => (close(true), clear()), tierEl('span', 'tf-ts-g', '×'),
 tierEl('span', 'tf-ts-t', 'Clear tier')));
@@ -5328,12 +5412,9 @@ const quiet = one ? [lt, note || l.note || ''].filter(Boolean).join(' ') : (l.no
 const named = browse && tierNamed(l);
 const b = tierButton(cls, () => chose(gi, si, li, false), gem, ...words, ...nt(quiet), ...val, n);
 b.ariaPressed = `${now?.g === gi && now.si === si && now.li === li}`;
-const tip = tierLevelTip(l, v, named);
-tipBox.tie(b, tip);
-if (!tip) b.title = tierRowAct(l.seeds.length, named);
 const shown = [said, one && worn ? `· ${worn}` : '', quiet];
-b.ariaLabel = tierRowName(shown, l.seeds.length, named, v && !v.none ? v.aria : '');
-rows.push(named ? tierBrowse(b, l.seeds.length, () => chose(gi, si, li, true)) : b);
+const order = browse && tierOrder?.on() ? () => tierOrder?.start(drawn, si, li) : null;
+rows.push(tierLevelButton(b, l, v, named, shown, () => chose(gi, si, li, true), order));
 });
 }
 });
@@ -5352,13 +5433,14 @@ const up = full > below && above > below;
 const room = Math.max(120, up ? above : below);
 pop.style.maxHeight = `${room}px`;
 const y = up ? a.top - 6 - Math.min(full, room) : a.bottom + 6;
-pop.style.translate = `${Math.max(8, Math.min(a.left, innerWidth - 376)) + scrollX}px ${y + scrollY}px`;
+tierPlace(pop, Math.max(8, Math.min(a.left, innerWidth - 376)), y, !!host);
 };
 function toggle(a) {
 if (pop && anchor === a) return close(true);
 close();
 if (!item()) return;
-[anchor, pop] = [a, document.body.appendChild(tierEl('div', 'tf-ts-pop', ...list()))];
+const into = host?.() ?? document.body;
+[anchor, pop] = [a, into.appendChild(tierEl('div', host ? 'tf-ts-pop tf-ts-in' : 'tf-ts-pop', ...list()))];
 [pop.role, pop.ariaLabel] = ['dialog', 'Pattern tiers'];
 a.setAttribute('aria-expanded', 'true');
 place();
@@ -5369,13 +5451,10 @@ pop.querySelector('.tf-ts-c:not(.tf-ts-clr)')
 }
 const away = ( e) =>
 pop && ![pop, anchor, document.getElementById('tf-tip')].some((x) => x?.contains( (e.target)));
-document.addEventListener('pointerdown', (e) => away(e) && close(), true);
 const step = { __proto__: null, ArrowDown: 1, ArrowUp: -1, Home: -1e4, End: 1e4 };
-document.addEventListener(
-'keydown',
-(e) => {
+const keys = ( e) => {
 if (!pop) return;
-if (e.key === 'Escape') return void (e.stopPropagation(), close(true));
+if (e.key === 'Escape') return void (e.stopPropagation(), e.preventDefault(), close(true));
 const [d, lv] = [step[e.key], document.activeElement?.closest('.tf-ts-lv')];
 if (!pop.contains(document.activeElement) || e.altKey || e.ctrlKey || e.metaKey) return;
 const side = ['ArrowLeft', 'ArrowRight'].indexOf(e.key);
@@ -5385,11 +5464,14 @@ e.preventDefault();
 const all = [...pop.querySelectorAll('button.tf-ts-c')];
 const at = all.indexOf( (lv?.firstElementChild ?? document.activeElement));
 (all[Math.max(0, Math.min(all.length - 1, at + d))])?.focus();
-},
-true,
-);
-addEventListener('resize', place);
-addEventListener('scroll', place, { capture: true, passive: true });
+};
+const heard = ([
+[document, 'pointerdown', ( e) => away(e) && close(), true],
+[document, 'keydown', keys, true],
+[globalThis, 'resize', place, false],
+[globalThis, 'scroll', place, { capture: true, passive: true }],
+]);
+for (const [t, type, f, o] of heard) t.addEventListener(type, f, o);
 return {
 toggle,
 close,
@@ -5398,6 +5480,7 @@ glyph,
 sysName,
 sys,
 under: (a) => !!pop && anchor === a,
+dispose: () => (close(), heard.forEach(([t, type, f, o]) => t.removeEventListener(type, f, o))),
 };
 }
 // ---- src/tier-picker.js
@@ -7120,6 +7203,7 @@ function createBuyOrders(running) {
 const html = document.documentElement;
 const attrs = [TF_SETTINGS.prices.attr, TF_SETTINGS.buyOrders.attr];
 const on = () => html.hasAttribute(attrs[0]) && html.hasAttribute(attrs[1]);
+const also = () => [TF_SETTINGS.orderConds.attr, TF_SETTINGS.orderMatch.attr].some((a) => html.hasAttribute(a));
 const guard = createOrderGuard(running);
 const byId = createShotMatch(10, Object.is);
 const keys = (new Map());
@@ -7167,7 +7251,7 @@ told();
 }
 tapSide.orders = (r) => {
 guard.seen(r);
-return r.status >= 200 && r.status < 300 && on();
+return r.status >= 200 && r.status < 300 && (on() || also());
 };
 tapSide.rows = (path, answer) => {
 const id = tapApply(tapExec, TAP_ORDERS, [path])?.[1];
@@ -7212,6 +7296,7 @@ const k = on() ? of(card) : null;
 const a = k ? held(k) : null;
 return a && a[1].rows > 0 ? [a[1].top, a[0] + ORDER_KEEP] : null;
 },
+book: (id) => held([id, keys.get(id) ?? `l:${id}`])?.[1] ?? null,
 watch: (f) => void subs.push(f),
 };
 }
@@ -8206,6 +8291,1305 @@ for (const m of [byName, byPrice, byCard, byGrade]) m.learn(l);
 if (live()) later();
 },
 };
+}
+// ---- src/order-money.js
+const [ORDER_MIN, ORDER_MAX] = [3, 1e7];
+const ORDER_TYPED = /^(\d{1,7})(?:\.(\d{0,2}))?$/;
+const ORDER_GROUPED = /^[1-9]\d{0,2}(?:,\d{3})+(?:\.\d{0,2})?$/;
+const orderFloorOf = Math.floor;
+const orderStep = (c) => (c < 500 ? 1 : c < 1000 ? 5 : c < 1e4 ? 10 : c < 5e4 ? 100 : c < 1e5 ? 500 : 1000);
+const orderSnap = (c) => orderFloorOf(c / orderStep(c)) * orderStep(c);
+function orderTyped(text) {
+const s = typeof text === 'string' ? tapApply(priceTrim, text, []) : '';
+const t = tapApply(tapExec, ORDER_GROUPED, [s]) ? s.replace(/,/g, '') : s;
+const m = tapApply(tapExec, ORDER_TYPED, [t]);
+const minor = m ? +m[1] * 100 + +`${m[2] ?? ''}00`.slice(0, 2) : 0;
+return minor > 0 ? minor : null;
+}
+function orderCents(minor, rate) {
+if (minor === null || !(rate > 0) || !tapInteger(minor)) return null;
+const c = orderSnap(orderFloorOf(minor / rate));
+return c >= ORDER_MIN && c <= ORDER_MAX ? c : null;
+}
+// ---- src/order-plan.js
+const ORDER_SEEDS = 25;
+const ORDER_QTY = 250;
+const ORDER_PARTS = 10;
+const ORDER_NAME = /^\P{C}{1,160}$/u;
+const ORDER_DOPPLER = /\| (?:Gamma )?Doppler \(/;
+const [orderStringify, orderFreeze, orderWeak, orderRead] = [JSON.stringify, Object.freeze, WeakSet, JSON.parse];
+const ORDER_TOTAL = 2e8;
+const [orderAdd, orderKeys] = [WeakSet.prototype.add, Object.keys];
+function orderSaid(b, text) {
+const t = orderRead(text);
+const [h, hb] = [tapOwn(t, 'hybrid_properties'), b.hybrid_properties];
+const [s, sb] = [tapOwn(h, 'paint_seeds'), hb.paint_seeds];
+const keys = ( o) => orderKeys(o).length;
+const same = ( k) => tapOwn(t, k) === tapOwn(b, k);
+if (keys(t) !== 4 || !same('market_hash_name') || !same('max_price') || !same('quantity')) return false;
+if (keys(h) !== keys(hb) || tapOwn(h, 'paint_index') !== hb.paint_index) return false;
+for (const k of ORDER_PROPS) if (tapOwn(h, k) !== hb[k]) return false;
+if (!sb) return s === undefined;
+if (!tapIsArray(s) || s.length !== sb.length) return false;
+for (let i = 0; i < sb.length; i++) if (s[i] !== sb[i]) return false;
+return true;
+}
+const ORDER_PROPS = (['min_float', 'max_float', 'min_keychain_pattern', 'max_keychain_pattern']);
+function orderProps(p) {
+const out = {};
+const [a, b, c, d] = ORDER_PROPS.map((k) => tapOwn(p, k));
+if (a !== undefined || b !== undefined) {
+if (!(typeof a === 'number' && typeof b === 'number' && a >= 0 && a < b && b <= 1)) return 'Float Range';
+[out.min_float, out.max_float] = [a, b];
+}
+if (c !== undefined || d !== undefined) {
+if (!(tapInteger(c) && tapInteger(d) && c >= 1 && c <= d && d <= 99999)) return 'Charm Pattern Range';
+[out.min_keychain_pattern, out.max_keychain_pattern] = [c, d];
+}
+return orderFreeze(out);
+}
+const orderMade = new orderWeak();
+function orderChunks(xs, n) {
+const out = ([]);
+for (let i = 0; i < xs.length; i += n) out.push(xs.slice(i, i + n));
+return out;
+}
+function orderShape(a) {
+const seeds = [];
+for (const s of a.seeds ?? []) {
+if (!(tapInteger(s) && s >= 0 && s <= 1000)) return `Not a seed: ${s}`;
+if (!seeds.includes(s)) seeds.push(s);
+}
+if (a.seeds && !seeds.length) return 'No seeds';
+if (!(tapInteger(a.qty) && a.qty >= 1 && a.qty <= ORDER_QTY * ORDER_PARTS)) return 'Quantity 1 or more';
+seeds.sort((x, y) => x - y);
+const runs = a.seeds ? orderChunks(seeds, ORDER_SEEDS) : [[]];
+const qtys = orderChunks(Array(a.qty).fill(0), ORDER_QTY).map((q) => q.length);
+const n = runs.length * qtys.length;
+if (n > ORDER_PARTS) return `${n} orders: at most ${ORDER_PARTS} at a time`;
+const big = seeds.length > ORDER_SEEDS ? `${seeds.length} seeds` : `${a.qty} items`;
+if (n > 1 && !a.split) return `${big}: turn on Split large orders`;
+const parts = [];
+for (const run of runs) for (const qty of qtys) parts.push(orderFreeze({ seeds: orderFreeze(run), qty }));
+let items = 0;
+for (let i = 0; i < parts.length; i++) items += parts[i].qty;
+return orderFreeze({ parts: orderFreeze(parts), seeds: seeds.length, items });
+}
+function orderPlan(a) {
+if (!tapMatches(ORDER_NAME, a.name)) return 'No item name';
+const doppler = tapMatches(ORDER_DOPPLER, a.name);
+if (doppler !== (a.paint !== null) || (a.paint !== null && !(tapInteger(a.paint) && a.paint > 0 && a.paint < 65536)))
+return 'No Doppler phase for this name';
+const props = orderProps(a.props ?? {});
+if (typeof props === 'string') return props;
+const shape = orderShape(a);
+if (typeof shape === 'string') return shape;
+if (a.cents === null || !(tapInteger(a.cents) && a.cents >= ORDER_MIN && a.cents <= ORDER_MAX)) return 'Price';
+const each = a.cents;
+const parts = shape.parts.map((x) => {
+const hp = {};
+if (a.seeds) hp.paint_seeds = x.seeds;
+if (a.paint !== null) hp.paint_index = a.paint;
+Object.assign(hp, props);
+const body = orderFreeze({
+market_hash_name: a.name,
+max_price: each,
+quantity: x.qty,
+hybrid_properties: orderFreeze(hp),
+});
+return orderFreeze({ ...x, body, text: orderStringify(body) });
+});
+if (shape.items * each > ORDER_TOTAL) return 'Total over US$2,000,000';
+if (!parts.every((p) => orderSaid(p.body, p.text))) return 'Could not build the order';
+const total = shape.items * each;
+const plan = orderFreeze({ parts: orderFreeze(parts), each, items: shape.items, total, seeds: shape.seeds });
+tapApply(orderAdd, orderMade, [plan]);
+return plan;
+}
+// ---- src/order-place.js
+const ORDER_URL = 'https://csfloat.com/api/v1/buy-orders';
+const ORDER_ACCEPTS = 'application/json, text/plain, */*';
+const ORDER_GAP = 1000;
+const ORDER_TIMEOUT = 2e4;
+const ORDER_SAID = 120;
+const ORDER_2FA = 123;
+const ORDER_2FA_SAYS = "CSFloat asks for 2FA: place this part in CSFloat's Create";
+const ORDER_ECHO = Object.freeze([
+...['paint_seeds', 'paint_index', 'min_float', 'max_float', 'min_keychain_pattern', 'max_keychain_pattern'],
+...['applied_stickers', 'applied_keychains'],
+]);
+const OrderXhr = XMLHttpRequest;
+const orderProto = OrderXhr.prototype;
+const orderOpenFn = tapXhrOpen;
+const orderSendFn = orderProto.send;
+const [orderHeadFn, orderReadFn] = [orderProto.setRequestHeader, orderProto.getResponseHeader];
+const orderDesc = ( k) => Reflect.getOwnPropertyDescriptor(orderProto, k);
+const [orderStatusOf, orderTextOf] = [orderDesc('status')?.get, orderDesc('responseText')?.get];
+const orderWait = orderDesc('timeout')?.set;
+const [orderParse, orderHas] = [JSON.parse, WeakSet.prototype.has];
+const orderUnlisten = EventTarget.prototype.removeEventListener;
+const orderUsed = new orderWeak();
+let orderBusy = false;
+function orderSame(got, sent) {
+if (!tapIsArray(sent)) return got === sent;
+if (!tapIsArray(got) || got.length !== sent.length) return false;
+for (let i = 0; i < sent.length; i++) if (tapOwn(got, i) !== sent[i]) return false;
+return true;
+}
+function orderEcho(a, b) {
+const hp = tapOwn(a, 'hybrid_properties');
+if (tapOwn(a, 'market_hash_name') !== b.market_hash_name || tapOwn(a, 'price') !== b.max_price) return false;
+if (tapOwn(a, 'qty') !== b.quantity || (hp != null && (typeof hp !== 'object' || tapIsArray(hp)))) return false;
+const sent = (b.hybrid_properties);
+for (const k of ORDER_ECHO) {
+const v = hp == null ? undefined : tapOwn(hp, k);
+const empty = v == null || (tapIsArray(v) && v.length === 0);
+if (tapHasOwn(sent, k) ? !orderSame(v, sent[k]) : !empty) return false;
+}
+return true;
+}
+const orderSays = (body) => {
+const m = tapOwn(body, 'message');
+return typeof m === 'string'
+? m
+.replace(/\p{C}+/gu, ' ')
+.trim()
+.slice(0, ORDER_SAID)
+: '';
+};
+const orderStay = (e) => e.preventDefault();
+function orderRun(press, plan, tell, done, keep = () => true) {
+if (!press?.isTrusted || press.type !== 'click' || orderBusy) return false;
+if (!tapApply(orderHas, orderMade, [plan]) || tapApply(orderHas, orderUsed, [plan])) return false;
+tapApply(orderAdd, orderUsed, [plan]);
+orderBusy = true;
+tapApply(tapListen, globalThis, ['beforeunload', orderStay]);
+const parts = plan.parts;
+let i = 0;
+const end = () => {
+for (let k = i + 1; k < parts.length; k++) tell(k, 'skipped', '');
+tapApply(orderUnlisten, globalThis, ['beforeunload', orderStay]);
+orderBusy = false;
+done();
+};
+const stop = (s, words) => (tell(i, s, words), end());
+const post = () => {
+if (i && !keep()) return stop('skipped', 'Not sent: Create was closed');
+const part = parts[i];
+tell(i, 'sending', '');
+let going = false;
+try {
+const xhr = new OrderXhr();
+tapApply(orderOpenFn, xhr, ['POST', ORDER_URL]);
+tapApply(orderHeadFn, xhr, ['Content-Type', 'application/json']);
+tapApply(orderHeadFn, xhr, ['Accept', ORDER_ACCEPTS]);
+tapApply( (orderWait), xhr, [ORDER_TIMEOUT]);
+tapApply(tapListen, xhr, ['loadend', () => heard(xhr, part.body), { once: true }]);
+going = true;
+tapApply(orderSendFn, xhr, [part.text]);
+} catch {
+if (!going) return stop('failed', 'Not sent');
+stop('unknown', 'Not sure it was sent: check your buy orders before trying again');
+}
+};
+const heard = (xhr, sent) => {
+let [status, body, left] = [0, (null), (null)];
+try {
+status = tapApply( (orderStatusOf), xhr, []);
+left = tapCount(tapApply(orderReadFn, xhr, ['x-ratelimit-remaining']));
+body = orderParse(tapApply( (orderTextOf), xhr, []));
+} catch {}
+if (!status) return stop('unknown', 'No answer from CSFloat: check your buy orders before trying again');
+if (status === 429) return stop('failed', 'CSFloat: too many requests');
+if (status < 200 || status > 299) {
+if (tapOwn(body, 'code') === ORDER_2FA) return stop('twofa', ORDER_2FA_SAYS);
+return stop('failed', `CSFloat: ${orderSays(body) || `error ${status}`}`);
+}
+if (!orderEcho(body, sent)) return stop('mismatch', "CSFloat's answer differs from what was sent: check it");
+const n = tapOwn(body, 'bought_item_count');
+tell(i, 'placed', `${tapInteger(n) && n > 0 ? n : 0}`);
+if (++i >= parts.length) return end();
+if (left === null || left < parts.length - i) return stop('skipped', "CSFloat's limit has too few left");
+tickAfter(post, ORDER_GAP);
+};
+post();
+return true;
+}
+// ---- src/order-cond.js
+const ORDER_SHOW_SEEDS = 6;
+const ORDER_KINDS = new Set(['Weapons', 'Knives', 'Gloves']);
+const ORDER_WEARS = ([
+['FN', 'Factory New', 0, 0.07],
+['MW', 'Minimal Wear', 0.07, 0.15],
+['FT', 'Field-Tested', 0.15, 0.38],
+['WW', 'Well-Worn', 0.38, 0.45],
+['BS', 'Battle-Scarred', 0.45, 1],
+]);
+const orderSchema = { skins: (new Map()), phases: new Map(), read: false };
+function orderSchemaRead(j) {
+catEach(tapOwn(j, 'weapons'), (def, w) => {
+const [gun, kind] = [tapOwn(w, 'name'), tapOwn(w, 'type')];
+if (!tapMatches(CAT_ID, def) || !tapMatches(CAT_TEXT, gun) || !ORDER_KINDS.has(kind)) return;
+catEach(tapOwn(w, 'paints'), (paint, p) => {
+const [name, min, max] = [tapOwn(p, 'name'), tapOwn(p, 'min'), tapOwn(p, 'max')];
+if (!tapMatches(CAT_ID, paint) || !tapMatches(CAT_TEXT, name)) return;
+if (!(typeof min === 'number' && typeof max === 'number' && min >= 0 && max <= 1 && min < max)) return;
+const ph = tapApply(tapExec, CAT_PHASE, [name]);
+if (ph) orderSchema.phases.set(+paint, ph[2]);
+const [st, sv] = [tapOwn(p, 'stattrak') === true, tapOwn(p, 'souvenir') === true];
+const skin = { gun, skin: ph ? ph[1] : name, phase: ph ? ph[2] : '', min, max, kind, st, sv };
+if (orderSchema.skins.size < 65536) orderSchema.skins.set(`${+def}:${+paint}`, skin);
+});
+});
+orderSchema.read = true;
+}
+const orderFloat = (v) => `${+v.toFixed(6)}`;
+function orderCondWords(c) {
+const out = [];
+if (c.min !== null || c.max !== null) out.push(`float ${orderFloat(c.min ?? 0)}–${orderFloat(c.max ?? 1)}`);
+if (c.paint !== null) out.push(orderSchema.phases.get(c.paint) ?? `phase ${c.paint}`);
+if (c.seeds) {
+const n = c.seeds.length;
+const shown = c.seeds.slice(0, ORDER_SHOW_SEEDS).join(' ');
+out.push(`${n} seed${n === 1 ? '' : 's'} ${shown}${n > ORDER_SHOW_SEEDS ? ` +${n - ORDER_SHOW_SEEDS}` : ''}`);
+}
+if (c.st) out.push(`${c.st} sticker${c.st === 1 ? '' : 's'}`);
+if (c.kc) out.push(`${c.kc} charm${c.kc === 1 ? '' : 's'}`);
+if (c.kmin !== null || c.kmax !== null) out.push(`pattern ${c.kmin ?? 1}–${c.kmax ?? 99999}`);
+if (c.rule) out.push('custom rule');
+if (c.other) out.push('other filter');
+return out.join(' · ');
+}
+const orderSeedList = (seeds) => seeds.join(' ');
+function orderLineEl(c, words) {
+const el = priceEl('span', 'tf-oc', words);
+el.title = c.seeds && c.seeds.length > ORDER_SHOW_SEEDS ? `Paint seeds ${orderSeedList(c.seeds)}` : words;
+return el;
+}
+const orderWearsOf = (s) => ORDER_WEARS.flatMap((w, i) => (w[2] < s.max && w[3] > s.min ? [i] : []));
+const orderCatsOf = (s) => [
+1,
+...(s.st && s.kind !== 'Gloves' ? [2] : []),
+...(s.sv && s.kind === 'Weapons' ? [3] : []),
+];
+function orderName(s, wear, cat) {
+const tag = cat === 2 ? 'StatTrak™ ' : cat === 3 ? 'Souvenir ' : '';
+return `${s.kind === 'Weapons' ? '' : '★ '}${tag}${s.gun} | ${s.skin} (${ORDER_WEARS[wear]?.[1] ?? ''})`;
+}
+function orderSkinsNamed(name) {
+const base = name
+.replace(/^★ /, '')
+.replace(/^(?:StatTrak™|Souvenir) /, '')
+.replace(/ \([^()]+\)$/, '');
+return [...orderSchema.skins].filter(([, s]) => `${s.gun} | ${s.skin}` === base);
+}
+const orderPhasePaint = (name, phase) => {
+const hit = phase ? orderSkinsNamed(name).find(([, s]) => s.phase === phase) : null;
+return hit ? +hit[0].split(':')[1] : null;
+};
+function orderPageChoice(s) {
+const q = new URLSearchParams(location.search);
+const [lo, hi] = [+(q.get('min_float') ?? 0), +(q.get('max_float') ?? 1)];
+const wears = orderWearsOf(s);
+const mid = (lo + hi) / 2;
+const wear = wears.find((i) => ORDER_WEARS[i][2] <= mid && mid < ORDER_WEARS[i][3]) ?? wears[0] ?? 0;
+const cat = +(q.get('category') ?? 1);
+return { wear, cat: orderCatsOf(s).includes(cat) ? cat : 1 };
+}
+// ---- src/order-rows.js
+const ORDER_ROWS_OURS = 'span.tf-oc';
+const ORDER_ITEM_PATH = /^\/item\/(\d{1,24})$/;
+const ORDER_TABLE = 'app-order-table';
+const orderListingId = () => tapApply(tapExec, ORDER_ITEM_PATH, [location.pathname])?.[1] ?? null;
+const orderCellText = (td) =>
+[...(td?.childNodes ?? [])]
+.map((n) => (n.nodeType === 3 ? n.nodeValue : ''))
+.join('')
+.trim();
+function createOrderRows(orders) {
+const html = document.documentElement;
+const attr = TF_SETTINGS.orderConds.attr;
+const on = () => html.hasAttribute(attr);
+const last = { similar: (null), at: 0, item: (null) };
+const subs = [];
+const prev = tapSide.rows;
+tapSide.rows = (path, answer) => {
+prev(path, answer);
+if (path === TAP_SIMILAR) [last.similar, last.at] = [answer, tickNow()];
+else if (path === TAP_ORDER_ITEM) last.item = answer;
+later();
+for (const f of subs)
+try {
+f();
+} catch {}
+};
+const want = () => [TF_SETTINGS.orderConds.attr, TF_SETTINGS.orderGuard.attr].some((a) => html.hasAttribute(a));
+tapSide.book = (status) => status >= 200 && status < 300 && want();
+function answerOf(t) {
+if (t.closest('app-create-dialog')) return last.similar;
+const lid = t.closest(TF_SELECTORS.dialog) ? orderListingId() : null;
+return lid ? orders.book(lid) : t.closest(TF_SELECTORS.dialog) ? null : last.item;
+}
+function fits(rows, a) {
+if (rows.length !== a.list.length || !rows.length) return false;
+for (let i = 0; i < rows.length; i++) {
+const qty = orderCellText(rows[i].querySelector('td.mat-column-qty')).replace(/[,\s]/g, '');
+const price = orderCellText(rows[i].querySelector('td.mat-column-price'));
+if (qty !== `${a.list[i].qty}` || (priceCurrency.fmt && !priceDraws(a.list[i].price, price))) return false;
+}
+return true;
+}
+function paint(t) {
+const rows = ([...t.querySelectorAll('tr.mat-mdc-row')]);
+const a = on() ? answerOf(t) : null;
+const ok = !!a && fits(rows, a);
+for (let i = 0; i < rows.length; i++) {
+const td = rows[i].querySelector('td.mat-column-price');
+const c = ok ? (a).list[i].cond : null;
+const words = c ? orderCondWords(c) : '';
+const had = td?.querySelector(ORDER_ROWS_OURS) ?? null;
+if ((had?.textContent ?? '') === words) continue;
+had?.remove();
+if (td && c && words) td.append(orderLineEl(c, words));
+}
+if (!ok) for (const el of t.querySelectorAll(ORDER_ROWS_OURS)) el.remove();
+}
+const box = () => [...(document.body?.children ?? [])].find((el) => el.matches('.cdk-overlay-container')) ?? null;
+const draw = () => box()?.querySelectorAll(ORDER_TABLE).forEach(paint);
+const later = frameLater(draw, (f) => requestAnimationFrame(f));
+function follow() {
+watch.disconnect();
+watch.observe(html, { attributeFilter: [attr] });
+const ours = box()?.querySelectorAll(ORDER_ROWS_OURS) ?? [];
+if (!on()) return void ours.forEach((el) => el.remove());
+if (document.body) watch.observe(document.body, { childList: true });
+const b = box();
+if (b) watch.observe(b, { childList: true, subtree: true, characterData: true });
+}
+const watch = new MutationObserver((records) => {
+if (records.some((r) => r.target === html || r.target === document.body)) follow();
+later();
+});
+follow();
+orders.watch(later);
+return {
+similar: () => ([last.similar, last.at]),
+heard: (f) => void subs.push(f),
+};
+}
+// ---- src/order-tier.js
+const ORDER_KEEP_LISTINGS = 300;
+const ORDER_OPEN_MS = 1500;
+const ORDER_WANT_MS = 8000;
+let orderWant = null;
+const orderItemOf = (ix, def, paint) =>
+tierItem(ix, `?${TIER_PAGES.search.def}=${def}&${TIER_PAGES.search.paint}=${paint}`);
+function createOrderTier(index, orders, start, need) {
+const html = document.documentElement;
+const on = () => html.hasAttribute(TF_SETTINGS.orderTiers.attr);
+const seen = new Map();
+const listing = (id) => (id ? (seen.get(id) ?? null) : null);
+const charmed = ( l) => l[8] !== null || (l[9]?.kc.length ?? 0) > 0;
+gradeOrder = (card, r, key) => {
+const [ix, l] = [on() && card.closest(TF_SELECTORS.dialog) ? index() : null, listing(orderListingId())];
+if (!ix || !l || charmed(l) || r.si === undefined || r.li === undefined || !l[7] || !l[4]) return null;
+if (key !== l[4]) return null;
+const s = ix.d.systems[r.si];
+const lv = s?.levels[r.li];
+if (!lv || !tapIsArray(lv.seeds)) return null;
+const paint = +`${l[4]}`.split(':')[1];
+const doppler = tapMatches(ORDER_DOPPLER, l[7]);
+const phase = orderSchema.phases.get(paint) ?? l[2]?.phase ?? '';
+return () => {
+if (!on()) return;
+orderWant = { name: (l[7]), si: (r.si), raw: lv, at: tickNow() };
+const gone = () => !document.querySelector(ORDER_CREATE) && (orderWant = null);
+if (orderOpenCreate(card)) return void tickAfter(gone, ORDER_OPEN_MS);
+orderWant = null;
+const item = orderItemOf(ix, `${l[4]}`.split(':')[0], paint);
+const skin = orderSchema.skins.get(`${l[4]}`) ?? null;
+const want = { si: (r.si), raw: lv };
+if (item) start({ item, want, paint: doppler ? paint : null, phase, name: l[7], skin, wear: 0, cat: 1, qty: 1 });
+};
+};
+const self = {
+feed(ls) {
+for (const l of ls) {
+if (l[10] === null) continue;
+seen.delete(l[10]);
+seen.set(l[10], l);
+if (seen.size > ORDER_KEEP_LISTINGS) seen.delete( (seen.keys().next().value));
+}
+},
+listing,
+plainName: () => {
+const l = listing(orderListingId());
+return l && l[11] === true && l[7] && !charmed(l) ? l[7] : null;
+},
+on,
+tiers(name, phase) {
+const ix = on() ? index() : null;
+if (!ix) return null;
+if (!orderSchema.read) need();
+const all = orderSkinsNamed(name).filter(([k]) => ix.items.has(k.replace(':', ',')));
+const hit = all.find(([, s]) => !s.phase || s.phase === phase);
+if (!hit) return all.length ? 'Pick a phase to see its pattern tiers' : null;
+const [[def, paint], skin] = [hit[0].split(':'), hit[1]];
+const item = orderItemOf(ix, def, paint);
+return item && { item, paint: skin.phase ? +paint : null, phase: skin.phase };
+},
+search(item, si, li) {
+const s = item?.ix.d.systems[si];
+const lv = s ? tierLevels(s)[li] : null;
+if (!on() || !lv) return;
+if (!orderSchema.read) need();
+const skin = orderSchema.skins.get(`${item.def}:${item.paint}`) ?? null;
+const { wear, cat } = skin ? orderPageChoice(skin) : { wear: 0, cat: 1 };
+const [paint, phase] = skin?.phase ? [item.paint, skin.phase] : [null, ''];
+start({ item, want: { si, raw: { seeds: lv.seeds } }, paint, phase, name: null, skin, wear, cat, qty: 1 });
+},
+};
+tierOrder = { on, start: (item, si, li) => self.search(item, si, li) };
+return self;
+}
+// ---- src/order-sheet-parts.js
+const orderCount = (n, one) => `${panelCount(n)} ${one}${n === 1 ? '' : 's'}`;
+function orderResult(s, words) {
+if (s === 'sending') return ['sending…', ''];
+if (s === 'placed') return [`✓ placed · ${words} bought`, 'ok'];
+if (s === 'skipped') return [words ? `not sent · ${words}` : 'not sent', ''];
+return [`${s === 'failed' || s === 'twofa' ? '✗' : '?'} ${words}`, 'bad'];
+}
+function orderTell(cell, s, words) {
+const [text, tone] = orderResult(s, words);
+cell.textContent = text;
+cell.className = `tf-ov-res${tone ? ` tf-ov-${tone}` : ''}`;
+}
+function orderCreateBox(lines) {
+const kids = lines.map(([t, warn]) => tierEl('div', `tf-ocr-l${warn ? ' tf-ocr-warn' : ''}`, t));
+return kids.length ? tierEl('div', 'tf-ocr', ...kids) : null;
+}
+function orderMatchEl(book) {
+const el = tierEl('section', 'tf-om', tierEl('div', 'tf-om-h', 'Orders matching this listing'));
+for (const r of book.list.slice(0, 3)) {
+const row = tierEl('div', 'tf-om-r', tierEl('div', 'tf-om-top', `${priceMoney(r.price)} · ${panelCount(r.qty)}`));
+const c = r.cond;
+const seeds = c?.seeds ?? [];
+const rest = c ? orderCondWords({ ...c, seeds: null }) : '';
+if (rest) row.append(tierEl('div', 'tf-om-c', rest));
+if (seeds.length) {
+const chips = orderChips(seeds);
+chips.hidden = true;
+const fold = tierButton(
+'tf-om-s',
+() => {
+chips.hidden = !chips.hidden;
+fold.ariaExpanded = `${!chips.hidden}`;
+},
+`${orderCount(seeds.length, 'seed')} ›`,
+);
+fold.ariaExpanded = 'false';
+row.append(fold, chips);
+}
+el.append(row);
+}
+return el;
+}
+// ---- src/order-view.js
+function orderQtys(qs) {
+const runs = [];
+for (const q of qs) {
+const last = runs[runs.length - 1];
+if (last && last[0] === q) last[1]++;
+else runs.push([q, 1]);
+}
+return runs.map(([q, n]) => (n > 1 ? `${n} × ${panelCount(q)}` : panelCount(q))).join(' + ');
+}
+function orderSentence(s) {
+const n = s.parts.length;
+const seedRuns = [...new Set(s.parts.map((x) => x.seeds))].map((x) => x.length);
+const qtys = s.parts.filter((x) => x.seeds === s.parts[0].seeds).map((x) => x.qty);
+const items = qtys.length > 1 ? `${orderQtys(qtys)} items${s.seeds ? ' each seed part' : ''}` : '';
+if (n === 1) return s.seeds ? `1 buy order with all ${orderCount(s.seeds, 'seed')}` : '1 buy order';
+const said = [s.seeds && seedRuns.length > 1 ? `seeds split ${seedRuns.join(' + ')}` : '', items].filter(Boolean);
+return `${n} buy orders: ${said.join(', ')}`;
+}
+function orderChips(seeds) {
+const box = tierEl('div', 'tf-sc-box', ...seeds.map((s) => tierEl('span', 'tf-sc', `#${s}`)));
+const wrap = tierEl('div', 'tf-sc-wrap', box);
+if (seeds.length <= 16) return wrap;
+const more = tierButton(
+'tf-sc-more',
+() => {
+const all = !wrap.hasAttribute('data-all');
+wrap.toggleAttribute('data-all', all);
+more.textContent = all ? 'show fewer' : `show all ${seeds.length}`;
+},
+`show all ${seeds.length}`,
+);
+wrap.append(more);
+return wrap;
+}
+const orderPartWords = (x) =>
+x.seeds.length === 1
+? `seed ${x.seeds[0]}`
+: x.seeds.length
+? `seeds ${x.seeds[0]}–${x.seeds[x.seeds.length - 1]} · ${orderCount(x.seeds.length, 'seed')}`
+: `${orderCount(x.qty, 'item')}`;
+function orderPlanView(s, each, about) {
+const el = tierEl('div', 'tf-ov', tierEl('div', 'tf-ov-say', orderSentence(s)));
+const many = s.parts.length > 1;
+const list = tierEl('div', 'tf-ov-parts');
+const cells = s.parts.map((x, i) => {
+const cell = tierEl('span', 'tf-ov-res', '');
+const price = each === null ? '' : priceMoney(each);
+const q = x.seeds.length
+? price
+? `${panelCount(x.qty)} × ${price}`
+: orderCount(x.qty, 'item')
+: price && `${price} each`;
+if (many || !x.seeds.length) {
+const row = tierEl('div', 'tf-ov-row', tierEl('span', 'tf-ov-n', `${i + 1}`));
+row.append(tierEl('span', 'tf-ov-what', orderPartWords(x)), tierEl('span', 'tf-ov-q', q), cell);
+list.append(row);
+} else list.append(tierEl('div', 'tf-ov-row', tierEl('span', 'tf-ov-what', orderPartWords(x)), cell));
+if (about) list.append(tierEl('div', 'tf-ov-about', about));
+if (x.seeds.length && (i === 0 || s.parts[i - 1].seeds !== x.seeds)) list.append(orderChips(x.seeds));
+return cell;
+});
+el.append(list);
+const n = s.parts.length;
+const money = each === null ? [] : [`${priceMoney(each)} each`, `up to ${priceMoney(s.items * each)}`];
+const sum = [`up to ${orderCount(s.items, 'item')}`, ...money, `counts ${n} toward CSFloat's 200 new orders a day`];
+el.append(tierEl('div', 'tf-ov-sum', sum.join(' · ')));
+el.append(tierEl('div', 'tf-ov-fine', 'Uses your CSFloat balance. Orders can fill at once.'));
+return { el, cells };
+}
+const orderAbout = (name, phase, props) => [name, phase, ...orderPropWords(props)].filter(Boolean).join(' · ');
+// ---- src/order-twin.js
+function orderTwinFrame(close) {
+const sheet = (tierEl('dialog', 'tf-ob tf-tw'));
+sheet.ariaLabel = 'Create Buy Order';
+const x = tierButton('tf-tw-x', close, '×');
+[x.ariaLabel, x.title] = ['Close', 'Close (Esc)'];
+const sub = 'Automatically purchase items at your specified price.';
+const text = tierEl(
+'div',
+'tf-tw-text',
+tierEl('div', 'tf-tw-title', 'Create Buy Order'),
+tierEl('div', 'tf-tw-sub', sub),
+);
+const [left, right] = [tierEl('div', 'tf-tw-new'), tierEl('div', 'tf-tw-book')];
+const head = tierEl('div', 'tf-tw-head', tierEl('div', 'tf-tw-icon', tierEl('span', 'tf-tw-plus')), text, x);
+sheet.append(head, tierEl('div', 'tf-tw-gap'), tierEl('div', 'tf-tw-grid', left, right));
+return { sheet, left, right };
+}
+const orderTwinBox = (label, ...kids) =>
+tierEl('div', 'tf-tw-in', tierEl('div', 'tf-tw-name', label), tierEl('div', 'tf-tw-field', ...kids));
+function orderTwinInput(cls, mode, hint) {
+const i = (tierEl('input', cls));
+[i.type, i.inputMode, i.placeholder, i.autocomplete] = ['text', mode, hint, 'off'];
+return i;
+}
+function orderTwinFloat(wear, changed) {
+const [lo, hi] = [0, 1].map((k) => orderTwinInput('tf-tw-num', 'decimal', k ? 'Max Float' : 'Min Float'));
+const off = tierButton('tf-tw-off', () => fold(false), '×');
+off.ariaLabel = 'Remove Float Range';
+const head = tierEl('div', 'tf-tw-fh', tierEl('span', '', 'Float Range'), off);
+const panel = tierEl('div', 'tf-tw-fp', head, tierEl('div', 'tf-tw-two', lo, tierEl('span', '', '–'), hi));
+const add = tierButton('tf-tw-add', () => fold(true), tierEl('span', 'tf-tw-addi', '+'), 'Float Range');
+const el = tierEl('div', 'tf-tw-filters', add);
+function fold(shown) {
+if (shown) [lo.value, hi.value] = wear().map((v) => `${v}`);
+el.replaceChildren(shown ? panel : add);
+if (shown) lo.focus();
+changed();
+}
+const read = () => {
+if (!panel.isConnected) return {};
+const vs = [lo.value.trim(), hi.value.trim()];
+if (!vs.every((v) => tapMatches(ORDER_DECIMAL, v))) return 'Float Range';
+const p = orderProps({ min_float: +vs[0], max_float: +vs[1] });
+return typeof p === 'string' || +vs[0] < wear()[0] || +vs[1] > wear()[1] ? 'Float Range' : p;
+};
+return { el, read, inputs: [lo, hi] };
+}
+function orderTwinPrice(qty, unit, rate, changed) {
+const q = orderTwinInput('tf-tw-qty', 'numeric', 'Qty');
+const p = orderTwinInput('tf-tw-price', 'decimal', '0.00');
+q.value = qty;
+const step = ( d) => {
+const c = orderCents(orderTyped(p.value), rate) ?? 0;
+const next = d > 0 ? orderSnap(c + orderStep(c)) : c - orderStep(Math.max(c - 1, ORDER_MIN));
+if (next < ORDER_MIN) return;
+p.value = (Math.ceil(next * rate) / 100).toFixed(2);
+changed();
+};
+const [minus, plus] = [-1, 1].map((d) => tierButton('tf-tw-step', () => step(d), d < 0 ? '−' : '+'));
+[minus.ariaLabel, plus.ariaLabel] = ['Lower price', 'Raise price'];
+const money = tierEl('div', 'tf-tw-field', tierEl('span', 'tf-tw-unit', unit), p, minus, plus);
+const priced = tierEl('div', 'tf-tw-in tf-tw-p', tierEl('div', 'tf-tw-name', 'Max Price Per Item'), money);
+const el = tierEl('div', 'tf-tw-row', orderTwinBox('Quantity', q), priced);
+return { el, qty: q, price: p };
+}
+function orderTwinBook(rows) {
+const th = tierEl('div', 'tf-tw-tr tf-tw-th', tierEl('span', '', 'Price'), tierEl('span', '', 'Quantity'));
+const tr = ( r) => {
+const c = orderCondWords(r.cond);
+const price = tierEl('span', '', priceMoney(r.price), ...(c ? [tierEl('span', 'tf-tw-c', c)] : []));
+return tierEl('div', 'tf-tw-tr', price, tierEl('span', '', panelCount(r.qty)));
+};
+const none = tierEl('div', 'tf-tw-none', 'No buy orders read for this item yet');
+return tierEl('div', 'tf-tw-table', th, ...(rows.length ? rows.slice(0, 12).map(tr) : [none]));
+}
+function orderTwinNames(host, chose) {
+const v = tierEl('span', 'tf-tw-v');
+const field = tierButton(
+'tf-tw-field tf-tw-pick',
+() => (list ? close() : unfold()),
+v,
+tierEl('span', 'tf-op-arrow'),
+);
+let list = null;
+let names = [];
+const close = () => void (list?.remove(), (list = null));
+function unfold() {
+if (names.length < 2) return;
+const row = ( n, i) =>
+tierButton('tf-ts-c', () => (close(), field.focus(), chose(i)), tierEl('span', 'tf-ts-t', n));
+list = host.appendChild(tierEl('div', 'tf-ts-pop tf-ts-in', ...names.map(row)));
+const a = field.getBoundingClientRect();
+tierPlace(list, a.left, a.bottom + 6, true);
+(list.querySelector('button'))?.focus();
+}
+return {
+el: tierEl('div', 'tf-tw-in', tierEl('div', 'tf-tw-name', 'Item Name'), field),
+set: (all, now) => void ((names = all), (v.textContent = now), (field.disabled = all.length < 2)),
+close,
+listed: () => !!list,
+};
+}
+// ---- src/order-sheet.js
+const ORDER_BOOK_MS = 6e5;
+function createOrderSheet(prices, rows) {
+const html = document.documentElement;
+const attr = TF_SETTINGS.orderTiers.attr;
+let d = null;
+let [running, dispose] = [() => false, () => {}];
+const known = new Map();
+const close = () => {
+if (!d || running()) return;
+const was = d;
+d = null;
+gate.disconnect();
+was.close();
+was.remove();
+dispose();
+};
+const gate = new MutationObserver(() => d && !html.hasAttribute(attr) && close());
+let listed = false;
+const esc = ( e) => e.key === 'Escape' && (listed = !!d?.querySelector('.tf-ts-pop'));
+tapApply(tapListen, globalThis, ['keydown', esc, true]);
+function start(o) {
+if (running() || !html.hasAttribute(attr)) return;
+close();
+let [wear, cat] = [o.wear, o.cat];
+const [fmt, unit] = [priceCurrency.fmt, priceUnit()];
+const { sheet, left, right } = orderTwinFrame(close);
+const sk = o.skin;
+const variants = sk ? orderWearsOf(sk).flatMap((w) => orderCatsOf(sk).map((c) => [w, c])) : [];
+const names = orderTwinNames(sheet, (i) => (([wear, cat] = variants[i]), show()));
+const nameOf = ( w, c) => (o.skin ? orderName(o.skin, w, c) : '');
+const name = () => o.name ?? nameOf(wear, cat);
+const range = () => {
+const w = ORDER_WEARS[wear];
+return (
+o.skin && w ? [Math.max(o.skin.min, w[2]), Math.min(o.skin.max, w[3])] : [0, 1]
+);
+};
+const float = orderTwinFloat(range, () => show());
+const pick = createOrderPick(
+null,
+() => show(),
+() => sheet,
+);
+const money = orderTwinPrice(`${o.qty}`, unit, fmt ? fmt.rate : 1, () => show());
+const inline = createOrderInline(() => ask(), true);
+[running, dispose] = [inline.running, pick.dispose];
+const phase =
+o.paint !== null ? [tierEl('div', 'tf-tw-in', tierEl('div', 'tf-tw-field tf-tw-phase', o.phase))] : [];
+left.append(names.el, ...phase, float.el, pick.row, money.el, inline.el);
+tapApply(tapListen, sheet, ['input', ( e) => e.isTrusted && show()]);
+tapApply(tapListen, sheet, [
+'cancel',
+( e) =>
+running() || names.listed() || listed ? (e.preventDefault(), names.close(), (listed = false)) : close(),
+]);
+function ask() {
+const n = name();
+const k = known.get(n);
+const props = float.read();
+const [lo, hi] = range();
+const stop = !n
+? 'CSFloat has not sent its item list yet'
+: k === 0 && !o.name
+? 'Checking the name…'
+: !k && !o.name
+? "Not a name CSFloat's market knows"
+: typeof props === 'string'
+? `Float Range: a Min under its Max, within ${lo}–${hi}`
+: '';
+const fields = { name: n, price: money.price.value, qty: money.qty.value, phase: o.phase };
+const p = pick.picked();
+return { fields, seeds: p?.seeds ?? null, paint: o.paint, props: typeof props === 'string' ? {} : props, stop };
+}
+function show() {
+const n = name();
+names.set(
+variants.map(([w, c]) => nameOf(w, c)),
+n,
+);
+if (n && !o.name && !known.has(n)) {
+known.set(n, 0);
+const said = ( s) => (known.set(n, !!s), d === sheet && show());
+tapApply(panelThen, prices.lookup(n, o.phase || null), [said]);
+}
+const [seen, at] = rows.similar();
+const fresh = seen && tickNow() - at < ORDER_BOOK_MS ? seen.list : [];
+right.replaceChildren(orderTwinBook(fresh.filter((r) => r.name === n && [null, o.paint].includes(r.cond.paint))));
+if (!inline.draw()) inline.el.replaceChildren();
+}
+pick.build({ item: o.item, paint: o.paint, phase: o.phase });
+pick.want(o.want);
+show();
+panelHold(sheet, null);
+d = sheet;
+gate.observe(html, { attributeFilter: [attr] });
+document.body.append(sheet);
+sheet.showModal();
+money.price.focus({ preventScroll: true });
+}
+return { start, close };
+}
+// ---- src/order-native.js
+const ORDER_SEED_TRIES = 20;
+const orderClick = HTMLElement.prototype.click;
+const orderInputEvent = Event;
+const ORDER_PHASE_TEXT = 'app-doppler-phase-filter .mat-mdc-select-value-text';
+const [ORDER_CHIP_X, ORDER_FILTER_X] = ['.seed-chip-remove', '.remove-filter-btn'];
+function orderCreateFields(d) {
+const f = ( n) => d.querySelector(`input[formcontrolname="${n}"]`);
+const [name, price, qty] = ['name', 'price', 'qty'].map((n) => `${ (f(n))?.value ?? ''}`.trim());
+const sel = d.querySelector(ORDER_PHASE_TEXT);
+return { name, price, qty, phase: (sel?.textContent ?? '').trim() };
+}
+function orderSeedBox(d) {
+const filter = () => d.querySelector('app-buy-order-filters app-paint-seed-filter');
+const chipEls = () => [...(filter()?.querySelectorAll('span.seed-chip') ?? [])];
+const num = ( c) => orderSeedOf(`${c.firstChild?.textContent ?? ''}`.trim());
+const press = ( el) => !!el && (tapApply(orderClick, el, []), true);
+return {
+chips: () => chipEls().map(num),
+field: () => !!filter()?.querySelector('input.seed-inline-input'),
+unfold: () => {
+const adds = [...d.querySelectorAll('app-buy-order-filters .add-filter-row .add-filter-chip')];
+return press(adds.find((b) => /seed/i.test(b.textContent ?? '')));
+},
+type: (seeds) => {
+const input = (filter()?.querySelector('input.seed-inline-input'));
+if (!input) return;
+input.value = `${seeds.join(' ')} `;
+input.dispatchEvent(new orderInputEvent('input', { bubbles: true }));
+},
+drop: (n) =>
+void press(
+chipEls()
+.find((c) => num(c) === n)
+?.querySelector(ORDER_CHIP_X),
+),
+close: () => void press(filter()?.querySelector(ORDER_FILTER_X)),
+every: () => chipEls().forEach((c) => press(c.querySelector(ORDER_CHIP_X))),
+};
+}
+function orderSeedPut(box, seeds, done, wait = (f) => void tickAfter(f, 40)) {
+if (seeds.length > ORDER_SEEDS) return done('many');
+if (box.chips().length) return done('theirs');
+const opened = !box.field();
+if (opened && !box.unfold()) return done('no-filter');
+let tries = 0;
+const same = () => {
+const got = box.chips();
+return got.length === seeds.length && seeds.every((s) => got.includes(s));
+};
+const check = () => {
+if (same()) return done('ok', opened);
+if (++tries <= ORDER_SEED_TRIES) return wait(check);
+if (opened) box.close();
+else box.every();
+let n = 0;
+const gone = () => (!box.chips().length ? done('failed') : ++n <= ORDER_SEED_TRIES ? wait(gone) : done('stuck'));
+wait(gone);
+};
+const typeIn = () => {
+if (!box.field()) return ++tries > ORDER_SEED_TRIES ? done('no-filter') : wait(typeIn);
+tries = 0;
+box.type(seeds);
+wait(check);
+};
+typeIn();
+}
+function orderSeedTake(box, added, opened) {
+const chips = box.chips();
+if (opened && chips.every((n) => added.includes(n))) return box.close();
+for (const n of added) if (chips.includes(n)) box.drop(n);
+}
+function orderOursOnly(d, hide) {
+if (d.hasAttribute(ORDER_OURS_ONLY) !== hide) d.toggleAttribute(ORDER_OURS_ONLY, hide);
+}
+const ORDER_OURS_ONLY = 'data-tf-oursonly';
+function orderHoldEnter(d, e) {
+if (!d.hasAttribute(ORDER_OURS_ONLY)) return false;
+const key =
+(e).key === 'Enter' && (e.target)?.tagName === 'INPUT';
+if (e.type !== 'submit' && !key) return false;
+e.preventDefault();
+e.stopPropagation();
+return true;
+}
+function orderSeedsGone(box, then, closing) {
+let n = 0;
+const gone = () => (box.chips().length || (closing && box.field())) && ++n <= 2 * ORDER_SEED_TRIES;
+const step = () => (gone() ? tickAfter(step, 40) : then());
+step();
+}
+function orderOpenCreate(card) {
+const b = card.closest(TF_SELECTORS.dialog)?.querySelector(ORDER_CREATE_BTN);
+const on = !!b && !( (b).disabled) && b.getAttribute('aria-disabled') !== 'true';
+return on && b.textContent?.trim() === 'Create' && (tapApply(orderClick, b, []), true);
+}
+const ORDER_CREATE_BTN =
+'item-detail .buy-orders .order-container > .header > button:has(mat-icon:is([svgicon="create"], [data-mat-icon-name="create"]))';
+const orderSeedOf = (t) => (tapMatches(/^\d{1,4}$/, t) ? +t : NaN);
+// ---- src/order-filters.js
+const ORDER_DECIMAL = /^(?:\d+(?:\.\d+)?|\.\d+)$/;
+const ORDER_WHOLE = /^\d{1,5}$/;
+const ORDER_READ =
+'app-doppler-phase-filter, app-float-range-filter, app-paint-seed-filter, app-keychain-pattern-range-filter';
+const ORDER_ANY_FILTER = '.optional-filters, app-filter-slide, .active-filter, .add-filter-chip';
+function orderRange(f, sel, re) {
+const els = ([...f.querySelectorAll(sel)]);
+if (!els.length) return undefined;
+const vs = els.map((e) => `${e.value ?? ''}`.trim());
+return vs.length === 2 && vs.every((v) => tapMatches(re, v)) ? vs.map(Number) : null;
+}
+function orderCreateFilters(d) {
+const no = ( blocked) => ({ props: {}, blocked });
+const f = d.querySelector('app-buy-order-filters');
+if (!f) return no(d.querySelector(ORDER_ANY_FILTER) ? 'filters' : '');
+const slides = [...f.querySelectorAll('app-filter-slide, .active-filter')];
+const odd = slides.find((x) => !x.closest(ORDER_READ) && !x.querySelector(`${ORDER_READ}, .add-filter-row`));
+if (odd) return no(orderFilterName(odd));
+const typed = (
+f.querySelector('app-paint-seed-filter input.seed-inline-input')
+);
+if (`${typed?.value ?? ''}`.trim()) return no('Paint Seeds');
+const float = orderRange(f, 'app-float-range-filter .float-inputs input', ORDER_DECIMAL);
+if (float === null) return no('Float Range');
+const pattern = orderRange(f, 'app-keychain-pattern-range-filter .pattern-inputs input', ORDER_WHOLE);
+if (pattern === null) return no('Charm Pattern Range');
+const props = {};
+if (float) [props.min_float, props.max_float] = float;
+if (pattern) [props.min_keychain_pattern, props.max_keychain_pattern] = pattern;
+const checked = orderProps(props);
+return typeof checked === 'string' ? no(checked) : { props: checked, blocked: '' };
+}
+const orderPropWords = (p) =>
+[
+p.min_float !== undefined ? `float ${p.min_float}–${p.max_float}` : '',
+p.min_keychain_pattern !== undefined ? `charm pattern ${p.min_keychain_pattern}–${p.max_keychain_pattern}` : '',
+].filter(Boolean);
+function orderCreateAsk(d, over, wrote, splitOn) {
+const fields = orderCreateFields(d);
+const q = +fields.qty;
+const chips = orderSeedBox(d).chips();
+const seeds = over?.seeds ?? (q > ORDER_QTY && chips.length ? chips : null);
+const { props, blocked } = orderCreateFilters(d);
+const unread = chips.some((n) => !tapInteger(n)) ? 'Paint Seeds' : blocked;
+const paint = over?.paint ?? wrote?.paint ?? orderPhasePaint(fields.name, fields.phase);
+const stop =
+over && chips.length
+? 'Create has Paint Seeds of its own; a tier over 25 seeds is not mixed in: remove them, or pick None.'
+: unread && `TrueFloat can't read your ${unread} filter for certain, so these orders can't carry it: remove it.`;
+const split = !!seeds || splitOn;
+return { fields: split ? fields : { ...fields, qty: '' }, seeds, paint, props, stop };
+}
+const orderOverlay = (d) => d.closest('[popover]') ?? d.closest('.cdk-overlay-container') ?? d;
+const orderFilterName = (el) =>
+(el.querySelector('.active-filter-label, .label')?.textContent ?? '').trim().slice(0, 40) ||
+(el.matches('app-applied-keychain-filter, app-applied-keychain-filter *') ? 'Charm' : 'Stickers');
+// ---- src/order-pick.js
+function createOrderPick(d, redraw, host) {
+const box = d ? orderSeedBox(d) : null;
+const [value, arrow] = [tierEl('span', 'tf-op-v', 'None'), tierEl('span', 'tf-op-arrow')];
+const field = tierButton('tf-op-sel', () => tiers && pop.toggle(field), value, arrow);
+field.ariaHasPopup = 'dialog';
+const [from, say, about, note] = ['tf-op-src', 'tf-op-say', 'tf-op-about', 'tf-op-note'].map((c) => tierEl('div', c));
+const row = tierEl('div', 'tf-op', tierEl('div', 'tf-op-name', 'Pattern tier'), field, from, say, about, note);
+let tiers = null;
+let pick = null;
+let [added, opened, busy] = [ ([]), false, false];
+let gen = 0;
+const words = ( t, bad = false, act = (null)) => {
+note.replaceChildren(t, ...(act ? [' ', act] : []));
+note.className = `tf-op-note${bad ? ' tf-op-bad' : ''}`;
+};
+const show = () => {
+const lv = pick && tiers ? tierLevels(tiers.item.ix.d.systems[pick.si])[pick.li] : null;
+const said = lv && pick ? `${lv.label} · ${orderCount(pick.seeds.length, 'seed')}` : 'None';
+value.replaceChildren(...(lv && pick ? [pop.glyph(pick.si, lv.mark, 16)] : []), said);
+field.toggleAttribute('data-none', !lv);
+from.textContent = pick?.source ?? '';
+};
+const whenGone = ( then, closing = false) =>
+box ? orderSeedsGone(box, then, closing) : then();
+const takeOurs = (then) => {
+if (!box || !added.length) return then();
+orderSeedTake(box, added, opened);
+const closing = opened;
+[added, opened] = [[], false];
+whenGone(then, closing);
+};
+const replace = (seeds) => {
+if (busy || !box) return;
+[busy, say.textContent] = [true, 'Adding seeds…'];
+const g = gen;
+box.every();
+whenGone(() => (g === gen ? put(seeds) : ((busy = false), redraw())), false);
+};
+const unpick = () => ((pick = null), (say.textContent = ''), show());
+const put = (seeds) => {
+if (!box) return;
+const g = gen;
+say.textContent = 'Adding seeds…';
+orderSeedPut(box, seeds, (why, op) => {
+busy = false;
+if (g !== gen) return void (why === 'ok' && orderSeedTake(box, seeds, !!op), redraw());
+if (why === 'ok')
+[added, opened, say.textContent] = [seeds, !!op, `1 buy order with all ${orderCount(seeds.length, 'seed')}`];
+else unpick();
+if (why === 'ok') words('');
+else if (why === 'theirs') {
+const swap = tierButton('tf-op-go', () => replace(seeds), 'Replace them with this tier ›');
+words('Create already has your own Paint Seeds; the tier is not mixed in.', false, swap);
+} else if (why === 'no-filter')
+words("CSFloat's Paint Seeds filter did not appear: add it in Create, then pick again.", true);
+else if (why === 'failed') words("CSFloat's seeds did not match the tier, so they were taken out again.", true);
+else words("CSFloat's seeds did not match the tier: clear its Paint Seeds filter before you place.", true);
+redraw();
+});
+};
+function choose(g, si, li) {
+pop.close(true);
+if (busy || !tiers) return;
+const s = tiers.item.ix.d.systems[si];
+const lv = g >= 0 && s ? tierLevels(s)[li] : null;
+const head = `${tiers.item.guides[g]?.head ?? ''} · ${pop.sysName(si)}`;
+pick = lv
+? { g, si, li, seeds: [...lv.seeds], source: `Seeds from ${head} · ${lv.label}`, paint: tiers.paint }
+: null;
+show();
+const n = pick?.seeds.length ?? 0;
+say.textContent = '';
+words(
+n > ORDER_SEEDS
+? `This tier has ${n} seeds → ${Math.ceil(n / ORDER_SEEDS)} orders. CSFloat allows 25 seeds per order.`
+: '',
+);
+if (!box) return void redraw();
+[busy, gen] = [true, gen + 1];
+const at = gen;
+const then = () => (n && n <= ORDER_SEEDS ? put(pick?.seeds ?? []) : ((busy = false), redraw()));
+takeOurs(() => (at === gen ? then() : (busy = false)));
+}
+const pop = createTierPop(
+() => tiers?.item ?? null,
+() => (pick ? { g: pick.g, si: pick.si, li: pick.li } : null),
+(g, si, li) => choose(g, si, li),
+() => choose(-1, -1, -1),
+() => null,
+false,
+host,
+);
+return {
+row,
+build(t) {
+gen += 1;
+tiers = t && typeof t === 'object' ? t : null;
+[pick, say.textContent, about.textContent] = [null, '', ''];
+words(typeof t === 'string' ? t : '');
+show();
+field.disabled = !tiers;
+pop.close();
+takeOurs(() => {});
+},
+want(w) {
+const g = tiers?.item.guides.findIndex(( x) => x.systems.includes(w.si)) ?? -1;
+const same = ( l) => l.raw === w.raw || `${l.seeds}` === `${w.raw.seeds}`;
+const li = g >= 0 && tiers ? tierLevels(tiers.item.ix.d.systems[w.si]).findIndex(same) : -1;
+if (li >= 0) choose(g, w.si, li);
+return li >= 0;
+},
+picked: () => pick,
+over: () => (pick && pick.seeds.length > ORDER_SEEDS ? pick : null),
+written: () => (added.length ? { seeds: added, paint: tiers?.paint ?? null } : null),
+shown: () => !!tiers || !!note.textContent,
+about: (t) => void (about.textContent !== t && (about.textContent = t)),
+dispose: () => pop.dispose(),
+};
+}
+// ---- src/order-inline.js
+function createOrderInline(now, one = false) {
+const el = tierEl('div', 'tf-oi');
+const go = (tierEl('button', ORDER_INLINE_GO));
+const label = tierEl('span', 'mdc-button__label', '');
+go.append(label);
+go.type = 'button';
+const note = tierEl('div', 'tf-oi-note');
+let [drawn, spent, busy] = ['', '', false];
+let plan = '';
+let cells = [];
+const keyOf = (a) =>
+JSON.stringify([
+a.fields.name,
+a.fields.price,
+a.fields.qty,
+a.fields.phase,
+a.seeds,
+a.props,
+a.stop,
+a.paint,
+priceCurrency.fmt?.rate,
+]);
+function draw() {
+const a = now();
+const key = keyOf(a);
+if (busy || key === drawn || key === spent) return !!el.childElementCount;
+[drawn, spent, plan, cells] = [key, '', '', []];
+const q = +a.fields.qty;
+if (!one && !a.seeds && !(q > ORDER_QTY)) {
+el.replaceChildren();
+return false;
+}
+const say = ( t) => (el.replaceChildren(tierEl('div', 'tf-oi-why', t)), true);
+if (a.stop) return say(a.stop);
+if (tapMatches(ORDER_DOPPLER, a.fields.name) && a.paint === null)
+return say('Pick a phase in Create: split orders need one.');
+const shape = orderShape({ seeds: a.seeds, qty: q || 1, split: true });
+if (typeof shape === 'string') return say(shape);
+const fmt = priceCurrency.fmt;
+const cents = fmt ? orderCents(orderTyped(a.fields.price), fmt.rate) : null;
+if (cents)
+plan = orderPlan({
+name: a.fields.name,
+paint: a.paint,
+seeds: a.seeds,
+qty: q || 1,
+cents,
+split: true,
+props: a.props,
+});
+const view = orderPlanView(shape, cents, orderAbout(a.fields.name, a.fields.phase, a.props));
+cells = view.cells;
+label.textContent =
+one && shape.parts.length === 1 ? 'Place Order' : `Place ${orderCount(shape.parts.length, 'order')}`;
+go.disabled = typeof plan === 'string';
+const why = !fmt
+? "CSFloat's currency is not known yet."
+: !cents
+? 'Type a max price.'
+: typeof plan === 'string'
+? plan
+: '';
+[note.textContent, note.className] = [why, `tf-oi-note${why && cents ? ' tf-oi-bad' : ''}`];
+el.replaceChildren(view.el, note, go);
+return true;
+}
+function place(e) {
+if (busy || typeof plan === 'string') return;
+if (keyOf(now()) !== drawn) return void draw();
+busy = true;
+go.disabled = true;
+[note.textContent, note.className] = ['Placing… keep this tab until it is done.', 'tf-oi-note'];
+const ran = orderRun(
+e,
+plan,
+(i, s, w) => orderTell(cells[i], s, w),
+() => {
+busy = false;
+note.textContent = 'Done. CSFloat lists your orders under Profile, Buy Orders.';
+},
+() => el.isConnected,
+);
+if (ran) return void ((spent = drawn), go.remove());
+busy = false;
+drawn = '';
+draw();
+}
+tapApply(tapListen, go, ['click', ( e) => place(e)]);
+return { el, draw, running: () => busy };
+}
+const ORDER_INLINE_GO = 'tf-oi-go mdc-button mdc-button--raised mat-mdc-raised-button mat-primary mat-mdc-button-base';
+// ---- src/order-warn.js
+const ORDER_OVER = 1.2;
+function createOrderWarn(prices, rows, later) {
+const asks = new Map();
+const askOf = (name) => {
+if (!name || tapMatches(PANEL_DOPPLER, name)) return null;
+if (!asks.has(name)) {
+asks.set(name, 0);
+tapApply(panelThen, prices.lookup(name, null), [
+( s) => {
+asks.set(name, (s && priceRows(s, null, name).find((r) => r.lowest)?.ask) || null);
+later();
+},
+]);
+}
+return asks.get(name) || null;
+};
+return (st, name, price, rate) => {
+const lines = [];
+const [a, at] = rows.similar();
+const its = !!a && !!name && (a.list.length ? a.list.every((r) => r.name === name) : at > st.at);
+const top = its && a ? a.top : null;
+if (top !== null) {
+const usd = orderCents(orderTyped(price), rate);
+const says = top ? `top order for this item ${priceMoney(top)}` : 'no orders for this item';
+if (price && st.of !== name) lines.push([`Price is from the previous item · ${says}`, true]);
+else if (usd && top && usd > top * ORDER_OVER)
+lines.push([`${priceRound((usd / top - 1) * 100)}% over the top order ${priceMoney(top)}`, false]);
+const ask = usd ? askOf(name) : null;
+const cheaper = `At or over the lowest ask ${priceMoney(ask)}: buying is cheaper`;
+if (usd && ask && usd >= ask) lines.push([cheaper, true]);
+}
+return lines;
+};
+}
+// ---- src/order-create.js
+const ORDER_CREATE = 'app-create-dialog';
+const ORDER_CREATE_OURS = 'div.tf-ocr, div.tf-op, div.tf-oi, section.tf-om';
+const orderCreateOff = EventTarget.prototype.removeEventListener;
+function createOrderCreate(prices, orders, rows, tier) {
+const html = document.documentElement;
+const mine = (['orderGuard', 'orderMatch', 'orderSplit', 'orderTiers']);
+const on = ( k) => html.hasAttribute(TF_SETTINGS[k].attr);
+const live = () => mine.some(on);
+const seen = new WeakMap();
+const [drawn, held] = [ (new Set()), new WeakSet()];
+const guard = createOrderWarn(prices, rows, () => later());
+const make = (d, name, price) => {
+const st = {
+name,
+at: tickNow(),
+price,
+of: name,
+said: '',
+mk: '',
+item: '',
+pick: createOrderPick(
+d,
+() => later(),
+() => orderOverlay(d),
+),
+inline: createOrderInline(() => ask(d, st)),
+};
+const hold = ( e) => on('orderTiers') && orderHoldEnter(d, e);
+if (!held.has(d)) for (const type of ['keydown', 'submit']) tapApply(tapListen, d, [type, hold, true]);
+held.add(d);
+drawn.add(d);
+return st;
+};
+const ask = ( d, st) =>
+orderCreateAsk(d, on('orderTiers') ? st.pick.over() : null, st.pick.written(), on('orderSplit'));
+function draw(d) {
+const head = d.querySelector(':scope > .container > .header');
+const { name, price } = orderCreateFields(d);
+const st = seen.get(d) ?? make(d, name, price);
+if (st.name !== name) [st.name, st.at] = [name, tickNow()];
+if (st.price !== price) [st.price, st.of] = [price, name];
+seen.set(d, st);
+const fmt = priceCurrency.fmt;
+const lines = on('orderGuard') && fmt ? guard(st, name, price, fmt.rate) : [];
+const said = JSON.stringify([lines, fmt?.rate]);
+if (said !== st.said || (lines.length && !d.querySelector('div.tf-ocr'))) {
+st.said = said;
+d.querySelector('div.tf-ocr')?.remove();
+const box = orderCreateBox(lines);
+if (head && box) head.append(box);
+}
+const lid = document.querySelector(TF_SELECTORS.dialog) ? orderListingId() : null;
+const book = lid && on('orderMatch') && tier.listing(lid)?.[7] === name ? orders.book(lid) : null;
+const mk = JSON.stringify([book?.rows ? book.list.slice(0, 3) : null, orderSchema.read]);
+const right = d.querySelector('app-simple-create .existing-orders');
+if (mk !== st.mk || (book?.rows && !right?.querySelector(':scope > section.tf-om'))) {
+st.mk = mk;
+right?.querySelector(':scope > section.tf-om')?.remove();
+if (right && book?.rows) right.prepend(orderMatchEl(book));
+}
+const { phase } = orderCreateFields(d);
+const priceRow = d.querySelector('app-simple-create .price-input');
+const item =
+on('orderTiers') && d.querySelector('app-buy-order-filters') ? `${name}|${phase}|${orderSchema.read}` : '';
+if (item !== st.item) {
+st.item = item;
+st.pick.build(item ? tier.tiers(name, phase) : null);
+}
+if (item && orderWant?.name === name && tickNow() - orderWant.at < ORDER_WANT_MS && st.pick.want(orderWant))
+orderWant = null;
+const wrote = st.pick.written();
+st.pick.about(wrote ? orderAbout(name, phase, orderCreateFilters(d).props) : '');
+if (!item || !st.pick.shown()) st.pick.row.remove();
+else if (priceRow && st.pick.row.nextElementSibling !== priceRow) priceRow.before(st.pick.row);
+orderOursOnly(d, !!(item && st.pick.over()));
+const placeBtn = d.querySelector('app-simple-create button.place-order');
+if (!st.inline.draw()) st.inline.el.remove();
+else if (placeBtn && st.inline.el.nextElementSibling !== placeBtn) placeBtn.before(st.inline.el);
+}
+const later = frameLater(
+() => {
+for (const d of drawn) if (!d.isConnected) drop(d);
+document.querySelectorAll(ORDER_CREATE).forEach(draw);
+},
+(f) => requestAnimationFrame(f),
+);
+const off = (d) => {
+orderOursOnly(d, false);
+seen.get(d)?.pick.build(null);
+drop(d);
+};
+const drop = (d) => void (seen.get(d)?.pick.dispose(), seen.delete(d), drawn.delete(d));
+let heard = false;
+function follow() {
+watch.disconnect();
+watch.observe(html, { attributeFilter: mine.map((k) => TF_SETTINGS[k].attr) });
+const all = live();
+if (all !== heard) {
+heard = all;
+if (all) tapApply(tapListen, document, ['input', later, { capture: true, passive: true }]);
+else tapApply(orderCreateOff, document, ['input', later, { capture: true, passive: true }]);
+}
+if (!all) document.querySelectorAll(ORDER_CREATE).forEach((d) => off(d));
+if (!all) return void document.querySelectorAll(ORDER_CREATE_OURS).forEach((el) => el.remove());
+if (document.body) watch.observe(document.body, { childList: true });
+const b = [...(document.body?.children ?? [])].find((el) => el.matches('.cdk-overlay-container'));
+if (b) watch.observe(b, { childList: true, subtree: true, characterData: true });
+}
+const watch = new MutationObserver((records) => {
+if (records.some((r) => r.target === html || r.target === document.body)) follow();
+later();
+});
+follow();
+rows.heard(later);
+orders.watch(later);
 }
 // ---- src/tradeup.js
 const TU_WEARS = ['FN', 'MW', 'FT', 'WW', 'BS'];
@@ -9394,6 +10778,175 @@ none: true,
 });
 const tierLost = (t, on, i) =>
 t.lost === on.keys[i] || document.querySelector(TF_SELECTORS.searchError) !== null ? TIER_LOST : null;
+// ---- src/fade-pop.js
+const FADE_LO = 80;
+const FADE_HI = 100;
+const FADE_PRESETS = [90, 95, 98];
+const FADE_WAIT = 400;
+const fadeNum = (v, d) =>
+v === null || v === '' || !isFinite(+v) ? d : +fadeTxt(Math.min(FADE_HI, Math.max(FADE_LO, +v)));
+function fadeTxt(n) {
+return `${Math.round(n * 100) / 100}`;
+}
+function createFadePop(btn, now, go) {
+let [pop, cancel] = [ (null), () => {}];
+const commit = ( lo, hi) => (cancel(), go(lo, hi));
+const later = ( lo, hi) => (
+cancel(),
+(cancel = tickAfter(() => go(lo, hi), FADE_WAIT))
+);
+const made = ( cls) => (tierEl('input', cls));
+const input = ( cls, props) =>
+Object.assign(made(cls), { min: `${FADE_LO}`, max: `${FADE_HI}`, step: '0.01', ...props });
+const [rLo, rHi] = [0, 1].map(() => input('tf-fd-r', { type: 'range', tabIndex: -1 }));
+const [nLo, nHi] = ['Min', 'Max'].map((l) =>
+input('tf-fd-n', { type: 'number', inputMode: 'decimal', ariaLabel: `${l} fade %` }),
+);
+const field = ( l, i) =>
+tierEl('div', 'tf-fd-f', tierEl('span', 'tf-fd-l', l), i);
+const track = tierEl('div', 'tf-fd-s', tierEl('span', 'tf-fd-c'), rLo, rHi);
+const clear = tierButton('tf-fd-x', () => (nLo.focus(), commit(FADE_LO, FADE_HI)), 'Clear');
+const presets = FADE_PRESETS.map((p) => tierButton('tf-fd-p', () => commit(p, FADE_HI), `${p}+`));
+const body = [
+tierEl('div', 'tf-fd-h', tierEl('span', '', 'Fade %'), clear),
+track,
+tierEl('div', 'tf-fd-fs', field('Min', nLo), field('Max', nHi)),
+tierEl('div', 'tf-fd-ps', ...presets),
+];
+function fill([lo, hi] = now()) {
+[rLo.value, rHi.value, nLo.value, nHi.value] = [lo, hi, lo, hi].map(fadeTxt);
+track.style.setProperty('--a', `${(lo - FADE_LO) / (FADE_HI - FADE_LO)}`);
+track.style.setProperty('--b', `${(hi - FADE_LO) / (FADE_HI - FADE_LO)}`);
+rLo.classList.toggle('tf-fd-top', lo > (FADE_LO + FADE_HI) / 2);
+const [ulo, uhi] = now();
+clear.hidden = ulo === FADE_LO && uhi === FADE_HI;
+presets.forEach((b, i) => (b.ariaPressed = `${ulo === FADE_PRESETS[i] && uhi === FADE_HI}`));
+}
+const read = (a, b, moved) => {
+let [lo, hi] = [fadeNum(a.value, FADE_LO), fadeNum(b.value, FADE_HI)];
+if (lo > hi) moved === a ? (hi = lo) : (lo = hi);
+return [lo, hi];
+};
+for (const [a, b] of [
+[rLo, rHi],
+[nLo, nHi],
+])
+for (const el of [a, b]) {
+const drag = ( e) => e.isTrusted && fill(read(a, b, el));
+const set = ( e) => {
+const [lo, hi] = read(a, b, el);
+if (e.isTrusted) (fill([lo, hi]), later(lo, hi));
+};
+if (a === rLo) tapApply(tapListen, el, ['input', drag]);
+tapApply(tapListen, el, ['change', set]);
+}
+function place() {
+const a = pop && btn.isConnected ? btn.getBoundingClientRect() : null;
+if (!pop || !a || !a.width) return void close();
+const x = Math.max(8, Math.min(a.left, innerWidth - pop.offsetWidth - 8));
+pop.style.translate = `${x + scrollX}px ${a.bottom + 6 + scrollY}px`;
+}
+const keys = ( e) => (e.stopPropagation(), e.key === 'Escape' && close(true, true));
+function toggle() {
+if (pop) return close(true);
+pop = document.body.appendChild(tierEl('div', 'tf-fd-pop', ...body));
+tapApply(tapListen, pop, ['keydown', keys]);
+[pop.role, pop.ariaLabel] = ['dialog', 'Fade %'];
+btn.ariaExpanded = 'true';
+fill();
+place();
+nLo.focus();
+}
+function close(focus = false, drop = false) {
+if (!pop) return;
+const [lo, hi] = read(nLo, nHi, nLo);
+const [ulo, uhi] = now();
+if (drop) cancel();
+else if (lo !== ulo || hi !== uhi) commit(lo, hi);
+(pop.remove(), (pop = null), (btn.ariaExpanded = 'false'));
+if (focus) btn.focus();
+}
+const own = ( e) => [pop, btn].some((x) => x?.contains( (e.target)));
+document.addEventListener('pointerdown', (e) => pop && !own(e) && close(), true);
+document.addEventListener('keydown', (e) => pop && e.key === 'Escape' && close(true, true));
+addEventListener('resize', place);
+addEventListener('scroll', place, { capture: true, passive: true });
+return { toggle, close, refill: () => pop && fill() };
+}
+// ---- src/fade-bar.js
+function createFadeBar() {
+const html = document.documentElement;
+const attr = TF_SETTINGS.fadeBar.attr;
+let [slot, drawn, queued] = [ (null), '', false];
+const btn = tierButton('tf-ts-btn tf-fd-btn', () => pop.toggle());
+[btn.ariaHasPopup, btn.ariaExpanded] = ['dialog', 'false'];
+const now = () => {
+const q = new TierParams(tierSearch());
+const lo = fadeNum(q.get('min_fade'), FADE_LO);
+return [lo, Math.max(lo, fadeNum(q.get('max_fade'), FADE_HI))];
+};
+function go( lo, hi) {
+const q = new TierParams(tierSearch());
+lo === FADE_LO ? q.delete('min_fade') : q.set('min_fade', fadeTxt(lo));
+hi === FADE_HI ? q.delete('max_fade') : q.set('max_fade', fadeTxt(hi));
+const parts = [];
+for (const k of new Set([...TIER_ORDER, ...q.keys()]))
+if (k !== 'cursor') for (const v of q.getAll(k)) parts.push(`${tierQ(k)}=${tierQ(v)}`);
+const to = `/search${parts.length ? `?${parts.join('&')}` : ''}`;
+if (tierAt() && to !== `/search${tierSearch()}`) tierJump(to);
+}
+const pop = createFadePop(btn, now, go);
+const rest = ( bar) =>
+[...bar.children]
+.filter((e) => e !== slot && !e.matches('div.gap'))
+.flatMap((e) => ((r) => [r.left, r.width, r.height])(e.getBoundingClientRect()));
+const fits = new ResizeObserver(() => fit());
+const watched = new Set();
+let host = (null);
+function fit() {
+const bar = slot?.parentElement;
+if (!slot || !bar) return;
+if (host !== bar) (fits.disconnect(), watched.clear(), (host = bar));
+for (const e of [bar, ...bar.children]) if (e !== slot && !watched.has(e)) (watched.add(e), fits.observe(e));
+slot.setAttribute('data-tf-off', '');
+const own = rest(bar);
+for (const icon of [false, true]) {
+slot.removeAttribute('data-tf-off');
+slot.toggleAttribute('data-tf-icon', icon);
+const v = rest(bar);
+if (v.length === own.length && v.every((x, i) => Math.abs(x - own[i]) < 0.5)) return;
+}
+slot.setAttribute('data-tf-off', '');
+}
+function sync() {
+queued = false;
+if (slot && tierOnItem()) return;
+const here = html.hasAttribute(attr) && tierAt();
+const bar = here ? document.querySelector(TF_SELECTORS.searchBar) : null;
+const crumb = bar?.querySelector(':scope > div.drill-down');
+const [lo, hi] = now();
+const on = lo !== FADE_LO || hi !== FADE_HI;
+const named = [...(crumb?.querySelectorAll('.item > span') ?? [])].some((s) => s.textContent?.includes('Fade'));
+const at = bar?.querySelector(':scope > .tf-ts-slot') ?? crumb;
+if (!bar || !at || !(named || on)) {
+if (slot)
+(pop.close(false, true), slot.remove(), (slot = null), fits.disconnect(), watched.clear(), (host = null));
+return;
+}
+if (!slot) [slot, drawn] = [tierEl('div', 'tf-fd-slot', btn), ''];
+if (slot.previousElementSibling !== at) (at.after(slot), (drawn = ''));
+if (drawn === `${lo}|${hi}`) return;
+drawn = `${lo}|${hi}`;
+const range = `${fadeTxt(lo)}–${fadeTxt(hi)}%`;
+btn.replaceChildren(tierEl('span', 'tf-fd-mark'), ...(on ? [tierEl('span', 'tf-fd-v', range)] : []));
+btn.toggleAttribute('data-on', on);
+btn.ariaLabel = btn.title = on ? `Fade ${range}` : 'Fade %';
+pop.refill();
+fit();
+}
+cardWatch({ attrs: [attr], cards: () => {}, settle: () => queued || ((queued = true), requestAnimationFrame(sync)) });
+return { fit };
+}
 // ---- src/tier-fit.js
 function createTierFit(chip, after) {
 let slot = (null);
@@ -9404,7 +10957,7 @@ const box = (e) => e.getBoundingClientRect();
 function theirs(bar, loose = false) {
 const v = [];
 for (const e of bar.children) {
-if (e === slot || e.matches('div.gap')) continue;
+if (e === slot || e.matches('div.gap, .tf-fd-slot')) continue;
 if (e.matches('div.refresh')) v.push(box(e.querySelector(':scope > button:not(.tf-chip)') ?? e).width);
 else if (e.matches('div.preset')) v.push(box(e).width);
 else if (loose && e.matches('div.drill-down')) v.push(box(e).left);
@@ -9443,7 +10996,9 @@ after();
 function choose() {
 const bar = slot?.parentElement;
 if (!slot || !bar) return;
-for (const e of [bar, ...bar.children]) if (e !== slot && !watched.has(e)) (watched.add(e), fits.observe(e));
+for (const e of [bar, ...bar.children])
+if (e !== slot && !e.matches('.tf-fd-slot') && !watched.has(e)) (watched.add(e), fits.observe(e));
+bar.querySelector(':scope > .tf-fd-slot')?.setAttribute('data-tf-off', '');
 const now = bar.querySelector(':scope > div.drill-down');
 if (crumb !== now) (unmark(), (crumb = now));
 set(false, true);
@@ -9671,7 +11226,7 @@ return true;
 return { draw };
 }
 // ---- src/tier-bar.js
-function createTiers(index, rate, premium, chip) {
+function createTiers(index, rate, premium, chip, fitted = () => {}) {
 const html = document.documentElement;
 const attrs = [
 TF_SETTINGS.tierSearch.attr,
@@ -9683,7 +11238,7 @@ TF_SETTINGS.patternPicker.attr,
 ];
 const net = createTierNet(rate);
 const nav = createTierNav(net.ours, (k) => ((t.lost = k), tick()));
-const fit = createTierFit(chip, () => {});
+const fit = createTierFit(chip, fitted);
 const t = {
 item: null,
 sel: null,
@@ -11579,8 +13134,14 @@ const stickerCards = createStickerCards();
 const stickerPanel = createStickerPanel(prices);
 const catalogViews = createCatalogViews();
 createLeftTidy();
+const orderRows = createOrderRows(orders);
+const orderSheet = createOrderSheet(prices, orderRows);
+const orderTier = createOrderTier(grades.index, orders, orderSheet.start, () => catalogViews.catalog.schemaNeed());
+catalogViews.catalog.schemaParsed(orderSchemaRead);
+createOrderCreate(prices, orders, orderRows, orderTier);
 const menus = createMenus(prices, grades.index);
-const tiers = createTiers(grades.index, rate, premium, chip);
+const fade = createFadeBar();
+const tiers = createTiers(grades.index, rate, premium, chip, fade.fit);
 const dbTiers = createDbTiers(grades.index);
 createDbMerge();
 createCollectionWindow(catalogViews.catalog, prices, createColGuard(tiers.net));
@@ -11611,6 +13172,9 @@ const listings = all.filter((l) => !tapMatches(TAP_GOODS_KEY, l[0]));
 if (listings.length < all.length)
 try {
 goods.feed(all);
+} catch {}
+try {
+orderTier.feed(all);
 } catch {}
 if (!listings.length) {
 for (const f of search && !all.length ? [tiers.seen, premium.grid] : [])

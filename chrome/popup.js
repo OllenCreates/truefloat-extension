@@ -1,4 +1,4 @@
-// TrueFloat 1.1.4: popup.js, built from src/settings.js, src/popup.js, src/popup-note.js.
+// TrueFloat 1.1.5: popup.js, built from src/settings.js, src/popup.js, src/popup-note.js.
 (() => {
 'use strict';
 // ---- src/settings.js
@@ -50,6 +50,7 @@ tierSearch: Object.freeze({ default: true, attr: 'data-tf-tiers' }),
 dbTiers: Object.freeze({ default: true, attr: 'data-tf-dbtiers' }),
 dbMerge: Object.freeze({ default: true, attr: 'data-tf-dbmerge' }),
 tierPlace: Object.freeze({ default: 'both', attr: 'data-tf-tierplace' }),
+fadeBar: Object.freeze({ default: true, attr: 'data-tf-fadebar' }),
 tierAll: Object.freeze({ default: true, attr: 'data-tf-tierall' }),
 tierPremium: Object.freeze({ default: true, attr: 'data-tf-premium' }),
 tierStrip: Object.freeze({ default: true, attr: 'data-tf-tierstrip' }),
@@ -94,6 +95,11 @@ offerAsks: Object.freeze({ default: true, attr: 'data-tf-offerasks' }),
 offerContext: Object.freeze({ default: true, attr: 'data-tf-offerctx' }),
 offerGraded: Object.freeze({ default: true, attr: 'data-tf-offergrade' }),
 discordBar: Object.freeze({ default: true, attr: 'data-tf-discordbar' }),
+orderConds: Object.freeze({ default: true, attr: 'data-tf-orderconds' }),
+orderGuard: Object.freeze({ default: true, attr: 'data-tf-orderguard' }),
+orderMatch: Object.freeze({ default: true, attr: 'data-tf-ordermatch' }),
+orderTiers: Object.freeze({ default: true, attr: 'data-tf-ordertiers' }),
+orderSplit: Object.freeze({ default: true, attr: 'data-tf-ordersplit' }),
 });
 // ---- src/popup.js
 const api = globalThis.browser ?? globalThis.chrome;
@@ -222,9 +228,13 @@ reset.focus();
 }
 // ---- src/popup-note.js
 const NEWS = {
-version: '1.1.4',
-title: 'Market prices for cases',
-points: ['Market prices for cases, capsules, packages and music kits', "What's new in the popup after each update"],
+version: '1.1.5',
+title: 'Fade % filter and buy orders for pattern tiers',
+points: [
+'Fade % filter in the toolbar, with 90+, 95+ and 98+',
+'Buy orders for a whole pattern tier in one go',
+"Each buy order's float and seed rules under its price",
+],
 };
 const ASK_AFTER = 7 * 864e5;
 const note = (document.getElementById('news'));
